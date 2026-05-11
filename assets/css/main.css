@@ -3510,4 +3510,35 @@ nav ul li a.active {
     height: 400px; /* 或者您设定的固定高度 */
     object-fit: cover; /* 关键：图片会自动裁剪以填充容器，不会拉伸变形 */
     object-position: center; /* 确保图片中心始终可见 */
+}/* 专门针对 Footer 区域的二维码优化 */
+#footer .qr-container {
+    position: relative; /* 确保定位基准正确 */
+}
+
+#footer .qr-popup {
+    /* 1. 强制尺寸：改为 180px，确保扫码清晰 */
+    width: 220px !important;
+    max-width: none !important; /* 解除父级容器的宽度限制 */
+    height: auto !important;
+
+    /* 2. 位置调整：弹出在图标正上方 */
+    position: absolute !important;
+    bottom: 120% !important; /* 弹出在图标上方，避免被手指或鼠标遮挡 */
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* 居中对齐 */
+
+    /* 3. 视觉修正：必须要有白底，否则扫不出码 */
+    background: #ffffff !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+
+    /* 4. 层级控制 */
+    z-index: 999999 !important;
+    display: none; 
+}
+
+/* 悬停触发显示 */
+#footer .qr-container:hover .qr-popup {
+    display: block !important;
 }
