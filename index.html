@@ -157,59 +157,32 @@
 			</div>
 
 			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-				<nav id="nav">
+<nav id="nav">
     <ul>
-
-        <li>
-            <a href="index.html" class="active">Home</a>
-        </li>
-
-        <li>
-            <a href="#">Brand</a>
-
-            <ul>
-
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="wd-parent">
+            <a href="javascript:void(0)" class="wd-trigger">Brand</a>
+            <ul id="wd-brand-menu">
                 <li><a href="sew-gearmotors.html">SEW</a></li>
-
                 <li><a href="flender-gearbox.html">FLENDER</a></li>
-
                 <li><a href="nord-gearmotors.html">NORD</a></li>
-
                 <li><a href="siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-
                 <li><a href="bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-
                 <li><a href="bauer-gearmotors.html">BAUER</a></li>
-
                 <li><a href="lenze-gearmotors.html">LENZE</a></li>
-
                 <li><a href="abb-motors.html">ABB</a></li>
-
                 <li><a href="baldor-motors.html">BALDOR</a></li>
-
                 <li><a href="kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-
                 <li><a href="sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-
                 <li><a href="odm-brand.html">ODM BRAND</a></li>
-
             </ul>
         </li>
-
         <li><a href="company.html">Company</a></li>
-
         <li><a href="case.html">Case</a></li>
-
         <li><a href="news-blog.html">News and Blog</a></li>
-
         <li><a href="inquiry.html">Inquiry</a></li>
-
         <li><a href="contact.html">Contact</a></li>
-
         <li><a href="discount.html">Discount</a></li>
-
     </ul>
 </nav>
 
@@ -1469,3 +1442,16 @@ developing their own industrial transmission brands.
 
 
 </html>
+<script>
+document.querySelectorAll('#wd-brand-menu a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        // 阻止任何可能存在的父级脚本拦截
+        e.stopPropagation();
+        // 获取链接地址并强制跳转
+        var url = this.getAttribute('href');
+        if (url && url !== '#') {
+            window.location.href = url;
+        }
+    });
+});
+</script>
