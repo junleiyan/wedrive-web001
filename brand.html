@@ -837,7 +837,28 @@
         Tawk_API.showWidget();
     };
 </script>
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取当前页面的文件名（例如 index.html 或 abb-motors.html）
+    var currentFileName = window.location.pathname.split("/").pop();
+    var brandBtn = document.getElementById("nav-brand");
 
+    // 只要文件名包含以下关键词，就让 Brand 标签高亮
+    // 涵盖了你所有的品牌页面后缀
+    if (
+        currentFileName === "brand.html" || 
+        currentFileName.includes("gearmotors") || 
+        currentFileName.includes("gearbox") || 
+        currentFileName.includes("motors") || 
+        currentFileName.includes("speedreducer") || 
+        currentFileName === "odm-brand.html"
+    ) {
+        if (brandBtn) {
+            brandBtn.classList.add("active"); // 这里确保 class 名和你 CSS 里的高亮类名一致
+        }
+    }
+});
+</script>
 
   
 
