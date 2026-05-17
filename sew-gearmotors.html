@@ -823,10 +823,13 @@
                 <!-- Copyright -->
                 <div id="copyright">
                     <ul class="links">
-                        <li>
-                            © 2015 - <script>document.write(new Date().getFullYear())</script>
-                            WE DRIVE HONGKONG LIMITED All Rights Reserved.
-                        </li>
+                      <li>
+    © 2015 - <span id="current-year">2026</span> WE DRIVE HONGKONG LIMITED All Rights Reserved.
+</li>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
                     </ul>
                 </div>
             </div>
@@ -868,7 +871,7 @@
             </a>
             <div class="bar-info">
                 <img src="images/whatsapp.jpg" class="qr-popup" alt="Whatsapp QR" loading="lazy">
-                WA Business<br>+86 15502804645
+                WA Business<br>+86 19802879543
             </div>
         </div>
 
