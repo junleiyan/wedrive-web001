@@ -161,21 +161,26 @@
     </ul>
 </nav>
 
-                   <section id="banner" style="background: none !important; padding: 0; margin: 0; clear: both;">
+               <section id="banner" style="background: none !important; padding: 0; margin: 0; clear: both;">
     <div class="slider-wrapper" style="position: relative; width: 100%; height: 400px; overflow: hidden; background: #fff;">
         <div class="slides-container" style="display: flex; width: 400%; height: 100%; animation: subpage-slide 20s infinite;">
             
-            <div style="width: 25%; height: 100%; background: url('/images/discount300.jpg') no-repeat center/cover;"></div>
+            <!-- 第一张：使用 cover 模式实现全铺满 -->
+            <div style="width: 25%; flex: 1 0 25%;height: 100%; background: url('https://www.wedrivepower.com/images/discount300.jpg') no-repeat center/cover;"></div>
             
-            <div style="width: 25%; height: 100%; background: url('/images/discount301.jpg') no-repeat center/cover;"></div>
+            <!-- 第二张 -->
+            <div style="width: 25%; flex: 1 0 25%;height: 100%; background: url('https://www.wedrivepower.com/images/discount301.jpg') no-repeat center/cover;"></div>
             
-            <div style="width: 25%; height: 100%; background: url('/images/discount302.jpg') no-repeat center/cover;"></div>
+            <!-- 第三张 -->
+            <div style="width: 25%; flex: 1 0 25%;height: 100%; background: url('https://www.wedrivepower.com/images/discount302.jpg') no-repeat center/cover;"></div>
             
-            <div style="width: 25%; height: 100%; background: url('/images/discount303.jpg') no-repeat center/cover;"></div>
+            <!-- 第四张 -->
+            <div style="width: 25%; flex: 1 0 25%;height: 100%; background: url('https://www.wedrivepower.com/images/discount303.jpg') no-repeat center/cover;"></div>
             
         </div>
     </div>
 
+    <!-- 动画逻辑保持不变 -->
     <style>
         @keyframes subpage-slide {
             0% { transform: translateX(0); }
@@ -190,6 +195,14 @@
         }
     </style>
 </section>
+
+<!-- 结构修复符 -->
+<div style="clear: both; height: 1px;"></div>
+
+<!-- 结构锚点：确保下方标语或 footer 不会上移 -->
+<div class="clearfix" style="clear: both; height: 1px;"></div>
+							
+						</section>
 
 
 				
