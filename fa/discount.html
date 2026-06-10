@@ -161,29 +161,27 @@
     </ul>
 </nav>
 
-<section id="banner" style="background: none !important; padding: 0; margin: 0; clear: both;">
-    <div class="slider-wrapper" style="position: relative; width: 100%; height: 400px; overflow: hidden; background: #fff;">
-        <div class="slides-container" style="display: flex; width: 400%; height: 100%; animation: subpage-slide 20s infinite;">
-            
-            <div style="width: 25%; height: 100%; background: url('../images/discount300.jpg') no-repeat center/cover;"></div>
-            <div style="width: 25%; height: 100%; background: url('../images/discount301.jpg') no-repeat center/cover;"></div>
-            <div style="width: 25%; height: 100%; background: url('../images/discount302.jpg') no-repeat center/cover;"></div>
-            <div style="width: 25%; height: 100%; background: url('../images/discount303.jpg') no-repeat center/cover;"></div>
-            
-        </div>
+<!-- 使用绝对定位强行锁定布局，无视外层语言环境 -->
+<section id="banner" style="background: none !important; padding: 0; margin: 0; clear: both; direction: ltr; position: relative; height: 400px; width: 100%; overflow: hidden;">
+    
+    <!-- 容器通过 left 属性控制，完全避开 transform: translateX 在 RTL 下的偏移 bug -->
+    <div class="slides-container" style="position: absolute; width: 400%; height: 100%; animation: subpage-slide 20s infinite; left: 0;">
+        
+        <div style="float: left; width: 25%; height: 100%; background: url('../images/discount300.jpg') no-repeat center/cover;"></div>
+        <div style="float: left; width: 25%; height: 100%; background: url('../images/discount301.jpg') no-repeat center/cover;"></div>
+        <div style="float: left; width: 25%; height: 100%; background: url('../images/discount302.jpg') no-repeat center/cover;"></div>
+        <div style="float: left; width: 25%; height: 100%; background: url('../images/discount303.jpg') no-repeat center/cover;"></div>
+        
     </div>
 
+    <!-- 使用 left 控制位移，这是最稳定的物理定位方式 -->
     <style>
         @keyframes subpage-slide {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(0); }
-            25% { transform: translateX(-25%); }
-            45% { transform: translateX(-25%); }
-            50% { transform: translateX(-50%); }
-            70% { transform: translateX(-50%); }
-            75% { transform: translateX(-75%); }
-            95% { transform: translateX(-75%); }
-            100% { transform: translateX(0); }
+            0%, 20% { left: 0; }
+            25%, 45% { left: -100%; }
+            50%, 70% { left: -200%; }
+            75%, 95% { left: -300%; }
+            100% { left: 0; }
         }
     </style>
 </section>
