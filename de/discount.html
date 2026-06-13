@@ -30,7 +30,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.wedrivepower.com/de/discount.html",
+        "url": "https://www.wedrivepower.com/de/discount/",
         "priceCurrency": "EUR",
         "price": "0.00",
         "priceValidUntil": "2026-12-31",
@@ -43,22 +43,34 @@
       }
     }
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 	<body class="homepage is-preload">
 		<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-          <li><a href="/ja/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/discount/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/discount/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/discount/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/discount/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/discount/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+          <li><a href="/ja/discount/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/discount.html';" 
+     <div onclick="window.location.href='/discount/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -132,30 +144,30 @@
         <li><a href="/de/">Startseite</a></li>
         
     <li class="wd-parent">
-    <a href="/de/brand.html" class="wd-trigger" onclick="toggleMenu(); return false;">Marken</a>
+    <a href="/de/brand/" class="wd-trigger" onclick="toggleMenu(); return false;">Marken</a>
     
     <ul id="wd-brand-menu">
-                <li onclick="window.location.href='/de/SEW-Getriebemotoren.html';"><a href="/de/SEW-Getriebemotoren.html">SEW</a></li>
-                <li onclick="window.location.href='/de/FLENDER-Getriebe.html';"><a href="/de/FLENDER-Getriebe.html">FLENDER</a></li>
-                <li onclick="window.location.href='/de/NORD-Getriebemotoren.html';"><a href="/de/NORD-Getriebemotoren.html">NORD</a></li>
-                <li onclick="window.location.href='/de/SIEMENS-Getriebe.html';"><a href="/de/SIEMENS-Getriebe.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='/de/BONFIGLIOLI-Getriebe.html';"><a href="/de/BONFIGLIOLI-Getriebe.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='/de/BAUER-Getriebemotoren.html';"><a href="/de/BAUER-Getriebemotoren.html">BAUER</a></li>
-                <li onclick="window.location.href='/de/LENZE-Getriebemotoren.html';"><a href="/de/LENZE-Getriebemotoren.html">LENZE</a></li>
-                <li onclick="window.location.href='/de/ABB-Motoren.html';"><a href="/de/ABB-Motoren.html">ABB</a></li>
-                <li onclick="window.location.href='/de/BALDOR-Motoren.html';"><a href="/de/BALDOR-Motoren.html">BALDOR</a></li>
-                <li onclick="window.location.href='/de/KOLLMORGEN-Servomotoren.html';"><a href="/de/KOLLMORGEN-Servomotoren.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='/de/SUMITOMO-HANSEN-Getriebe.html';"><a href="/de/SUMITOMO-HANSEN-Getriebe.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='/de/ODM-MARKE.html';"><a href="/de/ODM-MARKE.html">ODM MARKE</a></li>
+                <li onclick="window.location.href='/de/SEW-Getriebemotoren/';"><a href="/de/SEW-Getriebemotoren/">SEW</a></li>
+                <li onclick="window.location.href='/de/FLENDER-Getriebe/';"><a href="/de/FLENDER-Getriebe/">FLENDER</a></li>
+                <li onclick="window.location.href='/de/NORD-Getriebemotoren/';"><a href="/de/NORD-Getriebemotoren/">NORD</a></li>
+                <li onclick="window.location.href='/de/SIEMENS-Getriebe/';"><a href="/de/SIEMENS-Getriebe/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/de/BONFIGLIOLI-Getriebe/';"><a href="/de/BONFIGLIOLI-Getriebe/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/de/BAUER-Getriebemotoren/';"><a href="/de/BAUER-Getriebemotoren/">BAUER</a></li>
+                <li onclick="window.location.href='/de/LENZE-Getriebemotoren/';"><a href="/de/LENZE-Getriebemotoren/">LENZE</a></li>
+                <li onclick="window.location.href='/de/ABB-Motoren/';"><a href="/de/ABB-Motoren/">ABB</a></li>
+                <li onclick="window.location.href='/de/BALDOR-Motoren/';"><a href="/de/BALDOR-Motoren/">BALDOR</a></li>
+                <li onclick="window.location.href='/de/KOLLMORGEN-Servomotoren/';"><a href="/de/KOLLMORGEN-Servomotoren/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/de/SUMITOMO-HANSEN-Getriebe/';"><a href="/de/SUMITOMO-HANSEN-Getriebe/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/de/ODM-MARKE/';"><a href="/de/ODM-MARKE/">ODM MARKE</a></li>
             </ul>
         </li>
         
-        <li><a href="/de/company.html">Unternehmen</a></li>
-        <li><a href="/de/case.html">Projekte</a></li>
-        <li><a href="/de/news-blog.html">Aktuelles & Blog</a></li>
-        <li><a href="/de/inquiry.html">Anfrage</a></li>
-        <li><a href="/de/contact.html">Kontakt</a></li>
-        <li><a href="/de/discount.html" class="active">Aktionen</a></li>
+        <li><a href="/de/company/">Unternehmen</a></li>
+        <li><a href="/de/case/">Projekte</a></li>
+        <li><a href="/de/news-blog/">Aktuelles & Blog</a></li>
+        <li><a href="/de/inquiry/">Anfrage</a></li>
+        <li><a href="/de/contact/">Kontakt</a></li>
+        <li><a href="/de/discount/" class="active">Aktionen</a></li>
     </ul>
 </nav>
 
@@ -248,7 +260,7 @@
                         <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">175,00 USD - 19.998,00 USD</span>
                     </div>
                     
-                    <a href="/de/inquiry.html" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Anfrage via WhatsApp senden</a>
+                    <a href="/de/inquiry/" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Anfrage via WhatsApp senden</a>
                 </div>
             </div>
 
@@ -280,7 +292,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SEW-EURODRIVE" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/sewprice01.jpg" alt="SEW EURODRIVE Getriebemotoren" itemprop="image" />
                             </a>
                             <header>
@@ -299,7 +311,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -308,7 +320,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="FLENDER" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/flenderprice02.jpg" alt="FLENDER Industriegetriebe Preise" itemprop="image" />
                             </a>
                             <header>
@@ -327,7 +339,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -335,7 +347,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SIEMENS" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/siemensprice03.jpg" alt="SIEMENS INNOMOTICS MOTOX Getriebemotoren" itemprop="image" />
                             </a>
                             <header>
@@ -354,7 +366,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -363,7 +375,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BONFIGLIOLI" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/bonfiglioliprice04.jpg" alt="BONFIGLIOLI Planetengetriebe 300M Serie" itemprop="image" />
                             </a>
                             <header>
@@ -382,7 +394,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -391,7 +403,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="NORD" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/nordprice05.jpg" alt="NORD SK Serien Getriebemotoren" itemprop="image" />
                             </a>
                             <header>
@@ -410,7 +422,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -419,7 +431,7 @@
                   <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BAUER" />
-                            <a href="/de/inquiry.html" class="image featured">
+                            <a href="/de/inquiry/" class="image featured">
                                 <img src="/images/bauerprice06.jpg" alt="BAUER LENZE Getriebemotoren Sonderangebot" itemprop="image" />
                             </a>
                             <header>
@@ -437,7 +449,7 @@
                             </div>
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/de/inquiry.html" class="button alt">Anfrage</a></li>
+                                    <li><a href="/de/inquiry/" class="button alt">Anfrage</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -628,12 +640,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var brandBtn = document.getElementById("nav-brand");
 
     if (
-        currentFileName === "brand.html" || 
+        currentFileName === "brand/" || 
         currentFileName.includes("gearmotors") || 
         currentFileName.includes("gearbox") || 
         currentFileName.includes("motors") || 
         currentFileName.includes("speedreducer") || 
-        currentFileName === "odm-brand.html"
+        currentFileName === "odm-brand/"
     ) {
         if (brandBtn) {
             brandBtn.classList.add("active"); 
