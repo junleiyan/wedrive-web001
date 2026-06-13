@@ -91,6 +91,18 @@
   ]
 }
 </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="homepage is-preload" dir="ltr">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
@@ -184,28 +196,28 @@
                 <ul>
                     <li><a href="/fr/" class="active">Accueil</a></li>
                     <li class="wd-parent">
-                        <a href="../fr/brand.html" class="wd-trigger">Marques</a>
+                        <a href="../fr/brand/" class="wd-trigger">Marques</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/fr/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/fr/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/fr/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/fr/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/fr/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/fr/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/fr/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/fr/abb-motors.html">ABB</a></li>
-                            <li><a href="/fr/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/fr/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/fr/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/fr/odm-brand.html">Marques ODM</a></li>
+                            <li><a href="/fr/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/fr/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/fr/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/fr/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/fr/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/fr/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/fr/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/fr/abb-motors/">ABB</a></li>
+                            <li><a href="/fr/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/fr/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/fr/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/fr/odm-brand/">Marques ODM</a></li>
                         </ul>
                     </li>
-                    <li><a href="/fr/company.html">À propos de nous</a></li>
-                    <li><a href="/fr/case.html">Projets</a></li>
-                    <li><a href="/fr/news-blog.html">Actualités & Blog</a></li>
-                    <li><a href="/fr/inquiry.html">Demande de devis</a></li>
-                    <li><a href="/fr/contact.html">Contact</a></li>
-                    <li><a href="/fr/discount.html">Offres</a></li>
+                    <li><a href="/fr/company/">À propos de nous</a></li>
+                    <li><a href="/fr/case/">Projets</a></li>
+                    <li><a href="/fr/news-blog/">Actualités & Blog</a></li>
+                    <li><a href="/fr/inquiry/">Demande de devis</a></li>
+                    <li><a href="/fr/contact/">Contact</a></li>
+                    <li><a href="/fr/discount/">Offres</a></li>
                 </ul>
             </nav>
 
@@ -378,7 +390,7 @@
 
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="/fr/sew-gearmotors.html" class="image featured">
+                                <a href="/fr/sew-gearmotors/" class="image featured">
                                     <img src="/images/sew-gearbox01.png"
                                         alt="Réducteurs et motoréducteurs industriels SEW"
                                         width="600"
@@ -419,13 +431,13 @@
                                 </ul>
                                 <footer style="padding-top:1em;">
                                     <ul class="actions">
-                                        <li><a href="/fr/sew-gearmotors.html" class="button alt">En savoir plus</a></li>
+                                        <li><a href="/fr/sew-gearmotors/" class="button alt">En savoir plus</a></li>
                                     </ul>
                                 </footer>
                             </section>
                         </div><div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/fr/flender-gearbox.html" class="image featured">
+        <a href="/fr/flender-gearbox/" class="image featured">
             <img src="/images/flender-gearunit01.png"
                 alt="Réducteurs et accouplements industriels FLENDER" 
                 width="600"
@@ -466,7 +478,7 @@
 
         <footer style="padding-top:1em;">
             <ul class="actions">
-                <li><a href="/fr/flender-gearbox.html" class="button alt">En savoir plus</a></li>
+                <li><a href="/fr/flender-gearbox/" class="button alt">En savoir plus</a></li>
             </ul>
         </footer>
     </section>
@@ -474,7 +486,7 @@
 
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/fr/siemens-gearmotors.html" class="image featured">
+        <a href="/fr/siemens-gearmotors/" class="image featured">
             <img src="/images/siemens-gearbox01.png"
                 alt="Motoréducteurs SIEMENS INNOMOTICS MOTOX" 
                 width="600"
@@ -517,7 +529,7 @@
 
         <footer style="padding-top:1em;">
             <ul class="actions">
-                <li><a href="/fr/siemens-gearmotors.html" class="button alt">En savoir plus</a></li>
+                <li><a href="/fr/siemens-gearmotors/" class="button alt">En savoir plus</a></li>
             </ul>
         </footer>
     </section>
@@ -526,7 +538,7 @@
 
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/fr/bonfiglioli-gearbox.html" class="image featured">
+        <a href="/fr/bonfiglioli-gearbox/" class="image featured">
             <img src="/images/bonfiglioli-gearbox01.png"
                 alt="Réducteurs industriels et planétaires BONFIGLIOLI" 
                 width="600"
@@ -563,7 +575,7 @@
         <footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/fr/bonfiglioli-gearbox.html" class="button alt">
+                    <a href="/fr/bonfiglioli-gearbox/" class="button alt">
                         En savoir plus
                     </a>
                 </li>
@@ -573,7 +585,7 @@
 </div>
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/fr/nord-gearmotors.html" class="image featured">
+        <a href="/fr/nord-gearmotors/" class="image featured">
             <img src="/images/nord-gearmotor01.png"
                 alt="Réducteurs et technologies d'entraînement industriels NORD" />
         </a>
@@ -610,7 +622,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/fr/nord-gearmotors.html" class="button alt">
+                    <a href="/fr/nord-gearmotors/" class="button alt">
                         En savoir plus
                     </a>
                 </li>
@@ -621,7 +633,7 @@
 
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/fr/bauer-gearmotors.html" class="image featured">
+        <a href="/fr/bauer-gearmotors/" class="image featured">
             <img src="/images/bauer-gearmotor01.png"
                 alt="Motoréducteurs et technologies d'entraînement BAUER, LENZE, SUMITOMO" width="600"
                 height="400" />
@@ -667,7 +679,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/fr/bauer-gearmotors.html" class="button alt">
+                    <a href="/fr/bauer-gearmotors/" class="button alt">
                         En savoir plus
                     </a>
                 </li>
@@ -683,7 +695,7 @@
 
     <div class="col-6 col-12-small">
         <section class="box">
-            <a href="/fr/case.html" class="image featured">
+            <a href="/fr/case/" class="image featured">
                 <img src="/images/factory01.png"
                     alt="Fabrication et production de réducteurs industriels" 
                     width="600"
@@ -710,7 +722,7 @@
             <footer>
                 <ul class="actions">
                     <li>
-                        <a href="/fr/odm-brand.html" class="button icon solid fa-file-alt">
+                        <a href="/fr/odm-brand/" class="button icon solid fa-file-alt">
                             En savoir plus
                         </a>
                     </li>
@@ -721,7 +733,7 @@
 
     <div class="col-6 col-12-small">
         <section class="box">
-            <a href="/fr/contact.html" class="image featured">
+            <a href="/fr/contact/" class="image featured">
                 <img src="/images/factory02.png"
                     alt="Contrôle qualité et tests techniques de réducteurs" 
                     width="600"
@@ -747,7 +759,7 @@
             </ul>
             <ul class="actions">
                     <li>
-                        <a href="/fr/odm-brand.html" class="button icon solid fa-file-alt">
+                        <a href="/fr/odm-brand/" class="button icon solid fa-file-alt">
                             En savoir plus
                         </a>
                     </li>
@@ -771,11 +783,11 @@
                         <li>
                             <span class="date">Édition <strong>4</strong></span>
                             <div class="content">
-                                <a href="/fr/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/fr/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new01.png" alt="Réducteur à couple conique FLENDER B4DH" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/fr/flender-gearbox.html">
+                                    <a href="/fr/flender-gearbox/">
                                         Réducteur à couple conique FLENDER B4DH livré avec succès au Mexique
                                     </a>
                                 </h3>
@@ -788,11 +800,11 @@
                         <li>
                             <span class="date">Édition <strong>3</strong></span>
                             <div class="content">
-                                <a href="/fr/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/fr/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new02.png" alt="Motoréducteurs servo SEW-EURODRIVE au salon CNC" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/fr/sew-gearmotors.html">
+                                    <a href="/fr/sew-gearmotors/">
                                         SEW-EURODRIVE au salon international des machines-outils CNC en Chine
                                     </a>
                                 </h3>
@@ -806,11 +818,11 @@
                         <li>
                             <span class="date">Édition <strong>2</strong></span>
                             <div class="content">
-                                <a href="/fr/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/fr/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new03.png" alt="Solutions d'entraînement et motoréducteurs NORD" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/fr/nord-gearmotors.html">
+                                    <a href="/fr/nord-gearmotors/">
                                         Solutions d'entraînement NORD pour plus de 100 secteurs industriels différents
                                     </a>
                                 </h3>
@@ -824,11 +836,11 @@
                         <li>
                             <span class="date">Édition <strong>1</strong></span>
                             <div class="content">
-                                <a href="/fr/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/fr/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new04.png" alt="Formation technique pour les moteurs SIEMENS INNOMOTICS" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/fr/siemens-gearmotors.html">
+                                    <a href="/fr/siemens-gearmotors/">
                                         Programme de formation technique et de perfectionnement SIEMENS INNOMOTICS
                                     </a>
                                 </h3>
@@ -847,7 +859,7 @@
                     <header>
                         <h2>Réducteurs industriels & solutions d'entraînement</h2>
                     </header>
-                    <a href="/fr/contact.html" class="image featured">
+                    <a href="/fr/contact/" class="image featured">
             <img src="/images/company01.png"
                 alt="Fournisseur de réducteurs industriels, motoréducteurs et technologies d'entraînement" />
         </a>
