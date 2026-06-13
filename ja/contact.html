@@ -15,21 +15,34 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+    <script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 <body class="homepage is-preload">
     <!-- 语言切换菜单已更新为 ja 路径 -->
     <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
         <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-            <li><a href="/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-            <li><a href="/ar/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-            <li><a href="/de/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-            <li><a href="/es/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-            <li><a href="/fa/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-            <li><a href="/fr/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-            <li><a href="/ru/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-            <li><a href="/ja/contact.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/contact/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+            <li><a href="/ar/contact/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/contact/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/contact/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/contact/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/contact/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/contact/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/contact/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
         </ul>
-        <div onclick="window.location.href='/contact.html';" 
+        <div onclick="window.location.href='/contact/';" 
              style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
             🌐 Language
         </div>
@@ -56,28 +69,28 @@
                 <ul>
                     <li><a href="/ja/">ホーム</a></li>
                     <li class="wd-parent">
-                        <a href="/ja/brand.html" class="wd-trigger" onclick="toggleMenu(); return false;">ブランド</a>
+                        <a href="/ja/brand/" class="wd-trigger" onclick="toggleMenu(); return false;">ブランド</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/ja/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/ja/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/ja/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/ja/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/ja/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/ja/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/ja/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/ja/abb-motors.html">ABB</a></li>
-                            <li><a href="/ja/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/ja/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/ja/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/ja/odm-brand.html">ODM ブランド</a></li>
+                            <li><a href="/ja/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/ja/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/ja/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/ja/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/ja/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/ja/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/ja/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/ja/abb-motors/">ABB</a></li>
+                            <li><a href="/ja/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/ja/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/ja/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/ja/odm-brand/">ODM ブランド</a></li>
                         </ul>
                     </li>
-                    <li><a href="/ja/company.html">会社概要</a></li>
-                    <li><a href="/ja/case.html">導入事例</a></li>
-                    <li><a href="/ja/news-blog.html">ニュース・ブログ</a></li>
-                    <li><a href="/ja/inquiry.html">お問い合わせ</a></li>
-                    <li><a href="/ja/contact.html" class="active">連絡先</a></li>
-                    <li><a href="/ja/discount.html">割引・キャンペーン</a></li>
+                    <li><a href="/ja/company/">会社概要</a></li>
+                    <li><a href="/ja/case/">導入事例</a></li>
+                    <li><a href="/ja/news-blog/">ニュース・ブログ</a></li>
+                    <li><a href="/ja/inquiry/">お問い合わせ</a></li>
+                    <li><a href="/ja/contact/" class="active">連絡先</a></li>
+                    <li><a href="/ja/discount/">割引・キャンペーン</a></li>
                 </ul>
             </nav>
         </section>
@@ -179,26 +192,26 @@
                     <div style="display: flex; flex-wrap: wrap; margin-top: 20px; text-align: left;">
                         <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                             <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                <li><a href="/ja/sew-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SEW ギアモーター</a></li>
-                                <li><a href="/ja/flender-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• FLENDER ギアボックス</a></li>
-                                <li><a href="/ja/nord-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• NORD ギアモーター</a></li>
-                                <li><a href="/ja/siemens-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
+                                <li><a href="/ja/sew-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SEW ギアモーター</a></li>
+                                <li><a href="/ja/flender-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• FLENDER ギアボックス</a></li>
+                                <li><a href="/ja/nord-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• NORD ギアモーター</a></li>
+                                <li><a href="/ja/siemens-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
                             </ul>
                         </div>
                         <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                             <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                <li><a href="/ja/bonfiglioli-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• BONFIGLIOLI ギアボックス</a></li>
-                                <li><a href="/ja/bauer-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• BAUER ギアモーター</a></li>
-                                <li><a href="/ja/lenze-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• LENZE ギアモーター</a></li>
-                                <li><a href="/ja/abb-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• ABB モーター</a></li>
+                                <li><a href="/ja/bonfiglioli-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• BONFIGLIOLI ギアボックス</a></li>
+                                <li><a href="/ja/bauer-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• BAUER ギアモーター</a></li>
+                                <li><a href="/ja/lenze-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• LENZE ギアモーター</a></li>
+                                <li><a href="/ja/abb-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• ABB モーター</a></li>
                             </ul>
                         </div>
                         <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                             <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                <li><a href="/ja/baldor-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• BALDOR モーター</a></li>
-                                <li><a href="/ja/kollmorgen-servomotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• KOLLMORGEN サーボ</a></li>
-                                <li><a href="/ja/sumitomohansen-speedreducer.html" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
-                                <li><a href="/ja/odm-brand.html" style="color: #444; font-weight: 600; text-decoration: none;">• ODM ブランドソリューション</a></li>
+                                <li><a href="/ja/baldor-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• BALDOR モーター</a></li>
+                                <li><a href="/ja/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• KOLLMORGEN サーボ</a></li>
+                                <li><a href="/ja/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
+                                <li><a href="/ja/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• ODM ブランドソリューション</a></li>
                             </ul>
                         </div>
                     </div>
