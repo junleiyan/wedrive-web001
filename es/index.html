@@ -86,6 +86,18 @@
   ]
 }
 </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
@@ -178,28 +190,28 @@
 				<ul>
 					<li><a href="/es/" class="active">Inicio</a></li>
 					<li class="wd-parent">
-						<a href="/es/brand.html" class="wd-trigger">Marcas</a>
+						<a href="/es/brand/" class="wd-trigger">Marcas</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/es/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/es/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/es/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/es/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/es/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/es/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/es/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/es/abb-motors.html">ABB</a></li>
-							<li><a href="/es/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/es/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/es/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/es/odm-brand.html">MARCA ODM</a></li>
+							<li><a href="/es/sew-gearmotors/">SEW</a></li>
+							<li><a href="/es/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/es/nord-gearmotors/">NORD</a></li>
+							<li><a href="/es/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/es/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/es/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/es/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/es/abb-motors/">ABB</a></li>
+							<li><a href="/es/baldor-motors/">BALDOR</a></li>
+							<li><a href="/es/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/es/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/es/odm-brand/">MARCA ODM</a></li>
 						</ul>
 					</li>
-					<li><a href="/es/company.html">Empresa</a></li>
-					<li><a href="/es/case.html">Casos</a></li>
-					<li><a href="/es/news-blog.html">Blog y Noticias</a></li>
-					<li><a href="/es/inquiry.html">Consulta</a></li>
-					<li><a href="/es/contact.html">Contacto</a></li>
-					<li><a href="/es/discount.html">Descuentos</a></li>
+					<li><a href="/es/company/">Empresa</a></li>
+					<li><a href="/es/case/">Casos</a></li>
+					<li><a href="/es/news-blog/">Blog y Noticias</a></li>
+					<li><a href="/es/inquiry/">Consulta</a></li>
+					<li><a href="/es/contact/">Contacto</a></li>
+					<li><a href="/es/discount/">Descuentos</a></li>
 				</ul>
 			</nav>
 
@@ -420,7 +432,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/sew-gearmotors.html" class="image featured">
+		<a href="/es/sew-gearmotors/" class="image featured">
 			<img src="/images/sew-gearbox01.png"
 	alt="Reductor y motorreductores industriales SEW"
 	width="600"
@@ -467,7 +479,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/es/sew-gearmotors.html" class="button alt">
+					<a href="/es/sew-gearmotors/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -484,7 +496,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/flender-gearbox.html" class="image featured">
+		<a href="/es/flender-gearbox/" class="image featured">
 			<img src="../images/flender-gearunit01.png"
 				alt="Reductores industriales y soluciones de acoplamiento FLENDER" 
 				width="600"
@@ -530,7 +542,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/es/flender-gearbox.html" class="button alt">
+					<a href="/es/flender-gearbox/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -547,7 +559,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/siemens-gearmotors.html" class="image featured">
+		<a href="/es/siemens-gearmotors/" class="image featured">
 			<img src="../images/siemens-gearbox01.png"
 				alt="Reductores y motorreductores SIEMENS INNOMOTICS MOTOX" 
 				width="600"
@@ -594,7 +606,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/es/siemens-gearmotors.html" class="button alt">
+					<a href="/es/siemens-gearmotors/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -608,7 +620,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/bonfiglioli-gearbox.html" class="image featured">
+		<a href="/es/bonfiglioli-gearbox/" class="image featured">
 			<img src="../images/bonfiglioli-gearbox01.png"
 				alt="Reductores y motorreductores industriales BONFIGLIOLI" 
 				width="600"
@@ -663,7 +675,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/es/bonfiglioli-gearbox.html" class="button alt">
+					<a href="/es/bonfiglioli-gearbox/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -677,7 +689,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/nord-gearmotors.html" class="image featured">
+		<a href="/es/nord-gearmotors/" class="image featured">
 			<img src="../images/nord-gearmotor01.png"
 				alt="Reductor y motorreductores industriales NORD" />
 		</a>
@@ -732,7 +744,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/es/nord-gearmotors.html" class="button alt">
+					<a href="/es/nord-gearmotors/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -746,7 +758,7 @@ productos 100% originales y nuevos de fábrica.
 
 	<section class="box">
 
-		<a href="/es/bauer-gearmotors.html" class="image featured">
+		<a href="/es/bauer-gearmotors/" class="image featured">
 			<img src="../images/bauer-gearmotor01.png"
 				alt="Reductor y motorreductores industriales BAUER" width="600"
 	height="400" />
@@ -804,7 +816,7 @@ productos 100% originales y nuevos de fábrica.
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/es/bauer-gearmotors.html" class="button alt">
+					<a href="/es/bauer-gearmotors/" class="button alt">
 						Saber más
 					</a>
 				</li>
@@ -827,7 +839,7 @@ productos 100% originales y nuevos de fábrica.
 
 			<section class="box">
 
-				<a href="/es/case.html" class="image featured">
+				<a href="/es/case/" class="image featured">
 					<img src="../images/factory01.png"
 						alt="Taller de fabricación de reductores industriales" 
 						width="600"
@@ -865,7 +877,7 @@ productos 100% originales y nuevos de fábrica.
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/es/odm-brand.html"
+							<a href="/es/odm-brand/"
 								class="button icon solid fa-file-alt">
 								Seguir leyendo
 							</a>
@@ -883,7 +895,7 @@ productos 100% originales y nuevos de fábrica.
 
 			<section class="box">
 
-				<a href="/es/contact.html" class="image featured">
+				<a href="/es/contact/" class="image featured">
 					<img src="../images/factory02.png"
 						alt="Inspección y pruebas de calidad de reductores industriales" 
 						width="600"
@@ -921,7 +933,7 @@ productos 100% originales y nuevos de fábrica.
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/es/odm-brand.html"
+							<a href="/es/odm-brand/"
 								class="button icon solid fa-file-alt">
 								Seguir leyendo
 							</a>
@@ -952,7 +964,7 @@ productos 100% originales y nuevos de fábrica.
 
 							<div class="content">
 
-								<a href="/es/news-blog.html" class="image fit"
+								<a href="/es/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new01.png"
@@ -963,7 +975,7 @@ productos 100% originales y nuevos de fábrica.
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/es/flender-gearbox.html">
+									<a href="/es/flender-gearbox/">
 										Reductor cónico-helicoidal industrial FLENDER B4DH entregado en México
 									</a>
 
@@ -983,7 +995,7 @@ productos 100% originales y nuevos de fábrica.
 
 							<div class="content">
 
-								<a href="/es/news-blog.html" class="image fit"
+								<a href="/es/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new02.png"
@@ -994,7 +1006,7 @@ productos 100% originales y nuevos de fábrica.
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/es/sew-gearmotors.html">
+									<a href="/es/sew-gearmotors/">
 										SEW-EURODRIVE asistirá a la Feria de Máquinas Herramienta CNC de China
 									</a>
 
@@ -1015,7 +1027,7 @@ productos 100% originales y nuevos de fábrica.
 
 							<div class="content">
 
-								<a href="/es/news-blog.html" class="image fit"
+								<a href="/es/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new03.png"
@@ -1026,7 +1038,7 @@ productos 100% originales y nuevos de fábrica.
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/es/nord-gearmotors.html">
+									<a href="/es/nord-gearmotors/">
 										Soluciones de accionamiento NORD para más de 100 industrias
 									</a>
 
@@ -1047,7 +1059,7 @@ productos 100% originales y nuevos de fábrica.
 
 							<div class="content">
 
-								<a href="/es/news-blog.html" class="image fit"
+								<a href="/es/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new04.png"
@@ -1058,7 +1070,7 @@ productos 100% originales y nuevos de fábrica.
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/es/siemens-gearmotors.html">
+									<a href="/es/siemens-gearmotors/">
 										Capacitación en habilidades técnicas de SIEMENS INNOMOTICS
 									</a>
 
@@ -1086,7 +1098,7 @@ productos 100% originales y nuevos de fábrica.
 						<h2>Soluciones de Reductores e Industrial Gearmotors</h2>
 					</header>
 
-					<a href="/es/contact.html" class="image featured">
+					<a href="/es/contact/" class="image featured">
 
 						<img src="../images/company01.png"
 							alt="Proveedor de reductores industriales, motorreductores y transmisión de potencia" />
