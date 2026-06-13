@@ -21,6 +21,18 @@
         gtag('config', 'G-2QVTK1XJB6');
     </script>
 
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="left-sidebar is-preload">
@@ -29,7 +41,7 @@
         <section id="header">
             <div style="margin: 0;">
 
-                <a href="/de/sew-gearmotors.html"
+                <a href="/"
                     id="logo"
                     style="
                         display:flex;
@@ -85,33 +97,33 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="/de/index.html">Startseite</a></li>
+                    <li><a href="/de/index/">Startseite</a></li>
                     
                     <li class="wd-parent">
-                        <a href="/de/brand.html" class="wd-trigger active">Marken</a>
+                        <a href="/de/brand/" class="wd-trigger active">Marken</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/de/brand.html" style="font-weight: bold; color: #d42d1e;">Alle Marken anzeigen</a></li>
+                            <li><a href="/de/brand/" style="font-weight: bold; color: #d42d1e;">Alle Marken anzeigen</a></li>
                             
-                            <li><a href="/de/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/de/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/de/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/de/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/de/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/de/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/de/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/de/abb-motors.html">ABB</a></li>
-                            <li><a href="/de/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/de/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/de/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/de/odm-brand.html">ODM-Marke</a></li>
+                            <li><a href="/de/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/de/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/de/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/de/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/de/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/de/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/de/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/de/abb-motors/">ABB</a></li>
+                            <li><a href="/de/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/de/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/de/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/de/odm-brand/">ODM-Marke</a></li>
                         </ul>
                     </li>
-                    <li><a href="/de/company.html">Über uns</a></li>
-            <li><a href="/de/case.html">Projekte</a></li>
-            <li><a href="/de/news-blog.html">News & Blog</a></li>
-            <li><a href="/de/inquiry.html">Anfrage</a></li>
-            <li><a href="/de/contact.html">Kontakt</a></li>
-            <li><a href="/de/discount.html">Rabatte</a></li>
+                    <li><a href="/de/company/">Über uns</a></li>
+            <li><a href="/de/case/">Projekte</a></li>
+            <li><a href="/de/news-blog/">News & Blog</a></li>
+            <li><a href="/de/inquiry/">Anfrage</a></li>
+            <li><a href="/de/contact/">Kontakt</a></li>
+            <li><a href="/de/discount/">Rabatte</a></li>
         </ul>
     </nav>
 </section>
@@ -121,7 +133,7 @@
             <div class="col-4 col-12-medium">
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive01.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive01.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>SEW DRN Getriebemotoren (IE3)<br>SEW Getriebe<br>Schneckengetriebemotoren<br>SEW Industriegetriebe<br>Planetengetriebe<br>SEW Elektromotoren</h3>
                     </header>
@@ -131,7 +143,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive02.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive02.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>SEW DRN Getriebemotoren (IE3)<br>SEW Getriebe<br>Schneckengetriebe<br>SEW Industriegetriebe<br>SEW Elektromotoren</h3>
                     </header>
@@ -141,7 +153,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive03.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive03.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>SEW Industriegetriebe<br>Stirnrad-Industriegetriebe<br>Kegelrad-Industriegetriebe (Serie X.e)<br>SEW Elektromotoren</h3>
                     </header>
@@ -151,7 +163,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive04.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive04.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>Planetengetriebe<br>SEW DRN Getriebemotoren (IE3)<br>SEW Getriebe<br>SEW Industriegetriebe<br>SEW Elektromotoren</h3>
                     </header>
@@ -161,7 +173,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive05.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive05.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>Explosionsgeschützte Getriebemotoren<br>SEW EDRN Getriebemotoren (IE3)<br>SEW Getriebe<br>Schneckengetriebe<br>SEW Industriegetriebe<br>SEW Elektromotoren</h3>
                     </header>
@@ -171,7 +183,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sewnewgearbox06.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sewnewgearbox06.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>SEW Servogetriebemotoren<br>SEW Servomotoren (IE3)<br>SEW synchrone Servogetriebemotoren<br>SEW asynchrone Servogetriebemotoren<br>SEW asynchrone Servomotoren<br>SEW synchrone Servomotoren</h3>
                     </header>
@@ -181,7 +193,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/sew-gearmotors.html" class="image featured"><img src="/images/sew-eurodrive07.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
+                    <a href="/de/sew-gearmotors/" class="image featured"><img src="/images/sew-eurodrive07.png" alt="SEW Eurodrive Getriebemotoren und Industriegetriebe Serie DRN IE3" /></a>
                     <header style="text-align: left;">
                         <h3>Abgekündigte Produkte: SEW Serie M.<br>Abgekündigte Produkte: SEW Serie M.C</h3>
                     </header>
