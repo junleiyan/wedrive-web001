@@ -25,23 +25,35 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="left-sidebar is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		  <li><a href="/ja/siemens-gearmotors.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		  <li><a href="/ja/siemens-gearmotors/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/siemens-gearmotors.html';" 
+     <div onclick="window.location.href='/siemens-gearmotors/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -114,30 +126,30 @@
         <li><a href="/es/">Inicio</a></li>
         
    <li class="wd-parent">
-    <a href="/es/brand.html" class="wd-trigger active">Marcas</a>
+    <a href="/es/brand/" class="wd-trigger active">Marcas</a>
     
     <ul id="wd-brand-menu">
-             <li onclick="window.location.href='/es/sew-gearmotors.html';"><a href="/es/sew-gearmotors.html">SEW</a></li>
-                <li onclick="window.location.href='/es/flender-gearbox.html';"><a href="/es/flender-gearbox.html">FLENDER</a></li>
-                <li onclick="window.location.href='/es/nord-gearmotors.html';"><a href="/es/nord-gearmotors.html">NORD</a></li>
-                <li onclick="window.location.href='/es/siemens-gearmotors.html';"><a href="/es/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='/es/bonfiglioli-gearbox.html';"><a href="/es/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='/es/bauer-gearmotors.html';"><a href="/es/bauer-gearmotors.html">BAUER</a></li>
-                <li onclick="window.location.href='/es/lenze-gearmotors.html';"><a href="/es/lenze-gearmotors.html">LENZE</a></li>
-                <li onclick="window.location.href='/es/abb-motors.html';"><a href="/es/abb-motors.html">ABB</a></li>
-                <li onclick="window.location.href='/es/baldor-motors.html';"><a href="/es/baldor-motors.html">BALDOR</a></li>
-                <li onclick="window.location.href='/es/kollmorgen-servomotors.html';"><a href="/es/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='/es/sumitomohansen-speedreducer.html';"><a href="/es/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='/es/odm-brand.html';"><a href="/es/odm-brand.html">MARCA ODM</a></li>
+             <li onclick="window.location.href='/es/sew-gearmotors/';"><a href="/es/sew-gearmotors/">SEW</a></li>
+                <li onclick="window.location.href='/es/flender-gearbox/';"><a href="/es/flender-gearbox/">FLENDER</a></li>
+                <li onclick="window.location.href='/es/nord-gearmotors/';"><a href="/es/nord-gearmotors/">NORD</a></li>
+                <li onclick="window.location.href='/es/siemens-gearmotors/';"><a href="/es/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/es/bonfiglioli-gearbox/';"><a href="/es/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/es/bauer-gearmotors/';"><a href="/es/bauer-gearmotors/">BAUER</a></li>
+                <li onclick="window.location.href='/es/lenze-gearmotors/';"><a href="/es/lenze-gearmotors/">LENZE</a></li>
+                <li onclick="window.location.href='/es/abb-motors/';"><a href="/es/abb-motors/">ABB</a></li>
+                <li onclick="window.location.href='/es/baldor-motors/';"><a href="/es/baldor-motors/">BALDOR</a></li>
+                <li onclick="window.location.href='/es/kollmorgen-servomotors/';"><a href="/es/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/es/sumitomohansen-speedreducer/';"><a href="/es/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/es/odm-brand/';"><a href="/es/odm-brand/">MARCA ODM</a></li>
             </ul>
         </li>
         
-          <li><a href="/es/company.html">Empresa</a></li>
-          <li><a href="/es/case.html">Casos de Éxito</a></li>
-        <li><a href="/es/news-blog.html">Blog y Noticias</a></li>
-        <li><a href="/es/inquiry.html">Cotización</a></li>
-        <li><a href="/es/contact.html">Contacto</a></li>
-         <li><a href="/es/discount.html">Descuentos</a></li>
+          <li><a href="/es/company/">Empresa</a></li>
+          <li><a href="/es/case/">Casos de Éxito</a></li>
+        <li><a href="/es/news-blog/">Blog y Noticias</a></li>
+        <li><a href="/es/inquiry/">Cotización</a></li>
+        <li><a href="/es/contact/">Contacto</a></li>
+         <li><a href="/es/discount/">Descuentos</a></li>
      </ul>
 </nav>
 
