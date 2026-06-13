@@ -26,23 +26,36 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+		<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="left-sidebar is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-        <li><a href="/ja/sumitomohansen-speedreducer.html" style="text-decoration:none; color:#0073bb; font-weight:bold;">JA</a></li>
+        <li><a href="/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/sumitomohansen-speedreducer/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+        <li><a href="/ja/sumitomohansen-speedreducer/" style="text-decoration:none; color:#0073bb; font-weight:bold;">JA</a></li>
     </ul>
 
-   <div onclick="window.location.href='/sumitomohansen-speedreducer.html';" 
+   <div onclick="window.location.href='/sumitomohansen-speedreducer/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -122,31 +135,31 @@
         <li><a href="/ja/">ホーム</a></li>
         
         <li class="wd-parent">
-            <a href="/ja/brand.html" class="wd-trigger active">ブランド</a>
+            <a href="/ja/brand/" class="wd-trigger active">ブランド</a>
             <ul id="wd-brand-menu">
-                <li><a href="/ja/brand.html" style="font-weight: bold; color: #d42d1e;">すべてのブランドを見る</a></li>
+                <li><a href="/ja/brand/" style="font-weight: bold; color: #d42d1e;">すべてのブランドを見る</a></li>
                 
-                <li><a href="/ja/sew-gearmotors.html">SEW</a></li>
-                <li><a href="/ja/flender-gearbox.html">FLENDER</a></li>
-                <li><a href="/ja/nord-gearmotors.html">NORD</a></li>
-                <li><a href="/ja/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li><a href="/ja/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li><a href="/ja/bauer-gearmotors.html">BAUER</a></li>
-                <li><a href="/ja/lenze-gearmotors.html">LENZE</a></li>
-                <li><a href="/ja/abb-motors.html">ABB</a></li>
-                <li><a href="/ja/baldor-motors.html">BALDOR</a></li>
-                <li><a href="/ja/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li><a href="/ja/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li><a href="/ja/odm-brand.html">ODMブランド</a></li>
+                <li><a href="/ja/sew-gearmotors/">SEW</a></li>
+                <li><a href="/ja/flender-gearbox/">FLENDER</a></li>
+                <li><a href="/ja/nord-gearmotors/">NORD</a></li>
+                <li><a href="/ja/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li><a href="/ja/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li><a href="/ja/bauer-gearmotors/">BAUER</a></li>
+                <li><a href="/ja/lenze-gearmotors/">LENZE</a></li>
+                <li><a href="/ja/abb-motors/">ABB</a></li>
+                <li><a href="/ja/baldor-motors/">BALDOR</a></li>
+                <li><a href="/ja/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li><a href="/ja/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li><a href="/ja/odm-brand/">ODMブランド</a></li>
             </ul>
         </li>
         
-        <li><a href="/ja/company.html">会社概要</a></li>
-        <li><a href="/ja/case.html">導入事例</a></li>
-        <li><a href="/ja/news-blog.html">ニュース・ブログ</a></li>
-        <li><a href="/ja/inquiry.html">お問い合わせ</a></li>
-        <li><a href="/ja/contact.html">コンタクト</a></li>
-        <li><a href="/ja/discount.html">割引・キャンペーン</a></li>
+        <li><a href="/ja/company/">会社概要</a></li>
+        <li><a href="/ja/case/">導入事例</a></li>
+        <li><a href="/ja/news-blog/">ニュース・ブログ</a></li>
+        <li><a href="/ja/inquiry/">お問い合わせ</a></li>
+        <li><a href="/ja/contact/">コンタクト</a></li>
+        <li><a href="/ja/discount/">割引・キャンペーン</a></li>
     </ul>
 </nav>
 </section>
