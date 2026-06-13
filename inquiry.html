@@ -19,7 +19,20 @@
 		gtag('js', new Date());
 		gtag('config', 'G-2QVTK1XJB6');
 	</script>
+	<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 <body class="homepage is-preload">
 	<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
@@ -34,7 +47,7 @@
 		 <li><a href="/ja/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-      <div onclick="window.location.href='/inquiry.html';" 
+      <div onclick="window.location.href='/inquiry/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -52,7 +65,7 @@
 			<!-- Logo -->
 			<div style="margin: 0;">
 
-				<a href="abb-motors.html"
+				<a href="/"
 					id="logo"
 					style="
 						display:flex;
@@ -113,33 +126,33 @@
         
         <!-- SEO 优化点：href 指向真实 brand.html，让爬虫建立页面权重联系 -->
         <li class="wd-parent">
-            <a href="brand.html" class="wd-trigger">Brand</a>
+            <a href="/brand/" class="wd-trigger">Brand</a>
             <ul id="wd-brand-menu">
                 <!-- 保留汇总页入口，方便用户操作 -->
-                <li><a href="brand.html" style="font-weight: bold; color: #d42d1e;">View All Brands</a></li>
+                <li><a href="/brand/" style="font-weight: bold; color: #d42d1e;">View All Brands</a></li>
                 
                 <!-- 子菜单品牌关键词对 SEO 非常有利 -->
-                <li><a href="sew-gearmotors.html">SEW</a></li>
-                <li><a href="flender-gearbox.html">FLENDER</a></li>
-                <li><a href="nord-gearmotors.html">NORD</a></li>
-                <li><a href="siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li><a href="bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li><a href="bauer-gearmotors.html">BAUER</a></li>
-                <li><a href="lenze-gearmotors.html">LENZE</a></li>
-                <li><a href="abb-motors.html">ABB</a></li>
-                <li><a href="baldor-motors.html">BALDOR</a></li>
-                <li><a href="kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li><a href="sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li><a href="odm-brand.html">ODM BRAND</a></li>
+                <li><a href="/sew-gearmotors/">SEW</a></li>
+                <li><a href="/flender-gearbox/">FLENDER</a></li>
+                <li><a href="/nord-gearmotors/">NORD</a></li>
+                <li><a href="/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li><a href="/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li><a href="/bauer-gearmotors/">BAUER</a></li>
+                <li><a href="/lenze-gearmotors/">LENZE</a></li>
+                <li><a href="/abb-motors/">ABB</a></li>
+                <li><a href="/baldor-motors/">BALDOR</a></li>
+                <li><a href="/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li><a href="/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li><a href="/odm-brand/">ODM BRAND</a></li>
             </ul>
         </li>
         
-        <li><a href="company.html">Company</a></li>
-        <li><a href="case.html">Case</a></li>
-        <li><a href="news-blog.html">News and Blog</a></li>
-        <li><a href="inquiry.html"class="active">Inquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="discount.html">Discount</a></li>
+        <li><a href="/company/">Company</a></li>
+        <li><a href="/case/">Case</a></li>
+        <li><a href="/news-blog/">News and Blog</a></li>
+        <li><a href="/inquiry/"class="active">Inquiry</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/discount/">Discount</a></li>
     </ul>
 </nav>
         </section>
@@ -159,6 +172,11 @@
 					<p style="text-align: center; margin-top: 1.5em; font-weight: bold; color: #1a3a5f;">
 						We will reply to you soon for every inquiry.
 					</p>
+					<div class="privacy-statement-container" style="max-width: 100%; margin: 20px auto 0; padding: 15px; border-top: 1px dashed #ddd; font-family: sans-serif;">
+    <p style="font-size: 12px; line-height: 1.6; color: #666; margin: 0; text-align: left;">
+        <strong>Privacy Notice:</strong> We value your privacy. The information you submit through this Zoho form will only be used to process your business inquiry and provide you with the requested quotations or technical support regarding our power transmission products. We will never sell, share, or lease your personal data to any third parties for marketing purposes. For more details on how we protect and manage your data, please review our full <a href="/privacy-policy/" style="color: #d42d1e; text-decoration: underline; font-weight: bold;">Privacy Policy</a>.
+    </p>
+</div>
 				</article>
 			</div>
 		</section>
