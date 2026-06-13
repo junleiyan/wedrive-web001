@@ -11,7 +11,7 @@
     <meta property="og:title" content="WeDrive Новости и технический блог по промышленным мотор-редукторам" />
     <meta property="og:description" content="Актуальные технические руководства, советы по техническому обслуживанию и новости индустрии редукторов, двигателей и силовых трансмиссий." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wedrivepower.com/ru/news-blog.html" />
+    <meta property="og:url" content="https://www.wedrivepower.com/ru/news-blog/" />
     <meta property="og:image" content="https://www.wedrivepower.com/images/logo.png" />
 
  
@@ -25,23 +25,36 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+		<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		 <li><a href="/ja/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		 <li><a href="/ja/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/news-blog.html';" 
+    <div onclick="window.location.href='/news-blog/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -160,33 +173,33 @@
         
         <!-- SEO 优化点：href 指向真实 brand.html，让爬虫建立页面权重联系 -->
         <li class="wd-parent">
-            <a href="/ru/brand.html" class="wd-trigger">Бренды</a>
+            <a href="/ru/brand/" class="wd-trigger">Бренды</a>
             <ul id="wd-brand-menu">
                 <!-- 保留汇总页入口，方便用户操作 -->
-                <li><a href="/ru/brand.html" style="font-weight: bold; color: #d42d1e;">Посмотреть все бренды</a></li>
+                <li><a href="/ru/brand/" style="font-weight: bold; color: #d42d1e;">Посмотреть все бренды</a></li>
                 
                 <!-- 子菜单品牌关键词对 SEO 非常有利 -->
-                <li><a href="/ru/sew-gearmotors.html">SEW</a></li>
-                <li><a href="/ru/flender-gearbox.html">FLENDER</a></li>
-                <li><a href="/ru/nord-gearmotors.html">NORD</a></li>
-                <li><a href="/ru/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li><a href="/ru/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li><a href="/ru/bauer-gearmotors.html">BAUER</a></li>
-                <li><a href="/ru/lenze-gearmotors.html">LENZE</a></li>
-                <li><a href="/ru/abb-motors.html">ABB</a></li>
-                <li><a href="/ru/baldor-motors.html">BALDOR</a></li>
-                <li><a href="/ru/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li><a href="/ru/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li><a href="/ru/odm-brand.html">БРЕНД ODM</a></li>
+                <li><a href="/ru/sew-gearmotors/">SEW</a></li>
+                <li><a href="/ru/flender-gearbox/">FLENDER</a></li>
+                <li><a href="/ru/nord-gearmotors/">NORD</a></li>
+                <li><a href="/ru/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li><a href="/ru/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li><a href="/ru/bauer-gearmotors/">BAUER</a></li>
+                <li><a href="/ru/lenze-gearmotors/">LENZE</a></li>
+                <li><a href="/ru/abb-motors/">ABB</a></li>
+                <li><a href="/ru/baldor-motors/">BALDOR</a></li>
+                <li><a href="/ru/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li><a href="/ru/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li><a href="/ru/odm-brand/">БРЕНД ODM</a></li>
             </ul>
         </li>
         
-        <li><a href="/ru/company.html">О компании</a></li>
-        <li><a href="/ru/case.html">Проекты</a></li>
-        <li><a href="/ru/news-blog.html" class="active">Новости и Блог</a></li>
-        <li><a href="/ru/inquiry.html">Запрос цены</a></li>
-        <li><a href="/ru/contact.html">Контакты</a></li>
-        <li><a href="/ru/discount.html">Акции</a></li>
+        <li><a href="/ru/company/">О компании</a></li>
+        <li><a href="/ru/case/">Проекты</a></li>
+        <li><a href="/ru/news-blog/" class="active">Новости и Блог</a></li>
+        <li><a href="/ru/inquiry/">Запрос цены</a></li>
+        <li><a href="/ru/contact/">Контакты</a></li>
+        <li><a href="/ru/discount/">Акции</a></li>
     </ul>
 </nav>
         </section>
@@ -208,11 +221,11 @@
 						<li style="text-align: left;">
 							<span class="date" style="float: left;">№ <strong>4</strong></span>
 							<div class="content" style="text-align: left; margin-left: 4.5em;">
-								<a href="/ru/flender-gearbox.html" class="image fit" style="display: block; margin-bottom: 1em;">
+								<a href="/ru/flender-gearbox/" class="image fit" style="display: block; margin-bottom: 1em;">
 									<img src="../images/blog01.jpg" alt="Поставка коническо-цилиндрического редуктора WeDrive Flender B4DH в Мексику" style="border-radius: 4px;" />
 								</a>
 								<h3 style="color: #ed391b !important; text-align: left; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-									<a href="/ru/flender-gearbox.html" style="text-decoration: none;">Коническо-цилиндрический редуктор WeDrive серии Flender B4DH</a>
+									<a href="/ru/flender-gearbox/" style="text-decoration: none;">Коническо-цилиндрический редуктор WeDrive серии Flender B4DH</a>
 								</h3>
 								<p style="text-align: left; line-height: 1.6; color: #555; font-size: 0.95em;">
 									<time datetime="2026-04-25" style="font-weight: 600; color: #888;">25 апр. 2026 г.</time> 
@@ -224,11 +237,11 @@
 						<li style="text-align: left;">
 							<span class="date" style="float: left;">№ <strong>3</strong></span>
 							<div class="content" style="text-align: left; margin-left: 4.5em;">
-								<a href="/ru/sew-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+								<a href="/ru/sew-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
 									<img src="../images/blog02.jpg" alt="Выставка прецизионных сервоприводов SEW-EURODRIVE KAD157" style="border-radius: 4px;" />
 								</a>
 								<h3 style="color: #ed391b !important; text-align: left; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-									<a href="/ru/sew-gearmotors.html" style="text-decoration: none;">SEW-EURODRIVE примет участие в 14-й Китайской выставке станков с ЧПУ</a>
+									<a href="/ru/sew-gearmotors/" style="text-decoration: none;">SEW-EURODRIVE примет участие в 14-й Китайской выставке станков с ЧПУ</a>
 								</h3>
 								<p style="text-align: left; line-height: 1.6; color: #555; font-size: 0.95em;">
 									<time datetime="2026-04-16" style="font-weight: 600; color: #888;">16 апр. 2026 г.</time> 
@@ -240,11 +253,11 @@
 						<li style="text-align: left;">
 							<span class="date" style="float: left;">№ <strong>2</strong></span>
 							<div class="content" style="text-align: left; margin-left: 4.5em;">
-								<a href="/ru/nord-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+								<a href="/ru/nord-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
 									<img src="../images/blog03.jpg" alt="Приводные решения Nord Drive Solutions SK5282AFVL2" style="border-radius: 4px;" />
 								</a>
 								<h3 style="color: #ed391b !important; text-align: left; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-									<a href="/ru/nord-gearmotors.html" style="text-decoration: none;">Приводные решения NORD для более чем 100 отраслей промышленности SK5282AFVL2</a>
+									<a href="/ru/nord-gearmotors/" style="text-decoration: none;">Приводные решения NORD для более чем 100 отраслей промышленности SK5282AFVL2</a>
 								</h3>
 								<p style="text-align: left; line-height: 1.6; color: #555; font-size: 0.95em;">
 									<time datetime="2026-04-13" style="font-weight: 600; color: #888;">13 апр. 2026 г.</time> 
@@ -256,11 +269,11 @@
 						<li style="text-align: left;">
 							<span class="date" style="float: left;">№ <strong>1</strong></span>
 							<div class="content" style="text-align: left; margin-left: 4.5em;">
-								<a href="/ru/siemens-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+								<a href="/ru/siemens-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
 									<img src="../images/blog04.jpg" alt="Обучение профессиональным навыкам перехода от Siemens к Innomotics ZF129" style="border-radius: 4px;" />
 								</a>
 								<h3 style="color: #ed391b !important; text-align: left; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-									<a href="/ru/siemens-gearmotors.html" style="text-decoration: none;">Обучение профессиональным навыкам перехода от Siemens к Innomotics ZF129</a>
+									<a href="/ru/siemens-gearmotors/" style="text-decoration: none;">Обучение профессиональным навыкам перехода от Siemens к Innomotics ZF129</a>
 								</h3>
 								<p style="text-align: left; line-height: 1.6; color: #555; font-size: 0.95em;">
 									<time datetime="2026-04-08" style="font-weight: 600; color: #888;">08 апр. 2026 г.</time> 
@@ -295,61 +308,61 @@
 						<div class="blog-list-container">
 							<ul style="list-style: none; padding: 0; margin: 0;">
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/flender-gearbox.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/flender-gearbox/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										1. Поставка редукторов Flender B4DH от WeDrive
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 01 мая 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/sew-gearmotors.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/sew-gearmotors/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										2. Анонс участия SEW в выставке станков с ЧПУ
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 25 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/nord-gearmotors.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/nord-gearmotors/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										3. Приводные решения Nord для промышленности
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 18 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/siemens-gearmotors.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/siemens-gearmotors/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										4. Обучение навыкам перехода от Siemens к Innomotics
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 10 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/case.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/case/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										5. Техническое руководство: Обслуживание редукторов
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 02 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/brand.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/brand/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										6. Тренды индустрии: Силовые трансмиссии 2026
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 28 мар. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/discount.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/discount/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										7. Практический кейс: Энергосберегающие решения
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 15 мар. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/odm-brand.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/odm-brand/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										8. Запуск нового продукта: Высокоточные сервоприводы
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 01 мар. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/case.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/case/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										9. Применение редукторных двигателей и муфт Flender Siemens от WeDrive
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 01 мая 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/brand.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/brand/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										10. Анонс участия SEW в выставке станков с ЧПУ
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 25 апр. 2026 г.</span>
@@ -361,13 +374,13 @@
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 18 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/contact.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/contact/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										12. Обучение навыкам перехода от Siemens к Innomotics
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 10 апр. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/inquiry.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/inquiry/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										13. Техническое руководство: Редукторные двигатели и силовая трансмиссия
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 02 апр. 2026 г.</span>
@@ -379,7 +392,7 @@
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 28 мар. 2026 г.</span>
 								</li>
 								<li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-									<a href="/ru/discount.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+									<a href="/ru/discount/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
 										15. Скидки и цены на мотор-редукторы и червячные редукторы
 									</a>
 									<span style="font-size: 0.85em; color: #888; margin-left: 28px; display: block; margin-top: 2px;">Опубликовано: 15 мар. 2026 г.</span>
@@ -408,26 +421,26 @@
                             <div style="display: flex; flex-wrap: wrap; margin-top: 20px; text-align: left;">
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/sew-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы SEW</a></li>
-                                        <li><a href="/ru/flender-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы FLENDER</a></li>
-                                        <li><a href="/ru/nord-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы NORD</a></li>
-                                        <li><a href="/ru/siemens-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
+                                        <li><a href="/ru/sew-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы SEW</a></li>
+                                        <li><a href="/ru/flender-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы FLENDER</a></li>
+                                        <li><a href="/ru/nord-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы NORD</a></li>
+                                        <li><a href="/ru/siemens-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/bonfiglioli-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы BONFIGLIOLI</a></li>
-                                        <li><a href="/ru/bauer-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы BAUER</a></li>
-                                        <li><a href="/ru/lenze-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы LENZE</a></li>
-                                        <li><a href="/ru/abb-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели ABB</a></li>
+                                        <li><a href="/ru/bonfiglioli-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы BONFIGLIOLI</a></li>
+                                        <li><a href="/ru/bauer-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы BAUER</a></li>
+                                        <li><a href="/ru/lenze-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы LENZE</a></li>
+                                        <li><a href="/ru/abb-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели ABB</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/baldor-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Двигатели BALDOR</a></li>
-                                        <li><a href="/ru/kollmorgen-servomotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Сервоприводы KOLLMORGEN</a></li>
-                                        <li><a href="/ru/sumitomohansen-speedreducer.html" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
-                                        <li><a href="/ru/odm-brand.html" style="color: #444; font-weight: 600; text-decoration: none;">• Решения бренда ODM</a></li>
+                                        <li><a href="/ru/baldor-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• Двигатели BALDOR</a></li>
+                                        <li><a href="/ru/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Сервоприводы KOLLMORGEN</a></li>
+                                        <li><a href="/ru/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
+                                        <li><a href="/ru/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• Решения бренда ODM</a></li>
                                     </ul>
                                 </div>
                             </div>
