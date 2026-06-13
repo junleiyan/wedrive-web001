@@ -19,23 +19,35 @@
           gtag('js', new Date());
           gtag('config', 'G-2QVTK1XJB6');
         </script>
-    </head>
+ <script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
+</head>
     
     <body class="homepage is-preload">
         <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-         <li><a href="/ja/bonfiglioli-gearbox.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+         <li><a href="/ja/bonfiglioli-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/bonfiglioli-gearbox.html';" 
+    <div onclick="window.location.href='/bonfiglioli-gearbox/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -114,28 +126,28 @@
     <ul>
         <li><a href="/de/">Startseite</a></li>
         <li class="wd-parent">
-            <a href="/de/brand.html" class="wd-trigger active" onclick="toggleMenu(); return false;">Marken</a>
+            <a href="/de/brand/" class="wd-trigger active" onclick="toggleMenu(); return false;">Marken</a>
             <ul id="wd-brand-menu">
-                <li onclick="window.location.href='/de/sew-gearmotors.html';"><a href="/de/sew-gearmotors.html">SEW</a></li>
-                <li onclick="window.location.href='/de/flender-gearbox.html';"><a href="/de/flender-gearbox.html">FLENDER</a></li>
-                <li onclick="window.location.href='/de/nord-gearmotors.html';"><a href="/de/nord-gearmotors.html">NORD</a></li>
-                <li onclick="window.location.href='/de/siemens-gearmotors.html';"><a href="/de/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='/de/bonfiglioli-gearbox.html';"><a href="/de/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='/de/bauer-gearmotors.html';"><a href="/de/bauer-gearmotors.html">BAUER</a></li>
-                <li onclick="window.location.href='/de/lenze-gearmotors.html';"><a href="/de/lenze-gearmotors.html">LENZE</a></li>
-                <li onclick="window.location.href='/de/abb-motors.html';"><a href="/de/abb-motors.html">ABB</a></li>
-                <li onclick="window.location.href='/de/baldor-motors.html';"><a href="/de/baldor-motors.html">BALDOR</a></li>
-                <li onclick="window.location.href='/de/kollmorgen-servomotors.html';"><a href="/de/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='/de/sumitomohansen-speedreducer.html';"><a href="/de/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='/de/odm-brand.html';"><a href="/de/odm-brand.html">ODM Marken</a></li>
+                <li onclick="window.location.href='/de/sew-gearmotors/';"><a href="/de/sew-gearmotors/">SEW</a></li>
+                <li onclick="window.location.href='/de/flender-gearbox/';"><a href="/de/flender-gearbox/">FLENDER</a></li>
+                <li onclick="window.location.href='/de/nord-gearmotors/';"><a href="/de/nord-gearmotors/">NORD</a></li>
+                <li onclick="window.location.href='/de/siemens-gearmotors/';"><a href="/de/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/de/bonfiglioli-gearbox/';"><a href="/de/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/de/bauer-gearmotors/';"><a href="/de/bauer-gearmotors/">BAUER</a></li>
+                <li onclick="window.location.href='/de/lenze-gearmotors/';"><a href="/de/lenze-gearmotors/">LENZE</a></li>
+                <li onclick="window.location.href='/de/abb-motors/';"><a href="/de/abb-motors/">ABB</a></li>
+                <li onclick="window.location.href='/de/baldor-motors/';"><a href="/de/baldor-motors/">BALDOR</a></li>
+                <li onclick="window.location.href='/de/kollmorgen-servomotors/';"><a href="/de/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/de/sumitomohansen-speedreducer/';"><a href="/de/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/de/odm-brand/';"><a href="/de/odm-brand/">ODM Marken</a></li>
             </ul>
         </li>
-        <li><a href="/de/company.html">Über uns</a></li>
-        <li><a href="/de/case.html">Projekte</a></li>
-        <li><a href="/de/news-blog.html">News & Blog</a></li>
-        <li><a href="/de/inquiry.html">Anfrage</a></li>
-        <li><a href="/de/contact.html">Kontakt</a></li>
-        <li><a href="/de/discount.html">Rabatte</a></li>
+        <li><a href="/de/company/">Über uns</a></li>
+        <li><a href="/de/case/">Projekte</a></li>
+        <li><a href="/de/news-blog/">News & Blog</a></li>
+        <li><a href="/de/inquiry/">Anfrage</a></li>
+        <li><a href="/de/contact/">Kontakt</a></li>
+        <li><a href="/de/discount/">Rabatte</a></li>
     </ul>
 </nav>
 </section>
