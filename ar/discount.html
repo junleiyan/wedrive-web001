@@ -85,7 +85,7 @@
 
 	<meta property="og:type" content="website" />
 
-	<meta property="og:url" content="https://wedrivepower.com/ar/brand.html" />
+	<meta property="og:url" content="https://wedrivepower.com/ar/brand/" />
 
 	<meta property="og:image"
 		content="https://wedrivepower.com/images/logo.png" />
@@ -97,23 +97,35 @@
 
 	<link rel="stylesheet" href="/assets/css/main.css" />
 
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		 <li><a href="/ja/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/discount/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/discount/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/discount/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/discount/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/discount/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		 <li><a href="/ja/discount/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/discount.html';" 
+    <div onclick="window.location.href='/discount/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -145,28 +157,28 @@
 				<ul>
 					<li><a href="/ar/">الرئيسية</a></li>
 					<li class="wd-parent">
-						<a href="/ar/brand.html" class="wd-trigger">العلامات التجارية</a>
+						<a href="/ar/brand/" class="wd-trigger">العلامات التجارية</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ar/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ar/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ar/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ar/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ar/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ar/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ar/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ar/abb-motors.html">ABB</a></li>
-							<li><a href="/ar/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ar/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ar/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ar/odm-brand.html">ODM BRAND</a></li>
+							<li><a href="/ar/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ar/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ar/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ar/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ar/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ar/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ar/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ar/abb-motors/">ABB</a></li>
+							<li><a href="/ar/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ar/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ar/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ar/odm-brand/">ODM BRAND</a></li>
 						</ul>
 					</li>
-					<li><a href="/ar/company.html">الشركة</a></li>
-					<li><a href="/ar/case.html">الحالات</a></li>
-					<li><a href="/ar/news-blog.html">الأخبار والمدونة</a></li>
-					<li><a href="/ar/inquiry.html">الاستفسار</a></li>
-					<li><a href="/ar/contact.html">اتصل بنا</a></li>
-					<li><a href="/ar/discount.html"class="active">الخصومات</a></li>
+					<li><a href="/ar/company/">الشركة</a></li>
+					<li><a href="/ar/case/">الحالات</a></li>
+					<li><a href="/ar/news-blog/">الأخبار والمدونة</a></li>
+					<li><a href="/ar/inquiry/">الاستفسار</a></li>
+					<li><a href="/ar/contact/">اتصل بنا</a></li>
+					<li><a href="/ar/discount/"class="active">الخصومات</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -268,7 +280,7 @@
                         <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">$175.00 - $19,998.00</span>
                     </div>
                     
-                    <a href="/ar/inquiry.html" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">أرسل استفساراً عبر واتساب</a>
+                    <a href="/ar/inquiry/" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">أرسل استفساراً عبر واتساب</a>
                 </div>
             </div>
         </div>
@@ -298,7 +310,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SEW-EURODRIVE" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/sewprice01.jpg" alt="محركات تروس SEW EURODRIVE" itemprop="image" />
                             </a>
                             <header>
@@ -317,7 +329,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -326,7 +338,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="FLENDER" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/flenderprice02.jpg" alt="أسعار صناديق التروس الصناعية من FLENDER" itemprop="image" />
                             </a>
                             <header>
@@ -345,7 +357,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -354,7 +366,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SIEMENS" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/siemensprice03.jpg" alt="محرك تروس SIEMENS INNOMOTICS MOTOX" itemprop="image" />
                             </a>
                             <header>
@@ -373,7 +385,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -381,7 +393,7 @@
            <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BONFIGLIOLI" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/bonfiglioliprice04.jpg" alt="صناديق تروس كوكبية من BONFIGLIOLI 300M" itemprop="image" />
                             </a>
                             <header>
@@ -400,7 +412,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -409,7 +421,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="NORD" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/nordprice05.jpg" alt="محركات تروس NORD سلسلة SK" itemprop="image" />
                             </a>
                             <header>
@@ -428,7 +440,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -437,7 +449,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BAUER" />
-                            <a href="/ar/inquiry.html" class="image featured">
+                            <a href="/ar/inquiry/" class="image featured">
                                 <img src="/images/bauerprice06.jpg" alt="عرض خاص على محركات تروس BAUER LENZE" itemprop="image" />
                             </a>
                             <header>
@@ -456,7 +468,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/ar/inquiry.html" class="button alt">اطلب السعر</a></li>
+                                    <li><a href="/ar/inquiry/" class="button alt">اطلب السعر</a></li>
                                 </ul>
                             </footer>
                         </section>
