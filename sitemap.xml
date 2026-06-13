@@ -1,172 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wedrivepower.com/index.html</loc><lastmod>2026-05-26</lastmod><priority>1.0</priority></url>
-  <url><loc>https://wedrivepower.com/company.html</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://wedrivepower.com/contact.html</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://wedrivepower.com/inquiry.html</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://wedrivepower.com/case.html</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
-  <url><loc>https://wedrivepower.com/discount.html</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
-  <url><loc>https://wedrivepower.com/news-blog.html</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
-  <url><loc>https://wedrivepower.com/brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/index/</loc><lastmod>2026-05-26</lastmod><priority>1.0</priority></url>
+  <url><loc>https://wedrivepower.com/company/</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://wedrivepower.com/contact/</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://wedrivepower.com/inquiry/</loc><lastmod>2026-05-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://wedrivepower.com/case/</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://wedrivepower.com/discount/</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://wedrivepower.com/news-blog/</loc><lastmod>2026-05-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://wedrivepower.com/brand/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
 
-  <url><loc>https://wedrivepower.com/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://wedrivepower.com/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://wedrivepower.com/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://wedrivepower.com/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://wedrivepower.com/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://wedrivepower.com/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://wedrivepower.com/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://wedrivepower.com/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://wedrivepower.com/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://wedrivepower.com/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://wedrivepower.com/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://wedrivepower.com/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://wedrivepower.com/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.7</priority></url>
 
-  <url><loc>https://wedrivepower.com/ar/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ar/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ar/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
 
-    <url><loc>https://wedrivepower.com/de/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/de/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+    <url><loc>https://wedrivepower.com/de/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/de/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
 
-   <url><loc>https://wedrivepower.com/es/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/es/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+   <url><loc>https://wedrivepower.com/es/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/es/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
 
-  <url><loc>https://wedrivepower.com/fr/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fr/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fr/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
 
-    <url><loc>https://wedrivepower.com/fa/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/fa/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+    <url><loc>https://wedrivepower.com/fa/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/fa/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
 
-   <url><loc>https://wedrivepower.com/ru/index.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/abb-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/baldor-motors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/bauer-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/bonfiglioli-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/flender-gearbox.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/kollmorgen-servomotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/lenze-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/nord-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/sew-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/siemens-gearmotors.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/sumitomohansen-speedreducer.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
-  <url><loc>https://wedrivepower.com/ru/odm-brand.html</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+   <url><loc>https://wedrivepower.com/ru/index/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/abb-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/baldor-motors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/bauer-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/bonfiglioli-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/flender-gearbox/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/kollmorgen-servomotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/lenze-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/nord-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/sew-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/siemens-gearmotors/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/sumitomohansen-speedreducer/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+  <url><loc>https://wedrivepower.com/ru/odm-brand/</loc><lastmod>2026-05-26</lastmod><priority>0.5</priority></url>
+
+<url><loc>https://www.wedrivepower.com/ja/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/abb-motors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/baldor-motors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/bauer-gearmotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/bonfiglioli-gearbox/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/flender-gearbox/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/kollmorgen-servomotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/lenze-gearmotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/nord-gearmotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/sew-gearmotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/siemens-gearmotors/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/sumitomohansen-speedreducer/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.wedrivepower.com/ja/odm-brand/</loc><lastmod>2026-06-13</lastmod><priority>0.5</priority></url>
+  
   <url>
-        <loc>https://wedrivepower.com/blog/abb-baldor-industrial-dc-motors-china-company.html</loc>
+        <loc>https://wedrivepower.com/blog/abb-baldor-industrial-dc-motors-china-company/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/abb-industrial-motors-china-company.html</loc>
+        <loc>https://wedrivepower.com/blog/abb-industrial-motors-china-company/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/bauer-bk-series-geared-motors.html</loc>
+        <loc>https://wedrivepower.com/blog/bauer-bk-series-geared-motors/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/bonfiglioli-gearbox-upholding-our-green-mission.html</loc>
+        <loc>https://wedrivepower.com/blog/bonfiglioli-gearbox-upholding-our-green-mission/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/flender-gearbox-exhibition.html</loc>
+        <loc>https://wedrivepower.com/blog/flender-gearbox-exhibition/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/kollmorgen-hygienic-servo-drives.html</loc>
+        <loc>https://wedrivepower.com/blog/kollmorgen-hygienic-servo-drives/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/lenze-industrial-servogearmotor.html</loc>
+        <loc>https://wedrivepower.com/blog/lenze-industrial-servogearmotor/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/news.html</loc>
+        <loc>https://wedrivepower.com/blog/news/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/nord-drive-solutions.html</loc>
+        <loc>https://wedrivepower.com/blog/nord-drive-solutions/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/sew-gear-motors-port-machinery.html</loc>
+        <loc>https://wedrivepower.com/blog/sew-gear-motors-port-machinery/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/siemens-inverters-innomotics-gearbox-motor.html</loc>
+        <loc>https://wedrivepower.com/blog/siemens-inverters-innomotics-gearbox-motor/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/sumitomo-drive-technologies-news-updates.html</loc>
+        <loc>https://wedrivepower.com/blog/sumitomo-drive-technologies-news-updates/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedrivepower.com/blog/wedrive-replacement-news.html</loc>
+        <loc>https://wedrivepower.com/blog/wedrive-replacement-news/</loc>
         <lastmod>2026-06-02</lastmod>
         <priority>0.8</priority>
     </url>
