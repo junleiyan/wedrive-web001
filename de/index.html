@@ -89,6 +89,18 @@
   ]
 }
 </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="homepage is-preload" dir="ltr">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
@@ -182,28 +194,28 @@
                 <ul>
                     <li><a href="/de/" class="active">Startseite</a></li>
                     <li class="wd-parent">
-                        <a href="/de/brand.html" class="wd-trigger">Marken</a>
+                        <a href="/de/brand/" class="wd-trigger">Marken</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/de/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/de/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/de/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/de/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/de/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/de/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/de/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/de/abb-motors.html">ABB</a></li>
-                            <li><a href="/de/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/de/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/de/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/de/odm-brand.html">ODM-Marken</a></li>
+                            <li><a href="/de/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/de/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/de/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/de/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/de/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/de/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/de/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/de/abb-motors/">ABB</a></li>
+                            <li><a href="/de/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/de/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/de/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/de/odm-brand/">ODM-Marken</a></li>
                         </ul>
                     </li>
-                    <li><a href="/de/company.html">Über uns</a></li>
-                    <li><a href="/de/case.html">Projekte</a></li>
-                    <li><a href="/de/news-blog.html">Aktuelles & Blog</a></li>
-                    <li><a href="/de/inquiry.html">Anfrage</a></li>
-                    <li><a href="/de/contact.html">Kontakt</a></li>
-                    <li><a href="/de/discount.html">Angebote</a></li>
+                    <li><a href="/de/company/">Über uns</a></li>
+                    <li><a href="/de/case/">Projekte</a></li>
+                    <li><a href="/de/news-blog/">Aktuelles & Blog</a></li>
+                    <li><a href="/de/inquiry/">Anfrage</a></li>
+                    <li><a href="/de/contact/">Kontakt</a></li>
+                    <li><a href="/de/discount/">Angebote</a></li>
                 </ul>
             </nav>
 
@@ -377,7 +389,7 @@
                         <!-- SEW EURODRIVE Sektion -->
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="/de/sew-gearmotors.html" class="image featured">
+                                <a href="/de/sew-gearmotors/" class="image featured">
                                     <img src="/images/sew-gearbox01.png"
                                         alt="SEW Industriegetriebe und Getriebemotoren"
                                         width="600"
@@ -418,13 +430,13 @@
                                 </ul>
                                 <footer style="padding-top:1em;">
                                     <ul class="actions">
-                                        <li><a href="/de/sew-gearmotors.html" class="button alt">Mehr erfahren</a></li>
+                                        <li><a href="/de/sew-gearmotors/" class="button alt">Mehr erfahren</a></li>
                                     </ul>
                                 </footer>
                             </section>
                         </div><div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/de/flender-gearbox.html" class="image featured">
+        <a href="/de/flender-gearbox/" class="image featured">
             <img src="/images/flender-gearunit01.png"
                 alt="FLENDER Industriegetriebe und Kupplungen" 
                 width="600"
@@ -466,7 +478,7 @@
 
         <footer style="padding-top:1em;">
             <ul class="actions">
-                <li><a href="/de/flender-gearbox.html" class="button alt">Mehr erfahren</a></li>
+                <li><a href="/de/flender-gearbox/" class="button alt">Mehr erfahren</a></li>
             </ul>
         </footer>
     </section>
@@ -474,7 +486,7 @@
 
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/de/siemens-gearmotors.html" class="image featured">
+        <a href="/de/siemens-gearmotors/" class="image featured">
             <img src="/images/siemens-gearbox01.png"
                 alt="SIEMENS INNOMOTICS MOTOX Getriebemotoren" 
                 width="600"
@@ -517,7 +529,7 @@
 
         <footer style="padding-top:1em;">
             <ul class="actions">
-                <li><a href="/de/siemens-gearmotors.html" class="button alt">Mehr erfahren</a></li>
+                <li><a href="/de/siemens-gearmotors/" class="button alt">Mehr erfahren</a></li>
             </ul>
         </footer>
     </section>
@@ -526,7 +538,7 @@
 
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/de/bonfiglioli-gearbox.html" class="image featured">
+        <a href="/de/bonfiglioli-gearbox/" class="image featured">
             <img src="/images/bonfiglioli-gearbox01.png"
                 alt="BONFIGLIOLI Industrie- und Planetengetriebe" 
                 width="600"
@@ -564,7 +576,7 @@
         <footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/de/bonfiglioli-gearbox.html" class="button alt">
+                    <a href="/de/bonfiglioli-gearbox/" class="button alt">
                         Mehr erfahren
                     </a>
                 </li>
@@ -575,7 +587,7 @@
 <!-- NORD Sektion -->
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/de/nord-gearmotors.html" class="image featured">
+        <a href="/de/nord-gearmotors/" class="image featured">
             <img src="/images/nord-gearmotor01.png"
                 alt="NORD Industriegetriebe und Antriebstechnik" />
         </a>
@@ -612,7 +624,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/de/nord-gearmotors.html" class="button alt">
+                    <a href="/de/nord-gearmotors/" class="button alt">
                         Mehr erfahren
                     </a>
                 </li>
@@ -624,7 +636,7 @@
 <!-- BAUER LENZE SUMITOMO Sektion -->
 <div class="col-4 col-6-medium col-12-small">
     <section class="box">
-        <a href="/de/bauer-gearmotors.html" class="image featured">
+        <a href="/de/bauer-gearmotors/" class="image featured">
             <img src="/images/bauer-gearmotor01.png"
                 alt="BAUER, LENZE, SUMITOMO Getriebemotoren und Antriebstechnik" width="600"
                 height="400" />
@@ -663,7 +675,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/de/bauer-gearmotors.html" class="button alt">
+                    <a href="/de/bauer-gearmotors/" class="button alt">
                         Mehr erfahren
                     </a>
                 </li>
@@ -679,7 +691,7 @@
 
     <div class="col-6 col-12-small">
         <section class="box">
-            <a href="/de/case.html" class="image featured">
+            <a href="/de/case/" class="image featured">
                 <img src="/images/factory01.png"
                     alt="Industriegetriebe-Fertigung und Produktion" 
                     width="600"
@@ -706,7 +718,7 @@
             <footer>
                 <ul class="actions">
                     <li>
-                        <a href="/de/odm-brand.html" class="button icon solid fa-file-alt">
+                        <a href="/de/odm-brand/" class="button icon solid fa-file-alt">
                             Mehr erfahren
                         </a>
                     </li>
@@ -717,7 +729,7 @@
 
     <div class="col-6 col-12-small">
         <section class="box">
-            <a href="/de/contact.html" class="image featured">
+            <a href="/de/contact/" class="image featured">
                 <img src="/images/factory02.png"
                     alt="Qualitätskontrolle und technische Getriebetests" 
                     width="600"
@@ -751,7 +763,7 @@
             <footer>
                 <ul class="actions">
                     <li>
-                        <a href="/de/odm-brand.html" class="button icon solid fa-file-alt">
+                        <a href="/de/odm-brand/" class="button icon solid fa-file-alt">
                             Mehr erfahren
                         </a>
                     </li>
@@ -775,11 +787,11 @@
                         <li>
                             <span class="date">Ausgabe <strong>4</strong></span>
                             <div class="content">
-                                <a href="/de/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/de/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new01.png" alt="FLENDER Kegelradgetriebe B4DH" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/de/flender-gearbox.html">
+                                    <a href="/de/flender-gearbox/">
                                         FLENDER Kegelradgetriebe B4DH erfolgreich nach Mexiko geliefert
                                     </a>
                                 </h3>
@@ -792,11 +804,11 @@
                         <li>
                             <span class="date">Ausgabe <strong>3</strong></span>
                             <div class="content">
-                                <a href="/de/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/de/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new02.png" alt="SEW-EURODRIVE Servogetriebemotoren auf der CNC-Messe" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/de/sew-gearmotors.html">
+                                    <a href="/de/sew-gearmotors/">
                                         SEW-EURODRIVE auf der internationalen CNC-Werkzeugmaschinenmesse in China
                                     </a>
                                 </h3>
@@ -810,11 +822,11 @@
                         <li>
                             <span class="date">Ausgabe <strong>2</strong></span>
                             <div class="content">
-                                <a href="/de/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/de/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new03.png" alt="NORD Antriebslösungen und Getriebemotoren" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/de/nord-gearmotors.html">
+                                    <a href="/de/nord-gearmotors/">
                                         NORD Antriebslösungen für über 100 verschiedene Industriezweige
                                     </a>
                                 </h3>
@@ -828,11 +840,11 @@
                         <li>
                             <span class="date">Ausgabe <strong>1</strong></span>
                             <div class="content">
-                                <a href="/de/news-blog.html" class="image fit" style="display:block; margin-bottom:1em;">
+                                <a href="/de/news-blog/" class="image fit" style="display:block; margin-bottom:1em;">
                                     <img src="/images/new04.png" alt="Technische Schulung für SIEMENS INNOMOTICS Motoren" style="border-radius:4px;" />
                                 </a>
                                 <h3 style="color:#ed391b !important;">
-                                    <a href="/de/siemens-gearmotors.html">
+                                    <a href="/de/siemens-gearmotors/">
                                         Technisches Schulungs- und Weiterbildungsprogramm von SIEMENS INNOMOTICS
                                     </a>
                                 </h3>
@@ -852,7 +864,7 @@
             <h2>Industriegetriebe & Antriebslösungen</h2>
         </header>
 
-        <a href="/de/contact.html" class="image featured">
+        <a href="/de/contact/" class="image featured">
             <img src="/images/company01.png"
                 alt="Lieferant für Industriegetriebe, Getriebemotoren und Antriebstechnik" />
         </a>
