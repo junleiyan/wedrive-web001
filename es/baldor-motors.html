@@ -35,7 +35,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://wedrivepower.com/baldor.html",
+        "url": "https://wedrivepower.com/baldor/",
         "price": "0.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
@@ -46,23 +46,35 @@
       }
     }
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="left-sidebar is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-         <li><a href="/ja/baldor-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+         <li><a href="/ja/baldor-motors/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/baldor-motors.html';" 
+    <div onclick="window.location.href='/baldor-motors/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -95,29 +107,29 @@
                 <ul>
                     <li><a href="/es/">Inicio</a></li>
                     <li class="wd-parent">
-                        <a href="/es/brand.html" class="wd-trigger active">Marcas</a>
+                        <a href="/es/brand/" class="wd-trigger active">Marcas</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/es/brand.html" style="font-weight: bold; color: #d42d1e;">Todas las marcas</a></li>
-                            <li><a href="/es/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/es/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/es/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/es/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/es/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/es/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/es/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/es/abb-motors.html">ABB</a></li>
-                            <li><a href="/es/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/es/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/es/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/es/odm-brand.html">MARCA ODM</a></li>
+                            <li><a href="/es/brand/" style="font-weight: bold; color: #d42d1e;">Todas las marcas</a></li>
+                            <li><a href="/es/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/es/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/es/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/es/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/es/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/es/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/es/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/es/abb-motors/">ABB</a></li>
+                            <li><a href="/es/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/es/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/es/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/es/odm-brand/">MARCA ODM</a></li>
                         </ul>
                     </li>
-                    <li><a href="/es/company.html">Empresa</a></li>
-                    <li><a href="/es/case.html">Proyectos</a></li>
-                    <li><a href="/es/news-blog.html">Noticias y Blog</a></li>
-                    <li><a href="/es/inquiry.html">Solicitud de precio</a></li>
-                    <li><a href="/es/contact.html">Contacto</a></li>
-                    <li><a href="/es/discount.html">Promociones</a></li>
+                    <li><a href="/es/company/">Empresa</a></li>
+                    <li><a href="/es/case/">Proyectos</a></li>
+                    <li><a href="/es/news-blog/">Noticias y Blog</a></li>
+                    <li><a href="/es/inquiry/">Solicitud de precio</a></li>
+                    <li><a href="/es/contact/">Contacto</a></li>
+                    <li><a href="/es/discount/">Promociones</a></li>
                 </ul>
             </nav>
         </section>
@@ -128,7 +140,7 @@
                     
                     <div class="col-4 col-12-medium">
                         <section class="box">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor01.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor01.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>Motores BALDOR NEMA AC (Corriente Alterna)</h3>
                             </header>
@@ -138,7 +150,7 @@
                         </section>
 
                         <section class="box">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor02.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor02.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>Motores de Uso General NEMA AC</h3>
                             </header>
@@ -148,7 +160,7 @@
                         </section>
 
                         <section class="box">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor03.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor03.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>MOTORES BALDOR NEMA DC (CORRIENTE CONTINUA)</h3>
                             </header>
@@ -158,7 +170,7 @@
                         </section>
 
                         <section class="box">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor04.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor04.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>Motores Industriales DC de las series SCR y PM</h3>
                             </header>
@@ -168,7 +180,7 @@
                         </section>
 
                         <section class="box">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor05.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor05.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>ABB Baldor-Reliance® Motor de Potencia Fraccionaria SCR, PM<br>Versión a Prueba de Explosión SCR PM</h3>
                             </header>
@@ -178,7 +190,7 @@
                         </section>
 
                         <section class="box">
-                            <a href="/fa/baldor-motors.html" class="image featured"><img src="/images/baldor06.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/fa/baldor-motors/" class="image featured"><img src="/images/baldor06.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header style="text-align: left;">
                                 <h3>ABB Baldor-Reliance® Tipo Lavable (Washdown) SCR PM<br>Modelos sin Pintura (Paint-Free) SCR PM</h3>
                             </header>
@@ -190,7 +202,7 @@
 
                     <div class="col-8 col-12-medium imp-medium">
                         <article class="box post">
-                            <a href="/es/baldor-motors.html" class="image featured"><img src="/images/baldor-new01.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
+                            <a href="/es/baldor-motors/" class="image featured"><img src="/images/baldor-new01.jpg" alt="Motor eléctrico industrial Baldor-Reliance NEMA - WeDrive Power Transmission" loading="lazy" /></a>
                             <header>
                                 <h2>Descripción General y Designación de Series</h2>
                                 <p>MOTORES NEMA ABB Baldor-Reliance DE CORRIENTE CONTINUA (DC) Y ALTERNA (AC)</p>
