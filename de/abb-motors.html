@@ -26,23 +26,36 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+    <script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="left-sidebar is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-         <li><a href="/ja/abb-motors.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+         <li><a href="/ja/abb-motors/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/abb-motors.html';" 
+    <div onclick="window.location.href='/abb-motors/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -118,31 +131,31 @@
                     <li><a href="/de/">Startseite</a></li>
                     
                     <li class="wd-parent">
-                        <a href="/de/brand.html" class="wd-trigger active">Marken</a>
+                        <a href="/de/brand/" class="wd-trigger active">Marken</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/de/brand.html" style="font-weight: bold; color: #d42d1e;">Alle Marken</a></li>
+                            <li><a href="/de/brand/" style="font-weight: bold; color: #d42d1e;">Alle Marken</a></li>
                             
-                            <li><a href="/de/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/de/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/de/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/de/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/de/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/de/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/de/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/de/abb-motors.html">ABB</a></li>
-                            <li><a href="/de/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/de/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/de/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/de/odm-brand.html">ODM Marken</a></li>
+                            <li><a href="/de/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/de/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/de/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/de/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/de/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/de/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/de/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/de/abb-motors/">ABB</a></li>
+                            <li><a href="/de/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/de/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/de/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/de/odm-brand/">ODM Marken</a></li>
                         </ul>
                     </li>
                     
-                    <li><a href="/de/company.html">Über uns</a></li>
-                    <li><a href="/de/case.html">Projekte</a></li>
-                    <li><a href="/de/news-blog.html">News & Blog</a></li>
-                    <li><a href="/de/inquiry.html">Preisanfrage</a></li>
-                    <li><a href="/de/contact.html">Kontakt</a></li>
-                    <li><a href="/de/discount.html">Angebote</a></li>
+                    <li><a href="/de/company/">Über uns</a></li>
+                    <li><a href="/de/case/">Projekte</a></li>
+                    <li><a href="/de/news-blog/">News & Blog</a></li>
+                    <li><a href="/de/inquiry/">Preisanfrage</a></li>
+                    <li><a href="/de/contact/">Kontakt</a></li>
+                    <li><a href="/de/discount/">Angebote</a></li>
                 </ul>
             </nav>
         </section>
@@ -155,7 +168,7 @@
             <div class="col-4 col-12-medium">
 
                 <section class="box">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="/de/images/abb01.jpg" alt="ABB IEC Niederspannungsmotoren für industrielle Anwendungen" 
                             loading="lazy"/>
                     </a>
@@ -170,7 +183,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="/de/images/abb02.jpg" alt="ABB Hochspannungs-Induktionsmotoren nach IEC-Standard"
                             loading="lazy"/>
                     </a>
@@ -185,7 +198,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="/de/images/abb03.jpg" alt="ABB IEC Niederspannungsmotoren für explosionsgefährdete Bereiche"
                             loading="lazy"/>
                     </a>
@@ -203,7 +216,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="abb-motors.html" class="image featured">
+                    <a href="abb-motors/" class="image featured">
                         <img src="../de/images/abb04.jpg" alt="ABB Motoren für industrielle Spezialanwendungen"
                             loading="lazy"/>
                     </a>
@@ -220,7 +233,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="../de/images/abb05.png" alt="ABB Hochleistungsmotoren der Titanium-Serie" 
                             loading="lazy"/>
                     </a>
@@ -238,7 +251,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="/de/images/abb07.jpg" alt="ABB BALDOR explosionsgeschützte Motoren nach NEMA-Standard"
                             loading="lazy"/>
                     </a>
@@ -260,7 +273,7 @@
 
     <article class="box post">
 
-        <a href="/de/abb-motors.html" class="image featured">
+        <a href="/de/abb-motors/" class="image featured">
             <img src="/de/images/abb-new21.jpg" alt="ABB IEC Niederspannungs-Industriemotoren" 
                 loading="lazy"/>
         </a>
