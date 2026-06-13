@@ -14,22 +14,34 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="left-sidebar is-preload">
      <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-          <li><a href="/ja/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+          <li><a href="/ja/brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/brand.html';" 
+     <div onclick="window.location.href='/brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -63,28 +75,28 @@
                 <ul>
                     <li><a href="/de/">Startseite</a></li>
                     <li class="wd-parent">
-                        <a href="/de/brand.html" class="active" id="nav-brand" onclick="toggleMenu(); return false;">Marken</a>
+                        <a href="/de/brand/" class="active" id="nav-brand" onclick="toggleMenu(); return false;">Marken</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/de/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/de/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/de/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/de/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/de/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/de/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/de/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/de/abb-motors.html">ABB</a></li>
-                            <li><a href="/de/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/de/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/de/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/de/odm-brand.html">ODM-Marken</a></li>
+                            <li><a href="/de/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/de/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/de/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/de/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/de/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/de/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/de/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/de/abb-motors/">ABB</a></li>
+                            <li><a href="/de/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/de/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/de/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/de/odm-brand/">ODM-Marken</a></li>
                         </ul>
                     </li>
-                    <li><a href="/de/company.html">Über uns</a></li>
-                    <li><a href="/de/case.html">Projekte</a></li>
-                    <li><a href="/de/news-blog.html">Blog & News</a></li>
-                    <li><a href="/de/inquiry.html">Anfrage</a></li>
-                    <li><a href="/de/contact.html">Kontakt</a></li>
-                    <li><a href="/de/discount.html">Angebote</a></li>
+                    <li><a href="/de/company/">Über uns</a></li>
+                    <li><a href="/de/case/">Projekte</a></li>
+                    <li><a href="/de/news-blog/">Blog & News</a></li>
+                    <li><a href="/de/inquiry/">Anfrage</a></li>
+                    <li><a href="/de/contact/">Kontakt</a></li>
+                    <li><a href="/de/discount/">Angebote</a></li>
                 </ul>
             </nav>
         </section>
@@ -136,7 +148,7 @@
         <div class="row">
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/sew-gearmotors.html" class="image featured">
+                    <a href="/de/sew-gearmotors/" class="image featured">
                         <img src="/images/sew-logo-new.png"
                             alt="SEW Industriegetriebe und Elektromotoren"
                             width="600"
@@ -151,7 +163,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/sew-gearmotors.html" class="button alt">
+                                <a href="/de/sew-gearmotors/" class="button alt">
                                     SEW Modelle
                                 </a>
                             </li>
@@ -161,7 +173,7 @@
             </div>
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/flender-gearbox.html" class="image featured">
+                    <a href="/de/flender-gearbox/" class="image featured">
                         <img src="/images/flender-logo-new.png"
                             alt="FLENDER Industriegetriebe und Kupplungen Lieferant"
                             width="600"
@@ -176,7 +188,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/flender-gearbox.html" class="button alt">
+                                <a href="/de/flender-gearbox/" class="button alt">
                                     FLENDER Katalog
                                 </a>
                             </li>
@@ -187,7 +199,7 @@
             
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/siemens-gearmotors.html" class="image featured">
+                    <a href="/de/siemens-gearmotors/" class="image featured">
                         <img src="/images/siemens-logo-new.png"
                             alt="SIEMENS INNOMOTICS Industriegetriebemotoren"
                             width="600"
@@ -202,7 +214,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/siemens-gearmotors.html" class="button alt">
+                                <a href="/de/siemens-gearmotors/" class="button alt">
                                     Siemens Technische Daten
                                 </a>
                             </li>
@@ -213,7 +225,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/bonfiglioli-gearbox.html" class="image featured">
+                    <a href="/de/bonfiglioli-gearbox/" class="image featured">
                         <img src="/images/bonfiglioli-logo-new.png"
                             alt="BONFIGLIOLI Industriegetriebe"
                             width="600"
@@ -228,7 +240,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/bonfiglioli-gearbox.html" class="button alt">
+                                <a href="/de/bonfiglioli-gearbox/" class="button alt">
                                     Über Bonfiglioli
                                 </a>
                             </li>
@@ -239,7 +251,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/nord-gearmotors.html" class="image featured">
+                    <a href="/de/nord-gearmotors/" class="image featured">
                         <img src="/images/nord-logo-new.png" alt="NORD MAXXDRIVE Industriegetriebe und Nordbloc.1" width="600" height="400" />
                     </a>
                     <header>
@@ -251,7 +263,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/nord-gearmotors.html" class="button alt">
+                                <a href="/de/nord-gearmotors/" class="button alt">
                                     Über NORD
                                 </a>
                             </li>
@@ -262,7 +274,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/bauer-gearmotors.html" class="image featured">
+                    <a href="/de/bauer-gearmotors/" class="image featured">
                         <img src="/images/bauer-logo-new.png"
                             alt="BAUER Industriegetriebemotoren"
                             width="600"
@@ -277,7 +289,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/bauer-gearmotors.html" class="button alt">
+                                <a href="/de/bauer-gearmotors/" class="button alt">
                                     Bauer Getriebemotoren
                                 </a>
                             </li>
@@ -288,7 +300,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/lenze-gearmotors.html" class="image featured">
+                    <a href="/de/lenze-gearmotors/" class="image featured">
                         <img src="/images/lenze-logo-new.png"
                             alt="LENZE Industriegetriebemotoren"
                             width="600"
@@ -303,7 +315,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/lenze-gearmotors.html" class="button alt">
+                                <a href="/de/lenze-gearmotors/" class="button alt">
                                     Lenze Produkte
                                 </a>
                             </li>
@@ -314,7 +326,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/abb-motors.html" class="image featured">
+                    <a href="/de/abb-motors/" class="image featured">
                         <img src="/images/abb-logo-new.png"
                             alt="ABB Industriemotoren"
                             width="600"
@@ -329,7 +341,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/abb-motors.html" class="button alt">
+                                <a href="/de/abb-motors/" class="button alt">
                                     ABB Industriemotoren
                                 </a>
                             </li>
@@ -339,7 +351,7 @@
             </div>
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/baldor-motors.html" class="image featured">
+                    <a href="/de/baldor-motors/" class="image featured">
                         <img src="/images/baldor-logo-new.png"
                             alt="BALDOR Industriemotoren"
                             width="600"
@@ -354,7 +366,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/baldor-motors.html" class="button alt">
+                                <a href="/de/baldor-motors/" class="button alt">
                                     ABB Baldor Motoren
                                 </a>
                             </li>
@@ -365,7 +377,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/kollmorgen-servomotors.html" class="image featured">
+                    <a href="/de/kollmorgen-servomotors/" class="image featured">
                         <img src="/images/kollmorgen-logo-new.png"
                             alt="KOLLMORGEN Servomotoren"
                             width="600"
@@ -380,7 +392,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/kollmorgen-servomotors.html" class="button alt">
+                                <a href="/de/kollmorgen-servomotors/" class="button alt">
                                     Kollmorgen Servomotoren
                                 </a>
                             </li>
@@ -391,7 +403,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/sumitomohansen-speedreducer.html" class="image featured">
+                    <a href="/de/sumitomohansen-speedreducer/" class="image featured">
                         <img src="/images/sumitomo-logo-new.png" alt="SUMITOMO Cyclo Drive 6000 und Hansen P4 Getriebe" width="600" height="400" />
                     </a>
                     <header>
@@ -403,7 +415,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="/de/sumitomohansen-speedreducer.html" class="button alt">
+                                <a href="/de/sumitomohansen-speedreducer/" class="button alt">
                                     Sumitomo & Hansen Marken
                                 </a>
                             </li>
@@ -414,7 +426,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="/de/odm-brand.html" class="image featured">
+                    <a href="/de/odm-brand/" class="image featured">
                         <img src="/images/wedrive-logo.png" alt="Maßgeschneiderte OEM und ODM Industriegetriebe" width="600" height="400" />
                     </a>
                     <header>
@@ -426,7 +438,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="odm-brand.html" class="button alt">
+                                <a href="odm-brand/" class="button alt">
                                     ODM Getriebe
                                 </a>
                             </li>
@@ -617,12 +629,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var brandBtn = document.getElementById("nav-brand");
 
     if (
-        currentFileName === "brand.html" || 
+        currentFileName === "brand/" || 
         currentFileName.includes("gearmotors") || 
         currentFileName.includes("gearbox") || 
         currentFileName.includes("motors") || 
         currentFileName.includes("speedreducer") || 
-        currentFileName === "odm-brand.html"
+        currentFileName === "odm-brand/"
     ) {
         if (brandBtn) {
             brandBtn.classList.add("active"); 
