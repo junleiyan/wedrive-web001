@@ -78,27 +78,40 @@
     <meta property="og:title" content="産業用ギアボックスブランド | WEDRIVE POWER" />
     <meta property="og:description" content="WEDRIVE POWERが提供するグローバル産業用ギアボックスおよびギアモーターブランド。" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wedrivepower.com/brand.html" />
+    <meta property="og:url" content="https://wedrivepower.com/brand/" />
     <meta property="og:image" content="https://wedrivepower.com/images/logo.png" />
     <meta property="og:site_name" content="WEDRIVE POWER TRANSMISSION" />
 
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="stylesheet" href="/assets/css/main.css" />
+	<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 <body class="homepage is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		 <li><a href="/ja/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		 <li><a href="/ja/brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-   <div onclick="window.location.href='/brand.html';" 
+   <div onclick="window.location.href='/brand/';" 
           style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 言語切替
     </div>
@@ -128,28 +141,28 @@
 				<ul>
 					<li><a href="/ja/">ホーム</a></li>
 					<li class="wd-parent">
-						<a href="/ja/brand.html" class="wd-trigger active">ブランド</a>
+						<a href="/ja/brand/" class="wd-trigger active">ブランド</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ja/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ja/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ja/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ja/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ja/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ja/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ja/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ja/abb-motors.html">ABB</a></li>
-							<li><a href="/ja/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ja/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ja/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ja/odm-brand.html">ODM ブランド</a></li>
+							<li><a href="/ja/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ja/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ja/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ja/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ja/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ja/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ja/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ja/abb-motors/">ABB</a></li>
+							<li><a href="/ja/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ja/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ja/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ja/odm-brand/">ODM ブランド</a></li>
 						</ul>
 					</li>
-					<li><a href="/ja/company.html">会社概要</a></li>
-					<li><a href="/ja/case.html">導入事例</a></li>
-					<li><a href="/ja/news-blog.html">ニュース・ブログ</a></li>
-					<li><a href="/ja/inquiry.html">お問い合わせ</a></li>
-					<li><a href="/ja/contact.html">コンタクト</a></li>
-					<li><a href="/ja/discount.html">割引情報</a></li>
+					<li><a href="/ja/company/">会社概要</a></li>
+					<li><a href="/ja/case/">導入事例</a></li>
+					<li><a href="/ja/news-blog/">ニュース・ブログ</a></li>
+					<li><a href="/ja/inquiry/">お問い合わせ</a></li>
+					<li><a href="/ja/contact/">コンタクト</a></li>
+					<li><a href="/ja/discount/">割引情報</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -232,7 +245,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/sew-gearmotors.html" class="image featured">
+							<a href="/ja/sew-gearmotors/" class="image featured">
 								<img src="/images/sew-logo-new.png"
 									alt="SEW 産業用ギアボックスおよびギアモーター"
 									width="600"
@@ -249,7 +262,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/sew-gearmotors.html" class="button alt">
+										<a href="/ja/sew-gearmotors/" class="button alt">
 											SEWモデルを見る
 										</a>
 									</li>
@@ -263,7 +276,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/flender-gearbox.html" class="image featured">
+							<a href="/ja/flender-gearbox/" class="image featured">
 								<img src="/images/flender-logo-new.png"
 									alt="FLENDER 産業用ギアボックスおよびカップリング供給サービス"
 									width="600"
@@ -279,7 +292,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/flender-gearbox.html" class="button alt">
+										<a href="/ja/flender-gearbox/" class="button alt">
 											Flenderカタログを見る
 										</a>
 									</li>
@@ -292,7 +305,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/siemens-gearmotors.html" class="image featured">
+							<a href="/ja/siemens-gearmotors/" class="image featured">
 								<img src="/images/siemens-logo-new.png"
 									alt="SIEMENS INNOMOTICS ギアモーター"
 									width="600"
@@ -309,7 +322,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/siemens-gearmotors.html" class="button alt">
+										<a href="/ja/siemens-gearmotors/" class="button alt">
 											Siemens 技術データ
 										</a>
 									</li>
@@ -323,7 +336,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/bonfiglioli-gearbox.html" class="image featured">
+							<a href="/ja/bonfiglioli-gearbox/" class="image featured">
 								<img src="/images/bonfiglioli-logo-new.png"
 									alt="BONFIGLIOLI 産業用ギアボックス"
 									width="600"
@@ -341,7 +354,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/bonfiglioli-gearbox.html" class="button alt">
+										<a href="/ja/bonfiglioli-gearbox/" class="button alt">
 											Bonfiglioli 詳細情報
 										</a>
 									</li>
@@ -355,7 +368,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/nord-gearmotors.html" class="image featured">
+							<a href="/ja/nord-gearmotors/" class="image featured">
 								<img src="/images/nord-logo-new.png" alt="NORD MAXXDRIVE 産業用ギアユニットおよびNordbloc.1" width="600" height="400" />
 							</a>
 
@@ -370,7 +383,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/nord-gearmotors.html" class="button alt">
+										<a href="/ja/nord-gearmotors/" class="button alt">
 											Nord ギアボックス詳細
 										</a>
 									</li>
@@ -384,7 +397,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/bauer-gearmotors.html" class="image featured">
+							<a href="/ja/bauer-gearmotors/" class="image featured">
 								<img src="/images/bauer-logo-new.png"
 									alt="BAUER 産業用ギアモーター"
 									width="600"
@@ -402,7 +415,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/bauer-gearmotors.html" class="button alt">
+										<a href="/ja/bauer-gearmotors/" class="button alt">
 											Bauer ギアモーター詳細
 										</a>
 									</li>
@@ -415,7 +428,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/lenze-gearmotors.html" class="image featured">
+							<a href="/ja/lenze-gearmotors/" class="image featured">
 								<img src="/images/lenze-logo-new.png"
 									alt="LENZE 産業用ギアモーター"
 									width="600"
@@ -433,7 +446,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/lenze-gearmotors.html" class="button alt">
+										<a href="/ja/lenze-gearmotors/" class="button alt">
 											Lenze製品を見る
 										</a>
 									</li>
@@ -447,7 +460,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/abb-motors.html" class="image featured">
+							<a href="/ja/abb-motors/" class="image featured">
 								<img src="/images/abb-logo-new.png"
 									alt="ABB 産業用モーター"
 									width="600"
@@ -465,7 +478,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/abb-motors.html" class="button alt">
+										<a href="/ja/abb-motors/" class="button alt">
 											ABB 産業用モーター詳細
 										</a>
 									</li>
@@ -479,7 +492,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/baldor-motors.html" class="image featured">
+							<a href="/ja/baldor-motors/" class="image featured">
 								<img src="/images/baldor-logo-new.png"
 									alt="BALDOR 産業用モーター"
 									width="600"
@@ -497,7 +510,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/baldor-motors.html" class="button alt">
+										<a href="/ja/baldor-motors/" class="button alt">
 											ABB Baldor DCモーター詳細
 										</a>
 									</li>
@@ -510,7 +523,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/kollmorgen-servomotors.html" class="image featured">
+							<a href="/ja/kollmorgen-servomotors/" class="image featured">
 								<img src="/images/kollmorgen-logo-new.png"
 									alt="KOLLMORGEN サーボモーター"
 									width="600"
@@ -528,7 +541,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/kollmorgen-servomotors.html" class="button alt">
+										<a href="/ja/kollmorgen-servomotors/" class="button alt">
 											Kollmorgen サーボモーター詳細
 										</a>
 									</li>
@@ -542,7 +555,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/sumitomohansen-speedreducer.html" class="image featured">
+							<a href="/ja/sumitomohansen-speedreducer/" class="image featured">
 								<img src="/images/sumitomo-logo-new.png" alt="SUMITOMO サイクロ減速機 6000 および Hansen P4 ギアボックス" width="600" height="400" />
 							</a>
 
@@ -557,7 +570,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/sumitomohansen-speedreducer.html" class="button alt">
+										<a href="/ja/sumitomohansen-speedreducer/" class="button alt">
 											Sumitomo & Hansen 詳細
 										</a>
 									</li>
@@ -571,7 +584,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ja/odm-brand.html" class="image featured">
+							<a href="/ja/odm-brand/" class="image featured">
 								<img src="/images/wedrive-logo.png" alt="カスタム産業用ギアボックス OEM ODM製造" width="600" height="400" />
 							</a>
 
@@ -586,7 +599,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ja/odm-brand.html" class="button alt">
+										<a href="/ja/odm-brand/" class="button alt">
 											ODM ブランド製品
 										</a>
 									</li>
