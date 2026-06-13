@@ -10,9 +10,9 @@
     
     <meta property="og:title" content="ODM Gearmotors: Custom Solutions | WEDRIVE" />
     <meta property="og:description" content="Custom electric motors and high-torque gearmotor solutions for global industrial applications." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.yourdomain.com/odm-gearmotors" />
-    <meta property="og:image" content="https://www.yourdomain.com/images/og-image.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.wedrivepower.com/odm-brand/" />
+<meta property="og:image" content="https://www.wedrivepower.com/images/logo.png" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
 
@@ -23,23 +23,36 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+    <script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="homepage is-preload">
     <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-         <li><a href="/ja/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+         <li><a href="/ja/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/odm-brand.html';" 
+     <div onclick="window.location.href='/odm-brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -56,7 +69,7 @@
         <section id="header">
             <!-- Logo -->
             <div style="margin: 0;">
-                <a href="odm-brand.html" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
+                <a href="/" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
                     <img src="images/logo.png" loading="lazy" width="400" height="85" alt="WEDRIVE POWER Industrial Gearbox Supplier" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
                     <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
                         <h1 style="font-size:1.9em; font-weight:800; letter-spacing:2px; color:#1d1d1d; line-height:1.1; margin:0; display:inline-block;">ODM Gearmotors Custom | WeDrive</h1>
@@ -70,28 +83,28 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li class="wd-parent">
-                        <a href="brand.html" class="wd-trigger active" onclick="toggleMenu(); return false;">Brand</a>
+                        <a href="/brand/" class="wd-trigger active" onclick="toggleMenu(); return false;">Brand</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="sew-gearmotors.html">SEW</a></li>
-                            <li><a href="flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="nord-gearmotors.html">NORD</a></li>
-                            <li><a href="siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="abb-motors.html">ABB</a></li>
-                            <li><a href="baldor-motors.html">BALDOR</a></li>
-                            <li><a href="kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="odm-brand.html">ODM BRAND</a></li>
+                            <li><a href="/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/abb-motors/">ABB</a></li>
+                            <li><a href="/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/odm-brand/">ODM BRAND</a></li>
                         </ul>
                     </li>
-                    <li><a href="company.html">Company</a></li>
-                    <li><a href="case.html">Case</a></li>
-                    <li><a href="news-blog.html">News and Blog</a></li>
-                    <li><a href="inquiry.html">Inquiry</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="discount.html">Discount</a></li>
+                    <li><a href="/company/">Company</a></li>
+                    <li><a href="/case/">Case</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
+                    <li><a href="/inquiry/">Inquiry</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/discount/">Discount</a></li>
                 </ul>
             </nav>
         </section>
@@ -102,7 +115,7 @@
         <div class="row">
             <div class="col-4 col-12-medium">
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odm01.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odm01.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand</h3>
                     </header>
@@ -111,7 +124,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odmbrand02.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odmbrand02.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand</h3>
                     </header>
@@ -120,7 +133,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odm03.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odm03.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand</h3>
                     </header>
@@ -129,7 +142,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odm04.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odm04.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Bevel Helical<br>Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand<br>M series MC series</h3>
                     </header>
@@ -138,7 +151,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odmbrand05.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odmbrand05.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand</h3>
                     </header>
@@ -147,7 +160,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="odm-brand.html" class="image featured"><img src="images/odm06.jpg" alt="ODM WeDrive gearmotors" /></a>
+                    <a href="/odm-brand/" class="image featured"><img src="images/odm06.jpg" alt="ODM WeDrive gearmotors" /></a>
                     <header style="text-align: left;">
                         <h3 style="margin: 0; font-size: 1.25em;">Replace Use Your Brand<br>ODM Your Brand<br>Repace Our Brand<br>Use Our Brand</h3>
                     </header>
