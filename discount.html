@@ -38,7 +38,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.wedrivepower.com/discount.html",
+        "url": "https://www.wedrivepower.com/discount/",
         "priceCurrency": "USD",
         "price": "0.00",
         "priceValidUntil": "2026-12-31",
@@ -51,22 +51,35 @@
       }
     }
     </script>
+		<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 	<body class="homepage is-preload">
 		<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		 <li><a href="/ja/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/discount/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/discount/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/discount/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/discount/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/discount/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		 <li><a href="/ja/discount/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/discount.html';" 
+     <div onclick="window.location.href='/discount/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -85,7 +98,7 @@
 <!-- Logo -->
 			<div style="margin: 0;">
 
-				<a href="discount.html"
+				<a href="/"
 					id="logo"
 					style="
 						display:flex;
@@ -145,30 +158,30 @@
         <li><a href="/">Home</a></li>
         
     <li class="wd-parent">
-    <a href="brand.html" class="wd-trigger" onclick="toggleMenu(); return false;">Brand</a>
+    <a href="/brand/" class="wd-trigger" onclick="toggleMenu(); return false;">Brand</a>
     
     <ul id="wd-brand-menu">
-                <li onclick="window.location.href='SEW Gearmotors.html';"><a href="SEW Gearmotors.html">SEW</a></li>
-                <li onclick="window.location.href='FLENDER Gearunit.html';"><a href="FLENDER Gearunit.html">FLENDER</a></li>
-                <li onclick="window.location.href='NORD Geared motor.html';"><a href="NORD Geared motor.html">NORD</a></li>
-                <li onclick="window.location.href='SIEMENS Gearbox simogear MOTOX gearbox.html';"><a href="SIEMENS Gearbox simogear MOTOX gearbox.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='BONFIGLIOLI VF49 wormgear.html';"><a href="BONFIGLIOLI VF49 wormgear.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='BAUER gearmotors.html';"><a href="BAUER gearmotors.html">BAUER</a></li>
-                <li onclick="window.location.href='LENZE gearmotors.html';"><a href="LENZE gearmotors.html">LENZE</a></li>
-                <li onclick="window.location.href='ABB motors.html';"><a href="ABB motors.html">ABB</a></li>
-                <li onclick="window.location.href='BALDOR motors.html';"><a href="BALDOR motors.html">BALDOR</a></li>
-                <li onclick="window.location.href='KOLLMORGEN servomotors.html';"><a href="KOLLMORGEN servomotors.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='SUMITOMO HANSEN speed reduver motors.html';"><a href="SUMITOMO HANSEN speed reduver motors.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='ODM BRAND.html';"><a href="ODM BRAND.html">ODM BRAND</a></li>
+                <li onclick="window.location.href='/sew-gearmotors/';"><a href="/sew-gearmotors/">SEW</a></li>
+                <li onclick="window.location.href='/flender-gearbox/';"><a href="/flender-gearbox/">FLENDER</a></li>
+                <li onclick="window.location.href='/nord-gearmotors/';"><a href="/nord-gearmotors/">NORD</a></li>
+                <li onclick="window.location.href='/siemens-gearamotors/';"><a href="/siemens-gearamotors/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/bonfiglioli-gearbox/';"><a href="/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/bauer-gearmotors/';"><a href="/bauer-gearmotors/">BAUER</a></li>
+                <li onclick="window.location.href='/lenze-gearmotors/';"><a href="/lenze-gearmotors/">LENZE</a></li>
+                <li onclick="window.location.href='/abb-motors/';"><a href="/abb-motors/">ABB</a></li>
+                <li onclick="window.location.href='/baldor-motors/';"><a href="/baldor-motors/">BALDOR</a></li>
+                <li onclick="window.location.href='/kollmorgen-servomotors/';"><a href="/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/sumitomohansen-speedreducer/;"><a href="/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/odm-brand/';"><a href="/odm-brand/">ODM BRAND</a></li>
             </ul>
         </li>
         
-        <li><a href="company.html">Company</a></li>
-          <li><a href="case.html">Case</a></li>
-		<li><a href="news and blog.html">News and Blog</a></li>
-        <li><a href="inquiry.html">Inquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="discount.html"class="active">Discount</a></li>
+        <li><a href="/company/">Company</a></li>
+          <li><a href="/case/">Case</a></li>
+		<li><a href="/news-blog/">News and Blog</a></li>
+        <li><a href="/inquiry/">Inquiry</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/discount/"class="active">Discount</a></li>
     </ul>
 </nav>
 
@@ -280,7 +293,7 @@
                         <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">$175.00 - $19,998.00</span>
                     </div>
                     
-                    <a href="inquiry.html" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Send WhatsApp Inquiry</a>
+                    <a href="/inquiry/" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Send WhatsApp Inquiry</a>
                 </div>
             </div>
 
@@ -319,7 +332,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="SEW-EURODRIVE" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/sewprice01.jpg" alt="SEW EURODRIVE Helical Gearmotors" itemprop="image" />
                             </a>
                             <header>
@@ -338,7 +351,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -348,7 +361,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="FLENDER" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/flenderprice02.jpg" alt="FLENDER Industrial Gear Unit price" itemprop="image" />
                             </a>
                             <header>
@@ -367,7 +380,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -377,7 +390,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="SIEMENS" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/siemensprice03.jpg" alt="SIEMENS INNOMOTICS MOTOX Gearbox" itemprop="image" />
                             </a>
                             <header>
@@ -396,7 +409,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -406,7 +419,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="BONFIGLIOLI" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/bonfiglioliprice04.jpg" alt="BONFIGLIOLI Planetary Gearbox 300M" itemprop="image" />
                             </a>
                             <header>
@@ -425,7 +438,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -435,7 +448,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="NORD" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/nordprice05.jpg" alt="NORD Gearmotor SK series" itemprop="image" />
                             </a>
                             <header>
@@ -454,7 +467,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -464,7 +477,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
 							<meta itemprop="brand" content="BAUER" />
-                            <a href="inquiry.html" class="image featured">
+                            <a href="/inquiry/" class="image featured">
                                 <img src="images/bauerprice06.jpg" alt="BAUER LENZE Gear Motor Special Offer" itemprop="image" />
                             </a>
                             <header>
@@ -483,7 +496,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="inquiry.html" class="button alt">Inquiry Now</a></li>
+                                    <li><a href="/inquiry/" class="button alt">Inquiry Now</a></li>
                                 </ul>
                             </footer>
                         </section>
