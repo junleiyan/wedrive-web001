@@ -85,7 +85,7 @@
 
 	<meta property="og:type" content="website" />
 
-	<meta property="og:url" content="https://wedrivepower.com/ar/brand.html" />
+	<meta property="og:url" content="https://wedrivepower.com/ar/brand/" />
 
 	<meta property="og:image"
 		content="https://wedrivepower.com/images/logo.png" />
@@ -97,23 +97,35 @@
 
 	<link rel="stylesheet" href="/assets/css/main.css" />
 
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		 <li><a href="/ja/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		 <li><a href="/ja/brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/brand.html';" 
+    <div onclick="window.location.href='/brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -145,28 +157,28 @@
 				<ul>
 					<li><a href="/ar/">الرئيسية</a></li>
 					<li class="wd-parent">
-						<a href="/ar/brand.html" class="wd-trigger active">العلامات التجارية</a>
+						<a href="/ar/brand/" class="wd-trigger active">العلامات التجارية</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ar/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ar/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ar/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ar/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ar/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ar/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ar/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ar/abb-motors.html">ABB</a></li>
-							<li><a href="/ar/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ar/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ar/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ar/odm-brand.html">ODM BRAND</a></li>
+							<li><a href="/ar/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ar/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ar/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ar/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ar/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ar/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ar/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ar/abb-motors/">ABB</a></li>
+							<li><a href="/ar/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ar/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ar/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ar/odm-brand/">ODM BRAND</a></li>
 						</ul>
 					</li>
-					<li><a href="/ar/company.html">الشركة</a></li>
-					<li><a href="/ar/case.html">الحالات</a></li>
-					<li><a href="/ar/news-blog.html">الأخبار والمدونة</a></li>
-					<li><a href="/ar/inquiry.html">الاستفسار</a></li>
-					<li><a href="/ar/contact.html">اتصل بنا</a></li>
-					<li><a href="/ar/discount.html">الخصومات</a></li>
+					<li><a href="/ar/company/">الشركة</a></li>
+					<li><a href="/ar/case/">الحالات</a></li>
+					<li><a href="/ar/news-blog/">الأخبار والمدونة</a></li>
+					<li><a href="/ar/inquiry/">الاستفسار</a></li>
+					<li><a href="/ar/contact/">اتصل بنا</a></li>
+					<li><a href="/ar/discount/">الخصومات</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -309,7 +321,7 @@
                 <!-- SEW -->
                 <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
-                        <a href="/ar/sew-gearmotors.html" class="image featured">
+                        <a href="/ar/sew-gearmotors/" class="image featured">
                             <img src="/images/sew-logo-new.png" alt="SEW industrial gearbox and gearmotors" width="600" height="400" />
                         </a>
                         <header>
@@ -318,7 +330,7 @@
                         <p>توزيع محركات التروس <strong>SEW EURODRIVE</strong> من سلاسل R, F, K, S، ومحولات التردد Movitrac، وقطع الغيار الأصلية للأتمتة الصناعية.</p>
                         <footer>
                             <ul class="actions">
-                                <li><a href="/ar/sew-gearmotors.html" class="button alt">استكشف موديلات SEW</a></li>
+                                <li><a href="/ar/sew-gearmotors/" class="button alt">استكشف موديلات SEW</a></li>
                             </ul>
                         </footer>
                     </section>
@@ -327,7 +339,7 @@
                 <!-- FLENDER -->
                 <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
-                        <a href="/ar/flender-gearbox.html" class="image featured">
+                        <a href="/ar/flender-gearbox/" class="image featured">
                             <img src="/images/flender-logo-new.png" alt="FLENDER Industrial Gearbox and Coupling Supply Services" width="600" height="400" />
                         </a>
                         <header>
@@ -336,7 +348,7 @@
                         <p>صناديق التروس الحلزونية شديدة التحمل من سلسلة <strong>Flender H/B</strong>، وصناديق التروس الكوكبية SIP، ووصلات N-EUPEX. متخصصون في حلول نقل الطاقة الموثوقة للتعدين.</p>
                         <footer>
                             <ul class="actions">
-                                <li><a href="/ar/flender-gearbox.html" class="button alt">عرض كتالوج Flender</a></li>
+                                <li><a href="/ar/flender-gearbox/" class="button alt">عرض كتالوج Flender</a></li>
                             </ul>
                         </footer>
                     </section>
@@ -345,7 +357,7 @@
                 <!-- SIEMENS -->
                 <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
-                        <a href="/ar/siemens-gearmotors.html" class="image featured">
+                        <a href="/ar/siemens-gearmotors/" class="image featured">
                             <img src="/images/siemens-logo-new.png" alt="SIEMENS INNOMOTICS gearmotors" width="600" height="400" />
                         </a>
                         <header>
@@ -354,7 +366,7 @@
                         <p>توريد محركات التروس من سلسلة <strong>Siemens SIMOGEAR و MOTOX</strong>، بما في ذلك سلاسل E, Z, D, F, K, C, S، ومحركات Innomotics الصناعية عالية الكفاءة.</p>
                         <footer>
                             <ul class="actions">
-                                <li><a href="/ar/siemens-gearmotors.html" class="button alt">بيانات Siemens الفنية</a></li>
+                                <li><a href="/ar/siemens-gearmotors/" class="button alt">بيانات Siemens الفنية</a></li>
                             </ul>
                         </footer>
                     </section>
@@ -363,7 +375,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/bonfiglioli-gearbox.html" class="image featured">
+							<a href="/ar/bonfiglioli-gearbox/" class="image featured">
 								<img src="/images/bonfiglioli-logo-new.png"
 									alt="BONFIGLIOLI industrial gearbox"
 									width="600"
@@ -381,7 +393,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/bonfiglioli-gearbox.html" class="button alt">
+										<a href="/ar/bonfiglioli-gearbox/" class="button alt">
 											تفاصيل Bonfiglioli
 										</a>
 									</li>
@@ -395,7 +407,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/nord-gearmotors.html" class="image featured">
+							<a href="/ar/nord-gearmotors/" class="image featured">
 								<img src="/images/nord-logo-new.png" alt="NORD MAXXDRIVE industrial gear units and Nordbloc.1" width="600" height="400" />
 							</a>
 
@@ -410,7 +422,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/nord-gearmotors.html" class="button alt">
+										<a href="/ar/nord-gearmotors/" class="button alt">
 											تفاصيل صناديق تروس Nord
 										</a>
 									</li>
@@ -424,7 +436,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/bauer-gearmotors.html" class="image featured">
+							<a href="/ar/bauer-gearmotors/" class="image featured">
 								<img src="/images/bauer-logo-new.png"
 									alt="BAUER industrial gearmotors"
 									width="600"
@@ -442,7 +454,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/bauer-gearmotors.html" class="button alt">
+										<a href="/ar/bauer-gearmotors/" class="button alt">
 											محركات Bauer
 										</a>
 									</li>
@@ -456,7 +468,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/lenze-gearmotors.html" class="image featured">
+							<a href="/ar/lenze-gearmotors/" class="image featured">
 								<img src="/images/lenze-logo-new.png"
 									alt="LENZE industrial gearmotors"
 									width="600"
@@ -474,7 +486,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/lenze-gearmotors.html" class="button alt">
+										<a href="/ar/lenze-gearmotors/" class="button alt">
 											عرض منتجات Lenze
 										</a>
 									</li>
@@ -488,7 +500,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/abb-motors.html" class="image featured">
+							<a href="/ar/abb-motors/" class="image featured">
 								<img src="/images/abb-logo-new.png"
 									alt="ABB industrial motors"
 									width="600"
@@ -506,7 +518,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/abb-motors.html" class="button alt">
+										<a href="/ar/abb-motors/" class="button alt">
 											محرك ABB الصناعي
 										</a>
 									</li>
@@ -520,7 +532,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
 
-							<a href="/ar/baldor-motors.html" class="image featured">
+							<a href="/ar/baldor-motors/" class="image featured">
 								<img src="/images/baldor-logo-new.png"
 									alt="BALDOR industrial motors"
 									width="600"
@@ -538,7 +550,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="/ar/baldor-motors.html" class="button alt">
+										<a href="/ar/baldor-motors/" class="button alt">
 											محرك ABB Baldor للتيار المستمر
 										</a>
 									</li>
@@ -550,7 +562,7 @@
                     <!-- KOLLMORGEN -->
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
-							<a href="/ar/kollmorgen-servomotors.html" class="image featured">
+							<a href="/ar/kollmorgen-servomotors/" class="image featured">
 								<img src="/images/kollmorgen-logo-new.png" alt="KOLLMORGEN servo motors" width="600" height="400" />
 							</a>
 							<header>
@@ -559,7 +571,7 @@
 							<p>محركات السيرفو، وأنظمة التحكم في الحركة، وأنظمة الأتمتة الصناعية.</p>
 							<footer>
 								<ul class="actions">
-									<li><a href="/ar/kollmorgen-servomotors.html" class="button alt">محرك سيرفو Kollmorgen</a></li>
+									<li><a href="/ar/kollmorgen-servomotors/" class="button alt">محرك سيرفو Kollmorgen</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -568,7 +580,7 @@
 					<!-- SUMITOMO -->
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
-							<a href="/ar/sumitomohansen-speedreducer.html" class="image featured">
+							<a href="/ar/sumitomohansen-speedreducer/" class="image featured">
 								<img src="/images/sumitomo-logo-new.png" alt="SUMITOMO Cyclo Drive 6000 and Hansen P4 gearbox" width="600" height="400" />
 							</a>
 							<header>
@@ -577,7 +589,7 @@
 							<p>نقدم مخفضات السرعة <strong>Sumitomo Cyclo Drive 6000</strong>، وسلسلة Paramax، وأنظمة نقل الحركة الصناعية شديدة التحمل Hansen P4.</p>
 							<footer>
 								<ul class="actions">
-									<li><a href="/ar/sumitomohansen-speedreducer.html" class="button alt">Sumitomo و Hansen</a></li>
+									<li><a href="/ar/sumitomohansen-speedreducer/" class="button alt">Sumitomo و Hansen</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -586,7 +598,7 @@
 					<!-- ODM -->
 					<div class="col-4 col-6-medium col-12-small">
 						<section class="box">
-							<a href="/ar/odm-brand.html" class="image featured">
+							<a href="/ar/odm-brand/" class="image featured">
 								<img src="/images/wedrive-logo.png" alt="Custom industrial gearbox OEM ODM manufacturing" width="600" height="400" />
 							</a>
 							<header>
@@ -595,7 +607,7 @@
 							<p>هندسة <strong>صناديق التروس الصناعية ذات عزم الدوران العالي</strong> وبدائل العلامات التجارية. إنتاج بعلامة تجارية خاصة وفق معايير نقل حركة عالية الجودة.</p>
 							<footer>
 								<ul class="actions">
-									<li><a href="/ar/odm-brand.html" class="button alt">محركات ODM المخصصة</a></li>
+									<li><a href="/ar/odm-brand/" class="button alt">محركات ODM المخصصة</a></li>
 								</ul>
 							</footer>
 						</section>
