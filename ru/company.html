@@ -15,22 +15,35 @@
 		gtag('js', new Date());
 		gtag('config', 'G-2QVTK1XJB6');
 	</script>
+	<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 <body class="homepage is-preload">
 	<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/company.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/company.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/company.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/company.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/company.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/company.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/company.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		   <li><a href="/ja/company.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/company/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/company/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/company/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/company/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/company/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/company/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/company/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		   <li><a href="/ja/company/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/company.html';" 
+    <div onclick="window.location.href='/company/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -71,28 +84,28 @@
 				<ul>
 					<li><a href="/ru/">Главная</a></li>
 					<li class="wd-parent">
-						<a href="/ru/brand.html" class="wd-trigger">Бренды</a>
+						<a href="/ru/brand/" class="wd-trigger">Бренды</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ru/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ru/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ru/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ru/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ru/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ru/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ru/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ru/abb-motors.html">ABB</a></li>
-							<li><a href="/ru/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ru/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ru/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ru/odm-brand.html">БРЕНД ODM</a></li>
+							<li><a href="/ru/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ru/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ru/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ru/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ru/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ru/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ru/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ru/abb-motors/">ABB</a></li>
+							<li><a href="/ru/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ru/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ru/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ru/odm-brand/">БРЕНД ODM</a></li>
 						</ul>
 					</li>
-					<li><a href="/ru/company.html" class="active">О компании</a></li>
-					<li><a href="/ru/case.html">Проекты</a></li>
-					<li><a href="/ru/news-blog.html">Новости и Блог</a></li>
-					<li><a href="/ru/inquiry.html">Запрос цены</a></li>
-					<li><a href="/ru/contact.html">Контакты</a></li>
-					<li><a href="/ru/discount.html">Акции</a></li>
+					<li><a href="/ru/company/" class="active">О компании</a></li>
+					<li><a href="/ru/case/">Проекты</a></li>
+					<li><a href="/ru/news-blog/">Новости и Блог</a></li>
+					<li><a href="/ru/inquiry/">Запрос цены</a></li>
+					<li><a href="/ru/contact/">Контакты</a></li>
+					<li><a href="/ru/discount/">Акции</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -232,26 +245,26 @@
                             <div style="display: flex; flex-wrap: wrap; margin-top: 20px; text-align: left;">
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/sew-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы SEW</a></li>
-                                        <li><a href="/ru/flender-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы FLENDER</a></li>
-                                        <li><a href="/ru/nord-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы NORD</a></li>
-                                        <li><a href="/ru/siemens-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
+                                        <li><a href="/ru/sew-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы SEW</a></li>
+                                        <li><a href="/ru/flender-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы FLENDER</a></li>
+                                        <li><a href="/ru/nord-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы NORD</a></li>
+                                        <li><a href="/ru/siemens-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/bonfiglioli-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы BONFIGLIOLI</a></li>
-                                        <li><a href="/ru/bauer-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы BAUER</a></li>
-                                        <li><a href="/ru/lenze-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы LENZE</a></li>
-                                        <li><a href="/ru/abb-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели ABB</a></li>
+                                        <li><a href="/ru/bonfiglioli-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• Редукторы BONFIGLIOLI</a></li>
+                                        <li><a href="/ru/bauer-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы BAUER</a></li>
+                                        <li><a href="/ru/lenze-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Мотор-редукторы LENZE</a></li>
+                                        <li><a href="/ru/abb-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели ABB</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ru/baldor-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели BALDOR</a></li>
-                                        <li><a href="/ru/kollmorgen-servomotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• Сервоприводы KOLLMORGEN</a></li>
-                                        <li><a href="/ru/sumitomohansen-speedreducer.html" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
-                                        <li><a href="/ru/odm-brand.html" style="color: #444; font-weight: 600; text-decoration: none;">• Решения бренда ODM</a></li>
+                                        <li><a href="/ru/baldor-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• Электродвигатели BALDOR</a></li>
+                                        <li><a href="/ru/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• Сервоприводы KOLLMORGEN</a></li>
+                                        <li><a href="/ru/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
+                                        <li><a href="/ru/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• Решения бренда ODM</a></li>
                                     </ul>
                                 </div>
                             </div>
