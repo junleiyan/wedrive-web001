@@ -87,7 +87,20 @@
   ]
 }
 </script>
+	<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="homepage is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
@@ -179,28 +192,28 @@
 				<ul>
 					<li><a href="/ru/" class="active">Главная</a></li>
 					<li class="wd-parent">
-						<a href="/ru/brand.html" class="wd-trigger">Бренды</a>
+						<a href="/ru/brand/" class="wd-trigger">Бренды</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ru/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ru/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ru/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ru/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ru/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ru/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ru/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ru/abb-motors.html">ABB</a></li>
-							<li><a href="/ru/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ru/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ru/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ru/odm-brand.html">БРЕНД ODM</a></li>
+							<li><a href="/ru/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ru/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ru/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ru/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ru/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ru/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ru/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ru/abb-motors/">ABB</a></li>
+							<li><a href="/ru/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ru/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ru/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ru/odm-brand/">БРЕНД ODM</a></li>
 						</ul>
 					</li>
-					<li><a href="/ru/company.html">О компании</a></li>
-					<li><a href="/ru/case.html">Проекты</a></li>
-					<li><a href="/ru/news-blog.html">Новости и Блог</a></li>
-					<li><a href="/ru/inquiry.html">Запрос цены</a></li>
-					<li><a href="/ru/contact.html">Контакты</a></li>
-					<li><a href="/ru/discount.html">Акции</a></li>
+					<li><a href="/ru/company/">О компании</a></li>
+					<li><a href="/ru/case/">Проекты</a></li>
+					<li><a href="/ru/news-blog/">Новости и Блог</a></li>
+					<li><a href="/ru/inquiry/">Запрос цены</a></li>
+					<li><a href="/ru/contact/">Контакты</a></li>
+					<li><a href="/ru/discount/">Акции</a></li>
 				</ul>
 			</nav>
 
@@ -394,7 +407,7 @@
 
 	<section class="box">
 
-		<a href="/ru/sew-gearmotors.html" class="image featured">
+		<a href="/ru/sew-gearmotors/" class="image featured">
 			<img src="/images/sew-gearbox01.png"
 	alt="Промышленные редукторы и motor-редукторы SEW"
 	width="600"
@@ -441,7 +454,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ru/sew-gearmotors.html" class="button alt">
+					<a href="/ru/sew-gearmotors/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -458,7 +471,7 @@
 
 	<section class="box">
 
-		<a href="/ru/flender-gearbox.html" class="image featured">
+		<a href="/ru/flender-gearbox/" class="image featured">
 			<img src="/images/flender-gearunit01.png"
 				alt="Промышленные редукторы и соединительные муфты FLENDER" 
 				width="600"
@@ -504,7 +517,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ru/flender-gearbox.html" class="button alt">
+					<a href="/ru/flender-gearbox/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -521,7 +534,7 @@
 
 	<section class="box">
 
-		<a href="/ru/siemens-gearmotors.html" class="image featured">
+		<a href="/ru/siemens-gearmotors/" class="image featured">
 			<img src="/images/siemens-gearbox01.png"
 				alt="Мотор-редукторы SIEMENS INNOMOTICS MOTOX" 
 				width="600"
@@ -568,7 +581,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ru/siemens-gearmotors.html" class="button alt">
+					<a href="/ru/siemens-gearmotors/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -582,7 +595,7 @@
 
 	<section class="box">
 
-		<a href="/ru/bonfiglioli-gearbox.html" class="image featured">
+		<a href="/ru/bonfiglioli-gearbox/" class="image featured">
 			<img src="/images/bonfiglioli-gearbox01.png"
 				alt="Промышленные и планетарные редукторы BONFIGLIOLI" 
 				width="600"
@@ -638,7 +651,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ru/bonfiglioli-gearbox.html" class="button alt">
+					<a href="/ru/bonfiglioli-gearbox/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -652,7 +665,7 @@
 
 	<section class="box">
 
-		<a href="/ru/nord-gearmotors.html" class="image featured">
+		<a href="/ru/nord-gearmotors/" class="image featured">
 			<img src="/images/nord-gearmotor01.png"
 				alt="Промышленные редукторы и приводные системы NORD" />
 		</a>
@@ -707,7 +720,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ru/nord-gearmotors.html" class="button alt">
+					<a href="/ru/nord-gearmotors/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -721,7 +734,7 @@
 
 	<section class="box">
 
-		<a href="/ru/bauer-gearmotors.html" class="image featured">
+		<a href="/ru/bauer-gearmotors/" class="image featured">
 			<img src="/images/bauer-gearmotor01.png"
 				alt="Мотор-редукторы и приводная техника BAUER, LENZE, SUMITOMO" width="600"
 	height="400" />
@@ -779,7 +792,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ru/bauer-gearmotors.html" class="button alt">
+					<a href="/ru/bauer-gearmotors/" class="button alt">
 						Узнать больше
 					</a>
 				</li>
@@ -801,7 +814,7 @@
 
 			<section class="box">
 
-				<a href="/ru/case.html" class="image featured">
+				<a href="/ru/case/" class="image featured">
 					<img src="/images/factory01.png"
 						alt="Цех по производству промышленных редукторов" 
 						width="600"
@@ -839,7 +852,7 @@
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/ru/odm-brand.html"
+							<a href="/ru/odm-brand/"
 								class="button icon solid fa-file-alt">
 								Читать далее
 							</a>
@@ -857,7 +870,7 @@
 
 			<section class="box">
 
-				<a href="/ru/contact.html" class="image featured">
+				<a href="/ru/contact/" class="image featured">
 					<img src="/images/factory02.png"
 						alt="Контроль качества и технические испытания редукторов" 
 						width="600"
@@ -895,7 +908,7 @@
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/ru/odm-brand.html"
+							<a href="/ru/odm-brand/"
 								class="button icon solid fa-file-alt">
 								Читать далее
 							</a>
@@ -926,7 +939,7 @@
 
 							<div class="content">
 
-								<a href="/ru/news-blog.html" class="image fit"
+								<a href="/ru/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new01.png"
@@ -937,7 +950,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ru/flender-gearbox.html">
+									<a href="/ru/flender-gearbox/">
 										Промышленный коническо-цилиндрический редуктор FLENDER B4DH успешно доставлен в Мексику
 									</a>
 
@@ -957,7 +970,7 @@
 
 							<div class="content">
 
-								<a href="/ru/news-blog.html" class="image fit"
+								<a href="/ru/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new02.png"
@@ -968,7 +981,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ru/sew-gearmotors.html">
+									<a href="/ru/sew-gearmotors/">
 										Участие SEW-EURODRIVE в Китайской международной выставке станков с ЧПУ
 									</a>
 
@@ -989,7 +1002,7 @@
 
 							<div class="content">
 
-								<a href="/ru/news-blog.html" class="image fit"
+								<a href="/ru/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new03.png"
@@ -1000,7 +1013,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ru/nord-gearmotors.html">
+									<a href="/ru/nord-gearmotors/">
 										Приводные решения NORD для более чем 100 отраслей промышленности
 									</a>
 
@@ -1021,7 +1034,7 @@
 
 							<div class="content">
 
-								<a href="/ru/news-blog.html" class="image fit"
+								<a href="/ru/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new04.png"
@@ -1032,7 +1045,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ru/siemens-gearmotors.html">
+									<a href="/ru/siemens-gearmotors/">
 										Программа повышения квалификации и технического обучения SIEMENS INNOMOTICS
 									</a>
 
@@ -1060,7 +1073,7 @@
 						<h2>Решения в области промышленных редукторов и моторов</h2>
 					</header>
 
-					<a href="/ru/contact.html" class="image featured">
+					<a href="/ru/contact/" class="image featured">
 
 						<img src="/images/company01.png"
 							alt="Поставщик промышленных редукторов, мотор-редукторов и приводной техники" />
