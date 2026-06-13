@@ -31,7 +31,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.wedrivepower.com/fa/discount.html",
+        "url": "https://www.wedrivepower.com/fa/discount/",
         "priceCurrency": "USD",
         "price": "0.00",
         "priceValidUntil": "2026-12-31",
@@ -44,22 +44,34 @@
       }
     }
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
     <body class="homepage is-preload">
         <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-         <li><a href="/ja/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/discount/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/discount/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/discount/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/discount/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/discount/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+         <li><a href="/ja/discount/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/discount.html';" 
+    <div onclick="window.location.href='/discount/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -134,30 +146,30 @@
         <li><a href="/fa/">صفحه اصلی</a></li>
         
         <li class="wd-parent">
-            <a href="/fa/brand.html" class="wd-trigger" onclick="toggleMenu(); return false;">برندها</a>
+            <a href="/fa/brand/" class="wd-trigger" onclick="toggleMenu(); return false;">برندها</a>
             
             <ul id="wd-brand-menu">
-                <li onclick="window.location.href='/fa/sew-gearmotors.html';"><a href="/fa/sew-gearmotors.html">SEW</a></li>
-                <li onclick="window.location.href='/fa/flender-gearbox.html';"><a href="/fa/flender-gearbox.html">FLENDER</a></li>
-                <li onclick="window.location.href='/fa/nord-gearmotors.html';"><a href="/fa/nord-gearmotors.html">NORD</a></li>
-                <li onclick="window.location.href='/fa/siemens-gearmotors.html';"><a href="/fa/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='/fa/bonfiglioli-gearmotors.html';"><a href="/fa/bonfiglioli-gearmotors.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='/fa/bauer-gearmotors.html';"><a href="/fa/bauer-gearmotors.html">BAUER</a></li>
-                <li onclick="window.location.href='/fa/lenze-gearmotors.html';"><a href="/fa/lenze-gearmotors.html">LENZE</a></li>
-                <li onclick="window.location.href='/fa/abb-motors.html';"><a href="/fa/abb-motors.html">ABB</a></li>
-                <li onclick="window.location.href='/fa/baldor-motors.html';"><a href="/fa/baldor-motors.html">BALDOR</a></li>
-                <li onclick="window.location.href='/fa/kollmorgen-servomotors.html';"><a href="/fa/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='/fa/sumitomo-hansen-speed-reducer-motors.html';"><a href="/fa/sumitomo-hansen-speed-reducer-motors.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='/fa/odm-brand.html';"><a href="/fa/odm-brand.html">تولید OEM/ODM</a></li>
+                <li onclick="window.location.href='/fa/sew-gearmotors/';"><a href="/fa/sew-gearmotors/">SEW</a></li>
+                <li onclick="window.location.href='/fa/flender-gearbox/';"><a href="/fa/flender-gearbox/">FLENDER</a></li>
+                <li onclick="window.location.href='/fa/nord-gearmotors/';"><a href="/fa/nord-gearmotors/">NORD</a></li>
+                <li onclick="window.location.href='/fa/siemens-gearmotors/';"><a href="/fa/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/fa/bonfiglioli-gearmotors/';"><a href="/fa/bonfiglioli-gearmotors/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/fa/bauer-gearmotors/';"><a href="/fa/bauer-gearmotors/">BAUER</a></li>
+                <li onclick="window.location.href='/fa/lenze-gearmotors/';"><a href="/fa/lenze-gearmotors/">LENZE</a></li>
+                <li onclick="window.location.href='/fa/abb-motors/';"><a href="/fa/abb-motors/">ABB</a></li>
+                <li onclick="window.location.href='/fa/baldor-motors/';"><a href="/fa/baldor-motors/">BALDOR</a></li>
+                <li onclick="window.location.href='/fa/kollmorgen-servomotors/';"><a href="/fa/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/fa/sumitomo-hansen-speed-reducer-motors/';"><a href="/fa/sumitomo-hansen-speed-reducer-motors/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/fa/odm-brand/';"><a href="/fa/odm-brand/">تولید OEM/ODM</a></li>
             </ul>
         </li>
         
-        <li><a href="/fa/company.html">درباره ما</a></li>
-        <li><a href="/fa/case.html">پروژه‌ها</a></li>
-        <li><a href="/fa/news-blog.html">اخبار و وبلاگ</a></li>
-        <li><a href="/fa/inquiry.html">استعلام قیمت</a></li>
-        <li><a href="/fa/contact.html">تماس با ما</a></li>
-        <li><a href="/fa/discount.html" class="active">تخفیف‌ها</a></li>
+        <li><a href="/fa/company/">درباره ما</a></li>
+        <li><a href="/fa/case/">پروژه‌ها</a></li>
+        <li><a href="/fa/news-blog/">اخبار و وبلاگ</a></li>
+        <li><a href="/fa/inquiry/">استعلام قیمت</a></li>
+        <li><a href="/fa/contact/">تماس با ما</a></li>
+        <li><a href="/fa/discount/" class="active">تخفیف‌ها</a></li>
     </ul>
 </nav>
 
@@ -248,7 +260,7 @@
                         <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">۱۷۵.۰۰ دلار - ۱۹,۹۹۸.۰۰ دلار</span>
                     </div>
                     
-                    <a href="/fa/inquiry.html" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">ارسال درخواست در واتس‌اپ</a>
+                    <a href="/fa/inquiry/" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">ارسال درخواست در واتس‌اپ</a>
                 </div>
             </div>
 
@@ -280,7 +292,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SEW-EURODRIVE" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/sewprice01.jpg" alt="الکتروگیربکس‌های SEW EURODRIVE" itemprop="image" />
                             </a>
                             <header>
@@ -299,7 +311,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -308,7 +320,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="FLENDER" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/flenderprice02.jpg" alt="قیمت گیربکس‌های صنعتی FLENDER" itemprop="image" />
                             </a>
                             <header>
@@ -327,7 +339,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -335,7 +347,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SIEMENS" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/siemensprice03.jpg" alt="الکتروگیربکس‌های SIEMENS INNOMOTICS MOTOX" itemprop="image" />
                             </a>
                             <header>
@@ -354,7 +366,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -363,7 +375,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BONFIGLIOLI" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/bonfiglioliprice04.jpg" alt="گیربکس سیاره‌ای BONFIGLIOLI سری 300M" itemprop="image" />
                             </a>
                             <header>
@@ -382,7 +394,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -391,7 +403,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="NORD" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/nordprice05.jpg" alt="الکتروگیربکس‌های NORD سری SK" itemprop="image" />
                             </a>
                             <header>
@@ -410,7 +422,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -419,7 +431,7 @@
                   <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BAUER" />
-                            <a href="/fa/inquiry.html" class="image featured">
+                            <a href="/fa/inquiry/" class="image featured">
                                 <img src="/images/bauerprice06.jpg" alt="پیشنهاد ویژه موتور-گیربکس‌های BAUER LENZE" itemprop="image" />
                             </a>
                             <header>
@@ -438,7 +450,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fa/inquiry.html" class="button alt">استعلام قیمت</a></li>
+                                    <li><a href="/fa/inquiry/" class="button alt">استعلام قیمت</a></li>
                                 </ul>
                             </footer>
                         </section>
