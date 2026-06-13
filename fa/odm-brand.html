@@ -11,8 +11,8 @@
     <meta property="og:title" content="موتورگیربکس‌های ODM: راهکارهای سفارشی | WEDRIVE" />
     <meta property="og:description" content="ارائه انواع الکتروموتورهای سفارشی و موتورگیربکس‌های با گشتاور بالا برای مصارف صنعتی در سراسر جهان." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wedrivepower.com/fa/odm-brand" />
-    <meta property="og:image" content="https://www.wedrivepower.com/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.wedrivepower.com/fa/odm-brand/" />
+    <meta property="og:image" content="https://www.wedrivepower.com/images/logo.png" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />
 
@@ -23,23 +23,35 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
     <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-        <li><a href="/ja/odm-brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+        <li><a href="/ja/odm-brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/odm-brand.html';" 
+    <div onclick="window.location.href='/odm-brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -70,28 +82,28 @@
                 <ul>
                     <li><a href="/fa/">صفحه اصلی</a></li>
                     <li class="wd-parent">
-                        <a href="/fa/brand.html" class="wd-trigger active" onclick="toggleMenu(); return false;">برندها</a>
+                        <a href="/fa/brand/" class="wd-trigger active" onclick="toggleMenu(); return false;">برندها</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/fa/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/fa/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/fa/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/fa/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/fa/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/fa/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/fa/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/fa/abb-motors.html">ABB</a></li>
-                            <li><a href="/fa/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/fa/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/fa/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/fa/odm-brand.html">ODM BRAND</a></li>
+                            <li><a href="/fa/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/fa/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/fa/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/fa/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/fa/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/fa/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/fa/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/fa/abb-motors/">ABB</a></li>
+                            <li><a href="/fa/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/fa/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/fa/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/fa/odm-brand/">ODM BRAND</a></li>
                         </ul>
                     </li>
-                    <li><a href="/fa/company.html">شرکت</a></li>
-                    <li><a href="/fa/case.html">پروژه‌ها</a></li>
-                    <li><a href="/fa/news-blog.html">اخبار و وبلاگ</a></li>
-                    <li><a href="/fa/inquiry.html">استعلام قیمت</a></li>
-                    <li><a href="/fa/contact.html">تماس با ما</a></li>
-                    <li><a href="/fa/discount.html">تخفیف‌ها</a></li>
+                    <li><a href="/fa/company/">شرکت</a></li>
+                    <li><a href="/fa/case/">پروژه‌ها</a></li>
+                    <li><a href="/fa/news-blog/">اخبار و وبلاگ</a></li>
+                    <li><a href="/fa/inquiry/">استعلام قیمت</a></li>
+                    <li><a href="/fa/contact/">تماس با ما</a></li>
+                    <li><a href="/fa/discount/">تخفیف‌ها</a></li>
                 </ul>
             </nav>
         </section>
@@ -103,7 +115,7 @@
         <div class="row">
             <div class="col-4 col-12-medium">
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odm01.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odm01.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی</h3>
                     </header>
@@ -113,7 +125,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odmbrand02.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odmbrand02.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی</h3>
                     </header>
@@ -122,7 +134,7 @@
                     </footer>
                 </section>
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odm03.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odm03.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی</h3>
                     </header>
@@ -132,7 +144,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odm04.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odm04.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">گیربکس‌های کرانویل-پینیون<br>تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی<br>سری‌های M و MC</h3>
                     </header>
@@ -142,7 +154,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odmbrand05.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odmbrand05.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی</h3>
                     </header>
@@ -152,7 +164,7 @@
                 </section>
 
                 <section class="box">
-                    <a href="/fa/odm-brand.html" class="image featured"><img src="../images/odm06.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
+                    <a href="/fa/odm-brand/" class="image featured"><img src="../images/odm06.jpg" alt="موتورگیربکس‌های ODM WeDrive" /></a>
                     <header style="text-align: right;">
                         <h3 style="margin: 0; font-size: 1.25em;">تولید تحت برند شما<br>ODM سفارشی<br>جایگزینی برند ما<br>استفاده از برند اختصاصی</h3>
                     </header>
