@@ -88,6 +88,18 @@
   ]
 }
 </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
@@ -180,28 +192,28 @@
 				<ul>
 					<li><a href="/ar/" class="active">الرئيسية</a></li>
 					<li class="wd-parent">
-						<a href="/ar/brand.html" class="wd-trigger">العلامات التجارية</a>
+						<a href="/ar/brand/" class="wd-trigger">العلامات التجارية</a>
 						<ul id="wd-brand-menu">
-							<li><a href="/ar/sew-gearmotors.html">SEW</a></li>
-							<li><a href="/ar/flender-gearbox.html">FLENDER</a></li>
-							<li><a href="/ar/nord-gearmotors.html">NORD</a></li>
-							<li><a href="/ar/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="/ar/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="/ar/bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="/ar/lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="/ar/abb-motors.html">ABB</a></li>
-							<li><a href="/ar/baldor-motors.html">BALDOR</a></li>
-							<li><a href="/ar/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="/ar/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="/ar/odm-brand.html">علامة ODM</a></li>
+							<li><a href="/ar/sew-gearmotors/">SEW</a></li>
+							<li><a href="/ar/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/ar/nord-gearmotors/">NORD</a></li>
+							<li><a href="/ar/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/ar/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/ar/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/ar/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/ar/abb-motors/">ABB</a></li>
+							<li><a href="/ar/baldor-motors/">BALDOR</a></li>
+							<li><a href="/ar/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/ar/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/ar/odm-brand/">علامة ODM</a></li>
 						</ul>
 					</li>
-					<li><a href="/ar/company.html">من نحن</a></li>
-					<li><a href="/ar/case.html">المشاريع</a></li>
-					<li><a href="/ar/news-blog.html">الأخبار والمدونة</a></li>
-					<li><a href="/ar/inquiry.html">طلب عرض سعر</a></li>
-					<li><a href="/ar/contact.html">اتصل بنا</a></li>
-					<li><a href="/ar/discount.html">العروض</a></li>
+					<li><a href="/ar/company/">من نحن</a></li>
+					<li><a href="/ar/case/">المشاريع</a></li>
+					<li><a href="/ar/news-blog/">الأخبار والمدونة</a></li>
+					<li><a href="/ar/inquiry/">طلب عرض سعر</a></li>
+					<li><a href="/ar/contact/">اتصل بنا</a></li>
+					<li><a href="/ar/discount/">العروض</a></li>
 				</ul>
 			</nav>
 
@@ -396,7 +408,7 @@
 
 	<section class="box">
 
-		<a href="/ar/sew-gearmotors.html" class="image featured">
+		<a href="/ar/sew-gearmotors/" class="image featured">
 			<img src="/images/sew-gearbox01.png"
 	alt="علب التروس الصناعية ومحركات التروس SEW"
 	width="600"
@@ -443,7 +455,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ar/sew-gearmotors.html" class="button alt">
+					<a href="/ar/sew-gearmotors/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -457,7 +469,7 @@
 
 	<section class="box">
 
-		<a href="/ar/flender-gearbox.html" class="image featured">
+		<a href="/ar/flender-gearbox/" class="image featured">
 			<img src="/images/flender-gearunit01.png"
 				alt="علب التروس الصناعية ووصلات الاقتران FLENDER" 
 				width="600"
@@ -503,7 +515,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ar/flender-gearbox.html" class="button alt">
+					<a href="/ar/flender-gearbox/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -520,7 +532,7 @@
 
 	<section class="box">
 
-		<a href="/ar/siemens-gearmotors.html" class="image featured">
+		<a href="/ar/siemens-gearmotors/" class="image featured">
 			<img src="/images/siemens-gearbox01.png"
 				alt="محركات التروس SIEMENS INNOMOTICS MOTOX" 
 				width="600"
@@ -567,7 +579,7 @@
 		<footer style="padding-top:1em;">
 			<ul class="actions">
 				<li>
-					<a href="/ar/siemens-gearmotors.html" class="button alt">
+					<a href="/ar/siemens-gearmotors/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -581,7 +593,7 @@
 
 	<section class="box">
 
-		<a href="/ar/bonfiglioli-gearbox.html" class="image featured">
+		<a href="/ar/bonfiglioli-gearbox/" class="image featured">
 			<img src="/images/bonfiglioli-gearbox01.png"
 				alt="علب التروس الصناعية والكوكبية BONFIGLIOLI" 
 				width="600"
@@ -637,7 +649,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ar/bonfiglioli-gearbox.html" class="button alt">
+					<a href="/ar/bonfiglioli-gearbox/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -651,7 +663,7 @@
 
 	<section class="box">
 
-		<a href="/ar/nord-gearmotors.html" class="image featured">
+		<a href="/ar/nord-gearmotors/" class="image featured">
 			<img src="/images/nord-gearmotor01.png"
 				alt="علب التروس الصناعية وأنظمة القيادة NORD" />
 		</a>
@@ -705,7 +717,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ar/nord-gearmotors.html" class="button alt">
+					<a href="/ar/nord-gearmotors/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -719,7 +731,7 @@
 
 	<section class="box">
 
-		<a href="/ar/bauer-gearmotors.html" class="image featured">
+		<a href="/ar/bauer-gearmotors/" class="image featured">
 			<img src="/images/bauer-gearmotor01.png"
 				alt="محركات التروس وأنظمة القيادة BAUER و LENZE و SUMITOMO" width="600"
 	height="400" />
@@ -777,7 +789,7 @@
 		<footer>
 			<ul class="actions">
 				<li>
-					<a href="/ar/bauer-gearmotors.html" class="button alt">
+					<a href="/ar/bauer-gearmotors/" class="button alt">
 						اعرف المزيد
 					</a>
 				</li>
@@ -799,7 +811,7 @@
 
 			<section class="box">
 
-				<a href="/ar/case.html" class="image featured">
+				<a href="/ar/case/" class="image featured">
 					<img src="/images/factory01.png"
 						alt="ورشة تصنيع علب التروس الصناعية" 
 						width="600"
@@ -837,7 +849,7 @@
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/ar/odm-brand.html"
+							<a href="/ar/odm-brand/"
 								class="button icon solid fa-file-alt">
 								اقرأ المزيد
 							</a>
@@ -855,7 +867,7 @@
 
 			<section class="box">
 
-				<a href="/ar/contact.html" class="image featured">
+				<a href="/ar/contact/" class="image featured">
 					<img src="/images/factory02.png"
 						alt="مراقبة الجودة والاختبارات الفنية لعلب التروس" 
 						width="600"
@@ -892,7 +904,7 @@
 				<footer>
 					<ul class="actions">
 						<li>
-							<a href="/ar/odm-brand.html"
+							<a href="/ar/odm-brand/"
 								class="button icon solid fa-file-alt">
 								اقرأ المزيد
 							</a>
@@ -923,7 +935,7 @@
 
 							<div class="content">
 
-								<a href="/ar/news-blog.html" class="image fit"
+								<a href="/ar/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new01.png"
@@ -934,7 +946,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ar/flender-gearbox.html">
+									<a href="/ar/flender-gearbox/">
 										تم تسليم علبة التروس الصناعية المخروطية الحلزونية FLENDER B4DH بنجاح إلى المكسيك
 									</a>
 
@@ -954,7 +966,7 @@
 
 							<div class="content">
 
-								<a href="/ar/news-blog.html" class="image fit"
+								<a href="/ar/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new02.png"
@@ -965,7 +977,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ar/sew-gearmotors.html">
+									<a href="/ar/sew-gearmotors/">
 										مشاركة SEW-EURODRIVE في معرض الصين الدولي لماكينات CNC
 									</a>
 
@@ -986,7 +998,7 @@
 
 							<div class="content">
 
-								<a href="/ar/news-blog.html" class="image fit"
+								<a href="/ar/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new03.png"
@@ -997,7 +1009,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ar/nord-gearmotors.html">
+									<a href="/ar/nord-gearmotors/">
 										حلول أنظمة القيادة من NORD لأكثر من 100 قطاع صناعي
 									</a>
 
@@ -1018,7 +1030,7 @@
 
 							<div class="content">
 
-								<a href="/ar/news-blog.html" class="image fit"
+								<a href="/ar/news-blog/" class="image fit"
 									style="display:block; margin-bottom:1em;">
 
 									<img src="/images/new04.png"
@@ -1029,7 +1041,7 @@
 
 								<h3 style="color:#ed391b !important;">
 
-									<a href="/ar/siemens-gearmotors.html">
+									<a href="/ar/siemens-gearmotors/">
 										برنامج التدريب الفني ورفع الكفاءة من SIEMENS INNOMOTICS
 									</a>
 
@@ -1057,7 +1069,7 @@
 						<h2>حلول علب التروس والمحركات الصناعية</h2>
 					</header>
 
-					<a href="/ar/contact.html" class="image featured">
+					<a href="/ar/contact/" class="image featured">
 
 						<img src="/images/company01.png"
 							alt="مورد علب التروس الصناعية ومحركات التروس وأنظمة نقل الحركة" />
