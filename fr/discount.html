@@ -31,7 +31,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.wedrivepower.com/fr/discount.html",
+        "url": "https://www.wedrivepower.com/fr/discount/",
         "priceCurrency": "USD",
         "price": "0.00",
         "priceValidUntil": "2026-12-31",
@@ -44,22 +44,34 @@
       }
     }
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
     <body class="homepage is-preload">
         	<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-          <li><a href="/ja/discount.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/discount/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/discount/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/discount/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/discount/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/discount/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/discount/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+          <li><a href="/ja/discount/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/discount.html';" 
+    <div onclick="window.location.href='/discount/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -136,30 +148,30 @@
         <li><a href="/fr/">Accueil</a></li>
         
         <li class="wd-parent">
-            <a href="/fr/brand.html" class="wd-trigger" onclick="toggleMenu(); return false;">Marques</a>
+            <a href="/fr/brand/" class="wd-trigger" onclick="toggleMenu(); return false;">Marques</a>
             
             <ul id="wd-brand-menu">
-                <li onclick="window.location.href='/fr/sew-gearmotors.html';"><a href="/fr/sew-gearmotors.html">SEW</a></li>
-                <li onclick="window.location.href='/fr/flender-gearbox.html';"><a href="/fr/flender-gearbox.html">FLENDER</a></li>
-                <li onclick="window.location.href='/fr/nord-gearmotors.html';"><a href="/fr/nord-gearmotors.html">NORD</a></li>
-                <li onclick="window.location.href='/fr/siemens-gearmotors.html';"><a href="/fr/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li onclick="window.location.href='/fr/bonfiglioli-gearmotors.html';"><a href="/fr/bonfiglioli-gearmotors.html">BONFIGLIOLI</a></li>
-                <li onclick="window.location.href='/fr/bauer-gearmotors.html';"><a href="/fr/bauer-gearmotors.html">BAUER</a></li>
-                <li onclick="window.location.href='/fr/lenze-gearmotors.html';"><a href="/fr/lenze-gearmotors.html">LENZE</a></li>
-                <li onclick="window.location.href='/fr/abb-motors.html';"><a href="/fr/abb-motors.html">ABB</a></li>
-                <li onclick="window.location.href='/fr/baldor-motors.html';"><a href="/fr/baldor-motors.html">BALDOR</a></li>
-                <li onclick="window.location.href='/fr/kollmorgen-servomotors.html';"><a href="/fr/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li onclick="window.location.href='/fr/sumitomo-hansen-speed-reducer-motors.html';"><a href="/fr/sumitomo-hansen-speed-reducer-motors.html">SUMITOMO & HANSEN</a></li>
-                <li onclick="window.location.href='/fr/odm-brand.html';"><a href="/fr/odm-brand.html">Production OEM/ODM</a></li>
+                <li onclick="window.location.href='/fr/sew-gearmotors/';"><a href="/fr/sew-gearmotors/">SEW</a></li>
+                <li onclick="window.location.href='/fr/flender-gearbox/';"><a href="/fr/flender-gearbox/">FLENDER</a></li>
+                <li onclick="window.location.href='/fr/nord-gearmotors/';"><a href="/fr/nord-gearmotors/">NORD</a></li>
+                <li onclick="window.location.href='/fr/siemens-gearmotors/';"><a href="/fr/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li onclick="window.location.href='/fr/bonfiglioli-gearmotors/';"><a href="/fr/bonfiglioli-gearmotors/">BONFIGLIOLI</a></li>
+                <li onclick="window.location.href='/fr/bauer-gearmotors/';"><a href="/fr/bauer-gearmotors/">BAUER</a></li>
+                <li onclick="window.location.href='/fr/lenze-gearmotors/';"><a href="/fr/lenze-gearmotors/">LENZE</a></li>
+                <li onclick="window.location.href='/fr/abb-motors/';"><a href="/fr/abb-motors/">ABB</a></li>
+                <li onclick="window.location.href='/fr/baldor-motors/';"><a href="/fr/baldor-motors/">BALDOR</a></li>
+                <li onclick="window.location.href='/fr/kollmorgen-servomotors/';"><a href="/fr/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li onclick="window.location.href='/fr/sumitomo-hansen-speed-reducer-motors/';"><a href="/fr/sumitomo-hansen-speed-reducer-motors/">SUMITOMO & HANSEN</a></li>
+                <li onclick="window.location.href='/fr/odm-brand/';"><a href="/fr/odm-brand/">Production OEM/ODM</a></li>
             </ul>
         </li>
         
-        <li><a href="/fr/company.html">À propos de nous</a></li>
-        <li><a href="/fr/case.html">Projets</a></li>
-        <li><a href="/fr/news-blog.html">Actualités & Blog</a></li>
-        <li><a href="/fr/inquiry.html">Demande</a></li>
-        <li><a href="/fr/contact.html">Contact</a></li>
-        <li><a href="/fr/discount.html" class="active">Promotions</a></li>
+        <li><a href="/fr/company/">À propos de nous</a></li>
+        <li><a href="/fr/case/">Projets</a></li>
+        <li><a href="/fr/news-blog/">Actualités & Blog</a></li>
+        <li><a href="/fr/inquiry/">Demande</a></li>
+        <li><a href="/fr/contact/">Contact</a></li>
+        <li><a href="/fr/discount/" class="active">Promotions</a></li>
     </ul>
 </nav>
 
@@ -251,7 +263,7 @@
                         <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">175,00 USD - 19 998,00 USD</span>
                     </div>
                     
-                    <a href="/fr/inquiry.html" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Demande via WhatsApp</a>
+                    <a href="/fr/inquiry/" style="display: block; text-align: center; background: #25d366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold;">Demande via WhatsApp</a>
                 </div>
             </div>
 
@@ -283,7 +295,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SEW-EURODRIVE" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/sewprice01.jpg" alt="Motoréducteurs SEW EURODRIVE" itemprop="image" />
                             </a>
                             <header>
@@ -302,7 +314,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -311,7 +323,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="FLENDER" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/flenderprice02.jpg" alt="Prix des réducteurs industriels FLENDER" itemprop="image" />
                             </a>
                             <header>
@@ -330,7 +342,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -338,7 +350,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="SIEMENS" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/siemensprice03.jpg" alt="Motoréducteurs SIEMENS INNOMOTICS MOTOX" itemprop="image" />
                             </a>
                             <header>
@@ -357,7 +369,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -366,7 +378,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BONFIGLIOLI" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/bonfiglioliprice04.jpg" alt="Réducteurs planétaires BONFIGLIOLI série 300M" itemprop="image" />
                             </a>
                             <header>
@@ -385,7 +397,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -394,7 +406,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="NORD" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/nordprice05.jpg" alt="Motoréducteurs NORD série SK" itemprop="image" />
                             </a>
                             <header>
@@ -413,7 +425,7 @@
 
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -422,7 +434,7 @@
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box" itemscope itemtype="https://schema.org/Product">
                             <meta itemprop="brand" content="BAUER" />
-                            <a href="/fr/inquiry.html" class="image featured">
+                            <a href="/fr/inquiry/" class="image featured">
                                 <img src="/images/bauerprice06.jpg" alt="Offres spéciales motoréducteurs BAUER LENZE" itemprop="image" />
                             </a>
                             <header>
@@ -440,7 +452,7 @@
                             </div>
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/fr/inquiry.html" class="button alt">Demande</a></li>
+                                    <li><a href="/fr/inquiry/" class="button alt">Demande</a></li>
                                 </ul>
                             </footer>
                         </section>
