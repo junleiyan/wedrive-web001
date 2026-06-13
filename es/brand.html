@@ -54,29 +54,41 @@
     <meta property="og:title" content="Marcas de Reductores Industriales | WEDRIVE POWER" />
     <meta property="og:description" content="Marcas globales de reductores industriales y motorreductores de WEDRIVE POWER." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wedrivepower.com/es/brand" />
+    <meta property="og:url" content="https://www.wedrivepower.com/es/brand/" />
     <meta property="og:image" content="../images/logo.png" />
     <meta property="og:site_name" content="WEDRIVE POWER TRANSMISSION" />
 
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="stylesheet" href="/assets/css/main.css" />
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="homepage is-preload">
  <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		<li><a href="/ja/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		<li><a href="/ja/brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/brand.html';" 
+    <div onclick="window.location.href='/brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -105,28 +117,28 @@
                 <ul>
                     <li><a href="/es/">Inicio</a></li>
                     <li class="wd-parent">
-                        <a href="/es/brand.html" class="wd-trigger active">Marcas</a>
+                        <a href="/es/brand/" class="wd-trigger active">Marcas</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/es/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/es/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/es/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/es/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/es/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/es/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/es/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/es/abb-motors.html">ABB</a></li>
-                            <li><a href="/es/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/es/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/es/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/es/odm-brand.html">MARCA ODM</a></li>
+                            <li><a href="/es/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/es/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/es/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/es/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/es/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/es/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/es/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/es/abb-motors/">ABB</a></li>
+                            <li><a href="/es/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/es/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/es/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/es/odm-brand/">MARCA ODM</a></li>
                         </ul>
                     </li>
-                    <li><a href="/es/company.html">Empresa</a></li>
-                    <li><a href="/es/case.html">Casos</a></li>
-                    <li><a href="/es/news-blog.html">Noticias y Blog</a></li>
-                    <li><a href="/es/inquiry.html">Consulta</a></li>
-                    <li><a href="/es/contact.html">Contacto</a></li>
-                    <li><a href="/es/discount.html">Descuento</a></li>
+                    <li><a href="/es/company/">Empresa</a></li>
+                    <li><a href="/es/case/">Casos</a></li>
+                    <li><a href="/es/news-blog/">Noticias y Blog</a></li>
+                    <li><a href="/es/inquiry/">Consulta</a></li>
+                    <li><a href="/es/contact/">Contacto</a></li>
+                    <li><a href="/es/discount/">Descuento</a></li>
                 </ul>
             </nav>
         </section>
@@ -188,7 +200,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/sew-gearmotors.html" class="image featured">
+                    <a href="/es/sew-gearmotors/" class="image featured">
                         <img src="/images/sew-logo-new.png" alt="Motorreductores y reductores industriales SEW" width="600" height="400" />
                     </a>
                     <header>
@@ -197,7 +209,7 @@
                     <p>Distribución de <strong>motorreductores SEW EURODRIVE series R, F, K, S</strong>, variadores de frecuencia Movitrac y repuestos originales para automatización industrial.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/sew-gearmotors.html" class="button alt">Explorar Modelos SEW</a></li>
+                            <li><a href="/es/sew-gearmotors/" class="button alt">Explorar Modelos SEW</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -205,7 +217,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/flender-gearbox.html" class="image featured">
+                    <a href="/es/flender-gearbox/" class="image featured">
                         <img src="/images/flender-logo-new.png" alt="Servicios de suministro de reductores y acoplamientos industriales FLENDER" width="600" height="400" />
                     </a>
                     <header>
@@ -214,7 +226,7 @@
                     <p><strong>Reductores helicoidales Flender serie H/B</strong> para servicio pesado, reductores planetarios SIP y acoplamientos N-EUPEX. Especialistas en transmisión de potencia confiable para minería.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/flender-gearbox.html" class="button alt">Ver Catálogo Flender</a></li>
+                            <li><a href="/es/flender-gearbox/" class="button alt">Ver Catálogo Flender</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -222,7 +234,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/siemens-gearmotors.html" class="image featured">
+                    <a href="/es/siemens-gearmotors/" class="image featured">
                         <img src="/images/siemens-logo-new.png" alt="Motorreductores SIEMENS INNOMOTICS" width="600" height="400" />
                     </a>
                     <header>
@@ -231,7 +243,7 @@
                     <p>Suministro de <strong>motorreductores Siemens serie SIMOGEAR y MOTOX</strong>, incluyendo series E, Z, D, F, K, C, S y motores industriales de alta eficiencia Innomotics.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/siemens-gearmotors.html" class="button alt">Datos Técnicos Siemens</a></li>
+                            <li><a href="/es/siemens-gearmotors/" class="button alt">Datos Técnicos Siemens</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -239,7 +251,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/bonfiglioli-gearbox.html" class="image featured">
+                    <a href="/es/bonfiglioli-gearbox/" class="image featured">
                         <img src="/images/bonfiglioli-logo-new.png" alt="Reductores industriales BONFIGLIOLI" width="600" height="400" />
                     </a>
                     <header>
@@ -248,7 +260,7 @@
                     <p>Reductores planetarios, servodrives, reductores industriales y sistemas de automatización.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/bonfiglioli-gearbox.html" class="button alt">Detalles Bonfiglioli</a></li>
+                            <li><a href="/es/bonfiglioli-gearbox/" class="button alt">Detalles Bonfiglioli</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -256,7 +268,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/nord-gearmotors.html" class="image featured">
+                    <a href="/es/nord-gearmotors/" class="image featured">
                         <img src="/images/nord-logo-new.png" alt="Unidades de engranajes industriales NORD MAXXDRIVE y Nordbloc.1" width="600" height="400" />
                     </a>
                     <header>
@@ -265,7 +277,7 @@
                     <p><strong>Unidades de engranajes industriales NORD MAXXDRIVE</strong>, motorreductores helicoidales Nordbloc.1 y electrónica de potencia distribuida para un torque confiable.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/nord-gearmotors.html" class="button alt">Detalles de Reductores Nord</a></li>
+                            <li><a href="/es/nord-gearmotors/" class="button alt">Detalles de Reductores Nord</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -273,7 +285,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/bauer-gearmotors.html" class="image featured">
+                    <a href="/es/bauer-gearmotors/" class="image featured">
                         <img src="/images/bauer-logo-new.png" alt="Motorreductores industriales BAUER" width="600" height="400" />
                     </a>
                     <header>
@@ -282,7 +294,7 @@
                     <p>Motorreductores industriales, sistemas de accionamiento IP65 y aplicaciones de servicio pesado.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/bauer-gearmotors.html" class="button alt">Motorreductores Bauer</a></li>
+                            <li><a href="/es/bauer-gearmotors/" class="button alt">Motorreductores Bauer</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -290,7 +302,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/lenze-gearmotors.html" class="image featured">
+                    <a href="/es/lenze-gearmotors/" class="image featured">
                         <img src="/images/lenze-logo-new.png" alt="Motorreductores industriales LENZE" width="600" height="400" />
                     </a>
                     <header>
@@ -299,7 +311,7 @@
                     <p>Automatización industrial, servodrives y sistemas de motores inteligentes.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/lenze-gearmotors.html" class="button alt">Ver Productos Lenze</a></li>
+                            <li><a href="/es/lenze-gearmotors/" class="button alt">Ver Productos Lenze</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -307,7 +319,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/abb-motors.html" class="image featured">
+                    <a href="/es/abb-motors/" class="image featured">
                         <img src="/images/abb-logo-new.png" alt="Motores industriales ABB" width="600" height="400" />
                     </a>
                     <header>
@@ -316,7 +328,7 @@
                     <p>Motores eléctricos industriales, variadores de velocidad y sistemas de automatización.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/abb-motors.html" class="button alt">Motores Industriales ABB</a></li>
+                            <li><a href="/es/abb-motors/" class="button alt">Motores Industriales ABB</a></li>
                         </ul>
                     </footer>
                 </section>
@@ -324,7 +336,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box">
-                    <a href="/es/baldor-motors.html" class="image featured">
+                    <a href="/es/baldor-motors/" class="image featured">
                         <img src="/images/baldor-logo-new.png" alt="Motores industriales BALDOR" width="600" height="400" />
                     </a>
                     <header>
@@ -333,14 +345,14 @@
                     <p>Motores de CA industriales, servomotores y soluciones para industria pesada.</p>
                     <footer>
                         <ul class="actions">
-                            <li><a href="/es/baldor-motors.html" class="button alt">Motor de CC ABB Baldor</a></li>
+                            <li><a href="/es/baldor-motors/" class="button alt">Motor de CC ABB Baldor</a></li>
                         </ul>
                     </footer>
                 </section>
             </div>
 			<div class="col-4 col-6-medium col-12-small">
                         <section class="box">
-                            <a href="/es/kollmorgen-servomotors.html" class="image featured">
+                            <a href="/es/kollmorgen-servomotors/" class="image featured">
                                 <img src="/images/kollmorgen-logo-new.png" alt="Servomotores KOLLMORGEN" width="600" height="400" />
                             </a>
                             <header>
@@ -349,7 +361,7 @@
                             <p>Servomotores, control de movimiento y sistemas de automatización industrial.</p>
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/es/kollmorgen-servomotors.html" class="button alt">Servomotor Kollmorgen</a></li>
+                                    <li><a href="/es/kollmorgen-servomotors/" class="button alt">Servomotor Kollmorgen</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -357,7 +369,7 @@
 
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box">
-                            <a href="/es/sumitomohansen-speedreducer.html" class="image featured">
+                            <a href="/es/sumitomohansen-speedreducer/" class="image featured">
                                 <img src="/images/sumitomo-logo-new.png" alt="SUMITOMO Cyclo Drive 6000 y reductor Hansen P4" width="600" height="400" />
                             </a>
                             <header>
@@ -366,7 +378,7 @@
                             <p>Incluye reductores <strong>Sumitomo Cyclo Drive 6000</strong>, serie Paramax y sistemas de transmisión industrial de servicio pesado Hansen P4.</p>
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/es/sumitomohansen-speedreducer.html" class="button alt">Sumitomo y Hansen</a></li>
+                                    <li><a href="/es/sumitomohansen-speedreducer/" class="button alt">Sumitomo y Hansen</a></li>
                                 </ul>
                             </footer>
                         </section>
@@ -374,7 +386,7 @@
 
                     <div class="col-4 col-6-medium col-12-small">
                         <section class="box">
-                            <a href="/es/odm-brand.html" class="image featured">
+                            <a href="/es/odm-brand/" class="image featured">
                                 <img src="/images/wedrive-logo.png" alt="Fabricación personalizada de reductores industriales OEM ODM" width="600" height="400" />
                             </a>
                             <header>
@@ -383,7 +395,7 @@
                             <p>Ingeniería de <strong>reductores industriales de alto torque</strong> y reemplazos multimarca. Producción de marca propia con estándares de transmisión de alta calidad.</p>
                             <footer>
                                 <ul class="actions">
-                                    <li><a href="/es/odm-brand.html" class="button alt">Motorreductores Marca ODM</a></li>
+                                    <li><a href="/es/odm-brand/" class="button alt">Motorreductores Marca ODM</a></li>
                                 </ul>
                             </footer>
                         </section>
