@@ -89,6 +89,18 @@
   ]
 }
 </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="homepage is-preload" dir="rtl">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
@@ -180,28 +192,28 @@
                 <ul>
                     <li><a href="/fa/" class="active">صفحه اصلی</a></li>
                     <li class="wd-parent">
-                        <a href="/fa/brand.html" class="wd-trigger">برندها</a>
+                        <a href="/fa/brand/" class="wd-trigger">برندها</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/fa/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/fa/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/fa/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/fa/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/fa/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/fa/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/fa/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/fa/abb-motors.html">ABB</a></li>
-                            <li><a href="/fa/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/fa/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/fa/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/fa/odm-brand.html">برند ODM</a></li>
+                            <li><a href="/fa/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/fa/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/fa/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/fa/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/fa/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/fa/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/fa/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/fa/abb-motors/">ABB</a></li>
+                            <li><a href="/fa/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/fa/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/fa/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/fa/odm-brand/">برند ODM</a></li>
                         </ul>
                     </li>
-                    <li><a href="/fa/company.html">درباره ما</a></li>
-                    <li><a href="/fa/case.html">پروژه‌ها</a></li>
-                    <li><a href="/fa/news-blog.html">اخبار و بلاگ</a></li>
-                    <li><a href="/fa/inquiry.html">استعلام قیمت</a></li>
-                    <li><a href="/fa/contact.html">تماس با ما</a></li>
-                    <li><a href="/fa/discount.html">تخفیف‌ها</a></li>
+                    <li><a href="/fa/company/">درباره ما</a></li>
+                    <li><a href="/fa/case/">پروژه‌ها</a></li>
+                    <li><a href="/fa/news-blog/">اخبار و بلاگ</a></li>
+                    <li><a href="/fa/inquiry/">استعلام قیمت</a></li>
+                    <li><a href="/fa/contact/">تماس با ما</a></li>
+                    <li><a href="/fa/discount/">تخفیف‌ها</a></li>
                 </ul>
             </nav>
 
@@ -378,7 +390,7 @@
 
     <section class="box">
 
-        <a href="/fa/sew-gearmotors.html" class="image featured">
+        <a href="/fa/sew-gearmotors/" class="image featured">
             <img src="/images/sew-gearbox01.png"
     alt="گیربکس‌های صنعتی و موتورگیربکس‌های SEW"
     width="600"
@@ -424,7 +436,7 @@
         <footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/fa/sew-gearmotors.html" class="button alt">
+                    <a href="/fa/sew-gearmotors/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -439,7 +451,7 @@
 
     <section class="box">
 
-        <a href="/fa/flender-gearbox.html" class="image featured">
+        <a href="/fa/flender-gearbox/" class="image featured">
             <img src="/images/flender-gearunit01.png"
                 alt="گیربکس‌های صنعتی و کوپلینگ‌های FLENDER" 
                 width="600"
@@ -485,7 +497,7 @@
         <footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/fa/flender-gearbox.html" class="button alt">
+                    <a href="/fa/flender-gearbox/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -499,7 +511,7 @@
 
     <section class="box">
 
-        <a href="/fa/siemens-gearmotors.html" class="image featured">
+        <a href="/fa/siemens-gearmotors/" class="image featured">
             <img src="/images/siemens-gearbox01.png"
                 alt="موتورگیربکس‌های SIEMENS INNOMOTICS MOTOX" 
                 width="600"
@@ -546,7 +558,7 @@
         <footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/fa/siemens-gearmotors.html" class="button alt">
+                    <a href="/fa/siemens-gearmotors/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -561,7 +573,7 @@
 
     <section class="box">
 
-        <a href="/fa/bonfiglioli-gearbox.html" class="image featured">
+        <a href="/fa/bonfiglioli-gearbox/" class="image featured">
             <img src="/images/bonfiglioli-gearbox01.png"
                 alt="گیربکس‌های صنعتی و خورشیدی BONFIGLIOLI" 
                 width="600"
@@ -601,7 +613,7 @@
 		<footer style="padding-top:1em;">
             <ul class="actions">
                 <li>
-                    <a href="/fa/bonfiglioli-gearbox.html" class="button alt">
+                    <a href="/fa/bonfiglioli-gearbox/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -616,7 +628,7 @@
 
     <section class="box">
 
-        <a href="/fa/nord-gearmotors.html" class="image featured">
+        <a href="/fa/nord-gearmotors/" class="image featured">
             <img src="/images/nord-gearmotor01.png"
                 alt="گیربکس‌های صنعتی و سیستم‌های انتقال قدرت NORD" />
         </a>
@@ -656,7 +668,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/fa/nord-gearmotors.html" class="button alt">
+                    <a href="/fa/nord-gearmotors/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -671,7 +683,7 @@
 
     <section class="box">
 
-        <a href="/fa/bauer-gearmotors.html" class="image featured">
+        <a href="/fa/bauer-gearmotors/" class="image featured">
             <img src="/images/bauer-gearmotor01.png"
                 alt="موتورگیربکس‌ها و تکنولوژی درایو BAUER, LENZE, SUMITOMO" width="600"
                 height="400" />
@@ -728,7 +740,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/fa/bauer-gearmotors.html" class="button alt">
+                    <a href="/fa/bauer-gearmotors/" class="button alt">
                         اطلاعات بیشتر
                     </a>
                 </li>
@@ -750,7 +762,7 @@
 
             <section class="box">
 
-                <a href="/fa/case.html" class="image featured">
+                <a href="/fa/case/" class="image featured">
                     <img src="/images/factory01.png"
                         alt="کارگاه تولید گیربکس‌های صنعتی" 
                         width="600"
@@ -788,7 +800,7 @@
                 <footer>
                     <ul class="actions">
                         <li>
-                            <a href="/fa/odm-brand.html"
+                            <a href="/fa/odm-brand/"
                                 class="button icon solid fa-file-alt">
                                 مطالعه بیشتر
                             </a>
@@ -803,7 +815,7 @@
 
     <section class="box">
 
-        <a href="/fa/contact.html" class="image featured">
+        <a href="/fa/contact/" class="image featured">
             <img src="/images/factory02.png"
                 alt="کنترل کیفیت و تست‌های فنی گیربکس‌ها" 
                 width="600"
@@ -841,7 +853,7 @@
         <footer>
             <ul class="actions">
                 <li>
-                    <a href="/fa/odm-brand.html"
+                    <a href="/fa/odm-brand/"
                         class="button icon solid fa-file-alt">
                         مطالعه بیشتر
                     </a>
@@ -872,7 +884,7 @@
 
                             <div class="content">
 
-                                <a href="/fa/news-blog.html" class="image fit"
+                                <a href="/fa/news-blog/" class="image fit"
                                     style="display:block; margin-bottom:1em;">
 
                                     <img src="/images/new01.png"
@@ -883,7 +895,7 @@
 
                                 <h3 style="color:#ed391b !important;">
 
-                                    <a href="/fa/flender-gearbox.html">
+                                    <a href="/fa/flender-gearbox/">
                                         گیربکس صنعتی هلیکال-بِوِل FLENDER مدل B4DH با موفقیت به مکزیک تحویل داده شد
                                     </a>
 
@@ -903,7 +915,7 @@
 
                             <div class="content">
 
-                                <a href="/fa/news-blog.html" class="image fit"
+                                <a href="/fa/news-blog/" class="image fit"
                                     style="display:block; margin-bottom:1em;">
 
                                     <img src="/images/new02.png"
@@ -914,7 +926,7 @@
 
                                 <h3 style="color:#ed391b !important;">
 
-                                    <a href="/fa/sew-gearmotors.html">
+                                    <a href="/fa/sew-gearmotors/">
                                         حضور SEW-EURODRIVE در نمایشگاه بین‌المللی ماشین‌ابزار CNC چین
                                     </a>
 
@@ -935,7 +947,7 @@
 
                             <div class="content">
 
-                                <a href="/fa/news-blog.html" class="image fit"
+                                <a href="/fa/news-blog/" class="image fit"
                                     style="display:block; margin-bottom:1em;">
 
                                     <img src="/images/new03.png"
@@ -946,7 +958,7 @@
 
                                 <h3 style="color:#ed391b !important;">
 
-                                    <a href="/fa/nord-gearmotors.html">
+                                    <a href="/fa/nord-gearmotors/">
                                         راهکارهای درایو NORD برای بیش از ۱۰۰ صنعت مختلف
                                     </a>
 
@@ -966,7 +978,7 @@
 
                             <div class="content">
 
-                                <a href="/fa/news-blog.html" class="image fit"
+                                <a href="/fa/news-blog/" class="image fit"
                                     style="display:block; margin-bottom:1em;">
 
                                     <img src="/images/new04.png"
@@ -977,7 +989,7 @@
 
                                 <h3 style="color:#ed391b !important;">
 
-                                    <a href="/fa/siemens-gearmotors.html">
+                                    <a href="/fa/siemens-gearmotors/">
                                         برنامه آموزش فنی و مهارت‌افزایی SIEMENS INNOMOTICS
                                     </a>
 
@@ -1005,7 +1017,7 @@
                         <h2>راهکارهای گیربکس صنعتی و موتورگیربکس</h2>
                     </header>
 
-                    <a href="/fa/contact.html" class="image featured">
+                    <a href="/fa/contact/" class="image featured">
 
                         <img src="/images/company01.png"
                             alt="تامین‌کننده گیربکس‌های صنعتی، موتورگیربکس‌ها و تجهیزات انتقال قدرت" />
