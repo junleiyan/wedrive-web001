@@ -18,22 +18,34 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="homepage is-preload">
     <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-          <li><a href="/ja/inquiry.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+          <li><a href="/ja/inquiry/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-     <div onclick="window.location.href='/inquiry.html';" 
+     <div onclick="window.location.href='/inquiry/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -109,31 +121,31 @@
                     <li><a href="/fr/">Accueil</a></li>
                     
                     <li class="wd-parent">
-                        <a href="/fr/brand.html" class="wd-trigger">Marques</a>
+                        <a href="/fr/brand/" class="wd-trigger">Marques</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/fr/brand.html" style="font-weight: bold; color: #d42d1e;">Voir toutes les marques</a></li>
+                            <li><a href="/fr/brand/" style="font-weight: bold; color: #d42d1e;">Voir toutes les marques</a></li>
                             
-                            <li><a href="/fr/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/fr/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/fr/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/fr/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/fr/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/fr/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/fr/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/fr/abb-motors.html">ABB</a></li>
-                            <li><a href="/fr/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/fr/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/fr/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/fr/odm-brand.html">MARQUE ODM</a></li>
+                            <li><a href="/fr/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/fr/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/fr/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/fr/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/fr/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/fr/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/fr/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/fr/abb-motors/">ABB</a></li>
+                            <li><a href="/fr/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/fr/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/fr/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/fr/odm-brand/">MARQUE ODM</a></li>
                         </ul>
                     </li>
                     
-                    <li><a href="/fr/company.html">À propos</a></li>
-                    <li><a href="/fr/case.html">Projets</a></li>
-                    <li><a href="/fr/news-blog.html">Actualités & Blog</a></li>
-                    <li><a href="/fr/inquiry.html" class="active">Devis</a></li>
-                    <li><a href="/fr/contact.html">Contact</a></li>
-                    <li><a href="/fr/discount.html">Promotions</a></li>
+                    <li><a href="/fr/company/">À propos</a></li>
+                    <li><a href="/fr/case/">Projets</a></li>
+                    <li><a href="/fr/news-blog/">Actualités & Blog</a></li>
+                    <li><a href="/fr/inquiry/" class="active">Devis</a></li>
+                    <li><a href="/fr/contact/">Contact</a></li>
+                    <li><a href="/fr/discount/">Promotions</a></li>
                 </ul>
             </nav>
         </section>
@@ -264,6 +276,11 @@
             <p style="margin: 10px 0 0 0; color: rgba(255,255,255,0.7); font-size: 0.9em;">
                 Réducteurs industriels et solutions d'entraînement sur mesure
             </p>
+            <div class="privacy-statement-container" style="max-width: 100%; margin: 20px auto 0; padding: 15px; border-top: 1px dashed #ddd; font-family: sans-serif;">
+    <p style="font-size: 12px; line-height: 1.6; color: #666; margin: 0; text-align: left;">
+        <strong>Avis de confidentialité :</strong> Nous accordons une grande importance à la protection de votre vie privée. Les informations que vous soumettez via ce formulaire Zoho seront uniquement utilisées pour traiter votre demande commerciale et vous fournir des devis concernant nos produits de transmission de puissance. Nous ne vendons ni ne partageons jamais vos données. Pour plus d'informations sur notre entreprise, veuillez consulter notre page officielle <a href="/fr/company/" style="color: #d42d1e; text-decoration: underline; font-weight: bold;">Informations sur l'entreprise</a>.
+    </p>
+</div>
         </div>
     </div>
 </div>
