@@ -96,24 +96,36 @@
 	<link rel="icon" type="image/png" href="images/logo.png" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
-
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
+
 
 <body class="homepage is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		<li><a href="/ja/brand.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/brand/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/brand/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/brand/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/brand/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/brand/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/brand/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		<li><a href="/ja/brand/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-   <div onclick="window.location.href='/brand.html';" 
+   <div onclick="window.location.href='/brand/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -131,7 +143,7 @@
 		<section id="header">
 			<!-- Logo 区域：保持 Flex 布局对齐 -->
 			<div >
-				<a href="brand.html" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
+				<a href="/brand/" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
 					<img src="images/logo.png" width="400" height="85" alt="WEDRIVE POWER - Leading Global Industrial Gearbox & Motor Supplier" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
 					<span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
 						<span style="font-size:1.9em; font-weight:800; letter-spacing:2px; color:#1d1d1d; line-height:1.1;">WEDRIVE POWER TRANSMISSION</span>
@@ -145,28 +157,28 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li class="wd-parent">
-						<a href="brand.html" class="wd-trigger active">Brand</a>
+						<a href="/brand/" class="wd-trigger active">Brand</a>
 						<ul id="wd-brand-menu">
-							<li><a href="sew-gearmotors.html">SEW</a></li>
-							<li><a href="flender-gearbox.html">FLENDER</a></li>
-							<li><a href="nord-gearmotors.html">NORD</a></li>
-							<li><a href="siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-							<li><a href="bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-							<li><a href="bauer-gearmotors.html">BAUER</a></li>
-							<li><a href="lenze-gearmotors.html">LENZE</a></li>
-							<li><a href="abb-motors.html">ABB</a></li>
-							<li><a href="baldor-motors.html">BALDOR</a></li>
-							<li><a href="kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-							<li><a href="sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-							<li><a href="odm-brand.html">ODM BRAND</a></li>
+							<li><a href="/sew-gearmotors/">SEW</a></li>
+							<li><a href="/flender-gearbox/">FLENDER</a></li>
+							<li><a href="/nord-gearmotors/">NORD</a></li>
+							<li><a href="/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+							<li><a href="/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+							<li><a href="/bauer-gearmotors/">BAUER</a></li>
+							<li><a href="/lenze-gearmotors/">LENZE</a></li>
+							<li><a href="/abb-motors/">ABB</a></li>
+							<li><a href="/baldor-motors/">BALDOR</a></li>
+							<li><a href="/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+							<li><a href="/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+							<li><a href="/odm-brand/">ODM BRAND</a></li>
 						</ul>
 					</li>
-					<li><a href="company.html">Company</a></li>
-					<li><a href="case.html">Case</a></li>
-					<li><a href="news-blog.html">News and Blog</a></li>
-					<li><a href="inquiry.html">Inquiry</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="discount.html">Discount</a></li>
+					<li><a href="/company/">Company</a></li>
+					<li><a href="/case/">Case</a></li>
+					<li><a href="/news-blog/">News and Blog</a></li>
+					<li><a href="/inquiry/">Inquiry</a></li>
+					<li><a href="/contact/">Contact</a></li>
+					<li><a href="/discount/">Discount</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -355,7 +367,7 @@
 							<footer>
 								<ul class="actions">
 									<li>
-										<a href="ksb-industrial-pump.html" class="button alt">
+										<a href="/ksb-industrial-pump/" class="button alt">
 											Explore KSB Models
 										</a>
 									</li>
@@ -371,11 +383,11 @@
 			</div>
 			<nav class="pagination" aria-label="Page Navigation" style="text-align: center; margin: 40px 0;">
     <ul style="list-style: none; padding: 0; display: inline-flex; gap: 10px; justify-content: center;">
-        <li><a href="brand.html" style="padding: 8px 16px; border: 1px solid #ddd; text-decoration: none; color: #666; border-radius: 4px;">« Previous</a></li>
+        <li><a href="/brand/" style="padding: 8px 16px; border: 1px solid #ddd; text-decoration: none; color: #666; border-radius: 4px;">« Previous</a></li>
         
-        <li><a href="brand.html" style="padding: 8px 16px; border: 1px solid #ddd; text-decoration: none; color: #666; border-radius: 4px;">1</a></li>
+        <li><a href="/brand/" style="padding: 8px 16px; border: 1px solid #ddd; text-decoration: none; color: #666; border-radius: 4px;">1</a></li>
         
-        <li><a href="brand-2.html" style="padding: 8px 16px; border: 1px solid #0073bb; background: #0073bb; color: #fff; border-radius: 4px; font-weight: bold;">2</a></li>
+        <li><a href="/brand-2/" style="padding: 8px 16px; border: 1px solid #0073bb; background: #0073bb; color: #fff; border-radius: 4px; font-weight: bold;">2</a></li>
         
         <li><span style="padding: 8px 16px; border: 1px solid #ddd; color: #ccc; border-radius: 4px; cursor: not-allowed;">Next »</span></li>
     </ul>
