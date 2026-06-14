@@ -11,7 +11,7 @@
     <meta property="og:title" content="أخبار المحركات الصناعية والمدونة التقنية من WeDrive" />
     <meta property="og:description" content="أحدث الأدلة التقنية ورؤى الصيانة وأخبار الصناعة لصناديق التروس والمحركات ونقل الحركة." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wedrivepower.com/ar/news-blog.html" />
+    <meta property="og:url" content="https://www.wedrivepower.com/ar/news-blog/" />
     <meta property="og:image" content="https://www.wedrivepower.com/images/logo.png" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -23,23 +23,35 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 
 <body class="is-preload">
 <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-        <li><a href="/ar/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-        <li><a href="/de/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-        <li><a href="/es/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-        <li><a href="/fa/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-        <li><a href="/fr/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-        <li><a href="/ru/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-		<li><a href="/ja/news-blog.html" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/ar/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+		<li><a href="/ja/news-blog/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
     </ul>
 
-    <div onclick="window.location.href='/news-blog.html';" 
+    <div onclick="window.location.href='/news-blog/';" 
          style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
@@ -109,31 +121,31 @@
         <li><a href="/ar/">الرئيسية</a></li>
         
         <li class="wd-parent">
-            <a href="/ar/brand.html" class="wd-trigger">العلامات التجارية</a>
+            <a href="/ar/brand/" class="wd-trigger">العلامات التجارية</a>
             <ul id="wd-brand-menu">
-                <li><a href="/ar/brand.html" style="font-weight: bold; color: #d42d1e;">عرض جميع العلامات التجارية</a></li>
+                <li><a href="/ar/brand/" style="font-weight: bold; color: #d42d1e;">عرض جميع العلامات التجارية</a></li>
                 
-                <li><a href="/ar/sew-gearmotors.html">SEW</a></li>
-                <li><a href="/ar/flender-gearbox.html">FLENDER</a></li>
-                <li><a href="/ar/nord-gearmotors.html">NORD</a></li>
-                <li><a href="/ar/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                <li><a href="/ar/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                <li><a href="/ar/bauer-gearmotors.html">BAUER</a></li>
-                <li><a href="/ar/lenze-gearmotors.html">LENZE</a></li>
-                <li><a href="/ar/abb-motors.html">ABB</a></li>
-                <li><a href="/ar/baldor-motors.html">BALDOR</a></li>
-                <li><a href="/ar/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                <li><a href="/ar/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                <li><a href="/ar/odm-brand.html">ODM BRAND</a></li>
+                <li><a href="/ar/sew-gearmotors/">SEW</a></li>
+                <li><a href="/ar/flender-gearbox/">FLENDER</a></li>
+                <li><a href="/ar/nord-gearmotors/">NORD</a></li>
+                <li><a href="/ar/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                <li><a href="/ar/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                <li><a href="/ar/bauer-gearmotors/">BAUER</a></li>
+                <li><a href="/ar/lenze-gearmotors/">LENZE</a></li>
+                <li><a href="/ar/abb-motors/">ABB</a></li>
+                <li><a href="/ar/baldor-motors/">BALDOR</a></li>
+                <li><a href="/ar/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                <li><a href="/ar/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                <li><a href="/ar/odm-brand/">ODM BRAND</a></li>
             </ul>
         </li>
         
-        <li><a href="/ar/company.html">الشركة</a></li>
-        <li><a href="/ar/case.html">حالات المشاريع</a></li>
-        <li><a href="/ar/news-blog.html" class="active">الأخبار والمدونة</a></li>
-        <li><a href="/ar/inquiry.html">الاستفسار</a></li>
-        <li><a href="/ar/contact.html">اتصل بنا</a></li>
-        <li><a href="/ar/discount.html">الخصومات</a></li>
+        <li><a href="/ar/company/">الشركة</a></li>
+        <li><a href="/ar/case/">حالات المشاريع</a></li>
+        <li><a href="/ar/news-blog/" class="active">الأخبار والمدونة</a></li>
+        <li><a href="/ar/inquiry/">الاستفسار</a></li>
+        <li><a href="/ar/contact/">اتصل بنا</a></li>
+        <li><a href="/ar/discount/">الخصومات</a></li>
     </ul>
 </nav>
         </section>
@@ -152,11 +164,11 @@
                         <li style="text-align: right;">
                             <span class="date" style="float: right;">رقم <strong>4</strong></span>
                             <div class="content" style="text-align: right; margin-right: 4.5em;">
-                                <a href="/ar/flender-gearbox.html" class="image fit" style="display: block; margin-bottom: 1em;">
+                                <a href="/ar/flender-gearbox/" class="image fit" style="display: block; margin-bottom: 1em;">
                                     <img src="/images/blog01.jpg" alt="تسليم صندوق التروس المخروطي WeDrive Flender B4DH إلى المكسيك" style="border-radius: 4px;" />
                                 </a>
                                 <h3 style="color: #ed391b !important; text-align: right; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-                                    <a href="/ar/flender-gearbox.html" style="text-decoration: none;">سلسلة صناديق التروس المخروطية Flender B4DH من WeDrive</a>
+                                    <a href="/ar/flender-gearbox/" style="text-decoration: none;">سلسلة صناديق التروس المخروطية Flender B4DH من WeDrive</a>
                                 </h3>
                                 <p style="text-align: right; line-height: 1.6; color: #555; font-size: 0.95em;">
                                     <time datetime="2026-04-25" style="font-weight: 600; color: #888;">25 أبريل 2026</time> 
@@ -168,11 +180,11 @@
                         <li style="text-align: right;">
                             <span class="date" style="float: right;">رقم <strong>3</strong></span>
                             <div class="content" style="text-align: right; margin-right: 4.5em;">
-                                <a href="/ar/sew-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+                                <a href="/ar/sew-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
                                     <img src="/images/blog02.jpg" alt="معرض SEW-EURODRIVE لمحركات السيرفو الدقيقة KAD157" style="border-radius: 4px;" />
                                 </a>
                                 <h3 style="color: #ed391b !important; text-align: right; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-                                    <a href="/ar/sew-gearmotors.html" style="text-decoration: none;">SEW-EURODRIVE تشارك في معرض الصين الـ 14 لأدوات ماكينات CNC</a>
+                                    <a href="/ar/sew-gearmotors/" style="text-decoration: none;">SEW-EURODRIVE تشارك في معرض الصين الـ 14 لأدوات ماكينات CNC</a>
                                 </h3>
                                 <p style="text-align: right; line-height: 1.6; color: #555; font-size: 0.95em;">
                                     <time datetime="2026-04-16" style="font-weight: 600; color: #888;">16 أبريل 2026</time> 
@@ -183,11 +195,11 @@
                         <li style="text-align: right;">
                             <span class="date" style="float: right;">رقم <strong>2</strong></span>
                             <div class="content" style="text-align: right; margin-right: 4.5em;">
-                                <a href="/ar/nord-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+                                <a href="/ar/nord-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
                                     <img src="/images/blog03.jpg" alt="حلول محركات Nord SK5282AFVL2" style="border-radius: 4px;" />
                                 </a>
                                 <h3 style="color: #ed391b !important; text-align: right; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-                                    <a href="/ar/nord-gearmotors.html" style="text-decoration: none;">حلول محركات Nord لأكثر من 100 قطاع صناعي SK5282AFVL2</a>
+                                    <a href="/ar/nord-gearmotors/" style="text-decoration: none;">حلول محركات Nord لأكثر من 100 قطاع صناعي SK5282AFVL2</a>
                                 </h3>
                                 <p style="text-align: right; line-height: 1.6; color: #555; font-size: 0.95em;">
                                     <time datetime="2026-04-13" style="font-weight: 600; color: #888;">13 أبريل 2026</time> 
@@ -199,11 +211,11 @@
                         <li style="text-align: right;">
                             <span class="date" style="float: right;">رقم <strong>1</strong></span>
                             <div class="content" style="text-align: right; margin-right: 4.5em;">
-                                <a href="/ar/siemens-gearmotors.html" class="image fit" style="display: block; margin-bottom: 1em;">
+                                <a href="/ar/siemens-gearmotors/" class="image fit" style="display: block; margin-bottom: 1em;">
                                     <img src="/images/blog04.jpg" alt="تدريب مهارات سيمنز إلى Innomotics ZF129" style="border-radius: 4px;" />
                                 </a>
                                 <h3 style="color: #ed391b !important; text-align: right; font-size: 1.25em; font-weight: 700; line-height: 1.3; margin-bottom: 0.4em;">
-                                    <a href="/ar/siemens-gearmotors.html" style="text-decoration: none;">تدريب المهارات من سيمنز إلى Innomotics ZF129</a>
+                                    <a href="/ar/siemens-gearmotors/" style="text-decoration: none;">تدريب المهارات من سيمنز إلى Innomotics ZF129</a>
                                 </h3>
                                 <p style="text-align: right; line-height: 1.6; color: #555; font-size: 0.95em;">
                                     <time datetime="2026-04-08" style="font-weight: 600; color: #888;">08 أبريل 2026</time> 
@@ -238,7 +250,7 @@
                         <div class="blog-list-container">
                             <ul style="list-style: none; padding: 0; margin: 0;">
                                 <li style="margin-bottom: 15px; border-bottom: 1px solid #f3f3f3; padding-bottom: 8px;">
-                                    <a href="/ar/flender-gearbox.html" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
+                                    <a href="/ar/flender-gearbox/" class="icon solid fa-file-alt" style="color: #444; text-decoration: none; display: block; font-weight: bold;"> 
                                         1. تسليم صندوق التروس Flender B4DH من WeDrive
                                     </a>
                                     <span style="font-size: 0.85em; color: #888; margin-right: 28px; display: block; margin-top: 2px;">تاريخ النشر: 01 مايو 2026</span>
@@ -263,26 +275,26 @@
                             <div style="display: flex; flex-wrap: wrap; margin-top: 20px; text-align: right;">
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ar/sew-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات SEW</a></li>
-                                        <li><a href="/ar/flender-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• صناديق تروس FLENDER</a></li>
-                                        <li><a href="/ar/nord-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات NORD</a></li>
-                                        <li><a href="/ar/siemens-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
+                                        <li><a href="/ar/sew-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات SEW</a></li>
+                                        <li><a href="/ar/flender-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• صناديق تروس FLENDER</a></li>
+                                        <li><a href="/ar/nord-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات NORD</a></li>
+                                        <li><a href="/ar/siemens-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ar/bonfiglioli-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• صناديق تروس BONFIGLIOLI</a></li>
-                                        <li><a href="/ar/bauer-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات BAUER</a></li>
-                                        <li><a href="/ar/lenze-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات LENZE</a></li>
-                                        <li><a href="/ar/abb-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات ABB</a></li>
+                                        <li><a href="/ar/bonfiglioli-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• صناديق تروس BONFIGLIOLI</a></li>
+                                        <li><a href="/ar/bauer-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات BAUER</a></li>
+                                        <li><a href="/ar/lenze-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات LENZE</a></li>
+                                        <li><a href="/ar/abb-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات ABB</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/ar/baldor-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات BALDOR</a></li>
-                                        <li><a href="/ar/kollmorgen-servomotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• محركات سيرفو KOLLMORGEN</a></li>
-                                        <li><a href="/ar/sumitomohansen-speedreducer.html" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
-                                        <li><a href="/ar/odm-brand.html" style="color: #444; font-weight: 600; text-decoration: none;">• حلول العلامة التجارية ODM</a></li>
+                                        <li><a href="/ar/baldor-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات BALDOR</a></li>
+                                        <li><a href="/ar/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• محركات سيرفو KOLLMORGEN</a></li>
+                                        <li><a href="/ar/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
+                                        <li><a href="/ar/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• حلول العلامة التجارية ODM</a></li>
                                     </ul>
                                 </div>
                             </div>
