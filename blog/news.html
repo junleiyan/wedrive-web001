@@ -14,6 +14,18 @@
         gtag('js', new Date());
         gtag('config', 'G-2QVTK1XJB6');
     </script>
+<script>
+  // 1. 严格拦截：如果当前访问的网址是以大写或小写的 .html 结尾
+  if (window.location.pathname.toLowerCase().endsWith('.html')) {
+    
+    // 2. 动态裁剪掉最后的 .html（共5个字符），并在末尾极其精准地补上一个斜杠 /
+    // 它会自动捕捉当前语种路径（如 /es/...html 裁剪后自动变为 /es/.../），绝不混淆
+    var cleanPath = window.location.pathname.substring(0, window.location.pathname.length - 5) + '/';
+    
+    // 3. 浏览器毫秒级无痕跳转，完美继承用户或爬虫可能带有的任何动态参数（如 ?query=1）和锚点
+    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+  }
+</script>
 </head>
 <body class="left-sidebar is-preload">
     <div id="page-wrapper">
@@ -38,28 +50,28 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li class="wd-parent">
-                        <a href="/brand.html"  id="nav-brand" onclick="toggleMenu(); return false;">Brands</a>
+                        <a href="/brand/"  id="nav-brand" onclick="toggleMenu(); return false;">Brands</a>
                         <ul id="wd-brand-menu">
-                            <li><a href="/sew-gearmotors.html">SEW</a></li>
-                            <li><a href="/flender-gearbox.html">FLENDER</a></li>
-                            <li><a href="/nord-gearmotors.html">NORD</a></li>
-                            <li><a href="/siemens-gearmotors.html">SIEMENS & INNOMOTICS</a></li>
-                            <li><a href="/bonfiglioli-gearbox.html">BONFIGLIOLI</a></li>
-                            <li><a href="/bauer-gearmotors.html">BAUER</a></li>
-                            <li><a href="/lenze-gearmotors.html">LENZE</a></li>
-                            <li><a href="/abb-motors.html">ABB</a></li>
-                            <li><a href="/baldor-motors.html">BALDOR</a></li>
-                            <li><a href="/kollmorgen-servomotors.html">KOLLMORGEN</a></li>
-                            <li><a href="/sumitomohansen-speedreducer.html">SUMITOMO & HANSEN</a></li>
-                            <li><a href="/odm-brand.html">ODM Brands</a></li>
+                            <li><a href="/sew-gearmotors/">SEW</a></li>
+                            <li><a href="/flender-gearbox/">FLENDER</a></li>
+                            <li><a href="/nord-gearmotors/">NORD</a></li>
+                            <li><a href="/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                            <li><a href="/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                            <li><a href="/bauer-gearmotors/">BAUER</a></li>
+                            <li><a href="/lenze-gearmotors/">LENZE</a></li>
+                            <li><a href="/abb-motors/">ABB</a></li>
+                            <li><a href="/baldor-motors/">BALDOR</a></li>
+                            <li><a href="/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                            <li><a href="/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                            <li><a href="/odm-brand/">ODM Brands</a></li>
                         </ul>
                     </li>
-                    <li><a href="/company.html">About Us</a></li>
-                    <li><a href="/case.html">Projects</a></li>
-                    <li><a href="/news-blog.html"class="active">Blog & News</a></li>
-                    <li><a href="/inquiry.html">Inquiry</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/discount.html">Offers</a></li>
+                    <li><a href="/company/">About Us</a></li>
+                    <li><a href="/case/">Projects</a></li>
+                    <li><a href="/news-blog/"class="active">Blog & News</a></li>
+                    <li><a href="/inquiry/">Inquiry</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/discount/">Offers</a></li>
                 </ul>
             </nav>
         </section>
@@ -87,21 +99,21 @@
         WE DRIVE HONGKONG LIMITED provides industrial clients worldwide with high-quality power transmission equipment like gearbox motor coupling from <strong>FLENDER, SEW, SIEMENS, INNOMOTICS, MOTOX,NORD, BONFIGLIOLI, BAUER,LENZE,SUMITOMO, ABB,BALDOR and other leading manufacturers.</strong><br>WeDrive Power Transmission-We also offer the latest industry information and technical insights via our blog below:
     </p>
     <ul style="font-size: 1.05em; line-height: 1.8; color: #333; list-style-type: square; padding-left: 20px;">
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Optimizing Drive Systems with FLENDER and SIEMENS INNOMOTICS Integration</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">A Guide to Selecting the Right SEW-EURODRIVE Gearmotor for Your Application</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Why Choose Original NORD Drives: Quality vs. Cost Analysis</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">The Future of Industrial Automation: Trends in Gearbox and Motor Technology</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Navigating Global Supply Chains: Sourcing Authentic Industrial Gearboxes</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">Comparing Gearmotor Efficiency: SEW vs. NORD vs. BONFIGLIOLI</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Essential Maintenance Tips for Your Industrial Gearbox and Coupling</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">Siemens Innomotics Motors: Enhancing Operational Efficiency in Heavy Industry</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Understanding Torque Requirements for High-Performance Industrial Applications</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">Industrial Couplings Explained: How to Pair the Right Coupling with Your Motor</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Custom Drive Solutions: Replacing Legacy Equipment with Modern Gearmotors</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">Improving Machine Reliability with Reliable Gearbox Solutions (FLENDER & BAUER)</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">Tailored Drive Systems: Meeting OEM Requirements for Specialized Machinery</a></li>
-        <li><a href="/discount.html" style="text-decoration: none; color: #1a3a5f;">Case Study: Integrating ABB and NORD Motors into Automated Production Lines</a></li>
-        <li><a href="/brand.html" style="text-decoration: none; color: #1a3a5f;">The Importance of High-Torque Gearboxes in Demanding Industrial Environments</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Optimizing Drive Systems with FLENDER and SIEMENS INNOMOTICS Integration</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">A Guide to Selecting the Right SEW-EURODRIVE Gearmotor for Your Application</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Why Choose Original NORD Drives: Quality vs. Cost Analysis</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">The Future of Industrial Automation: Trends in Gearbox and Motor Technology</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Navigating Global Supply Chains: Sourcing Authentic Industrial Gearboxes</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">Comparing Gearmotor Efficiency: SEW vs. NORD vs. BONFIGLIOLI</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Essential Maintenance Tips for Your Industrial Gearbox and Coupling</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">Siemens Innomotics Motors: Enhancing Operational Efficiency in Heavy Industry</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Understanding Torque Requirements for High-Performance Industrial Applications</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">Industrial Couplings Explained: How to Pair the Right Coupling with Your Motor</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Custom Drive Solutions: Replacing Legacy Equipment with Modern Gearmotors</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">Improving Machine Reliability with Reliable Gearbox Solutions (FLENDER & BAUER)</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">Tailored Drive Systems: Meeting OEM Requirements for Specialized Machinery</a></li>
+        <li><a href="/discount/" style="text-decoration: none; color: #1a3a5f;">Case Study: Integrating ABB and NORD Motors into Automated Production Lines</a></li>
+        <li><a href="/brand/" style="text-decoration: none; color: #1a3a5f;">The Importance of High-Torque Gearboxes in Demanding Industrial Environments</a></li>
     </ul>
 </div>
             </div>
@@ -123,7 +135,7 @@
         <div class="row">
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="sew-gear-motors-port-machinery.html" class="image featured">
+                    <a href="/sew-gear-motors-port-machinery/" class="image featured">
                         <img src="images/sew-eurodrive-port-machinery-new-product-launch-2026.jpg"
                             alt="SEW industrial gearboxes and electric motors"
                             width="600"
@@ -157,7 +169,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="sew-gear-motors-port-machinery.html" class="button alt">
+                                <a href="/sew-gear-motors-port-machinery/" class="button alt">
                                     MORE SEW-EURODRIVE NEWS
                                 </a>
                             </li>
@@ -167,7 +179,7 @@
             </div>
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="flender-gearbox-exhibition.html" class="image featured">
+                    <a href="/flender-gearbox-exhibition/" class="image featured">
                         <img src="images/flender-gearbox-china-factory.png"
                             alt="FLENDER industrial gearboxes and couplings supplier"
                             width="600"
@@ -185,7 +197,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="flender-gearbox-exhibition.html" class="button alt">
+                                <a href="/flender-gearbox-exhibition/" class="button alt">
                                     FLENDER at The Exhibition
                                 </a>
                             </li>
@@ -196,7 +208,7 @@
             
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="siemens-inverters-innomotics-gearbox-motor.html" class="image featured">
+                    <a href="/siemens-inverters-innomotics-gearbox-motor/" class="image featured">
                         <img src="images/siemens-innomotics-gearbox-motor.jpg"
                             alt="SIEMENS INNOMOTICS industrial gearmotors"
                             width="600"
@@ -214,7 +226,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="siemens-inverters-innomotics-gearbox-motor.html" class="button alt">
+                                <a href="/siemens-inverters-innomotics-gearbox-motor/" class="button alt">
                                     Siemens&Innomotics News
                                 </a>
                             </li>
@@ -224,7 +236,7 @@
             </div>
 			<div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="bonfiglioli-gearbox-upholding-our-green-mission.html" class="image featured">
+                    <a href="/bonfiglioli-gearbox-upholding-our-green-mission/" class="image featured">
                         <img src="images/bonfiglioli-heavy-duty-gearbox-mining-solutions.jpg"
                             alt="BONFIGLIOLI industrial gearboxes"
                             width="600"
@@ -242,7 +254,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="blog/bonfiglioli-gearbox-upholding-our-green-mission.html" class="button alt">
+                                <a href="/blog/bonfiglioli-gearbox-upholding-our-green-mission/" class="button alt">
                                     News For Bonfiglioli
                                 </a>
                             </li>
@@ -253,7 +265,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="nord-drive-solutions.html" class="image featured">
+                    <a href="/nord-drive-solutions/" class="image featured">
                         <img src="images/nord-drivesystems-industrial-automation-components.jpg" alt="NORD MAXXDRIVE industrial gearboxes and Nordbloc.1" width="600" height="400" />
                     </a>
                     <header>
@@ -268,7 +280,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="nord-drive-solutions.html" class="button alt">
+                                <a href="/nord-drive-solutions/" class="button alt">
                                     About NORD Drive Solution
                                 </a>
                             </li>
@@ -279,7 +291,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="bauer-bk-series-geared-motors.html" class="image featured">
+                    <a href="/bauer-bk-series-geared-motors/" class="image featured">
                         <img src="images/bauer-bk-series-helical-bevel-geared-motor-crane-drive.jpg"
                             alt="BAUER industrial gearmotors"
                             width="600"
@@ -297,7 +309,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="bauer-bk-series-geared-motors.html" class="button alt">
+                                <a href="/bauer-bk-series-geared-motors/" class="button alt">
                                     Bauer Gearmotors BK NEWS
                                 </a>
                             </li>
@@ -308,7 +320,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="lenze-industrial-servogearmotor.html" class="image featured">
+                    <a href="/lenze-industrial-servogearmotor/" class="image featured">
                         <img src="images/lenze-industrial-servo-gearmotors.jpg"
                             alt="LENZE industrial gearmotors"
                             width="600"
@@ -326,7 +338,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="lenze-industrial-servogearmotor.html" class="button alt">
+                                <a href="/lenze-industrial-servogearmotor/" class="button alt">
                                     Lenze Products NEWS
                                 </a>
                             </li>
@@ -336,7 +348,7 @@
             </div>
 			<div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="abb-industrial-motors-china-company.html" class="image featured">
+                    <a href="/abb-industrial-motors-china-company/" class="image featured">
                         <img src="images/abb-industrial-motor.jpg"
                             alt="ABB industrial motors"
                             width="600"
@@ -354,7 +366,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="abb-industrial-motors-china-company.html" class="button alt">
+                                <a href="/abb-industrial-motors-china-company/" class="button alt">
                                     ABB Industrial Company
                                 </a>
                             </li>
@@ -364,7 +376,7 @@
             </div>
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="abb-baldor-industrial-dc-motors-china-company.html" class="image featured">
+                    <a href="/abb-baldor-industrial-dc-motors-china-company/" class="image featured">
                         <img src="images/baldor-reliance-dc-vertical-pump-motor-application.jpg"
                             alt="BALDOR industrial motors"
                             width="600"
@@ -382,7 +394,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="abb-baldor-industrial-dc-motors-china-company.html" class="button alt">
+                                <a href="/abb-baldor-industrial-dc-motors-china-company/" class="button alt">
                                     ABB Baldor Motors News
                                 </a>
                             </li>
@@ -393,7 +405,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="kollmorgen-hygienic-servo-drives.html" class="image featured">
+                    <a href="/kollmorgen-hygienic-servo-drives/" class="image featured">
                         <img src="images/kollmorgen-motion-control-servo-system-essentials.jpg"
                             alt="KOLLMORGEN servo motors"
                             width="600"
@@ -411,7 +423,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="kollmorgen-hygienic-servo-drives.html" class="button alt">
+                                <a href="/kollmorgen-hygienic-servo-drives/" class="button alt">
                                     Kollmorgen Servo Motors
                                 </a>
                             </li>
@@ -422,7 +434,7 @@
 
             <div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="sumitomo-drive-technologies-news-updates.html" class="image featured">
+                    <a href="/sumitomo-drive-technologies-news-updates/" class="image featured">
                         <img src="images/sumitomo-shi-800t-servopress-control-model.jpg" alt="SUMITOMO Cyclo Drive 6000 and Hansen P4 gearboxes" width="600" height="400" />
                     </a>
                     <header>
@@ -437,7 +449,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="sumitomohansen-speedreducer.html" class="button alt">
+                                <a href="/sumitomohansen-speedreducer/" class="button alt">
                                     Sumitomo & Hansen Gearbox News
                                 </a>
                             </li>
@@ -447,7 +459,7 @@
             </div>
 			<div class="col-4 col-6-medium col-12-small">
                 <section class="box" style="text-align: left;">
-                    <a href="wedrive-replacement-news.html" class="image featured">
+                    <a href="/wedrive-replacement-news/" class="image featured">
                         <img src="/images/wedrive-logo.png" alt="Customized OEM and ODM industrial gearboxes" width="600" height="400" />
                     </a>
                     <header>
@@ -462,7 +474,7 @@
                     <footer>
                         <ul class="actions">
                             <li>
-                                <a href="wedrive-replacement-news.html" class="button alt">
+                                <a href="/wedrive-replacement-news/" class="button alt">
                                     ODM Replacement Gearboxes News
                                 </a>
                             </li>
@@ -486,26 +498,26 @@
                             <div style="display: flex; flex-wrap: wrap; margin-top: 20px; text-align: left;">
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/sew-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SEW Gearmotors</a></li>
-                                        <li><a href="/flender-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• FLENDER Gearbox</a></li>
-                                        <li><a href="/nord-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• NORD Gearmotors</a></li>
-                                        <li><a href="/siemens-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
+                                        <li><a href="/sew-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SEW Gearmotors</a></li>
+                                        <li><a href="/flender-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• FLENDER Gearbox</a></li>
+                                        <li><a href="/nord-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• NORD Gearmotors</a></li>
+                                        <li><a href="/siemens-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• SIEMENS & INNOMOTICS</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/bonfiglioli-gearbox.html" style="color: #444; font-weight: 600; text-decoration: none;">• BONFIGLIOLI Gearbox</a></li>
-                                        <li><a href="/bauer-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• BAUER Gearmotors</a></li>
-                                        <li><a href="/lenze-gearmotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• LENZE Gearmotors</a></li>
-                                        <li><a href="/abb-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• ABB Motors</a></li>
+                                        <li><a href="/bonfiglioli-gearbox/" style="color: #444; font-weight: 600; text-decoration: none;">• BONFIGLIOLI Gearbox</a></li>
+                                        <li><a href="/bauer-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• BAUER Gearmotors</a></li>
+                                        <li><a href="/lenze-gearmotors/" style="color: #444; font-weight: 600; text-decoration: none;">• LENZE Gearmotors</a></li>
+                                        <li><a href="/abb-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• ABB Motors</a></li>
                                     </ul>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; margin-bottom: 15px;">
                                     <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                                        <li><a href="/baldor-motors.html" style="color: #444; font-weight: 600; text-decoration: none;">• BALDOR Motors</a></li>
-                                        <li><a href="/kollmorgen-servomotors.html" style="color: #444; font-weight: 600; text-decoration: none;">• KOLLMORGEN Servo</a></li>
-                                        <li><a href="/sumitomohansen-speedreducer.html" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
-                                        <li><a href="/odm-brand.html" style="color: #444; font-weight: 600; text-decoration: none;">• ODM BRAND Solutions</a></li>
+                                        <li><a href="/baldor-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• BALDOR Motors</a></li>
+                                        <li><a href="/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• KOLLMORGEN Servo</a></li>
+                                        <li><a href="/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
+                                        <li><a href="/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• ODM BRAND Solutions</a></li>
                                     </ul>
                                 </div>
                             </div>
