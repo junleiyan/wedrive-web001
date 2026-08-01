@@ -243,22 +243,34 @@
         <!-- 产品折扣网格 -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
             
-            <!-- 产品卡片 1：Bonfiglioli (加入 Microdata 修复报错) -->
-          <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <!-- 产品卡片：完全符合 Google 结构化数据要求的标准样板 -->
+<div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" itemscope itemtype="https://schema.org/Product">
+    
+    <!-- 产品图片 -->
     <div style="background: #fff; height: 400px; display: flex; align-items: center; justify-content: center; position: relative;">
-        <img src="images/discount101.png" alt="Bonfiglioli VF Worm Gearbox" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+        <img src="images/discount101.png" alt="Bonfiglioli VF Worm Gearbox" style="max-width: 80%; max-height: 80%; object-fit: contain;" itemprop="image">
         <span style="position: absolute; top: 15px; left: 15px; background: #d93025; color: white; padding: 5px 12px; border-radius: 5px; font-weight: bold; font-size: 0.9em;">Up to -15% OFF</span>
     </div>
     
+    <!-- 产品文案与描述 -->
     <div style="padding: 25px;">
-        <h3 style="color: #333; margin-bottom: 10px; font-size: 1.4em;">Bonfiglioli VF Worm Gearbox</h3>
-        <p style="color: #777; font-size: 0.9em; margin-bottom: 20px;">Original VF30/VF44/VF49 series. Limited Time Offer with 12 months warranty.</p>
+        <h3 style="color: #333; margin-bottom: 10px; font-size: 1.4em;" itemprop="name">Bonfiglioli VF Worm Gearbox</h3>
+        <p style="color: #777; font-size: 0.9em; margin-bottom: 20px;" itemprop="description">Original VF30/VF44/VF49 series. Limited Time Offer with 12 months warranty.</p>
         
-        <div style="text-align: center; margin-top: 20px;">
+        <!-- 符合 Google 规范的 AggregateOffer 结构化数据 -->
+        <div style="text-align: center; margin-top: 20px;" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+            <!-- 严丝合缝的 Google 必填底层数据 -->
+            <meta itemprop="priceCurrency" content="USD">
+            <meta itemprop="lowPrice" content="145.00">
+            <meta itemprop="highPrice" content="199.00">
+            
+            <!-- 视觉展示区 -->
             <div style="margin-bottom: 20px;">
                 <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">$145-$199.00</span>
                 <span style="text-decoration: line-through; color: #999; font-size: 1.1em; margin-left: 10px;">$250.00</span>
             </div>
+            
+            <!-- B2B 询盘跳转按钮 -->
             <a href="/inquiry/" style="display: inline-block; text-align: center; background: #2b468b; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em; width: auto; min-width: 200px;">
                 Inquiry for Best Price
             </a>
@@ -267,18 +279,23 @@
 </div>
 
             <!-- 产品卡片 2：Siemens Innomotics (完善区间价声明) -->
-          <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding-bottom: 25px;">
+       <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding-bottom: 25px;" itemscope itemtype="https://schema.org/Product">
     <div style="background: #fff; height: 400px; display: flex; align-items: center; justify-content: center; position: relative;">
-        <img src="images/discount100.png" alt="Siemens Innomotics Motor" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+        <img src="images/discount100.png" alt="Siemens Innomotics Motor" style="max-width: 80%; max-height: 80%; object-fit: contain;" itemprop="image">
         <span style="position: absolute; top: 15px; left: 15px; background: #2b468b; color: white; padding: 5px 12px; border-radius: 5px; font-weight: bold; font-size: 0.9em;">Bulk Discount</span>
     </div>
     
     <div style="text-align: center; margin-top: 20px; padding: 0 25px;">
         <div style="display: inline-block; text-align: center; width: 90%;">
-            <h3 style="margin-bottom: 5px; color: #333; font-size: 1.4em;">Siemens Motors</h3>
-            <p style="margin-bottom: 15px; color: #777; font-size: 0.9em;">0.55KW to 315KW Standard Low Voltage Motors. 100% Brand New.</p>
+            <h3 style="margin-bottom: 5px; color: #333; font-size: 1.4em;" itemprop="name">Siemens Motors</h3>
+            <p style="margin-bottom: 15px; color: #777; font-size: 0.9em;" itemprop="description">0.55KW to 315KW Standard Low Voltage Motors. 100% Brand New.</p>
             
-            <div style="margin-bottom: 20px;">
+            <!-- 符合 Google 规范的 AggregateOffer 结构化数据区间 -->
+            <div style="margin-bottom: 20px;" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta itemprop="priceCurrency" content="USD">
+                <meta itemprop="lowPrice" content="175.00">
+                <meta itemprop="highPrice" content="19998.00">
+                
                 <span style="font-size: 1.6em; font-weight: bold; color: #2b468b;">$175.00 - $19,998.00</span>
             </div>
         </div>
