@@ -2,6 +2,18 @@
 <html lang="fa" dir="rtl">
 
 <head>
+	<script>
+  (function() {
+    var path = window.location.pathname;
+    if (path.toLowerCase().endsWith('.html')) {
+      var cleanPath = path.substring(0, path.length - 5) + '/';
+      // 检查是否已经是新地址，防止死循环
+      if (path !== cleanPath) {
+        window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+      }
+    }
+  })();
+</script>
 	<!-- Google tag (gtag.js) - 流量追踪 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6"></script>
 <script>
