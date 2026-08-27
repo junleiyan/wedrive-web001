@@ -145,7 +145,7 @@
   <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
     
     <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-        <li><a href="/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/products/odm-brand-products/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
         <li><a href="/pt/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
         <li><a href="/ar/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
         <li><a href="/de/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
@@ -157,17 +157,17 @@
         <li><a href="/th/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
         <li><a href="/vi/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
         <li><a href="/id/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
-        <li><a href="/fil/products/odm-brand-products/" style="text-decoration:none; color:#0073bb; font-weight:bold;">FIL</a></li>
+        <li><a href="/fil/products/odm-brand-products/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
     </ul>
 
-    <!-- 删除了 onclick 强制跳转，仅作为悬停触发出菜单的按钮 -->
-    <div style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+    <!-- Trigger button: hover to reveal menu or click to redirect to English product page -->
+    <div onclick="window.location.href='/products/odm-brand-products/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
         🌐 Language
     </div>
 </div>
 
 <style>
-    /* 鼠标悬停在 container 上时，显示 ul */
+    /* Display language menu (ul) when hovering over lang-container */
     .lang-container:hover .lang-menu {
         display: flex !important;
     }
