@@ -104,26 +104,36 @@
 <body class="homepage is-preload">
 
     <!-- Top Right Language Selector Switcher -->
-    <div class="lang-container">
-        <ul class="lang-menu">
-            <li><a href="/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-            <li><a href="/pt/products/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
-            <li><a href="/ar/products/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-            <li><a href="/de/products/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-            <li><a href="/es/products/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-            <li><a href="/fa/products/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-            <li><a href="/fr/products/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-            <li><a href="/ru/products/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-            <li><a href="/ja/products/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
-            <li><a href="/th/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#0073bb; font-weight:bold;">TH</a></li>
-            <li><a href="/vi/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
-            <li><a href="/id/products/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
-            <li><a href="/fil/products/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
-        </ul>
-        <div onclick="window.location.href='/products/kollmorgen-servomotors-products/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
-            🌐 ภาษา
-        </div>
+   <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
+    
+    <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
+        <li><a href="/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/pt/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+        <li><a href="/ar/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+        <li><a href="/ja/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/th/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#0073bb; font-weight:bold;">TH</a></li>
+        <li><a href="/vi/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+        <li><a href="/id/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+        <li><a href="/fil/products/kollmorgen-servomotors-products/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+    </ul>
+
+    <!-- ปุ่มหลัก: วางเมาส์เหนือปุ่มเพื่อเปิดเมนูภาษา หรือคลิกเพื่อกลับไปยังหน้าภาษาอังกฤษหลัก -->
+    <div onclick="window.location.href='/products/kollmorgen-servomotors-products/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+        🌐 ภาษา
     </div>
+</div>
+
+<style>
+    /* แสดงเมนูภาษา (ul) เมื่อวางเมาส์เหนือ lang-container */
+    .lang-container:hover .lang-menu {
+        display: flex !important;
+    }
+</style>
 
     <div id="page-wrapper">
         <!-- Header Section -->
