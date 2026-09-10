@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Filipino Structured Data -->
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Filipino", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Pandaigdigang Direktoryo ng mga Tatak ng Pang-industriyang Transmisyon",
+      "description": "Direktang direktoryo ng suplay para sa mga gearbox na pambigat, reduktor, motor na elektriko, at drive ng awtomasyon.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/fil/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Filipino", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Gearmotor SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/fil/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pang-industriyang Gearbox FLENDER",
+          "url": "https://www.wedrivepower.com/fil/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sistema ng Drive NORD",
+          "url": "https://www.wedrivepower.com/fil/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Motor na Elektriko SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/fil/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Pang-industriyang Motor ABB",
+          "url": "https://www.wedrivepower.com/fil/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Paano ninyo tinitiyak na tunay ang mga produkto para sa mga kilalang tatak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ang lahat ng kagamitang ibinibigay ng WE DRIVE HONGKONG LIMITED ay direktang nanggagaling sa mga beripikadong tsanal ng pabrika, may kasamang orihinal na nameplate, beripikasyon ng serial number, at kumpletong sertipikasyon ng inspeksyon mula sa pabrika."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Pandaigdigang Direktoryo ng mga Tatak ng Pang-industriyang Transmisyon",
-          "description": "Direktang direktoryo ng suplay para sa mga gearbox na pambigat, reduktor, motor na elektriko, at drive ng awtomasyon.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Gearmotor SEW-Eurodrive", "url": "https://www.wedrivepower.com/fil/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "Pang-industriyang Gearbox FLENDER", "url": "https://www.wedrivepower.com/fil/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "Sistema ng Drive NORD", "url": "https://www.wedrivepower.com/fil/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "Motor na Elektriko SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/fil/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "Pang-industriyang Motor ABB", "url": "https://www.wedrivepower.com/fil/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Paano ninyo tinitiyak na tunay ang mga produkto para sa mga kilalang tatak?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ang lahat ng kagamitang ibinibigay ng WE DRIVE HONGKONG LIMITED ay direktang nanggagaling sa mga beripikadong tsanal ng pabrika, may kasamang orihinal na nameplate, beripikasyon ng serial number, at kumpletong sertipikasyon ng inspeksyon mula sa pabrika."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Maaari ba kayong magbigay ng pasadyang gear ratio o modipikasyon para sa pambigat na gamit?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Oo, tumutulong ang aming pangkat ng inhinyero sa modipikasyon ng shaft, mga espesyal na flange adapter, seal para sa mataas na temperatura, at pasadyang gear ratio na nakadisenyo para sa minahan, semento, at conveyor."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Maaari ba kayong magbigay ng pasadyang gear ratio o modipikasyon para sa pambigat na gamit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oo, tumutulong ang aming pangkat ng inhinyero sa modipikasyon ng shaft, mga espesyal na flange adapter, seal para sa mataas na temperatura, at pasadyang gear ratio na nakadisenyo para sa minahan, semento, at conveyor."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
