@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Thai Structured Data -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Thai", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "ดรรชนีแบรนด์อุปกรณ์ส่งกำลังอุตสาหกรรมระดับโลก",
+      "description": "แคตตาล็อกเกียร์อุตสาหกรรมงานหนัก มอเตอร์เกียร์ มอเตอร์ไฟฟ้า และระบบอัตโนมัติ",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/th/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Thai", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "มอเตอร์เกียร์ SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/th/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "เกียร์อุตสาหกรรม FLENDER",
+          "url": "https://www.wedrivepower.com/th/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ระบบขับเคลื่อน NORD Drive Systems",
+          "url": "https://www.wedrivepower.com/th/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "มอเตอร์ไฟฟ้า SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/th/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "มอเตอร์อุตสาหกรรม ABB",
+          "url": "https://www.wedrivepower.com/th/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "มั่นใจได้อย่างไรว่าสินค้าเป็นของแท้จากแบรนด์ชั้นนำ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "อุปกรณ์ทั้งหมดที่จัดจำหน่ายโดย WE DRIVE HONGKONG LIMITED นำเข้ามาจากช่องทางผู้ผลิตที่ผ่านการตรวจสอบโดยตรง พร้อมป้ายสเปก (Nameplate) ดั้งเดิม หมายเลขซีเรียลที่ตรวจสอบได้ และใบรับรองการตรวจสอบจากโรงงาน"
           }
         },
         {
-          "@type": "ItemList",
-          "name": "ดรรชนีแบรนด์อุปกรณ์ส่งกำลังอุตสาหกรรมระดับโลก",
-          "description": "แคตตาล็อกเกียร์อุตสาหกรรมงานหนัก มอเตอร์เกียร์ มอเตอร์ไฟฟ้า และระบบอัตโนมัติ",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "มอเตอร์เกียร์ SEW-Eurodrive", "url": "https://www.wedrivepower.com/th/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "เกียร์อุตสาหกรรม FLENDER", "url": "https://www.wedrivepower.com/th/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "ระบบขับเคลื่อน NORD Drive Systems", "url": "https://www.wedrivepower.com/th/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "มอเตอร์ไฟฟ้า SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/th/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "มอเตอร์อุตสาหกรรม ABB", "url": "https://www.wedrivepower.com/th/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "มั่นใจได้อย่างไรว่าสินค้าเป็นของแท้จากแบรนด์ชั้นนำ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "อุปกรณ์ทั้งหมดที่จัดจำหน่ายโดย WE DRIVE HONGKONG LIMITED นำเข้ามาจากช่องทางผู้ผลิตที่ผ่านการตรวจสอบโดยตรง พร้อมป้ายสเปก (Nameplate) ดั้งเดิม หมายเลขซีเรียลที่ตรวจสอบได้ และใบรับรองการตรวจสอบจากโรงงาน"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "สามารถจัดหาอัตราทดเกียร์พิเศษหรือการดัดแปลงสำหรับงานหนักได้หรือไม่?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ได้ ทีมวิศวกรของเราพร้อมช่วยปรับแต่งขนาดเพลา หน้าแปลนแปลงพิเศษ ซีลทนความร้อนสูง และอัตราทดเกียร์แบบพิเศษที่ออกแบบมาเฉพาะสำหรับอุตสาหกรรมเหมืองแร่ ซีเมนต์ และระบบสายพานลำเลียง"
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "สามารถจัดหาอัตราทดเกียร์พิเศษหรือการดัดแปลงสำหรับงานหนักได้หรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ได้ ทีมวิศวกรของเราพร้อมช่วยปรับแต่งขนาดเพลา หน้าแปลนแปลงพิเศษ ซีลทนความร้อนสูง และอัตราทดเกียร์แบบพิเศษที่ออกแบบมาเฉพาะสำหรับอุตสาหกรรมเหมืองแร่ ซีเมนต์ และระบบสายพานลำเลียง"
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
