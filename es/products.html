@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Spanish Structured Data -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Spanish", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Directorio Global de Marcas de Transmisión Industrial",
+      "description": "Suministro directo de reductores pesados, motorreductores, motores eléctricos y sistemas de automatización.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/es/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Spanish", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Motorreductores SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/es/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Reductores Industriales FLENDER",
+          "url": "https://www.wedrivepower.com/es/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sistemas de Accionamiento NORD",
+          "url": "https://www.wedrivepower.com/es/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Motores Eléctricos SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/es/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Motores Industriales ABB",
+          "url": "https://www.wedrivepower.com/es/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo garantizan la autenticidad de los productos de marcas industriales premium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todos los componentes suministrados por WE DRIVE HONGKONG LIMITED se adquieren directamente a través de canales de fabricantes verificados, acompañados de placas de identificación originales, verificación de número de serie y certificaciones completas de inspección de fábrica."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Directorio Global de Marcas de Transmisión Industrial",
-          "description": "Suministro directo de reductores pesados, motorreductores, motores eléctricos y sistemas de automatización.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Motorreductores SEW-Eurodrive", "url": "https://www.wedrivepower.com/es/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "Reductores Industriales FLENDER", "url": "https://www.wedrivepower.com/es/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "Sistemas de Accionamiento NORD", "url": "https://www.wedrivepower.com/es/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "Motores Eléctricos SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/es/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "Motores Industriales ABB", "url": "https://www.wedrivepower.com/es/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "¿Cómo garantizan la autenticidad de los productos de marcas industriales premium?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Todos los componentes suministrados por WE DRIVE HONGKONG LIMITED se adquieren directamente a través de canales de fabricantes verificados, acompañados de placas de identificación originales, verificación de número de serie y certificaciones completas de inspección de fábrica."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "¿Es posible suministrar relaciones de reducción especiales o adaptaciones para servicio pesado?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sí, nuestro equipo de ingeniería brinda asistencia en la adaptación de ejes, bridas especiales, sellos para altas temperaturas y relaciones de transmisión personalizadas diseñadas para minería, cemento y transportadores."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "¿Es posible suministrar relaciones de reducción especiales o adaptaciones para servicio pesado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, nuestro equipo de ingeniería brinda asistencia en la adaptación de ejes, bridas especiales, sellos para altas temperaturas y relaciones de transmisión personalizadas diseñadas para minería, cemento y transportadores."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
