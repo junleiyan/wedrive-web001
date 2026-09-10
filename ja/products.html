@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Japanese Structured Data -->
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Japanese", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "世界の産業用伝動機器ブランドディレクトリ",
+      "description": "大型減速機、ギヤードモーター、電動機、自動化ドライブの直サプライディレクトリ。",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/ja/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Japanese", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "SEW-Eurodrive ギヤードモーター",
+          "url": "https://www.wedrivepower.com/ja/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FLENDER 産業用減速機",
+          "url": "https://www.wedrivepower.com/ja/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NORD 駆動システム",
+          "url": "https://www.wedrivepower.com/ja/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SIEMENS & INNOMOTICS 産業用モータ",
+          "url": "https://www.wedrivepower.com/ja/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "ABB 産業用モータ",
+          "url": "https://www.wedrivepower.com/ja/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "プレミアムブランドの製品が正規品であることをどのように保証していますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WE DRIVE HONGKONG LIMITEDが供給するすべてのコンポーネントは、認証されたメーカーチャネルから直接調達されており、元の銘板（ネームプレート）、シリアル番号検証、完全な工場出荷検査証明書が付属しています。"
           }
         },
         {
-          "@type": "ItemList",
-          "name": "世界の産業用伝動機器ブランドディレクトリ",
-          "description": "大型減速機、ギヤードモーター、電動機、自動化ドライブの直サプライディレクトリ。",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "SEW-Eurodrive ギヤードモーター", "url": "https://www.wedrivepower.com/ja/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "FLENDER 産業用減速機", "url": "https://www.wedrivepower.com/ja/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "NORD 駆動システム", "url": "https://www.wedrivepower.com/ja/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "SIEMENS & INNOMOTICS 産業用モータ", "url": "https://www.wedrivepower.com/ja/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "ABB 産業用モータ", "url": "https://www.wedrivepower.com/ja/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "プレミアムブランドの製品が正規品であることをどのように保証していますか？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "WE DRIVE HONGKONG LIMITEDが供給するすべてのコンポーネントは、認証されたメーカーチャネルから直接調達されており、元の銘板（ネームプレート）、シリアル番号検証、完全な工場出荷検査証明書が付属しています。"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "特殊な減速比や重荷重向けカスタマイズは可能ですか？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "はい。当社のエンジニアリングチームが、鉱山、セメント、コンベア用途向けに設計された軸加工、特殊フランジアダプター、耐熱シール、カスタム減速比の対応をサポートします。"
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "特殊な減速比や重荷重向けカスタマイズは可能ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。当社のエンジニアリングチームが、鉱山、セメント、コンベア用途向けに設計された軸加工、特殊フランジアダプター、耐熱シール、カスタム減速比の対応をサポートします。"
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
