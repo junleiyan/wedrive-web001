@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Persian Structured Data -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Persian", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "دایرکتوری جهانی برندهای انتقال قدرت صنعتی",
+      "description": "دایرکتوری تامین مستقیم گیربکس های سنگین صنعتی، موتور گیربکس ها، الکتروموتورها و درایوهای اتوماسیون.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/fa/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Persian", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "موتور گیربکس SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/fa/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "گیربکس های صنعتی FLENDER",
+          "url": "https://www.wedrivepower.com/fa/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "سیستم های درایو NORD",
+          "url": "https://www.wedrivepower.com/fa/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "الکتروموتورهای SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/fa/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "الکتروموتورهای صنعتی ABB",
+          "url": "https://www.wedrivepower.com/fa/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "چگونه از اصالت محصولات برندهای ممتاز صنعتی اطمینان حاصل می کنید؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تمامی تجهیزات ارائه شده توسط WE DRIVE HONGKONG LIMITED مستقیماً از کانال های تایید شده سازندگان تامین شده و همراه با پلاک اصلی، تاییدیه شماره سریال و گواهی های کامل بازرسی کارخانه ارائه می شوند."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "دایرکتوری جهانی برندهای انتقال قدرت صنعتی",
-          "description": "دایرکتوری تامین مستقیم گیربکس های سنگین صنعتی، موتور گیربکس ها، الکتروموتورها و درایوهای اتوماسیون.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "موتور گیربکس SEW-Eurodrive", "url": "https://www.wedrivepower.com/fa/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "گیربکس های صنعتی FLENDER", "url": "https://www.wedrivepower.com/fa/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "سیستم های درایو NORD", "url": "https://www.wedrivepower.com/fa/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "الکتروموتورهای SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/fa/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "الکتروموتورهای صنعتی ABB", "url": "https://www.wedrivepower.com/fa/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "چگونه از اصالت محصولات برندهای ممتاز صنعتی اطمینان حاصل می کنید؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تمامی تجهیزات ارائه شده توسط WE DRIVE HONGKONG LIMITED مستقیماً از کانال های تایید شده سازندگان تامین شده و همراه با پلاک اصلی، تاییدیه شماره سریال و گواهی های کامل بازرسی کارخانه ارائه می شوند."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "آیا امکان ارائه نسبت های تبدیل سفارشی یا تغییرات برای شرایط کاری سنگین وجود دارد؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "بله، تیم مهندسی ما در زمینه تغییرات شفت، آداپتورهای فلنج خاص، آب بندهای مقاوم در برابر دمای بالا و نسبت های تبدیل سفارشی طراحی شده برای صنایع معدن، سیمان و نوار نقاله ها خدمات ارائه می دهد."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "آیا امکان ارائه نسبت های تبدیل سفارشی یا تغییرات برای شرایط کاری سنگین وجود دارد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بله، تیم مهندسی ما در زمینه تغییرات شفت، آداپتورهای فلنج خاص، آب بندهای مقاوم در برابر دمای بالا و نسبت های تبدیل سفارشی طراحی شده برای صنایع معدن، سیمان و نوار نقاله ها خدمات ارائه می دهد."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         body { text-align: right; }
