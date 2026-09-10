@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org German Structured Data -->
-    <script type="application/ld+json">
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "German", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Globales Markenverzeichnis für industrielle Antriebstechnik",
+      "description": "Direktlieferverzeichnis für Schwerlastgetriebe, Getriebemotoren, Elektromotoren und Automatisierungsantriebe.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/de/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "German", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "SEW-Eurodrive Getriebemotoren",
+          "url": "https://www.wedrivepower.com/de/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FLENDER Industriegetriebe",
+          "url": "https://www.wedrivepower.com/de/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NORD Antriebssysteme",
+          "url": "https://www.wedrivepower.com/de/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SIEMENS & INNOMOTICS Motoren",
+          "url": "https://www.wedrivepower.com/de/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "ABB Industriemotoren",
+          "url": "https://www.wedrivepower.com/de/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie stellen Sie die Echtheit von Produkten industrieller Premium-Marken sicher?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alle von WE DRIVE HONGKONG LIMITED gelieferten Komponenten werden direkt über verifizierte Herstellerkanäle bezogen, inklusive originaler Typenschilder, Seriennummernprüfung und vollständiger Werksprüfzertifikate."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Globales Markenverzeichnis für industrielle Antriebstechnik",
-          "description": "Direktlieferverzeichnis für Schwerlastgetriebe, Getriebemotoren, Elektromotoren und Automatisierungsantriebe.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "SEW-Eurodrive Getriebemotoren", "url": "https://www.wedrivepower.com/de/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "FLENDER Industriegetriebe", "url": "https://www.wedrivepower.com/de/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "NORD Antriebssysteme", "url": "https://www.wedrivepower.com/de/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "SIEMENS & INNOMOTICS Motoren", "url": "https://www.wedrivepower.com/de/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "ABB Industriemotoren", "url": "https://www.wedrivepower.com/de/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Wie stellen Sie die Echtheit von Produkten industrieller Premium-Marken sicher?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Alle von WE DRIVE HONGKONG LIMITED gelieferten Komponenten werden direkt über verifizierte Herstellerkanäle bezogen, inklusive originaler Typenschilder, Seriennummernprüfung und vollständiger Werksprüfzertifikate."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Können Sie Sonderübersetzungen oder Anpassungen für extreme Betriebsbedingungen liefern?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ja, unser Ingenieurteam unterstützt bei Wellenanpassungen, speziellen Flanschadaptern, Hochtemperaturdichtungen und kundenspezifischen Übersetzungen für Bergbau-, Zement- und Förderanwendungen."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Können Sie Sonderübersetzungen oder Anpassungen für extreme Betriebsbedingungen liefern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, unser Ingenieurteam unterstützt bei Wellenanpassungen, speziellen Flanschadaptern, Hochtemperaturdichtungen und kundenspezifischen Übersetzungen für Bergbau-, Zement- und Förderanwendungen."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
