@@ -48,60 +48,85 @@
     </script>
 
     <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Global Industrial Brand Directory",
+      "description": "Authorized and direct supply directory for heavy-duty gearboxes, speed reducers, electric motors, and automation drives.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "SEW-Eurodrive Gearmotors",
+          "url": "https://www.wedrivepower.com/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FLENDER Industrial Gearboxes",
+          "url": "https://www.wedrivepower.com/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NORD Drive Systems",
+          "url": "https://www.wedrivepower.com/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SIEMENS & INNOMOTICS Motors",
+          "url": "https://www.wedrivepower.com/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "ABB Industrial Motors",
+          "url": "https://www.wedrivepower.com/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you ensure product authenticity for premium industrial brands?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All components supplied by WE DRIVE HONGKONG LIMITED are sourced directly from verified manufacturer channels, complete with original nameplates, serial verification, and full factory inspection certifications."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Global Industrial Brand Directory",
-          "description": "Authorized and direct supply directory for heavy-duty gearboxes, speed reducers, electric motors, and automation drives.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "SEW-Eurodrive Gearmotors", "url": "https://www.wedrivepower.com/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "FLENDER Industrial Gearboxes", "url": "https://www.wedrivepower.com/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "NORD Drive Systems", "url": "https://www.wedrivepower.com/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "SIEMENS & INNOMOTICS Motors", "url": "https://www.wedrivepower.com/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "ABB Industrial Motors", "url": "https://www.wedrivepower.com/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How do you ensure product authenticity for premium industrial brands?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All components supplied by WE DRIVE HONGKONG LIMITED are sourced directly from verified manufacturer channels, complete with original nameplates, serial verification, and full factory inspection certifications."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can you provide custom gear ratios or severe-duty modifications?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, our engineering team assists with shaft modifications, special flange adapters, high-temperature seals, and custom gear ratios tailored for mining, cement, and conveyor applications."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Can you provide custom gear ratios or severe-duty modifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our engineering team assists with shaft modifications, special flange adapters, high-temperature seals, and custom gear ratios tailored for mining, cement, and conveyor applications."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
