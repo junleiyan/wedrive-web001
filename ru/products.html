@@ -49,59 +49,84 @@
 
     <!-- Schema.org Russian Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Russian", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Каталог брендов промышленной приводной техники",
+      "description": "Прямые поставки тяжелых промышленных редукторов, мотор-редукторов, электродвигателей и систем автоматизации.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/ru/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Russian", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Мотор-редукторы SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/ru/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Промышленные редукторы FLENDER",
+          "url": "https://www.wedrivepower.com/ru/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Приводные системы NORD",
+          "url": "https://www.wedrivepower.com/ru/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Электродвигатели SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/ru/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Промышленные электродвигатели ABB",
+          "url": "https://www.wedrivepower.com/ru/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как гарантируется подлинность оборудования премиальных брендов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Все оборудование, поставляемое WE DRIVE HONGKONG LIMITED, закупается напрямую через проверенные заводские каналы, поставляется с оригинальными заводскими шильдами, серийными номерами и заводской технической документацией."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Каталог брендов промышленной приводной техники",
-          "description": "Прямые поставки тяжелых промышленных редукторов, мотор-редукторов, электродвигателей и систем автоматизации.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Мотор-редукторы SEW-Eurodrive", "url": "https://www.wedrivepower.com/ru/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "Промышленные редукторы FLENDER", "url": "https://www.wedrivepower.com/ru/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "Приводные системы NORD", "url": "https://www.wedrivepower.com/ru/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "Электродвигатели SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/ru/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "Промышленные электродвигатели ABB", "url": "https://www.wedrivepower.com/ru/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Как гарантируется подлинность оборудования премиальных брендов?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Все оборудование, поставляемое WE DRIVE HONGKONG LIMITED, закупается напрямую через проверенные заводские каналы, поставляется с оригинальными заводскими шильдами, серийными номерами и заводской технической документацией."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Возможно ли изготовление нестандартных передаточных чисел или адаптация под тяжелые условия?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Да, наша инженерная группа выполняет адаптацию валов, изготовление специальных переходных фланцев, установку высокотемпературных уплотнений и подбор специальных передаточных чисел для горнодобывающей, цементной и конвейерной промышленности."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Возможно ли изготовление нестандартных передаточных чисел или адаптация под тяжелые условия?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, наша инженерная группа выполняет адаптацию валов, изготовление специальных переходных фланцев, установку высокотемпературных уплотнений и подбор специальных передаточных чисел для горнодобывающей, цементной и конвейерной промышленности."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
