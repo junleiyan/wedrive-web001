@@ -48,61 +48,85 @@
     </script>
 
     <!-- Schema.org Vietnamese Structured Data -->
-    <script type="application/ld+json">
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.wedrivepower.com/#organization",
+      "name": "WE DRIVE HONGKONG LIMITED",
+      "url": "https://www.wedrivepower.com/",
+      "logo": "https://www.wedrivepower.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-15502804645",
+        "contactType": "sales",
+        "email": "james@wedrivepower.com",
+        "availableLanguage": ["English", "Vietnamese", "Chinese"]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Danh Mục Thương Hiệu Truyền Động Công Nghiệp Toàn Cầu",
+      "description": "Danh mục cung cấp trực tiếp hộp số tải nặng, bộ giảm tốc, động cơ điện và thiết bị tự động hóa.",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://www.wedrivepower.com/#organization",
-          "name": "WE DRIVE HONGKONG LIMITED",
-          "url": "https://www.wedrivepower.com/vi/",
-          "logo": "https://www.wedrivepower.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-15502804645",
-            "contactType": "sales",
-            "email": "james@wedrivepower.com",
-            "availableLanguage": ["English", "Vietnamese", "Chinese"]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Động cơ giảm tốc SEW-Eurodrive",
+          "url": "https://www.wedrivepower.com/vi/sew-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hộp số công nghiệp FLENDER",
+          "url": "https://www.wedrivepower.com/vi/flender-gearbox.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hệ thống truyền động NORD",
+          "url": "https://www.wedrivepower.com/vi/nord-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Động cơ SIEMENS & INNOMOTICS",
+          "url": "https://www.wedrivepower.com/vi/siemens-gearmotors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Động cơ công nghiệp ABB",
+          "url": "https://www.wedrivepower.com/vi/abb-motors.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Làm thế nào để đảm bảo sản phẩm chính hãng cho các thương hiệu cao cấp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tất cả thiết bị do WE DRIVE HONGKONG LIMITED cung cấp đều được nhập trực tiếp từ các kênh nhà sản xuất đã qua xác minh, đi kèm mác nguyên bản, số sê-ri xác thực và chứng nhận kiểm định nhà máy đầy đủ."
           }
         },
         {
-          "@type": "ItemList",
-          "name": "Danh Mục Thương Hiệu Truyền Động Công Nghiệp Toàn Cầu",
-          "description": "Danh mục cung cấp trực tiếp hộp số tải nặng, bộ giảm tốc, động cơ điện và thiết bị tự động hóa.",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Động cơ giảm tốc SEW-Eurodrive", "url": "https://www.wedrivepower.com/vi/sew-gearmotors/"},
-            {"@type": "ListItem", "position": 2, "name": "Hộp số công nghiệp FLENDER", "url": "https://www.wedrivepower.com/vi/flender-gearbox/"},
-            {"@type": "ListItem", "position": 3, "name": "Hệ thống truyền động NORD", "url": "https://www.wedrivepower.com/vi/nord-gearmotors/"},
-            {"@type": "ListItem", "position": 4, "name": "Động cơ SIEMENS & INNOMOTICS", "url": "https://www.wedrivepower.com/vi/siemens-gearmotors/"},
-            {"@type": "ListItem", "position": 5, "name": "Động cơ công nghiệp ABB", "url": "https://www.wedrivepower.com/vi/abb-motors/"}
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Làm thế nào để đảm bảo sản phẩm chính hãng cho các thương hiệu cao cấp?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Tất cả thiết bị do WE DRIVE HONGKONG LIMITED cung cấp đều được nhập trực tiếp từ các kênh nhà sản xuất đã qua xác minh, đi kèm mác nguyên bản, số sê-ri xác thực và chứng nhận kiểm định nhà máy đầy đủ."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Công ty có cung cấp tỷ số truyền tùy chỉnh hoặc nâng cấp chịu tải nặng không?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Có, đội ngũ kỹ thuật của chúng tôi hỗ trợ tùy chỉnh trục, mặt bích chuyển đổi, phớt chịu nhiệt độ cao và tỷ số truyền thiết kế riêng cho ứng dụng khai khoáng, xi măng và băng tải."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Công ty có cung cấp tỷ số truyền tùy chỉnh hoặc nâng cấp chịu tải nặng không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có, đội ngũ kỹ thuật của chúng tôi hỗ trợ tùy chỉnh trục, mặt bích chuyển đổi, phớt chịu nhiệt độ cao và tỷ số truyền thiết kế riêng cho ứng dụng khai khoáng, xi măng và băng tải."
+          }
         }
       ]
     }
-    </script>
-
+  ]
+}
+</script>
     <style>
         .lang-container:hover .lang-menu { display: flex !important; }
         .brand-card-desc { font-size: 0.82em; color: #64748b; margin-top: 6px; text-align: center; font-weight: 500; }
