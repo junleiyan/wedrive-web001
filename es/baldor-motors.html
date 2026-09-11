@@ -51,29 +51,53 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.wedrivepower.com/es/baldor-motors.html#webpage",
-  "url": "https://www.wedrivepower.com/es/baldor-motors.html",
-  "name": "BALDOR NEMA Industrial Electric Motors | WeDrive Power",
-  "description": "Motores eléctricos industriales Baldor-Reliance de alta calidad, incluyendo soluciones para servicio pesado y a prueba de explosiones. Productos genuinos del grupo ABB.",
-  "inLanguage": "es",
-  "isPartOf": {
-    "@type": "WebSite",
-    "@id": "https://www.wedrivepower.com/#website",
-    "name": "WeDrive Power Transmission",
-    "url": "https://www.wedrivepower.com/"
-  },
-  "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": "https://www.wedrivepower.com/images/baldor-motor.jpg"
-  },
-  "about": [
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.wedrivepower.com/es/baldor-motors.html#webpage",
+      "url": "https://www.wedrivepower.com/es/baldor-motors.html",
+      "name": "BALDOR NEMA Industrial Electric Motors | WeDrive Power",
+      "description": "Motores eléctricos industriales Baldor-Reliance de alta calidad, incluyendo soluciones para servicio pesado y a prueba de explosiones. Productos genuinos del grupo ABB.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.wedrivepower.com/#website",
+        "name": "WE DRIVE HONGKONG LIMITED",
+        "url": "https://www.wedrivepower.com/"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.wedrivepower.com/images/baldor-motor.jpg"
+      },
+      "about": {
+        "@id": "https://www.wedrivepower.com/es/baldor-motors.html#product"
+      }
+    },
     {
       "@type": "Product",
+      "@id": "https://www.wedrivepower.com/es/baldor-motors.html#product",
       "name": "BALDOR NEMA Industrial Electric Motors",
+      "image": "https://www.wedrivepower.com/images/baldor-motor.jpg",
+      "description": "Motores eléctricos industriales Baldor-Reliance de alta calidad, incluyendo soluciones para servicio pesado y a prueba de explosiones. Productos genuinos del grupo ABB.",
+      "sku": "BALDOR-NEMA-MOTOR",
+      "mpn": "BALDOR-RELIANCE-SERIES",
       "brand": {
         "@type": "Brand",
         "name": "Baldor-Reliance"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "500.00",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.wedrivepower.com/es/baldor-motors.html",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
       }
     }
   ]
