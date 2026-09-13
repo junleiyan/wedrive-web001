@@ -6,18 +6,7 @@
 -->
 <html lang="pt">
 <head>
-	<script>
-  (function() {
-    var path = window.location.pathname;
-    if (path.toLowerCase().endsWith('.html')) {
-      var cleanPath = path.substring(0, path.length - 5) + '/';
-      // 检查是否已经是新地址，防止死循环
-      if (path !== cleanPath) {
-        window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
-      }
-    }
-  })();
-</script>
+	
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -25,11 +14,11 @@
     <!-- Title: 核心词前置，控制在 60 字符以内 -->
     <title>Redutores Flender e Acoplamentos Industriais | WeDrive Power</title>
     
-    <!-- Description: 融入高效搜索词（N-EUPEX, RUPEX, ZAPEX, Redutor Helicoidal），带 B2B 行动呼吁 -->
+    <!-- Description -->
     <meta name="description" content="Fornecedor global de redutores Flender, motorredutores helicoidais/cônicos e acoplamentos industriais (N-EUPEX, RUPEX, ZAPEX). Peças de reposição e soluções em transmissão de potência." />
     <meta name="keywords" content="redutor Flender, acoplamento Flender, N-EUPEX, RUPEX, ZAPEX, redutor helicoidal, redutor cônico helicoidal, peças Flender, transmissão de potência" />
     
-    <!-- Canonical & Hreflang 规范化化标签 -->
+    <!-- Canonical & Hreflang 规范化标签 -->
     <link rel="canonical" href="https://www.wedrivepower.com/pt/flender-gearbox/" />
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/flender-gearbox/" />
     <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/flender-gearbox/" />
@@ -46,15 +35,15 @@
     <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/flender-gearbox/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/flender-gearbox/" />
 
-    <!-- Open Graph (OG) 标签：提升 WhatsApp/LinkedIn 分享点击率及搜索引擎认知 -->
+    <!-- Open Graph (OG) 标签 -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Redutores Flender e Acoplamentos Industriais | WeDrive Power" />
     <meta property="og:description" content="Fornecedor global de redutores Flender, motorredutores e acoplamentos industriais (N-EUPEX, RUPEX, ZAPEX)." />
     <meta property="og:url" content="https://www.wedrivepower.com/pt/flender-gearbox/" />
     <meta property="og:site_name" content="WeDrive Power Transmission" />
 
-    <!-- 样式表 -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- 样式表：已修复为根目录绝对路径，防止子目录404 -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
     <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6"></script>
@@ -65,7 +54,7 @@
         gtag('config', 'G-2QVTK1XJB6');
     </script>
 
-    <!-- JSON-LD Structured Data: 提升 Google Rich Snippets 展现 -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -82,99 +71,93 @@
     </script>
 </head>
 
-
 <body class="left-sidebar is-preload">
-    <!-- 语言切换器 -->
-    <div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
-        <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
-            <li><a href="/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
-            <li><a href="/pt/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
-            <li><a href="/ar/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
-            <li><a href="/de/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
-            <li><a href="/es/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
-            <li><a href="/fa/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
-            <li><a href="/fr/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
-            <li><a href="/ru/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
-            <li><a href="/th/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
-            <li><a href="/vi/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
-            <li><a href="/id/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
-            <li><a href="/fil/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
-        </ul>
 
-        <div style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
-            🌐 Idioma
-        </div>
-    </div>
-
-    <style>
-        .lang-container:hover .lang-menu {
-            display: flex !important;
-        }
-    </style>
-
-    <div id="page-wrapper">
-        <section id="header">
-            <!-- Logo 与 顶部 Header 核心文字 -->
-            <div style="margin: 0;">
-                <!-- 链接修复：指向葡语首页 /pt/ -->
-                <a href="/pt/" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
-                    
-                    <img src="/images/logo.png" width="400" height="85" alt="WeDrive Power - Fornecedor de Redutores Industriais e Acoplamentos Flender" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
-
-                    <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
-                        <!-- 使用 h1 语义化标签提升主关键词权重 -->
-                        <h1 style="font-size:1.8em; font-weight:800; letter-spacing:1px; color:#1d1d1d; line-height:1.1; margin:0;">
-                            REDUTORES FLENDER® E ACOPLAMENTOS INDUSTRIAIS
-                        </h1>
-
-                        <span style="font-size:0.82em; font-weight:500; color:#666; margin-top:6px; letter-spacing:1px; text-transform:uppercase;">
-                            Fornecedor Global de Redutores de Velocidade, Acoplamentos e Soluções em Transmissão de Potência
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <!-- Nav -->
-<nav id="nav">
-    <ul>
-        <li><a href="/pt/">Início</a></li>
-        
-        <!-- SEO 优化点：href 指向真实 brand.html，让爬虫建立页面权重联系 -->
-        <li class="wd-parent">
-            <a href="/pt/brand/" class="wd-trigger active">Marcas</a>
-            <ul id="wd-brand-menu">
-                <!-- 保留汇总页入口，方便用户操作 -->
-                <li><a href="/pt/brand/" style="font-weight: bold; color: #d42d1e;">Ver Todas as Marcas</a></li>
-                
-                <!-- 子菜单品牌关键词对 SEO 非常有利 -->
-               <li><a href="/pt/sew-gearmotors/">SEW</a></li>
-                <li><a href="/pt/flender-gearbox/">FLENDER</a></li>
-                <li><a href="/pt/nord-gearmotors/">NORD</a></li>
-                <li><a href="/pt/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
-                <li><a href="/pt/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
-                <li><a href="/pt/bauer-gearmotors/">BAUER</a></li>
-                <li><a href="/pt/lenze-gearmotors/">LENZE</a></li>
-                <li><a href="/pt/abb-motors/">ABB</a></li>
-                <li><a href="/pt/baldor-motors/">BALDOR</a></li>
-                <li><a href="/pt/kollmorgen-servomotors/">KOLLMORGEN</a></li>
-                <li><a href="/pt/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
-                <li><a href="/pt/rossi-gearmotors/">ROSSI</a></li>
-                <li><a href="/pt/neugart-planetary-gearbox/">NEUGART</a></li>
-                <li><a href="/pt/busch-industrial-vacuum-solutions/">BUSCH</a></li>
-                <li><a href="/pt/ksb-industrial-pump/">KSB</a></li>
-                <li><a href="/pt/samson-industrial-valve-actuator/">SAMSON</a></li>
-                <li><a href="/pt/odm-brand/">MARCA ODM</a></li>
-            </ul>
-        </li>
-        <li><a href="/pt/products/">Produtos</a></li>
-        <li><a href="/pt/company/">Empresa</a></li>
-        <li><a href="/pt/case/">Casos</a></li>
-        <li><a href="/pt/news-blog/">Notícias e Blog</a></li>
-        <li><a href="/pt/inquiry/">Consulta</a></li>
-        <li><a href="/pt/contact/">Contato</a></li>
-        <li><a href="/pt/discount/">Desconto</a></li>
+<!-- 顶部语言切换器 -->
+<div class="lang-container" style="position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px;">
+    <ul class="lang-menu" style="display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap;">
+        <li><a href="/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">EN</a></li>
+        <li><a href="/pt/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+        <li><a href="/ar/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+        <li><a href="/de/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+        <li><a href="/es/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+        <li><a href="/fa/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+        <li><a href="/fr/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+        <li><a href="/ru/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+        <li><a href="/ja/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+        <li><a href="/th/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+        <li><a href="/vi/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+        <li><a href="/id/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+        <li><a href="/fil/flender-gearbox/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
     </ul>
-</nav>
-        </section>
+
+    <div onclick="window.location.href='/pt/flender-gearbox/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+        🌐 Language
+    </div>
+</div>
+
+<style>
+    .lang-container:hover .lang-menu {
+        display: flex !important;
+    }
+</style>
+
+<!-- 页面包裹主容器 -->
+<div id="page-wrapper">
+    <section id="header">
+        <!-- Logo 区域 -->
+        <div style="margin: 0;">
+            <a href="/pt/" id="logo" style="display:flex; align-items:center; max-width:1200px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
+                <img src="/images/logo.png" width="400" height="85" alt="WEDRIVE POWER Fornecedor de Redutores Flender" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
+                <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
+                    <h1 style="font-size:1.8em; font-weight:800; letter-spacing:1px; color:#1d1d1d; line-height:1.1; margin:0;">
+                        REDUTORES FLENDER & ACOPLAMENTOS
+                    </h1>
+                    <span style="font-size:0.82em; font-weight:500; color:#666; margin-top:6px; letter-spacing:1px; text-transform:uppercase;">
+                        Fornecedor Global de Redutores Industriais, N-EUPEX, RUPEX e ZAPEX
+                    </span>
+                </span>
+            </a>
+        </div>
+
+        <!-- 导航菜单区域 -->
+        <nav id="nav">
+            <ul>
+                <li><a href="/pt/">Início</a></li>
+                <li class="wd-parent">
+                    <a href="/pt/brand/" class="wd-trigger active">Marcas</a>
+                    <ul id="wd-brand-menu">
+                        <li><a href="/pt/brand/" style="font-weight: bold; color: #d42d1e;">Ver Todas as Marcas</a></li>
+                        <li><a href="/pt/sew-gearmotors/">SEW</a></li>
+                        <li><a href="/pt/flender-gearbox/">FLENDER</a></li>
+                        <li><a href="/pt/nord-gearmotors/">NORD</a></li>
+                        <li><a href="/pt/siemens-gearmotors/">SIEMENS & INNOMOTICS</a></li>
+                        <li><a href="/pt/bonfiglioli-gearbox/">BONFIGLIOLI</a></li>
+                        <li><a href="/pt/bauer-gearmotors/">BAUER</a></li>
+                        <li><a href="/pt/lenze-gearmotors/">LENZE</a></li>
+                        <li><a href="/pt/abb-motors/">ABB</a></li>
+                        <li><a href="/pt/baldor-motors/">BALDOR</a></li>
+                        <li><a href="/pt/kollmorgen-servomotors/">KOLLMORGEN</a></li>
+                        <li><a href="/pt/sumitomohansen-speedreducer/">SUMITOMO & HANSEN</a></li>
+                        <li><a href="/pt/rossi-gearmotors/">ROSSI</a></li>
+                        <li><a href="/pt/neugart-planetary-gearbox/">NEUGART</a></li>
+                        <li><a href="/pt/busch-industrial-vacuum-solutions/">BUSCH</a></li>
+                        <li><a href="/pt/ksb-industrial-pump/">KSB</a></li>
+                        <li><a href="/pt/samson-industrial-valve-actuator/">SAMSON</a></li>
+                        <li><a href="/pt/odm-brand/">MARCA ODM</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pt/products/">Produtos</a></li>
+                <li><a href="/pt/company/">Empresa</a></li>
+                <li><a href="/pt/case/">Casos de Sucesso</a></li>
+                <li><a href="/pt/news-blog/">Notícias e Blog</a></li>
+                <li><a href="/pt/inquiry/">Orçamento</a></li>
+                <li><a href="/pt/contact/">Contato</a></li>
+                <li><a href="/pt/discount/">Descontos</a></li>
+            </ul>
+        </nav>
+    </section>
+</div>
 
 			<section id="main">
     <div class="container">
