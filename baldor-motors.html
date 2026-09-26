@@ -26,18 +26,7 @@
     <link rel="preload" href="assets/css/main.css" as="style" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- 6. 路径规范化脚本 (防止 .html 造成重定向死循环) -->
-    <script>
-        (function() {
-            var path = window.location.pathname;
-            if (path.toLowerCase().endsWith('.html')) {
-                var cleanPath = path.substring(0, path.length - 5) + '/';
-                if (path !== cleanPath) {
-                    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
-                }
-            }
-        })();
-    </script>
+  
 
     <!-- 7. Google Analytics 分析代码 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6"></script>
