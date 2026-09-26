@@ -2,101 +2,75 @@
 	<!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<script>
-  (function() {
-    var path = window.location.pathname;
-    if (path.toLowerCase().endsWith('.html')) {
-      var cleanPath = path.substring(0, path.length - 5) + '/';
-      // 检查是否已经是新地址，防止死循环
-      if (path !== cleanPath) {
-        window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+    <!-- 1. 基础编码与移动端适配（全局唯一） -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- 2. 页面标题与核心元数据 -->
+    <title>BALDOR NEMA Motors Supplier | Industrial Electric Motors | Wedrive Power</title>
+    <meta name="description" content="Professional BALDOR NEMA motors supplier for industrial electric motors, severe duty motors, explosion proof motors and power transmission solutions." />
+    <meta name="keywords" content="BALDOR motors, NEMA motors, industrial electric motors, explosion proof motors, severe duty motors, Wedrive Power" />
+    <meta name="author" content="WeDrive Power Transmission" />
+
+    <!-- 3. 规范链接 (Canonical) - 防止重复收录 -->
+    <link rel="canonical" href="https://www.wedrivepower.com/baldor-motors/" />
+
+    <!-- 4. 多语言 hreflang 声明 -->
+    <!-- 注意：只有当您的网站确实存在以下多语言子目录页面时，才取消注释；如果全是单页或英文，请保持注释或删除 -->
+    <!--
+    <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/baldor-motors/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/baldor-motors/" />
+    -->
+
+    <!-- 5. 样式表预加载与引入 -->
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- 6. 路径规范化脚本 (防止 .html 造成重定向死循环) -->
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            if (path.toLowerCase().endsWith('.html')) {
+                var cleanPath = path.substring(0, path.length - 5) + '/';
+                if (path !== cleanPath) {
+                    window.location.replace(window.location.protocol + '//' + window.location.host + cleanPath + window.location.search + window.location.hash);
+                }
+            }
+        })();
+    </script>
+
+    <!-- 7. Google Analytics 分析代码 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2QVTK1XJB6');
+    </script>
+
+    <!-- 8. JSON-LD 结构化数据 (Product) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "BALDOR NEMA Industrial Electric Motors",
+      "image": "https://wedrivepower.com/images/baldor-motor.jpg",
+      "description": "Premium Baldor-Reliance NEMA motors including severe duty and explosion proof solutions. Genuine ABB group products.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Baldor-Reliance"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.wedrivepower.com/baldor-motors/",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WeDrive Power Transmission"
+        }
       }
     }
-  })();
-</script>
-		<title>BALDOR NEMA Motors Supplier | Industrial Electric Motors | Wedrive Power</title>
-		<meta charset="utf-8" />
-		<link rel="canonical" href="https://www.wedrivepower.com/baldor-motors/" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
-    <!-- 其他 meta 和 link 标签 -->
-    
-    <!-- 之后是你已经加好的 Google Analytics 和 JSON-LD 脚本 -->
-</head>
-    <meta charset="utf-8" />
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, user-scalable=no" />
-
-    <meta name="description"
-          content="Professional BALDOR NEMA motors supplier for industrial electric motors, severe duty motors, explosion proof motors and power transmission solutions." />
-<link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/" />
-    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/baldor-motors/" />
-    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/baldor-motors/" />
-    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/baldor-motors/" />
-    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/baldor-motors/" />
-    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/baldor-motors/" />
-    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/baldor-motors/" />
-    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/baldor-motors/" />
-    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/baldor-motors/" />
-    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/baldor-motors/" />
-    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/baldor-motors/" />
-    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/baldor-motors/" />
-    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/baldor-motors/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/baldor-motors/" />
-    <meta name="keywords"
-          content="BALDOR motors, NEMA motors, industrial electric motors, explosion proof motors, severe duty motors, Wedrive Power" />
-
-    <meta name="author"
-          content="WeDrive Power Transmission" />
-<link rel="preload" href="assets/css/main.css" as="style" />
-    <link rel="stylesheet"
-          href="assets/css/main.css" />
-
-    <!-- Google Analytics -->
-    <script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6">
     </script>
-
-    <script>
-
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-2QVTK1XJB6');
-
-    </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "BALDOR NEMA Industrial Electric Motors",
-  "image": "https://wedrivepower.com/images/baldor-motor.jpg",
-  "description": "Premium Baldor-Reliance NEMA motors including severe duty and explosion proof solutions. Genuine ABB group products.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Baldor-Reliance"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://wedrivepower.com/baldor-motors/",
-    "price": "500",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "WeDrive Power Transmission"
-    }
-  }
-}
-</script>
-
-
 </head>
 
 <body class="left-sidebar is-preload">
@@ -130,68 +104,73 @@
         display: flex !important;
     }
 </style>
-    <div id="page-wrapper">
+   <div id="page-wrapper">
 
-        <!-- Header -->
-        <section id="header">
-				
-					<!-- Logo -->
-			<div style="margin: 0;">
+    <!-- Header -->
+    <section id="header">
+        
+        <!-- Logo -->
+        <div style="margin: 0;">
 
-				<a href="/"
-					id="logo"
-					style="
-						display:flex;
-						align-items:center;
-						max-width:1200px;
-						margin:0 auto;
-						padding:1.2em 1.5em 0.8em 1.5em;
-						text-decoration:none;
-					">
+            <a href="/"
+                id="logo"
+                style="
+                    display:flex;
+                    align-items:center;
+                    max-width:1200px;
+                    margin:0 auto;
+                    padding:1.2em 1.5em 0.8em 1.5em;
+                    text-decoration:none;
+                ">
 
-					<img src="images/logo.png"
-					
-	width="400"
-	height="85"
-						alt="WEDRIVE POWER Industrial Gearbox Supplier"
-						style="
-							height:85px;
-							width:auto;
-							margin-right:26px;
-							flex-shrink:0;
-						">
+               
+                <img src="images/logo.png"
+                    width="300"
+                    height="85"
+                    alt="WEDRIVE POWER Industrial Gearbox Supplier"
+                    style="
+                        height:85px;
+                        width:auto;
+                        margin-right:26px;
+                        flex-shrink:0;
+                    ">
 
-					<span style="
-						display:flex;
-						flex-direction:column;
-						align-items:flex-start;
-						line-height:1.15;
-					">
+                <span style="
+                    display:flex;
+                    flex-direction:column;
+                    align-items:flex-start;
+                    line-height:1.15;
+                ">
 
-						<span style="
-	font-size:1.9em;
-	font-weight:800;
-	letter-spacing:2px;
-	color:#1d1d1d;
-	line-height:1.1;
-">
-	BALDOR INDUSTRIAL DC MOTORS
-</span>
+                    <span style="
+                        font-size:1.9em;
+                        font-weight:800;
+                        letter-spacing:2px;
+                        color:#1d1d1d;
+                        line-height:1.1;
+                    ">
+                        BALDOR INDUSTRIAL DC MOTORS
+                    </span>
 
-<span style="
-	font-size:0.82em;
-	font-weight:500;
-	color:#666;
-	margin-top:6px;
-	letter-spacing:1px;
-	text-transform:uppercase;
-">
-	Global Supplier of Industrial Gearboxes, Geared Motors & Power Transmission Solutions
-</span>
+                    <span style="
+                        font-size:0.82em;
+                        font-weight:500;
+                        color:#666;
+                        margin-top:6px;
+                        letter-spacing:1px;
+                        text-transform:uppercase;
+                    ">
+                        Global Supplier of Industrial Gearboxes, Geared Motors & Power Transmission Solutions
+                    </span>
 
-				</a>
+                </span>
 
-			</div>
+            </a>
+
+        </div>
+
+    </section>
+</div>
 					<!-- Nav -->
 <nav id="nav">
     <ul>
