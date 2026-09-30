@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/nord-bevel-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/nord-bevel-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/nord-bevel-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/nord-bevel-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="NORD SK 92172.1 NORDBLOC.1 Bevel Gearmotor | Technical Specs & Replacement Guide" />
@@ -55,17 +67,17 @@
         "NORD UNICASE SK 9012.1", "NORD UNICASE SK 9022.1", "NORD UNICASE SK 9032.1", "NORD UNICASE SK 9042.1", "NORD UNICASE SK 9052.1"
       ],
       "description": "NORD DRIVESYSTEMS NORDBLOC.1® and UNICASE 2-stage and 3-stage helical-bevel right-angle gearmotors. High efficiency, smooth washable aluminum or rigid cast iron housings, covering torques up to 50,000 Nm.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -111,10 +123,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/nord-bevel-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/nord-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/nord-bevel-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -178,7 +305,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
+                    <a href="/products/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
                     <span>SK 92172.1 NORDBLOC.1</span>
                 </div>
 
@@ -188,37 +315,37 @@
                         <h1>NORD SK 92172.1 NORDBLOC.1® Bevel Gearmotor</h1>
                         <div class="model-subtitle">Brand: NORD DRIVESYSTEMS | Series: NORDBLOC.1 Bevel (SK 92007.1...93772.1) & Heavy UNICASE Bevel (SK 9012.1...9096.1)</div>
                         
-                        <p>The <strong>NORD SK 92172.1</strong> is a highly efficient, 2-stage right-angle helical-bevel gearmotor from NORD DRIVESYSTEMS' flagship <strong>NORDBLOC.1®</strong> washdown catalog[cite: 23]. Featuring a smooth, corrosion-resistant die-cast aluminum UNICASE housing[cite: 23], the SK 92172.1 offers right-angle mechanical efficiency exceeding 95%, low noise generation, and long bearing operational life without external parting lines[cite: 23]. Available across a complete range of mounting configurations—including hollow shaft keyway (SK 92172.1 AH), B5 flange (SK 92172.1 AF), B14 flange (SK 92172.1 AZ), shrink disc (SK 92172.1 ASH), GRIPMAXX™ keyless bushing system (SK 92172.1 AM), and nsd tupH™ surface conversion[cite: 23]—it is extensively specified across food & beverage processing, airport baggage handling, parcel sorting conveyors, and automated warehouse logistics[cite: 23].</p>
+                        <p>The <strong>NORD SK 92172.1</strong> is a highly efficient, 2-stage right-angle helical-bevel gearmotor from NORD DRIVESYSTEMS' flagship <strong>NORDBLOC.1®</strong> washdown catalog. Featuring a smooth, corrosion-resistant die-cast aluminum UNICASE housing, the SK 92172.1 offers right-angle mechanical efficiency exceeding 95%, low noise generation, and long bearing operational life without external parting lines. Available across a complete range of mounting configurations—including hollow shaft keyway (SK 92172.1 AH), B5 flange (SK 92172.1 AF), B14 flange (SK 92172.1 AZ), shrink disc (SK 92172.1 ASH), GRIPMAXX™ keyless bushing system (SK 92172.1 AM), and nsd tupH™ surface conversion—it is extensively specified across food & beverage processing, airport baggage handling, parcel sorting conveyors, and automated warehouse logistics.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>SK 92172.1 (2-Stage Bevel, Size 172.1 NORDBLOC.1)[cite: 23]</td>
+                                <td>SK 92172.1 (2-Stage Bevel, Size 172.1 NORDBLOC.1)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Getriebebau NORD GmbH & Co. KG[cite: 23]</td>
+                                <td>Getriebebau NORD GmbH & Co. KG</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>NORDBLOC.1 Washdown Aluminum Die-Cast or Heavy UNICASE Cast Iron[cite: 23]</td>
+                                <td>NORDBLOC.1 Washdown Aluminum Die-Cast or Heavy UNICASE Cast Iron</td>
                             </tr>
                             <tr>
                                 <th>Compatible Motor Types</th>
-                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 180L)[cite: 23]</td>
+                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 180L)</td>
                             </tr>
                             <tr>
                                 <th>Rated Motor Power (kW)</th>
-                                <td>0.12 kW to 200 kW (0.75 kW Standard for SK 92172.1-80L/4)[cite: 23]</td>
+                                <td>0.12 kW to 200 kW (0.75 kW Standard for SK 92172.1-80L/4)</td>
                             </tr>
                             <tr>
                                 <th>Maximum Torque Output</th>
-                                <td>Up to 50,000 Nm (Heavy UNICASE Series) / 250 Nm (SK 92172.1)[cite: 23]</td>
+                                <td>Up to 50,000 Nm (Heavy UNICASE Series) / 250 Nm (SK 92172.1)</td>
                             </tr>
                             <tr>
                                 <th>Shaft & Mounting Form</th>
-                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14[cite: 23]</td>
+                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14</td>
                             </tr>
                         </table>
 
@@ -226,8 +353,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">NORD NORDBLOC.1 Bevel Gearmotors Catalog G1000 & Manual (PDF)</a>[cite: 23]</li>
-                                <li><a href="#cad-drawing">SK 92172.1 3D CAD Drawing & Shaft Dimension Request</a>[cite: 23]</li>
+                                <li><a href="#pdf-manual">NORD NORDBLOC.1 Bevel Gearmotors Catalog G1000 & Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">SK 92172.1 3D CAD Drawing & Shaft Dimension Request</a></li>
                             </ul>
                         </div>
 
@@ -235,7 +362,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">NORD NORDBLOC.1® & UNICASE Bevel Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range modular configuration guide for NORD DRIVESYSTEMS helical-bevel right-angle gearboxes[cite: 23]. Review supported housing materials, stage designs, shaft connection options, and surface treatment executions:
+                                Full-range modular configuration guide for NORD DRIVESYSTEMS helical-bevel right-angle gearboxes. Review supported housing materials, stage designs, shaft connection options, and surface treatment executions:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -250,33 +377,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>NORDBLOC.1® 2-Stage Bevel</strong> (Aluminum)[cite: 23]</td>
-                                        <td>SK 92007.1 to SK 92772.1 (6 Sizes)[cite: 23]</td>
-                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 180[cite: 23]</td>
+                                        <td><strong>NORDBLOC.1® 2-Stage Bevel</strong> (Aluminum)</td>
+                                        <td>SK 92007.1 to SK 92772.1 (6 Sizes)</td>
+                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 180</td>
                                         <td><strong>nsd tupH™</strong> (Sealed Corrosion Conversion)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>NORDBLOC.1® 3-Stage Bevel</strong> (Aluminum)[cite: 23]</td>
-                                        <td>SK 93007.1 to SK 93772.1 (5 Sizes)[cite: 23]</td>
-                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 160[cite: 23]</td>
+                                        <td><strong>NORDBLOC.1® 3-Stage Bevel</strong> (Aluminum)</td>
+                                        <td>SK 93007.1 to SK 93772.1 (5 Sizes)</td>
+                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 160</td>
                                         <td><strong>GRIPMAXX™</strong> (Keyless Bushing System)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>NORDBLOC.1® Cast Iron Bevel</strong> (Heavy Duty)[cite: 23]</td>
-                                        <td>SK 92086 to SK 92786 (5 Sizes)[cite: 23]</td>
-                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 160[cite: 23]</td>
+                                        <td><strong>NORDBLOC.1® Cast Iron Bevel</strong> (Heavy Duty)</td>
+                                        <td>SK 92086 to SK 92786 (5 Sizes)</td>
+                                        <td>0.12 kW - 9.2 kW / IEC Frame 63 to 160</td>
                                         <td><strong>ASH</strong> (Hollow Shaft Shrink Disc)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy UNICASE 2/3-Stage Bevel</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 9012.1 to SK 9052.1 (6 Sizes)[cite: 23]</td>
-                                        <td>1.5 kW - 30.0 kW / IEC Frame 80 to 200[cite: 23]</td>
+                                        <td><strong>Heavy UNICASE 2/3-Stage Bevel</strong> (Cast Iron)</td>
+                                        <td>SK 9012.1 to SK 9052.1 (6 Sizes)</td>
+                                        <td>1.5 kW - 30.0 kW / IEC Frame 80 to 200</td>
                                         <td><strong>VL2 / VL3</strong> (Heavy Agitator Bearings)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Extra Heavy UNICASE Bevel</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 9072.1 to SK 9096.1 (5 Sizes)[cite: 23]</td>
-                                        <td>15.0 kW - 200.0 kW / IEC Frame 160 to 315[cite: 23]</td>
+                                        <td><strong>Extra Heavy UNICASE Bevel</strong> (Cast Iron)</td>
+                                        <td>SK 9072.1 to SK 9096.1 (5 Sizes)</td>
+                                        <td>15.0 kW - 200.0 kW / IEC Frame 160 to 315</td>
                                         <td><strong>SCP</strong> (Screw Conveyor Package Adapter)</td>
                                     </tr>
                                 </tbody>
@@ -285,7 +412,7 @@
                             <!-- Legacy Bevel Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy NORD Bevel Replacement & High-Efficiency IE3/IE4 Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Older generation NORD right-angle gearboxes and worm/helical units installed on production lines can be directly replaced with current NORDBLOC.1® and UNICASE helical-bevel gearmotors[cite: 23]. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
+                                Older generation NORD right-angle gearboxes and worm/helical units installed on production lines can be directly replaced with current NORDBLOC.1® and UNICASE helical-bevel gearmotors. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -300,38 +427,38 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>SK 92072 / SK 92172</strong>[cite: 23]</td>
-                                        <td>1st Gen Aluminum Bevel[cite: 23]</td>
-                                        <td><strong>SK 92072.1 / SK 92172.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>110 Nm - 250 Nm / 0.12 - 3.0 kW[cite: 23]</td>
+                                        <td><strong>SK 92072 / SK 92172</strong></td>
+                                        <td>1st Gen Aluminum Bevel</td>
+                                        <td><strong>SK 92072.1 / SK 92172.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>110 Nm - 250 Nm / 0.12 - 3.0 kW</td>
                                         <td>Direct 1-to-1 foot & shaft match. Enhanced washdown housing.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 92372 / SK 92672</strong>[cite: 23]</td>
-                                        <td>1st Gen Aluminum Bevel[cite: 23]</td>
-                                        <td><strong>SK 92372.1 / SK 92672.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>400 Nm - 660 Nm / 0.75 - 7.5 kW[cite: 23]</td>
+                                        <td><strong>SK 92372 / SK 92672</strong></td>
+                                        <td>1st Gen Aluminum Bevel</td>
+                                        <td><strong>SK 92372.1 / SK 92672.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>400 Nm - 660 Nm / 0.75 - 7.5 kW</td>
                                         <td>Identical shaft centerline and mounting face. Drop-in replacement.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 9012 / SK 9022 / SK 9032</strong>[cite: 23]</td>
-                                        <td>1st Gen Cast Iron Bevel[cite: 23]</td>
-                                        <td><strong>SK 9012.1 / SK 9022.1 / SK 9032.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>800 Nm - 3,000 Nm / 1.5 - 15 kW[cite: 23]</td>
+                                        <td><strong>SK 9012 / SK 9022 / SK 9032</strong></td>
+                                        <td>1st Gen Cast Iron Bevel</td>
+                                        <td><strong>SK 9012.1 / SK 9022.1 / SK 9032.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>800 Nm - 3,000 Nm / 1.5 - 15 kW</td>
                                         <td>Preserves footprint & B5 flange dimensions. Higher radial capacity.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 9042 / SK 9052 / SK 9072</strong>[cite: 23]</td>
-                                        <td>1st Gen Heavy Cast Iron[cite: 23]</td>
-                                        <td><strong>SK 9042.1 / SK 9052.1 / SK 9072.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>4,800 Nm - 15,000 Nm / 5.5 - 45 kW[cite: 23]</td>
+                                        <td><strong>SK 9042 / SK 9052 / SK 9072</strong></td>
+                                        <td>1st Gen Heavy Cast Iron</td>
+                                        <td><strong>SK 9042.1 / SK 9052.1 / SK 9072.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>4,800 Nm - 15,000 Nm / 5.5 - 45 kW</td>
                                         <td>Direct drop-in. Accepts current NEMA C-face or IEC B5 motor adapters.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 02050 / SK 12050 Series</strong>[cite: 23]</td>
-                                        <td>Legacy Helical-Worm Unit[cite: 23]</td>
-                                        <td><strong>SK 92172.1 / SK 92372.1 Bevel</strong> <span class="upgrade-badge">Efficiency Upgrade</span>[cite: 23]</td>
-                                        <td>Efficiency boosted from ~75% to >95%[cite: 23]</td>
+                                        <td><strong>SK 02050 / SK 12050 Series</strong></td>
+                                        <td>Legacy Helical-Worm Unit</td>
+                                        <td><strong>SK 92172.1 / SK 92372.1 Bevel</strong> <span class="upgrade-badge">Efficiency Upgrade</span></td>
+                                        <td>Efficiency boosted from ~75% to >95%</td>
                                         <td>Substantially reduces power consumption and heat generation. Fits same shaft.</td>
                                     </tr>
                                 </tbody>
@@ -340,34 +467,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD NORDBLOC.1® and UNICASE bevel gearmotor series</strong>[cite: 23]. Whether you require a washdown aluminum 2-stage unit (<strong>SK 92007.1 to SK 92772.1</strong>)[cite: 23], a 3-stage high-ratio reducer (<strong>SK 93007.1 to SK 93772.1</strong>)[cite: 23], hollow shaft keyway (<strong>AH</strong>)[cite: 23], shrink disc (<strong>ASH</strong>)[cite: 23], keyless GRIPMAXX™ clamping system (<strong>AM</strong>)[cite: 23], or heavy cast iron UNICASE drives up to 50,000 Nm (<strong>SK 9012.1 to SK 9096.1</strong>)[cite: 23], all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors[cite: 23].
+                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD NORDBLOC.1® and UNICASE bevel gearmotor series</strong>. Whether you require a washdown aluminum 2-stage unit (<strong>SK 92007.1 to SK 92772.1</strong>), a 3-stage high-ratio reducer (<strong>SK 93007.1 to SK 93772.1</strong>), hollow shaft keyway (<strong>AH</strong>), shrink disc (<strong>ASH</strong>), keyless GRIPMAXX™ clamping system (<strong>AM</strong>), or heavy cast iron UNICASE drives up to 50,000 Nm (<strong>SK 9012.1 to SK 9096.1</strong>), all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors.
                                 <br><br>
-                                When retrofitting an existing installation featuring older <strong>SK 92072, SK 92172, SK 9012, or helical-worm</strong> gearboxes[cite: 23], upgrading to NORDBLOC.1® .1 Generation bevel gearmotors ensures complete dimensional interchangeability while substantially increasing efficiency and reducing maintenance costs. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
+                                When retrofitting an existing installation featuring older <strong>SK 92072, SK 92172, SK 9012, or helical-worm</strong> gearboxes, upgrading to NORDBLOC.1® .1 Generation bevel gearmotors ensures complete dimensional interchangeability while substantially increasing efficiency and reducing maintenance costs. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>SK 92007.1-63L/4 (0.18 kW)[cite: 23]</li>
-                                <li>SK 92072.1-71L/4 (0.37 kW)[cite: 23]</li>
-                                <li>SK 92172.1-80L/4 (0.75 kW)[cite: 23]</li>
-                                <li>SK 92372.1-90L/4 (1.5 kW)[cite: 23]</li>
-                                <li>SK 92672.1-100L/4 (2.2 kW)[cite: 23]</li>
-                                <li>SK 92772.1-112M/4 (4.0 kW)[cite: 23]</li>
-                                <li>SK 93172.1-80L/4 (0.75 kW)[cite: 23]</li>
-                                <li>SK 93372.1-90L/4 (1.5 kW)[cite: 23]</li>
-                                <li>SK 93672.1-100L/4 (2.2 kW)[cite: 23]</li>
-                                <li>SK 93772.1-112M/4 (4.0 kW)[cite: 23]</li>
-                                <li>SK 9012.1-90L/4 (1.5 kW)[cite: 23]</li>
-                                <li>SK 9022.1-100LA/4 (3.0 kW)[cite: 23]</li>
-                                <li>SK 9032.1-112M/4 (4.0 kW)[cite: 23]</li>
-                                <li>SK 9042.1-132M/4 (7.5 kW)[cite: 23]</li>
-                                <li>SK 9052.1-160L/4 (15.0 kW)[cite: 23]</li>
-                                <li>SK 9072.1-180MX/4 (22.0 kW)[cite: 23]</li>
-                                <li>SK 92172.1AH-80L (Hollow Shaft)[cite: 23]</li>
-                                <li>SK 92372.1ASH-90L (Shrink Disc)[cite: 23]</li>
-                                <li>SK 92672.1AM-100L (GRIPMAXX)[cite: 23]</li>
-                                <li>SK 9042.1AF-132M (B5 Flange)[cite: 23]</li>
+                                <li>SK 92007.1-63L/4 (0.18 kW)</li>
+                                <li>SK 92072.1-71L/4 (0.37 kW)</li>
+                                <li>SK 92172.1-80L/4 (0.75 kW)</li>
+                                <li>SK 92372.1-90L/4 (1.5 kW)</li>
+                                <li>SK 92672.1-100L/4 (2.2 kW)</li>
+                                <li>SK 92772.1-112M/4 (4.0 kW)</li>
+                                <li>SK 93172.1-80L/4 (0.75 kW)</li>
+                                <li>SK 93372.1-90L/4 (1.5 kW)</li>
+                                <li>SK 93672.1-100L/4 (2.2 kW)</li>
+                                <li>SK 93772.1-112M/4 (4.0 kW)</li>
+                                <li>SK 9012.1-90L/4 (1.5 kW)</li>
+                                <li>SK 9022.1-100LA/4 (3.0 kW)</li>
+                                <li>SK 9032.1-112M/4 (4.0 kW)</li>
+                                <li>SK 9042.1-132M/4 (7.5 kW)</li>
+                                <li>SK 9052.1-160L/4 (15.0 kW)</li>
+                                <li>SK 9072.1-180MX/4 (22.0 kW)</li>
+                                <li>SK 92172.1AH-80L (Hollow Shaft)</li>
+                                <li>SK 92372.1ASH-90L (Shrink Disc)</li>
+                                <li>SK 92672.1AM-100L (GRIPMAXX)</li>
+                                <li>SK 9042.1AF-132M (B5 Flange)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -377,7 +504,7 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 92172.1</strong>?[cite: 23]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 92172.1</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
                             <li>100% Original NORD Equipment</li>
                             <li>Global Express Shipping</li>
