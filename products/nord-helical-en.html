@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/nord-helical-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/nord-helical-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/nord-helical-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/nord-helical-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="NORD SK 32 UNICASE Helical Inline Gearmotor | Technical Specs & Replacement Guide" />
@@ -53,17 +65,17 @@
         "NORDBLOC.1 SK 071.1", "NORDBLOC.1 SK 171.1", "NORDBLOC.1 SK 271.1", "NORDBLOC.1 SK 371.1", "NORDBLOC.1 SK 571.1", "NORDBLOC.1 SK 771.1", "NORDBLOC.1 SK 871.1", "NORDBLOC.1 SK 971.1"
       ],
       "description": "NORD DRIVESYSTEMS UNICASE helical inline gearmotors and NORDBLOC.1 series. High efficiency, rigid single-piece housing construction, and flexible foot/flange mountings covering torques up to 26,000 Nm.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/nord-helical-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/nord-helical-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/nord-helical-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -176,7 +303,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
+                    <a href="/products/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
                     <span>SK 32 UNICASE Helical</span>
                 </div>
 
@@ -186,37 +313,37 @@
                         <h1>NORD SK 32 UNICASE Helical Inline Gearmotor</h1>
                         <div class="model-subtitle">Brand: NORD DRIVESYSTEMS | Series: UNICASE Helical (SK 02...10382) & NORDBLOC.1 (SK 071.1...973.1)</div>
                         
-                        <p>The <strong>NORD SK 32</strong> is a high-efficiency 2-stage inline helical gearmotor engineered with NORD DRIVESYSTEMS' signature <strong>UNICASE single-piece cast iron housing</strong>[cite: 20]. By eliminating casing joints under stress, the SK 32 ensures superior structural rigidity, leak-proof reliability, extended bearing operational life, and quiet gear mesh transmission[cite: 20]. Available across a versatile array of mounting styles—including foot-mounted (SK 32), B5 flange (SK 32F), B14 face flange (SK 32Z), and foot/flange combination (SK 32FZ)[cite: 20]—it is extensively deployed across conveyor belts, packaging machinery, pumping systems, and industrial automation drives[cite: 20].</p>
+                        <p>The <strong>NORD SK 32</strong> is a high-efficiency 2-stage inline helical gearmotor engineered with NORD DRIVESYSTEMS' signature <strong>UNICASE single-piece cast iron housing</strong>. By eliminating casing joints under stress, the SK 32 ensures superior structural rigidity, leak-proof reliability, extended bearing operational life, and quiet gear mesh transmission. Available across a versatile array of mounting styles—including foot-mounted (SK 32), B5 flange (SK 32F), B14 face flange (SK 32Z), and foot/flange combination (SK 32FZ)—it is extensively deployed across conveyor belts, packaging machinery, pumping systems, and industrial automation drives.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>SK 32 (2-Stage Inline Helical, Size 32 UNICASE)[cite: 20]</td>
+                                <td>SK 32 (2-Stage Inline Helical, Size 32 UNICASE)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Getriebebau NORD GmbH & Co. KG[cite: 20]</td>
+                                <td>Getriebebau NORD GmbH & Co. KG</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>UNICASE One-Piece Cast Iron Housing (GJL-200) or Aluminum (NORDBLOC.1)[cite: 20]</td>
+                                <td>UNICASE One-Piece Cast Iron Housing (GJL-200) or Aluminum (NORDBLOC.1)</td>
                             </tr>
                             <tr>
                                 <th>Compatible Motor Types</th>
-                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 315M)[cite: 20]</td>
+                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 315M)</td>
                             </tr>
                             <tr>
                                 <th>Rated Motor Power (kW)</th>
-                                <td>0.12 kW to 160 kW (0.75 kW Standard for SK 32-80L/4)[cite: 20]</td>
+                                <td>0.12 kW to 160 kW (0.75 kW Standard for SK 32-80L/4)</td>
                             </tr>
                             <tr>
                                 <th>Maximum Torque Output</th>
-                                <td>Up to 26,000 Nm (Heavy UNICASE Series) / 235 Nm (SK 32)[cite: 20]</td>
+                                <td>Up to 26,000 Nm (Heavy UNICASE Series) / 235 Nm (SK 32)</td>
                             </tr>
                             <tr>
                                 <th>Mounting Executions</th>
-                                <td>Foot-mounted (SK..), Flange B5 (SK..F), B14 Flange (SK..Z), Foot/Flange (SK..FZ)[cite: 20]</td>
+                                <td>Foot-mounted (SK..), Flange B5 (SK..F), B14 Flange (SK..Z), Foot/Flange (SK..FZ)</td>
                             </tr>
                         </table>
 
@@ -224,8 +351,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">NORD UNICASE Helical Gearmotors Catalog G1000 & Operating Instructions (PDF)</a>[cite: 20]</li>
-                                <li><a href="#cad-drawing">SK 32 3D CAD Drawing & Shaft Dimension Request</a>[cite: 20]</li>
+                                <li><a href="#pdf-manual">NORD UNICASE Helical Gearmotors Catalog G1000 & Operating Instructions (PDF)</a></li>
+                                <li><a href="#cad-drawing">SK 32 3D CAD Drawing & Shaft Dimension Request</a></li>
                             </ul>
                         </div>
 
@@ -233,7 +360,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">NORD UNICASE & NORDBLOC.1® Helical Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range modular configuration guide for NORD DRIVESYSTEMS inline helical gearboxes[cite: 20]. Review supported housing materials, stage designs, mounting executions, and motor adapter options:
+                                Full-range modular configuration guide for NORD DRIVESYSTEMS inline helical gearboxes. Review supported housing materials, stage designs, mounting executions, and motor adapter options:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -248,33 +375,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>NORDBLOC.1® Inline Helical</strong> (Aluminum)[cite: 20]</td>
-                                        <td>SK 071.1 to SK 973.1 (10 Sizes)[cite: 20]</td>
-                                        <td>0.12 kW - 45.0 kW / IEC Frame 63 to 225[cite: 20]</td>
+                                        <td><strong>NORDBLOC.1® Inline Helical</strong> (Aluminum)</td>
+                                        <td>SK 071.1 to SK 973.1 (10 Sizes)</td>
+                                        <td>0.12 kW - 45.0 kW / IEC Frame 63 to 225</td>
                                         <td><strong>nsd tupH™</strong> (Sealed Surface Conversion)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Standard UNICASE Helical</strong> (Cast Iron)[cite: 20]</td>
-                                        <td>SK 02 to SK 102 (11 Sizes)[cite: 20]</td>
-                                        <td>0.12 kW - 75.0 kW / IEC Frame 63 to 280[cite: 20]</td>
+                                        <td><strong>Standard UNICASE Helical</strong> (Cast Iron)</td>
+                                        <td>SK 02 to SK 102 (11 Sizes)</td>
+                                        <td>0.12 kW - 75.0 kW / IEC Frame 63 to 280</td>
                                         <td><strong>B5 / B14 Flange</strong> (Precision Mount)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy Multi-Stage UNICASE</strong> (Cast Iron)[cite: 20]</td>
-                                        <td>SK 1082 to SK 10382 (6 Sizes)[cite: 20]</td>
-                                        <td>7.5 kW - 160.0 kW / IEC Frame 132 to 315[cite: 20]</td>
+                                        <td><strong>Heavy Multi-Stage UNICASE</strong> (Cast Iron)</td>
+                                        <td>SK 1082 to SK 10382 (6 Sizes)</td>
+                                        <td>7.5 kW - 160.0 kW / IEC Frame 132 to 315</td>
                                         <td><strong>Free Input Shaft</strong> (W Series Adapter)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Single-Stage High-Speed Helical</strong> (Cast Iron)[cite: 20]</td>
-                                        <td>SK 0D to SK 5D (5 Sizes)[cite: 20]</td>
-                                        <td>0.12 kW - 11.0 kW / IEC Frame 63 to 160[cite: 20]</td>
+                                        <td><strong>Single-Stage High-Speed Helical</strong> (Cast Iron)</td>
+                                        <td>SK 0D to SK 5D (5 Sizes)</td>
+                                        <td>0.12 kW - 11.0 kW / IEC Frame 63 to 160</td>
                                         <td><strong>IEC / NEMA</strong> (Motor Adapters)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ATEX Explosion-Proof Helical</strong> (Cast Iron)[cite: 20]</td>
-                                        <td>SK 02 to SK 102 (Dust/Gas Zones)[cite: 20]</td>
-                                        <td>0.12 kW - 75.0 kW / Category 2G/2D & 3G/3D[cite: 20]</td>
+                                        <td><strong>ATEX Explosion-Proof Helical</strong> (Cast Iron)</td>
+                                        <td>SK 02 to SK 102 (Dust/Gas Zones)</td>
+                                        <td>0.12 kW - 75.0 kW / Category 2G/2D & 3G/3D</td>
                                         <td><strong>Tandem Compound</strong> (Extreme Ratios)</td>
                                     </tr>
                                 </tbody>
@@ -283,7 +410,7 @@
                             <!-- Legacy Helical Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy NORD Helical Replacement & High-Efficiency IE3/IE4 Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Older generation NORD inline helical gearboxes installed on factory automation lines can be seamlessly retrofitted with current UNICASE and NORDBLOC.1® helical gearmotors[cite: 20]. Refer to the cross-reference mapping below for 1-to-1 replacement:
+                                Older generation NORD inline helical gearboxes installed on factory automation lines can be seamlessly retrofitted with current UNICASE and NORDBLOC.1® helical gearmotors. Refer to the cross-reference mapping below for 1-to-1 replacement:
                             </p>
 
                             <table class="upgrade-table">
@@ -298,39 +425,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>SK 01 / SK 11 / SK 21</strong>[cite: 20]</td>
-                                        <td>1st Gen Cast Iron Helical[cite: 20]</td>
-                                        <td><strong>SK 02 / SK 12 / SK 22</strong> <span class="upgrade-badge">UNICASE Upgrade</span>[cite: 20]</td>
-                                        <td>60 Nm - 160 Nm / 0.12 - 1.5 kW[cite: 20]</td>
-                                        <td>Direct 1-to-1 shaft diameter & centerline height match[cite: 20].</td>
+                                        <td><strong>SK 01 / SK 11 / SK 21</strong></td>
+                                        <td>1st Gen Cast Iron Helical</td>
+                                        <td><strong>SK 02 / SK 12 / SK 22</strong> <span class="upgrade-badge">UNICASE Upgrade</span></td>
+                                        <td>60 Nm - 160 Nm / 0.12 - 1.5 kW</td>
+                                        <td>Direct 1-to-1 shaft diameter & centerline height match.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 31 / SK 41 / SK 51</strong>[cite: 20]</td>
-                                        <td>1st Gen Cast Iron Helical[cite: 20]</td>
-                                        <td><strong>SK 32 / SK 42 / SK 52</strong> <span class="upgrade-badge">UNICASE Upgrade</span>[cite: 20]</td>
-                                        <td>235 Nm - 650 Nm / 0.37 - 7.5 kW[cite: 20]</td>
-                                        <td>Identical foot hole pattern & B5 flange pitch circle diameter[cite: 20].</td>
+                                        <td><strong>SK 31 / SK 41 / SK 51</strong></td>
+                                        <td>1st Gen Cast Iron Helical</td>
+                                        <td><strong>SK 32 / SK 42 / SK 52</strong> <span class="upgrade-badge">UNICASE Upgrade</span></td>
+                                        <td>235 Nm - 650 Nm / 0.37 - 7.5 kW</td>
+                                        <td>Identical foot hole pattern & B5 flange pitch circle diameter.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 61 / SK 71 / SK 81</strong>[cite: 20]</td>
-                                        <td>1st Gen Cast Iron Helical[cite: 20]</td>
-                                        <td><strong>SK 62 / SK 72 / SK 82</strong> <span class="upgrade-badge">UNICASE Upgrade</span>[cite: 20]</td>
-                                        <td>1,000 Nm - 3,100 Nm / 3.0 - 30 kW[cite: 20]</td>
-                                        <td>Preserves original foundation dimensions. Higher overhung load capacity[cite: 20].</td>
+                                        <td><strong>SK 61 / SK 71 / SK 81</strong></td>
+                                        <td>1st Gen Cast Iron Helical</td>
+                                        <td><strong>SK 62 / SK 72 / SK 82</strong> <span class="upgrade-badge">UNICASE Upgrade</span></td>
+                                        <td>1,000 Nm - 3,100 Nm / 3.0 - 30 kW</td>
+                                        <td>Preserves original foundation dimensions. Higher overhung load capacity.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 91 / SK 101</strong>[cite: 20]</td>
-                                        <td>1st Gen Heavy Cast Iron[cite: 20]</td>
-                                        <td><strong>SK 92 / SK 102</strong> <span class="upgrade-badge">UNICASE Upgrade</span>[cite: 20]</td>
-                                        <td>6,000 Nm - 13,000 Nm / 18.5 - 75 kW[cite: 20]</td>
-                                        <td>Direct drop-in unit. Accepts current NEMA C-face or IEC B5 adapters[cite: 20].</td>
+                                        <td><strong>SK 91 / SK 101</strong></td>
+                                        <td>1st Gen Heavy Cast Iron</td>
+                                        <td><strong>SK 92 / SK 102</strong> <span class="upgrade-badge">UNICASE Upgrade</span></td>
+                                        <td>6,000 Nm - 13,000 Nm / 18.5 - 75 kW</td>
+                                        <td>Direct drop-in unit. Accepts current NEMA C-face or IEC B5 adapters.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>NORDBLOC 1st Gen (SK 071 to 771)</strong>[cite: 20]</td>
-                                        <td>1st Gen Aluminum Inline[cite: 20]</td>
-                                        <td><strong>SK 071.1 to SK 771.1 NORDBLOC.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 20]</td>
-                                        <td>Smooth Washdown Housing[cite: 20]</td>
-                                        <td>Smooth unribbed design prevents dirt accumulation. Direct drop-in[cite: 20].</td>
+                                        <td><strong>NORDBLOC 1st Gen (SK 071 to 771)</strong></td>
+                                        <td>1st Gen Aluminum Inline</td>
+                                        <td><strong>SK 071.1 to SK 771.1 NORDBLOC.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>Smooth Washdown Housing</td>
+                                        <td>Smooth unribbed design prevents dirt accumulation. Direct drop-in.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -338,34 +465,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNICASE and NORDBLOC.1® inline helical gearmotor series</strong>[cite: 20]. Whether you require a foot-mounted cast iron unit (<strong>SK 02 to SK 102</strong>)[cite: 20], a washdown aluminum inline gearmotor (<strong>SK 071.1 to SK 973.1</strong>)[cite: 20], B5 flange mounting (<strong>SK..F</strong>)[cite: 20], B14 face mounting (<strong>SK..Z</strong>)[cite: 20], or heavy multi-stage drives up to 26,000 Nm (<strong>SK 1082 to SK 10382</strong>)[cite: 20], all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors[cite: 20].
+                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNICASE and NORDBLOC.1® inline helical gearmotor series</strong>. Whether you require a foot-mounted cast iron unit (<strong>SK 02 to SK 102</strong>), a washdown aluminum inline gearmotor (<strong>SK 071.1 to SK 973.1</strong>), B5 flange mounting (<strong>SK..F</strong>), B14 face mounting (<strong>SK..Z</strong>), or heavy multi-stage drives up to 26,000 Nm (<strong>SK 1082 to SK 10382</strong>), all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors.
                                 <br><br>
-                                When retrofitting an existing installation featuring older <strong>SK 01, SK 31, SK 61, or 1st generation NORDBLOC</strong> gearboxes[cite: 20], upgrading to UNICASE single-piece housing gearmotors ensures complete dimensional interchangeability while substantially increasing radial load capacity and oil seal longevity. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
+                                When retrofitting an existing installation featuring older <strong>SK 01, SK 31, SK 61, or 1st generation NORDBLOC</strong> gearboxes, upgrading to UNICASE single-piece housing gearmotors ensures complete dimensional interchangeability while substantially increasing radial load capacity and oil seal longevity. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>SK 02-63L/4 (0.18 kW)[cite: 20]</li>
-                                <li>SK 12-71L/4 (0.37 kW)[cite: 20]</li>
-                                <li>SK 22-80L/4 (0.75 kW)[cite: 20]</li>
-                                <li>SK 32-80L/4 (0.75 kW)[cite: 20]</li>
-                                <li>SK 32-90L/4 (1.5 kW)[cite: 20]</li>
-                                <li>SK 42-100L/4 (2.2 kW)[cite: 20]</li>
-                                <li>SK 52-112M/4 (4.0 kW)[cite: 20]</li>
-                                <li>SK 62-132M/4 (7.5 kW)[cite: 20]</li>
-                                <li>SK 72-160M/4 (11.0 kW)[cite: 20]</li>
-                                <li>SK 82-180MX/4 (22.0 kW)[cite: 20]</li>
-                                <li>SK 92-225RP/4 (37.0 kW)[cite: 20]</li>
-                                <li>SK 102-280M/4 (75.0 kW)[cite: 20]</li>
-                                <li>SK 071.1-71L/4 (0.37 kW)[cite: 20]</li>
-                                <li>SK 171.1-80L/4 (0.75 kW)[cite: 20]</li>
-                                <li>SK 371.1-90L/4 (1.5 kW)[cite: 20]</li>
-                                <li>SK 571.1-112M/4 (4.0 kW)[cite: 20]</li>
-                                <li>SK 32F-90L/4 (B5 Flange)[cite: 20]</li>
-                                <li>SK 52F-112M/4 (B5 Flange)[cite: 20]</li>
-                                <li>SK 32Z-80L/4 (B14 Flange)[cite: 20]</li>
-                                <li>SK 62FZ-132M/4 (Foot/Flange)[cite: 20]</li>
+                                <li>SK 02-63L/4 (0.18 kW)</li>
+                                <li>SK 12-71L/4 (0.37 kW)</li>
+                                <li>SK 22-80L/4 (0.75 kW)</li>
+                                <li>SK 32-80L/4 (0.75 kW)</li>
+                                <li>SK 32-90L/4 (1.5 kW)</li>
+                                <li>SK 42-100L/4 (2.2 kW)</li>
+                                <li>SK 52-112M/4 (4.0 kW)</li>
+                                <li>SK 62-132M/4 (7.5 kW)</li>
+                                <li>SK 72-160M/4 (11.0 kW)</li>
+                                <li>SK 82-180MX/4 (22.0 kW)</li>
+                                <li>SK 92-225RP/4 (37.0 kW)</li>
+                                <li>SK 102-280M/4 (75.0 kW)</li>
+                                <li>SK 071.1-71L/4 (0.37 kW)</li>
+                                <li>SK 171.1-80L/4 (0.75 kW)</li>
+                                <li>SK 371.1-90L/4 (1.5 kW)</li>
+                                <li>SK 571.1-112M/4 (4.0 kW)</li>
+                                <li>SK 32F-90L/4 (B5 Flange)</li>
+                                <li>SK 52F-112M/4 (B5 Flange)</li>
+                                <li>SK 32Z-80L/4 (B14 Flange)</li>
+                                <li>SK 62FZ-132M/4 (Foot/Flange)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -375,7 +502,7 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 32</strong>?[cite: 20]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 32</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
                             <li>100% Original NORD Equipment</li>
                             <li>Global Express Shipping</li>
