@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/nord-worm-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/nord-worm-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/nord-worm-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/nord-worm-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="NORD SI50 UNIVERSAL Worm Gearmotor | Technical Specs & Replacement Guide" />
@@ -55,17 +67,17 @@
         "NORD HELICAL-WORM SK 1S32", "NORD HELICAL-WORM SK 2S42", "NORD HELICAL-WORM SK 3S52", "NORD HELICAL-WORM SK 4S90"
       ],
       "description": "NORD DRIVESYSTEMS UNIVERSAL SI, SMI smooth-surface aluminum worm gearmotors, and UNICASE helical-worm gear units. Compact right-angle layout, washdown suitability, and high reduction ratios covering torques up to 4,200 Nm.",
-    "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -111,10 +123,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/nord-worm-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/nord-worm-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/nord-worm-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -178,7 +305,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
+                    <a href="/products/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
                     <span>SI50 UNIVERSAL Worm</span>
                 </div>
 
@@ -188,37 +315,37 @@
                         <h1>NORD SI50 UNIVERSAL Worm Gearmotor</h1>
                         <div class="model-subtitle">Brand: NORD DRIVESYSTEMS | Series: UNIVERSAL SI / SMI (Aluminium Housing) & UNICASE Helical-Worm (SK 02040...42125)</div>
                         
-                        <p>The <strong>NORD SI50</strong> is a highly compact, versatile right-angle worm gearmotor from NORD DRIVESYSTEMS' <strong>UNIVERSAL SI Series</strong>[cite: 24]. Featuring a smooth, corrosion-resistant die-cast aluminum housing[cite: 24], the SI50 offers high single-stage reduction ratios, quiet operation, and washdown suitability for light to medium industrial processing[cite: 24]. Available in complete mounting configurations—including hollow shaft keyway (SI50A), B5 flange (SI50AF), B14 face flange (SI50AZ), shrink disc (SI50ASH), GRIPMAXX™ keyless bushing system (SI50AM), and nsd tupH™ sealed surface treatment[cite: 24]—it is extensively applied in food & beverage processing, bottling plants, packaging equipment, and light material handling conveyors[cite: 24].</p>
+                        <p>The <strong>NORD SI50</strong> is a highly compact, versatile right-angle worm gearmotor from NORD DRIVESYSTEMS' <strong>UNIVERSAL SI Series</strong>. Featuring a smooth, corrosion-resistant die-cast aluminum housing, the SI50 offers high single-stage reduction ratios, quiet operation, and washdown suitability for light to medium industrial processing. Available in complete mounting configurations—including hollow shaft keyway (SI50A), B5 flange (SI50AF), B14 face flange (SI50AZ), shrink disc (SI50ASH), GRIPMAXX™ keyless bushing system (SI50AM), and nsd tupH™ sealed surface treatment—it is extensively applied in food & beverage processing, bottling plants, packaging equipment, and light material handling conveyors.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>SI50 (UNIVERSAL Single-Stage Worm, Size 50 Aluminum Housing)[cite: 24]</td>
+                                <td>SI50 (UNIVERSAL Single-Stage Worm, Size 50 Aluminum Housing)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Getriebebau NORD GmbH & Co. KG[cite: 24]</td>
+                                <td>Getriebebau NORD GmbH & Co. KG</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>Smooth Washdown Aluminum Die-Cast Housing (SI/SMI) or Cast Iron UNICASE[cite: 24]</td>
+                                <td>Smooth Washdown Aluminum Die-Cast Housing (SI/SMI) or Cast Iron UNICASE</td>
                             </tr>
                             <tr>
                                 <th>Compatible Motor Types</th>
-                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 180L)[cite: 24]</td>
+                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 180L)</td>
                             </tr>
                             <tr>
                                 <th>Rated Motor Power (kW)</th>
-                                <td>0.12 kW to 15 kW (0.75 kW Standard for SI50-80L/4)[cite: 24]</td>
+                                <td>0.12 kW to 15 kW (0.75 kW Standard for SI50-80L/4)</td>
                             </tr>
                             <tr>
                                 <th>Maximum Torque Capacity</th>
-                                <td>Up to 4,200 Nm (UNICASE Helical-Worm) / 180 Nm (SI50)[cite: 24]</td>
+                                <td>Up to 4,200 Nm (UNICASE Helical-Worm) / 180 Nm (SI50)</td>
                             </tr>
                             <tr>
                                 <th>Shaft & Mounting Form</th>
-                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14[cite: 24]</td>
+                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14</td>
                             </tr>
                         </table>
 
@@ -226,8 +353,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">NORD UNIVERSAL Worm Gearmotors Catalog G1035 & Operating Manual (PDF)</a>[cite: 24]</li>
-                                <li><a href="#cad-drawing">SI50 3D CAD Drawing & Shaft Dimension Request</a>[cite: 24]</li>
+                                <li><a href="#pdf-manual">NORD UNIVERSAL Worm Gearmotors Catalog G1035 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">SI50 3D CAD Drawing & Shaft Dimension Request</a></li>
                             </ul>
                         </div>
 
@@ -235,7 +362,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">NORD UNIVERSAL & UNICASE Worm Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range modular configuration guide for NORD DRIVESYSTEMS right-angle worm gearboxes[cite: 24]. Review supported housing materials, stage designs, shaft connection options, and surface treatment executions:
+                                Full-range modular configuration guide for NORD DRIVESYSTEMS right-angle worm gearboxes. Review supported housing materials, stage designs, shaft connection options, and surface treatment executions:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -250,33 +377,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>UNIVERSAL SI Series</strong> (Modular Aluminum)[cite: 24]</td>
-                                        <td>SI 31 to SI 125 (8 Sizes)[cite: 24]</td>
-                                        <td>0.12 kW - 15.0 kW / IEC Frame 63 to 180[cite: 24]</td>
+                                        <td><strong>UNIVERSAL SI Series</strong> (Modular Aluminum)</td>
+                                        <td>SI 31 to SI 125 (8 Sizes)</td>
+                                        <td>0.12 kW - 15.0 kW / IEC Frame 63 to 180</td>
                                         <td><strong>nsd tupH™</strong> (Sealed Surface Conversion)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Smooth SMI Series</strong> (Hygienic Aluminum)[cite: 24]</td>
-                                        <td>SMI 31 to SMI 75 (5 Sizes)[cite: 24]</td>
-                                        <td>0.12 kW - 4.0 kW / IEC Frame 63 to 112[cite: 24]</td>
+                                        <td><strong>Smooth SMI Series</strong> (Hygienic Aluminum)</td>
+                                        <td>SMI 31 to SMI 75 (5 Sizes)</td>
+                                        <td>0.12 kW - 4.0 kW / IEC Frame 63 to 112</td>
                                         <td><strong>GRIPMAXX™</strong> (Keyless Bushing System)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>UNICASE 2-Stage Helical-Worm</strong> (Cast Iron)[cite: 24]</td>
-                                        <td>SK 02040 to SK 42125 (6 Sizes)[cite: 24]</td>
-                                        <td>0.12 kW - 7.5 kW / IEC Frame 63 to 132[cite: 24]</td>
+                                        <td><strong>UNICASE 2-Stage Helical-Worm</strong> (Cast Iron)</td>
+                                        <td>SK 02040 to SK 42125 (6 Sizes)</td>
+                                        <td>0.12 kW - 7.5 kW / IEC Frame 63 to 132</td>
                                         <td><strong>ASH</strong> (Hollow Shaft Shrink Disc)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>UNICASE Helical-Worm Stage</strong> (Cast Iron)[cite: 24]</td>
-                                        <td>SK 1S32 to SK 4S90 (4 Sizes)[cite: 24]</td>
-                                        <td>0.12 kW - 5.5 kW / IEC Frame 63 to 132[cite: 24]</td>
+                                        <td><strong>UNICASE Helical-Worm Stage</strong> (Cast Iron)</td>
+                                        <td>SK 1S32 to SK 4S90 (4 Sizes)</td>
+                                        <td>0.12 kW - 5.5 kW / IEC Frame 63 to 132</td>
                                         <td><strong>VL2 / VL3</strong> (Heavy Agitator Bearings)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Double-Worm Compound Units</strong> (High Ratios)[cite: 24]</td>
-                                        <td>SI31/31 to SI125/63 (Double Worm)[cite: 24]</td>
-                                        <td>0.12 kW - 1.5 kW / IEC Frame 63 to 90[cite: 24]</td>
+                                        <td><strong>Double-Worm Compound Units</strong> (High Ratios)</td>
+                                        <td>SI31/31 to SI125/63 (Double Worm)</td>
+                                        <td>0.12 kW - 1.5 kW / IEC Frame 63 to 90</td>
                                         <td><strong>SCP</strong> (Screw Conveyor Package Adapter)</td>
                                     </tr>
                                 </tbody>
@@ -285,7 +412,7 @@
                             <!-- Legacy Worm Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy NORD Worm Replacement & High-Efficiency IE3/IE4 Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Older generation NORD right-angle worm gearboxes installed on production lines can be directly replaced with current UNIVERSAL SI/SMI or UNICASE helical-worm gearmotors[cite: 24]. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
+                                Older generation NORD right-angle worm gearboxes installed on production lines can be directly replaced with current UNIVERSAL SI/SMI or UNICASE helical-worm gearmotors. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -300,39 +427,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>SI 32 / SI 42 / SI 52</strong>[cite: 24]</td>
-                                        <td>1st Gen Aluminum Worm[cite: 24]</td>
-                                        <td><strong>SI 31 / SI 40 / SI 50</strong> <span class="upgrade-badge">SI Series</span>[cite: 24]</td>
-                                        <td>21 Nm - 180 Nm / 0.12 - 0.75 kW[cite: 24]</td>
-                                        <td>Direct 1-to-1 foot & shaft match. Enhanced washdown housing[cite: 24].</td>
+                                        <td><strong>SI 32 / SI 42 / SI 52</strong></td>
+                                        <td>1st Gen Aluminum Worm</td>
+                                        <td><strong>SI 31 / SI 40 / SI 50</strong> <span class="upgrade-badge">SI Series</span></td>
+                                        <td>21 Nm - 180 Nm / 0.12 - 0.75 kW</td>
+                                        <td>Direct 1-to-1 foot & shaft match. Enhanced washdown housing.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SI 62 / SI 72 / SI 82</strong>[cite: 24]</td>
-                                        <td>1st Gen Aluminum Worm[cite: 24]</td>
-                                        <td><strong>SI 63 / SI 75 / SI 90</strong> <span class="upgrade-badge">SI Series</span>[cite: 24]</td>
-                                        <td>260 Nm - 620 Nm / 0.25 - 5.5 kW[cite: 24]</td>
-                                        <td>Identical shaft centerline and mounting face. Drop-in replacement[cite: 24].</td>
+                                        <td><strong>SI 62 / SI 72 / SI 82</strong></td>
+                                        <td>1st Gen Aluminum Worm</td>
+                                        <td><strong>SI 63 / SI 75 / SI 90</strong> <span class="upgrade-badge">SI Series</span></td>
+                                        <td>260 Nm - 620 Nm / 0.25 - 5.5 kW</td>
+                                        <td>Identical shaft centerline and mounting face. Drop-in replacement.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 02050 / SK 12063</strong>[cite: 24]</td>
-                                        <td>Legacy UNICASE Helical-Worm[cite: 24]</td>
-                                        <td><strong>SK 02050 / SK 12063</strong> <span class="upgrade-badge">Current Standard</span>[cite: 24]</td>
-                                        <td>180 Nm - 420 Nm / 0.18 - 2.2 kW[cite: 24]</td>
-                                        <td>Preserves footprint & B5 flange. High primary helical stage efficiency[cite: 24].</td>
+                                        <td><strong>SK 02050 / SK 12063</strong></td>
+                                        <td>Legacy UNICASE Helical-Worm</td>
+                                        <td><strong>SK 02050 / SK 12063</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>180 Nm - 420 Nm / 0.18 - 2.2 kW</td>
+                                        <td>Preserves footprint & B5 flange. High primary helical stage efficiency.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 32090 / SK 42125</strong>[cite: 24]</td>
-                                        <td>Legacy Heavy Helical-Worm[cite: 24]</td>
-                                        <td><strong>SK 32090 / SK 42125</strong> <span class="upgrade-badge">Current Standard</span>[cite: 24]</td>
-                                        <td>1,100 Nm - 3,000 Nm / 0.75 - 11 kW[cite: 24]</td>
-                                        <td>Direct drop-in. Accepts current NEMA C-face or IEC B5 motor adapters[cite: 24].</td>
+                                        <td><strong>SK 32090 / SK 42125</strong></td>
+                                        <td>Legacy Heavy Helical-Worm</td>
+                                        <td><strong>SK 32090 / SK 42125</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>1,100 Nm - 3,000 Nm / 0.75 - 11 kW</td>
+                                        <td>Direct drop-in. Accepts current NEMA C-face or IEC B5 motor adapters.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Pure Worm Units (Low Efficiency)</strong>[cite: 24]</td>
-                                        <td>Standard Worm Drive[cite: 24]</td>
-                                        <td><strong>SK 1S32 to SK 4S90 Helical-Worm</strong> <span class="upgrade-badge">Efficiency Upgrade</span>[cite: 24]</td>
-                                        <td>Helical Primary Stage[cite: 24]</td>
-                                        <td>Helical primary stage improves overall efficiency by up to 20%[cite: 24].</td>
+                                        <td><strong>Pure Worm Units (Low Efficiency)</strong></td>
+                                        <td>Standard Worm Drive</td>
+                                        <td><strong>SK 1S32 to SK 4S90 Helical-Worm</strong> <span class="upgrade-badge">Efficiency Upgrade</span></td>
+                                        <td>Helical Primary Stage</td>
+                                        <td>Helical primary stage improves overall efficiency by up to 20%.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -340,34 +467,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNIVERSAL SI, SMI, and UNICASE worm gearmotor series</strong>[cite: 24]. Whether you require a smooth washdown aluminum unit (<strong>SI 31 to SI 125 / SMI 31 to SMI 75</strong>)[cite: 24], a UNICASE helical-worm drive (<strong>SK 02040 to SK 42125 / SK 1S32 to SK 4S90</strong>)[cite: 24], hollow shaft keyway (<strong>AH</strong>)[cite: 24], shrink disc (<strong>ASH</strong>)[cite: 24], keyless GRIPMAXX™ clamping system (<strong>AM</strong>)[cite: 24], or double-worm compound reducers[cite: 24], all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors[cite: 24].
+                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNIVERSAL SI, SMI, and UNICASE worm gearmotor series</strong>. Whether you require a smooth washdown aluminum unit (<strong>SI 31 to SI 125 / SMI 31 to SMI 75</strong>), a UNICASE helical-worm drive (<strong>SK 02040 to SK 42125 / SK 1S32 to SK 4S90</strong>), hollow shaft keyway (<strong>AH</strong>), shrink disc (<strong>ASH</strong>), keyless GRIPMAXX™ clamping system (<strong>AM</strong>), or double-worm compound reducers, all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors.
                                 <br><br>
-                                When retrofitting an existing installation featuring older <strong>SI 42, SI 52, SK 02050, or competitor worm</strong> gearboxes[cite: 24], upgrading to UNIVERSAL SI or UNICASE helical-worm gearmotors ensures complete dimensional interchangeability while substantially increasing energy efficiency and seal longevity[cite: 24]. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal[cite: 24].
+                                When retrofitting an existing installation featuring older <strong>SI 42, SI 52, SK 02050, or competitor worm</strong> gearboxes, upgrading to UNIVERSAL SI or UNICASE helical-worm gearmotors ensures complete dimensional interchangeability while substantially increasing energy efficiency and seal longevity. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>SI31-63L/4 (0.18 kW)[cite: 24]</li>
-                                <li>SI40-71L/4 (0.37 kW)[cite: 24]</li>
-                                <li>SI50-80L/4 (0.75 kW)[cite: 24]</li>
-                                <li>SI63-90L/4 (1.5 kW)[cite: 24]</li>
-                                <li>SI75-100L/4 (2.2 kW)[cite: 24]</li>
-                                <li>SI90-112M/4 (4.0 kW)[cite: 24]</li>
-                                <li>SI100-132M/4 (7.5 kW)[cite: 24]</li>
-                                <li>SMI40-71L/4 (0.37 kW)[cite: 24]</li>
-                                <li>SMI50-80L/4 (0.75 kW)[cite: 24]</li>
-                                <li>SMI63-90L/4 (1.5 kW)[cite: 24]</li>
-                                <li>SK 02050-80L/4 (0.75 kW)[cite: 24]</li>
-                                <li>SK 12063-90L/4 (1.5 kW)[cite: 24]</li>
-                                <li>SK 32090-100LA/4 (3.0 kW)[cite: 24]</li>
-                                <li>SK 1S32-71L/4 (0.37 kW)[cite: 24]</li>
-                                <li>SK 2S42-80L/4 (0.75 kW)[cite: 24]</li>
-                                <li>SK 3S52-90L/4 (1.5 kW)[cite: 24]</li>
-                                <li>SI50A-80L (Hollow Shaft)[cite: 24]</li>
-                                <li>SI63ASH-90L (Shrink Disc)[cite: 24]</li>
-                                <li>SMI50AM-80L (GRIPMAXX)[cite: 24]</li>
-                                <li>SI75AF-100L (B5 Flange)[cite: 24]</li>
+                                <li>SI31-63L/4 (0.18 kW)</li>
+                                <li>SI40-71L/4 (0.37 kW)</li>
+                                <li>SI50-80L/4 (0.75 kW)</li>
+                                <li>SI63-90L/4 (1.5 kW)</li>
+                                <li>SI75-100L/4 (2.2 kW)</li>
+                                <li>SI90-112M/4 (4.0 kW)</li>
+                                <li>SI100-132M/4 (7.5 kW)</li>
+                                <li>SMI40-71L/4 (0.37 kW)</li>
+                                <li>SMI50-80L/4 (0.75 kW)</li>
+                                <li>SMI63-90L/4 (1.5 kW)</li>
+                                <li>SK 02050-80L/4 (0.75 kW)</li>
+                                <li>SK 12063-90L/4 (1.5 kW)</li>
+                                <li>SK 32090-100LA/4 (3.0 kW)</li>
+                                <li>SK 1S32-71L/4 (0.37 kW)</li>
+                                <li>SK 2S42-80L/4 (0.75 kW)</li>
+                                <li>SK 3S52-90L/4 (1.5 kW)</li>
+                                <li>SI50A-80L (Hollow Shaft)</li>
+                                <li>SI63ASH-90L (Shrink Disc)</li>
+                                <li>SMI50AM-80L (GRIPMAXX)</li>
+                                <li>SI75AF-100L (B5 Flange)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -377,11 +504,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SI50 Worm Gearmotors</strong>?[cite: 24]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SI50 Worm Gearmotors</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original NORD Equipment[cite: 24]</li>
-                            <li>Global Express Shipping[cite: 24]</li>
-                            <li>Technical Support Available[cite: 24]</li>
+                            <li>100% Original NORD Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Technical Support Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
