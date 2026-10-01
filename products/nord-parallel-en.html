@@ -15,6 +15,18 @@
     <!-- Canonical English URL -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/nord-parallel-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/nord-parallel-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/nord-parallel-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="NORD SK 2282 UNICASE Parallel Shaft Gearmotor | Technical Specs & Replacement Guide" />
@@ -52,17 +64,17 @@
         "NORD SK 0182.1", "NORD SK 0282.1", "NORD SK 1282.1", "NORD SK 1382.1", "NORD SK 2282", "NORD SK 2382", "NORD SK 3282", "NORD SK 3382", "NORD SK 4282", "NORD SK 4382", "NORD SK 5282", "NORD SK 5382", "NORD SK 6282", "NORD SK 6382", "NORD SK 7282", "NORD SK 7382", "NORD SK 8282", "NORD SK 8382", "NORD SK 9282", "NORD SK 9382", "NORD SK 10382.1", "NORD SK 11382.1"
       ],
       "description": "NORD DRIVESYSTEMS UNICASE parallel shaft helical gearmotors (2-stage and 3-stage). High torque density, space-saving flat design, and flexible foot, flange, hollow shaft, shrink disc, and Gripmaxx options covering torques up to 90,000 Nm.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -108,10 +120,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/nord-parallel-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/nord-parallel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/nord-parallel-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -175,7 +302,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
+                    <a href="/products/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
                     <span>SK 2282 UNICASE Parallel</span>
                 </div>
 
@@ -185,37 +312,37 @@
                         <h1>NORD SK 2282 UNICASE Parallel Shaft Gearmotor</h1>
                         <div class="model-subtitle">Brand: NORD DRIVESYSTEMS | Series: UNICASE Parallel Shaft (SK 0182.1...11382.1)</div>
                         
-                        <p>The <strong>NORD SK 2282</strong> is a compact, high-efficiency 2-stage parallel shaft helical gearmotor featuring NORD DRIVESYSTEMS' benchmark <strong>UNICASE single-piece cast iron housing</strong>[cite: 23]. Engineered for applications with tight mounting profiles[cite: 23], the SK 2282 provides superior torsional stiffness, leak-proof operational reliability, high overhung load capacity, and quiet gear transmission[cite: 23]. Available across flexible mounting configurations—including hollow shaft with keyway (SK 2282A), shrink disc (SK 2282ASH), B5 flange (SK 2282AF), B14 face flange (SK 2282AZ), keyless GRIPMAXX™ system (SK 2282AFMH), and rubber buffer torque arm (SK 2282G)[cite: 23]—it is widely specified in agitators, belt conveyors, crane hoists, wastewater aerators, and automated warehouse systems[cite: 23].</p>
+                        <p>The <strong>NORD SK 2282</strong> is a compact, high-efficiency 2-stage parallel shaft helical gearmotor featuring NORD DRIVESYSTEMS' benchmark <strong>UNICASE single-piece cast iron housing</strong>. Engineered for applications with tight mounting profiles, the SK 2282 provides superior torsional stiffness, leak-proof operational reliability, high overhung load capacity, and quiet gear transmission. Available across flexible mounting configurations—including hollow shaft with keyway (SK 2282A), shrink disc (SK 2282ASH), B5 flange (SK 2282AF), B14 face flange (SK 2282AZ), keyless GRIPMAXX™ system (SK 2282AFMH), and rubber buffer torque arm (SK 2282G)—it is widely specified in agitators, belt conveyors, crane hoists, wastewater aerators, and automated warehouse systems.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>SK 2282 (2-Stage Parallel Shaft, Size 2 UNICASE)[cite: 23]</td>
+                                <td>SK 2282 (2-Stage Parallel Shaft, Size 2 UNICASE)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Getriebebau NORD GmbH & Co. KG[cite: 23]</td>
+                                <td>Getriebebau NORD GmbH & Co. KG</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>UNICASE One-Piece Cast Iron Housing (GJL-200) or Lightweight Aluminum[cite: 23]</td>
+                                <td>UNICASE One-Piece Cast Iron Housing (GJL-200) or Lightweight Aluminum</td>
                             </tr>
                             <tr>
                                 <th>Compatible Motor Types</th>
-                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 315M)[cite: 23]</td>
+                                <td>NORD IE1, IE2, IE3 Premium, and IE4 Super Premium AC Motors (Frame 63S to 315M)</td>
                             </tr>
                             <tr>
                                 <th>Rated Motor Power (kW)</th>
-                                <td>0.12 kW to 200 kW (0.75 kW Standard for SK 2282-80L/4)[cite: 23]</td>
+                                <td>0.12 kW to 200 kW (0.75 kW Standard for SK 2282-80L/4)</td>
                             </tr>
                             <tr>
                                 <th>Maximum Torque Output</th>
-                                <td>Up to 90,000 Nm (Heavy UNICASE Series) / 245 Nm (SK 2282)[cite: 23]</td>
+                                <td>Up to 90,000 Nm (Heavy UNICASE Series) / 245 Nm (SK 2282)</td>
                             </tr>
                             <tr>
                                 <th>Shaft & Mounting Form</th>
-                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14[cite: 23]</td>
+                                <td>Hollow Shaft (A/AH/AZ), Shrink Disc (ASH), GRIPMAXX™ (AM), Solid Shaft (V), Flange B5/B14</td>
                             </tr>
                         </table>
 
@@ -223,8 +350,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">NORD UNICASE Parallel Shaft Gearmotors Catalog G1000 & Operating Instructions (PDF)</a>[cite: 23]</li>
-                                <li><a href="#cad-drawing">SK 2282 3D CAD Drawing & Shaft Dimension Request</a>[cite: 23]</li>
+                                <li><a href="#pdf-manual">NORD UNICASE Parallel Shaft Gearmotors Catalog G1000 & Operating Instructions (PDF)</a></li>
+                                <li><a href="#cad-drawing">SK 2282 3D CAD Drawing & Shaft Dimension Request</a></li>
                             </ul>
                         </div>
 
@@ -232,7 +359,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">NORD UNICASE Parallel Shaft Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range modular configuration guide for NORD DRIVESYSTEMS parallel shaft helical gearboxes[cite: 23]. Review supported housing materials, stage designs, shaft connection options, and special accessory kits:
+                                Full-range modular configuration guide for NORD DRIVESYSTEMS parallel shaft helical gearboxes. Review supported housing materials, stage designs, shaft connection options, and special accessory kits:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -247,33 +374,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Compact Parallel Shaft 2/3-Stage</strong> (Aluminum)[cite: 23]</td>
-                                        <td>SK 0182.1 & SK 0282.1 (2 Sizes)[cite: 23]</td>
-                                        <td>0.12 kW - 0.75 kW / IEC Frame 63 to 80[cite: 23]</td>
+                                        <td><strong>Compact Parallel Shaft 2/3-Stage</strong> (Aluminum)</td>
+                                        <td>SK 0182.1 & SK 0282.1 (2 Sizes)</td>
+                                        <td>0.12 kW - 0.75 kW / IEC Frame 63 to 80</td>
                                         <td><strong>nsd tupH™</strong> (Sealed Surface Conversion)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Mid-Size Parallel Shaft 2/3-Stage</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 1282.1 & SK 1382.1 (2 Sizes)[cite: 23]</td>
-                                        <td>0.12 kW - 1.5 kW / IEC Frame 63 to 100[cite: 23]</td>
+                                        <td><strong>Mid-Size Parallel Shaft 2/3-Stage</strong> (Cast Iron)</td>
+                                        <td>SK 1282.1 & SK 1382.1 (2 Sizes)</td>
+                                        <td>0.12 kW - 1.5 kW / IEC Frame 63 to 100</td>
                                         <td><strong>GRIPMAXX™</strong> (Keyless Bushing System)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Standard UNICASE Parallel Shaft</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 2282 to SK 6382 (10 Sizes)[cite: 23]</td>
-                                        <td>0.25 kW - 37.0 kW / IEC Frame 71 to 225[cite: 23]</td>
+                                        <td><strong>Standard UNICASE Parallel Shaft</strong> (Cast Iron)</td>
+                                        <td>SK 2282 to SK 6382 (10 Sizes)</td>
+                                        <td>0.25 kW - 37.0 kW / IEC Frame 71 to 225</td>
                                         <td><strong>ASH</strong> (Hollow Shaft Shrink Disc)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy UNICASE Parallel Shaft</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 7282 to SK 9382 (6 Sizes)[cite: 23]</td>
-                                        <td>5.5 kW - 90.0 kW / IEC Frame 132 to 315[cite: 23]</td>
+                                        <td><strong>Heavy UNICASE Parallel Shaft</strong> (Cast Iron)</td>
+                                        <td>SK 7282 to SK 9382 (6 Sizes)</td>
+                                        <td>5.5 kW - 90.0 kW / IEC Frame 132 to 315</td>
                                         <td><strong>VL2 / VL3</strong> (Heavy Agitator Bearings)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Maximum Capacity UNICASE Parallel</strong> (Cast Iron)[cite: 23]</td>
-                                        <td>SK 10382.1 & SK 11382.1 (2 Sizes)[cite: 23]</td>
-                                        <td>45.0 kW - 200.0 kW / IEC Frame 225 to 315[cite: 23]</td>
+                                        <td><strong>Maximum Capacity UNICASE Parallel</strong> (Cast Iron)</td>
+                                        <td>SK 10382.1 & SK 11382.1 (2 Sizes)</td>
+                                        <td>45.0 kW - 200.0 kW / IEC Frame 225 to 315</td>
                                         <td><strong>SCP</strong> (Screw Conveyor Package Adapter)</td>
                                     </tr>
                                 </tbody>
@@ -282,7 +409,7 @@
                             <!-- Legacy Parallel Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy NORD Parallel Replacement & High-Efficiency IE3/IE4 Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Older generation NORD flat/parallel gearboxes installed on production lines can be directly replaced with current UNICASE parallel shaft helical gearmotors[cite: 23]. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
+                                Older generation NORD flat/parallel gearboxes installed on production lines can be directly replaced with current UNICASE parallel shaft helical gearmotors. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -297,38 +424,38 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>SK 0182 / SK 0282</strong>[cite: 23]</td>
-                                        <td>1st Gen Parallel Shaft[cite: 23]</td>
-                                        <td><strong>SK 0182.1 / SK 0282.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>90 Nm - 140 Nm / 0.12 - 0.75 kW[cite: 23]</td>
+                                        <td><strong>SK 0182 / SK 0282</strong></td>
+                                        <td>1st Gen Parallel Shaft</td>
+                                        <td><strong>SK 0182.1 / SK 0282.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>90 Nm - 140 Nm / 0.12 - 0.75 kW</td>
                                         <td>Direct 1-to-1 foot & shaft match. Compact profile.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 1282 / SK 1382</strong>[cite: 23]</td>
-                                        <td>1st Gen Parallel Shaft[cite: 23]</td>
-                                        <td><strong>SK 1282.1 / SK 1382.1</strong> <span class="upgrade-badge">.1 Generation</span>[cite: 23]</td>
-                                        <td>180 Nm - 220 Nm / 0.12 - 1.5 kW[cite: 23]</td>
+                                        <td><strong>SK 1282 / SK 1382</strong></td>
+                                        <td>1st Gen Parallel Shaft</td>
+                                        <td><strong>SK 1282.1 / SK 1382.1</strong> <span class="upgrade-badge">.1 Generation</span></td>
+                                        <td>180 Nm - 220 Nm / 0.12 - 1.5 kW</td>
                                         <td>Identical shaft centerline and mounting face. Drop-in replacement.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 2282 / SK 3282 / SK 4282</strong>[cite: 23]</td>
-                                        <td>Standard UNICASE Flat[cite: 23]</td>
-                                        <td><strong>SK 2282 / SK 3282 / SK 4282</strong> <span class="upgrade-badge">Current Standard</span>[cite: 23]</td>
-                                        <td>245 Nm - 1,400 Nm / 0.25 - 11 kW[cite: 23]</td>
+                                        <td><strong>SK 2282 / SK 3282 / SK 4282</strong></td>
+                                        <td>Standard UNICASE Flat</td>
+                                        <td><strong>SK 2282 / SK 3282 / SK 4282</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>245 Nm - 1,400 Nm / 0.25 - 11 kW</td>
                                         <td>Preserves footprint & B5 flange. Accepts IE3/IE4 motors.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 5282 / SK 6282 / SK 7282</strong>[cite: 23]</td>
-                                        <td>Heavy UNICASE Flat[cite: 23]</td>
-                                        <td><strong>SK 5282 / SK 6282 / SK 7282</strong> <span class="upgrade-badge">Current Standard</span>[cite: 23]</td>
-                                        <td>2,200 Nm - 12,000 Nm / 1.5 - 45 kW[cite: 23]</td>
+                                        <td><strong>SK 5282 / SK 6282 / SK 7282</strong></td>
+                                        <td>Heavy UNICASE Flat</td>
+                                        <td><strong>SK 5282 / SK 6282 / SK 7282</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>2,200 Nm - 12,000 Nm / 1.5 - 45 kW</td>
                                         <td>Direct drop-in. Accepts current NEMA C-face or IEC B5 adapters.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 8282 / SK 9282 / SK 10382</strong>[cite: 23]</td>
-                                        <td>Extra Heavy UNICASE Flat[cite: 23]</td>
-                                        <td><strong>SK 8282 / SK 9282 / SK 10382.1</strong> <span class="upgrade-badge">Current Standard</span>[cite: 23]</td>
-                                        <td>20,000 Nm - 90,000 Nm / 11 - 200 kW[cite: 23]</td>
+                                        <td><strong>SK 8282 / SK 9282 / SK 10382</strong></td>
+                                        <td>Extra Heavy UNICASE Flat</td>
+                                        <td><strong>SK 8282 / SK 9282 / SK 10382.1</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>20,000 Nm - 90,000 Nm / 11 - 200 kW</td>
                                         <td>Matches original heavy drive footprint. Reinforced bearings.</td>
                                     </tr>
                                 </tbody>
@@ -337,34 +464,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNICASE parallel shaft gearmotor series</strong>[cite: 23]. Whether you require a compact aluminum unit (<strong>SK 0182.1 / SK 0282.1</strong>)[cite: 23], a standard UNICASE flat gearbox (<strong>SK 2282 to SK 6382</strong>)[cite: 23], hollow shaft keyway (<strong>A</strong>)[cite: 23], shrink disc (<strong>ASH</strong>)[cite: 23], keyless GRIPMAXX™ clamping system (<strong>AM</strong>)[cite: 23], or extra heavy-duty parallel drives up to 90,000 Nm (<strong>SK 7282 to SK 11382.1</strong>)[cite: 23], all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors[cite: 23].
+                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>NORD UNICASE parallel shaft gearmotor series</strong>. Whether you require a compact aluminum unit (<strong>SK 0182.1 / SK 0282.1</strong>), a standard UNICASE flat gearbox (<strong>SK 2282 to SK 6382</strong>), hollow shaft keyway (<strong>A</strong>), shrink disc (<strong>ASH</strong>), keyless GRIPMAXX™ clamping system (<strong>AM</strong>), or extra heavy-duty parallel drives up to 90,000 Nm (<strong>SK 7282 to SK 11382.1</strong>), all units can be supplied pre-assembled with NORD IE3 Premium or IE4 Super Premium high-efficiency AC motors.
                                 <br><br>
-                                When retrofitting an existing installation featuring older <strong>SK 1282, SK 2282, or competitor parallel shaft</strong> gearboxes[cite: 23], upgrading to current UNICASE block housing gearmotors ensures complete dimensional interchangeability while substantially increasing radial load capacity and oil seal longevity. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
+                                When retrofitting an existing installation featuring older <strong>SK 1282, SK 2282, or competitor parallel shaft</strong> gearboxes, upgrading to current UNICASE block housing gearmotors ensures complete dimensional interchangeability while substantially increasing radial load capacity and oil seal longevity. Simply provide us with your existing NORD serial number or nameplate code, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>SK 0182.1-63L/4 (0.18 kW)[cite: 23]</li>
-                                <li>SK 0282.1-71L/4 (0.37 kW)[cite: 23]</li>
-                                <li>SK 1282.1-80L/4 (0.75 kW)[cite: 23]</li>
-                                <li>SK 2282-80L/4 (0.75 kW)[cite: 23]</li>
-                                <li>SK 2282-90L/4 (1.5 kW)[cite: 23]</li>
-                                <li>SK 3282-100L/4 (2.2 kW)[cite: 23]</li>
-                                <li>SK 4282-112M/4 (4.0 kW)[cite: 23]</li>
-                                <li>SK 5282-132M/4 (7.5 kW)[cite: 23]</li>
-                                <li>SK 6282-160M/4 (11.0 kW)[cite: 23]</li>
-                                <li>SK 7282-180MX/4 (22.0 kW)[cite: 23]</li>
-                                <li>SK 8282-225RP/4 (37.0 kW)[cite: 23]</li>
-                                <li>SK 9282-280M/4 (75.0 kW)[cite: 23]</li>
-                                <li>SK 2282A-80L (Hollow Shaft)[cite: 23]</li>
-                                <li>SK 3282ASH-90L (Shrink Disc)[cite: 23]</li>
-                                <li>SK 4282AM-100L (GRIPMAXX)[cite: 23]</li>
-                                <li>SK 5282AF-112M (B5 Flange)[cite: 23]</li>
-                                <li>SK 6282AZ-132M (B14 Flange)[cite: 23]</li>
-                                <li>SK 7282G-160M (Torque Arm)[cite: 23]</li>
-                                <li>SK 2282SCP-80L (Screw Conveyor)[cite: 23]</li>
-                                <li>SK 10382.1-280M (Heavy Unit)[cite: 23]</li>
+                                <li>SK 0182.1-63L/4 (0.18 kW)</li>
+                                <li>SK 0282.1-71L/4 (0.37 kW)</li>
+                                <li>SK 1282.1-80L/4 (0.75 kW)</li>
+                                <li>SK 2282-80L/4 (0.75 kW)</li>
+                                <li>SK 2282-90L/4 (1.5 kW)</li>
+                                <li>SK 3282-100L/4 (2.2 kW)</li>
+                                <li>SK 4282-112M/4 (4.0 kW)</li>
+                                <li>SK 5282-132M/4 (7.5 kW)</li>
+                                <li>SK 6282-160M/4 (11.0 kW)</li>
+                                <li>SK 7282-180MX/4 (22.0 kW)</li>
+                                <li>SK 8282-225RP/4 (37.0 kW)</li>
+                                <li>SK 9282-280M/4 (75.0 kW)</li>
+                                <li>SK 2282A-80L (Hollow Shaft)</li>
+                                <li>SK 3282ASH-90L (Shrink Disc)</li>
+                                <li>SK 4282AM-100L (GRIPMAXX)</li>
+                                <li>SK 5282AF-112M (B5 Flange)</li>
+                                <li>SK 6282AZ-132M (B14 Flange)</li>
+                                <li>SK 7282G-160M (Torque Arm)</li>
+                                <li>SK 2282SCP-80L (Screw Conveyor)</li>
+                                <li>SK 10382.1-280M (Heavy Unit)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -374,7 +501,7 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 2282</strong>?[cite: 23]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 2282</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
                             <li>100% Original NORD Equipment</li>
                             <li>Global Express Shipping</li>
