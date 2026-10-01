@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/nord-industrial-bevel-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/nord-industrial-bevel-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/nord-industrial-bevel-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/nord-industrial-bevel-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="NORD SK 7307.1 MAXXDRIVE B Industrial Gearbox | Technical Specs & Replacement Guide" />
@@ -53,17 +65,17 @@
         "NORD SK 5407.1", "NORD SK 6407.1", "NORD SK 7407.1", "NORD SK 8407.1", "NORD SK 9407.1", "NORD SK 10407.1", "NORD SK 11407.1"
       ],
       "description": "NORD DRIVESYSTEMS MAXXDRIVE® B Series heavy-duty 3-stage and 4-stage industrial bevel-helical right-angle gearboxes in UNICASE block housing. Maximum power transmission, right-angle layout, high radial/axial load capacity, and modular options covering torques up to 282,000 Nm.",
-    "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/nord-industrial-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/nord-industrial-bevel-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -176,7 +303,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/nord-geargearbox-products/">NORD Gearmotors</a> &gt; 
+                    <a href="/products/nord-gearbox-products/">NORD Gearmotors</a> &gt; 
                     <span>SK 7307.1 MAXXDRIVE B</span>
                 </div>
 
@@ -186,37 +313,37 @@
                         <h1>NORD SK 7307.1 MAXXDRIVE® B Industrial Bevel-Helical Gear Unit</h1>
                         <div class="model-subtitle">Brand: NORD DRIVESYSTEMS | Series: MAXXDRIVE® B Right-Angle Bevel-Helical (SK 5307.1...11407.1)</div>
                         
-                        <p>The <strong>NORD SK 7307.1</strong> is a heavy-duty, 3-stage right-angle industrial bevel-helical gearbox from NORD DRIVESYSTEMS' flagship <strong>MAXXDRIVE® B Series</strong>[cite: 21]. Engineered with NORD's single-piece <strong>UNICASE cast iron block housing</strong>[cite: 21], the SK 7307.1 delivers exceptional thermal dissipation capacity, extreme radial and axial load tolerance, and a nominal output torque capacity of 48,000 Nm[cite: 21]. Covering 11 frame sizes from SK 5307.1 to SK 11407.1 (15,000 Nm to 282,000 Nm)[cite: 21], MAXXDRIVE® B units support solid output shafts (V), hollow shafts with keyway (A) or shrink disc (S), B5 output flanges (F), torque arms (G), swing bases (SB), cooling fans, heat exchangers, mechanical backstops (RLS), and auxiliary maintenance drives[cite: 21]. They are extensively specified across bucket elevators, apron feeders, heavy belt conveyors, agitators, ball mills, crushers, and port machinery[cite: 21].</p>
+                        <p>The <strong>NORD SK 7307.1</strong> is a heavy-duty, 3-stage right-angle industrial bevel-helical gearbox from NORD DRIVESYSTEMS' flagship <strong>MAXXDRIVE® B Series</strong>. Engineered with NORD's single-piece <strong>UNICASE cast iron block housing</strong>, the SK 7307.1 delivers exceptional thermal dissipation capacity, extreme radial and axial load tolerance, and a nominal output torque capacity of 48,000 Nm. Covering 11 frame sizes from SK 5307.1 to SK 11407.1 (15,000 Nm to 282,000 Nm), MAXXDRIVE® B units support solid output shafts (V), hollow shafts with keyway (A) or shrink disc (S), B5 output flanges (F), torque arms (G), swing bases (SB), cooling fans, heat exchangers, mechanical backstops (RLS), and auxiliary maintenance drives. They are extensively specified across bucket elevators, apron feeders, heavy belt conveyors, agitators, ball mills, crushers, and port machinery.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>SK 7307.1 (3-Stage Bevel-Helical, Size 7 Industrial Unit)[cite: 21]</td>
+                                <td>SK 7307.1 (3-Stage Bevel-Helical, Size 7 Industrial Unit)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Getriebebau NORD GmbH & Co. KG[cite: 21]</td>
+                                <td>Getriebebau NORD GmbH & Co. KG</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>UNICASE Single-Piece Heavy Cast Iron Housing (GJL-200 / GJS-400)[cite: 21]</td>
+                                <td>UNICASE Single-Piece Heavy Cast Iron Housing (GJL-200 / GJS-400)</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Capacity</th>
-                                <td>48,000 Nm (SK 7307.1) / 15,000 Nm to 282,000 Nm (Full Series Range)[cite: 21]</td>
+                                <td>48,000 Nm (SK 7307.1) / 15,000 Nm to 282,000 Nm (Full Series Range)</td>
                             </tr>
                             <tr>
                                 <th>Motor Input Options</th>
-                                <td>IEC B5 Motor Adapters (132 to 355), NEMA C-Face Adapters, Free Input Shafts (W)[cite: 21]</td>
+                                <td>IEC B5 Motor Adapters (132 to 355), NEMA C-Face Adapters, Free Input Shafts (W)</td>
                             </tr>
                             <tr>
                                 <th>Ratio Range (i)</th>
-                                <td>3-Stage: 12.50 to 90.00 | 4-Stage: 80.00 to 500.00+[cite: 21]</td>
+                                <td>3-Stage: 12.50 to 90.00 | 4-Stage: 80.00 to 500.00+</td>
                             </tr>
                             <tr>
                                 <th>Shaft & Mounting Executions</th>
-                                <td>Solid Shaft (V), Hollow Shaft Keyway (A) / Shrink Disc (S), Flange B5 (F), Torque Arm (G), Swing Base (SB)[cite: 21]</td>
+                                <td>Solid Shaft (V), Hollow Shaft Keyway (A) / Shrink Disc (S), Flange B5 (F), Torque Arm (G), Swing Base (SB)</td>
                             </tr>
                         </table>
 
@@ -224,8 +351,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">NORD MAXXDRIVE® Industrial Gear Units Catalog G1050 & Operating Manual (PDF)</a>[cite: 21]</li>
-                                <li><a href="#cad-drawing">SK 7307.1 2D/3D CAD Drawing & Dimension Sheet Request</a>[cite: 21]</li>
+                                <li><a href="#pdf-manual">NORD MAXXDRIVE® Industrial Gear Units Catalog G1050 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">SK 7307.1 2D/3D CAD Drawing & Dimension Sheet Request</a></li>
                             </ul>
                         </div>
 
@@ -233,7 +360,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">NORD MAXXDRIVE® B Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Complete structural layout guide for NORD DRIVESYSTEMS MAXXDRIVE® B right-angle industrial gearboxes[cite: 21]. Review reduction stages, shaft options, mounting configurations, and auxiliary thermal accessories:
+                                Complete structural layout guide for NORD DRIVESYSTEMS MAXXDRIVE® B right-angle industrial gearboxes. Review reduction stages, shaft options, mounting configurations, and auxiliary thermal accessories:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -248,33 +375,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>MAXXDRIVE® B 3-Stage Bevel-Helical</strong>[cite: 21]</td>
-                                        <td>SK 5307.1 to SK 11307.1 (7 Sizes)[cite: 21]</td>
-                                        <td>15.0 kNm - 282.0 kNm[cite: 21]</td>
+                                        <td><strong>MAXXDRIVE® B 3-Stage Bevel-Helical</strong></td>
+                                        <td>SK 5307.1 to SK 11307.1 (7 Sizes)</td>
+                                        <td>15.0 kNm - 282.0 kNm</td>
                                         <td><strong>/Fan-Rad</strong> (Radial Cooling Fan)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>MAXXDRIVE® B 4-Stage Bevel-Helical</strong>[cite: 21]</td>
-                                        <td>SK 5407.1 to SK 11407.1 (7 Sizes)[cite: 21]</td>
-                                        <td>15.0 kNm - 282.0 kNm[cite: 21]</td>
+                                        <td><strong>MAXXDRIVE® B 4-Stage Bevel-Helical</strong></td>
+                                        <td>SK 5407.1 to SK 11407.1 (7 Sizes)</td>
+                                        <td>15.0 kNm - 282.0 kNm</td>
                                         <td><strong>/Cool-W</strong> (Water/Oil Heat Exchanger)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Shrink Disc (S/SH)</strong>[cite: 21]</td>
-                                        <td>Sizes 5 to 11 (All Frame Sizes)[cite: 21]</td>
-                                        <td>15.0 kNm - 282.0 kNm[cite: 21]</td>
+                                        <td><strong>Hollow Shaft Shrink Disc (S/SH)</strong></td>
+                                        <td>Sizes 5 to 11 (All Frame Sizes)</td>
+                                        <td>15.0 kNm - 282.0 kNm</td>
                                         <td><strong>/RLS</strong> (Mechanical Backstop)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Swing Base Assemblies (SB)</strong>[cite: 21]</td>
-                                        <td>Sizes 5 to 11 (Complete Drive Packages)[cite: 21]</td>
-                                        <td>15.0 kNm - 282.0 kNm[cite: 21]</td>
+                                        <td><strong>Swing Base Assemblies (SB)</strong></td>
+                                        <td>Sizes 5 to 11 (Complete Drive Packages)</td>
+                                        <td>15.0 kNm - 282.0 kNm</td>
                                         <td><strong>/AUX</strong> (Inching / Maintenance Drive)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Pressure Lubrication Systems (Pump)</strong>[cite: 21]</td>
-                                        <td>Sizes 5 to 11 (For Heavy Thermal Duty)[cite: 21]</td>
-                                        <td>15.0 kNm - 282.0 kNm[cite: 21]</td>
+                                        <td><strong>Pressure Lubrication Systems (Pump)</strong></td>
+                                        <td>Sizes 5 to 11 (For Heavy Thermal Duty)</td>
+                                        <td>15.0 kNm - 282.0 kNm</td>
                                         <td><strong>/Fl-Filtr</strong> (Oil Filter & Heater)</td>
                                     </tr>
                                 </tbody>
@@ -283,7 +410,7 @@
                             <!-- Legacy Heavy Industrial Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Industrial Gearbox Replacement & MAXXDRIVE® B Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Obsolete heavy industrial gearboxes installed on cement, mining, and bulk handling systems can be directly replaced with current MAXXDRIVE® B Series bevel-helical units[cite: 21]. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
+                                Obsolete heavy industrial gearboxes installed on cement, mining, and bulk handling systems can be directly replaced with current MAXXDRIVE® B Series bevel-helical units. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -298,39 +425,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>SK 5000 / SK 5207.1 Bevel</strong>[cite: 21]</td>
-                                        <td>1st Gen Industrial Bevel[cite: 21]</td>
-                                        <td><strong>SK 5307.1 / SK 5407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span>[cite: 21]</td>
-                                        <td>15,000 Nm[cite: 21]</td>
-                                        <td>Direct shaft height & footprint match. Upgraded thermal capacity[cite: 21].</td>
+                                        <td><strong>SK 5000 / SK 5207.1 Bevel</strong></td>
+                                        <td>1st Gen Industrial Bevel</td>
+                                        <td><strong>SK 5307.1 / SK 5407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span></td>
+                                        <td>15,000 Nm</td>
+                                        <td>Direct shaft height & footprint match. Upgraded thermal capacity.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 6000 / SK 6207.1 Bevel</strong>[cite: 21]</td>
-                                        <td>1st Gen Industrial Bevel[cite: 21]</td>
-                                        <td><strong>SK 6307.1 / SK 6407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span>[cite: 21]</td>
-                                        <td>24,000 Nm[cite: 21]</td>
-                                        <td>Identical shaft diameter & keyway specs. Drop-in replacement[cite: 21].</td>
+                                        <td><strong>SK 6000 / SK 6207.1 Bevel</strong></td>
+                                        <td>1st Gen Industrial Bevel</td>
+                                        <td><strong>SK 6307.1 / SK 6407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span></td>
+                                        <td>24,000 Nm</td>
+                                        <td>Identical shaft diameter & keyway specs. Drop-in replacement.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 7000 / SK 7207.1 Bevel</strong>[cite: 21]</td>
-                                        <td>1st Gen Industrial Bevel[cite: 21]</td>
-                                        <td><strong>SK 7307.1 / SK 7407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span>[cite: 21]</td>
-                                        <td>48,000 Nm[cite: 21]</td>
-                                        <td>Direct replacement for heavy conveyor & bucket elevator drives[cite: 21].</td>
+                                        <td><strong>SK 7000 / SK 7207.1 Bevel</strong></td>
+                                        <td>1st Gen Industrial Bevel</td>
+                                        <td><strong>SK 7307.1 / SK 7407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span></td>
+                                        <td>48,000 Nm</td>
+                                        <td>Direct replacement for heavy conveyor & bucket elevator drives.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 8000 / SK 8207.1 Bevel</strong>[cite: 21]</td>
-                                        <td>1st Gen Industrial Bevel[cite: 21]</td>
-                                        <td><strong>SK 8307.1 / SK 8407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span>[cite: 21]</td>
-                                        <td>75,000 Nm[cite: 21]</td>
-                                        <td>Preserves base mounting bolt pattern. Accepts IEC/NEMA adapters[cite: 21].</td>
+                                        <td><strong>SK 8000 / SK 8207.1 Bevel</strong></td>
+                                        <td>1st Gen Industrial Bevel</td>
+                                        <td><strong>SK 8307.1 / SK 8407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span></td>
+                                        <td>75,000 Nm</td>
+                                        <td>Preserves base mounting bolt pattern. Accepts IEC/NEMA adapters.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>SK 9000 to SK 11000 Series</strong>[cite: 21]</td>
-                                        <td>1st Gen Ultra Heavy Bevel[cite: 21]</td>
-                                        <td><strong>SK 9307.1 to SK 11407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span>[cite: 21]</td>
-                                        <td>112,000 - 282,000 Nm[cite: 21]</td>
-                                        <td>Modular swing base & cooling packages ensure 1-to-1 retrofit[cite: 21].</td>
+                                        <td><strong>SK 9000 to SK 11000 Series</strong></td>
+                                        <td>1st Gen Ultra Heavy Bevel</td>
+                                        <td><strong>SK 9307.1 to SK 11407.1</strong> <span class="upgrade-badge">MAXXDRIVE B</span></td>
+                                        <td>112,000 - 282,000 Nm</td>
+                                        <td>Modular swing base & cooling packages ensure 1-to-1 retrofit.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -338,34 +465,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing comprehensive engineering sourcing and replacement solutions for the entire <strong>NORD MAXXDRIVE® B industrial bevel-helical gearbox series</strong>[cite: 21]. Whether your plant requires a 3-stage right-angle drive (<strong>SK 5307.1 to SK 11307.1</strong>)[cite: 21], a 4-stage high-ratio reducer (<strong>SK 5407.1 to SK 11407.1</strong>)[cite: 21], hollow shaft with shrink disc (<strong>S/SH</strong>)[cite: 21], solid output shaft (<strong>V/VL</strong>)[cite: 21], swing base motor mount (<strong>SB</strong>)[cite: 21], or complete cooling & filtration systems[cite: 21], all units can be supplied pre-assembled with NORD IE3 Premium efficiency motors and auxiliary inching drives[cite: 21].
+                                We specialize in providing comprehensive engineering sourcing and replacement solutions for the entire <strong>NORD MAXXDRIVE® B industrial bevel-helical gearbox series</strong>. Whether your plant requires a 3-stage right-angle drive (<strong>SK 5307.1 to SK 11307.1</strong>), a 4-stage high-ratio reducer (<strong>SK 5407.1 to SK 11407.1</strong>), hollow shaft with shrink disc (<strong>S/SH</strong>), solid output shaft (<strong>V/VL</strong>), swing base motor mount (<strong>SB</strong>), or complete cooling & filtration systems, all units can be supplied pre-assembled with NORD IE3 Premium efficiency motors and auxiliary inching drives.
                                 <br><br>
-                                When retrofitting an existing application featuring older <strong>SK 5207.1, SK 7207.1, or competitor industrial gearboxes</strong>[cite: 21], upgrading to MAXXDRIVE® B UNICASE block housing gear units ensures complete dimensional compatibility while offering significantly higher thermal ratings and lower maintenance down-time. Simply supply us with your existing NORD serial number or nameplate data, and our engineering team will provide a 100% compliant replacement specification and proposal.
+                                When retrofitting an existing application featuring older <strong>SK 5207.1, SK 7207.1, or competitor industrial gearboxes</strong>, upgrading to MAXXDRIVE® B UNICASE block housing gear units ensures complete dimensional compatibility while offering significantly higher thermal ratings and lower maintenance down-time. Simply supply us with your existing NORD serial number or nameplate data, and our engineering team will provide a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>SK 5307.1V-IEC180 (15 kNm)[cite: 21]</li>
-                                <li>SK 6307.1V-IEC200 (24 kNm)[cite: 21]</li>
-                                <li>SK 7307.1V-IEC280 (48 kNm)[cite: 21]</li>
-                                <li>SK 8307.1V-IEC315 (75 kNm)[cite: 21]</li>
-                                <li>SK 9307.1V-IEC315 (112 kNm)[cite: 21]</li>
-                                <li>SK 10307.1V-IEC355 (175 kNm)[cite: 21]</li>
-                                <li>SK 11307.1V-IEC400 (282 kNm)[cite: 21]</li>
-                                <li>SK 5407.1V-IEC132 (15 kNm)[cite: 21]</li>
-                                <li>SK 7407.1V-IEC200 (48 kNm)[cite: 21]</li>
-                                <li>SK 9407.1V-IEC250 (112 kNm)[cite: 21]</li>
-                                <li>SK 5307.1A Hollow Shaft[cite: 21]</li>
-                                <li>SK 7307.1S Shrink Disc[cite: 21]</li>
-                                <li>SK 8307.1F Output Flange[cite: 21]</li>
-                                <li>SK 9307.1G Torque Arm[cite: 21]</li>
-                                <li>SK 7307.1SB Swing Base[cite: 21]</li>
-                                <li>SK 8307.1-RLS Backstop[cite: 21]</li>
-                                <li>SK 5307.1-Fan-Rad Cooling[cite: 21]</li>
-                                <li>SK 7307.1-Cool-W Water[cite: 21]</li>
-                                <li>SK 9307.1-AUX Inching[cite: 21]</li>
-                                <li>SK 10307.1-Pump Lubrication[cite: 21]</li>
+                                <li>SK 5307.1V-IEC180 (15 kNm)</li>
+                                <li>SK 6307.1V-IEC200 (24 kNm)</li>
+                                <li>SK 7307.1V-IEC280 (48 kNm)</li>
+                                <li>SK 8307.1V-IEC315 (75 kNm)</li>
+                                <li>SK 9307.1V-IEC315 (112 kNm)</li>
+                                <li>SK 10307.1V-IEC355 (175 kNm)</li>
+                                <li>SK 11307.1V-IEC400 (282 kNm)</li>
+                                <li>SK 5407.1V-IEC132 (15 kNm)</li>
+                                <li>SK 7407.1V-IEC200 (48 kNm)</li>
+                                <li>SK 9407.1V-IEC250 (112 kNm)</li>
+                                <li>SK 5307.1A Hollow Shaft</li>
+                                <li>SK 7307.1S Shrink Disc</li>
+                                <li>SK 8307.1F Output Flange</li>
+                                <li>SK 9307.1G Torque Arm</li>
+                                <li>SK 7307.1SB Swing Base</li>
+                                <li>SK 8307.1-RLS Backstop</li>
+                                <li>SK 5307.1-Fan-Rad Cooling</li>
+                                <li>SK 7307.1-Cool-W Water</li>
+                                <li>SK 9307.1-AUX Inching</li>
+                                <li>SK 10307.1-Pump Lubrication</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -375,7 +502,7 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 7307.1 MAXXDRIVE B</strong>?[cite: 21]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, or best price for <strong>NORD SK 7307.1 MAXXDRIVE B</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
                             <li>100% Original NORD Equipment</li>
                             <li>Global Express Shipping</li>
