@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/product/flender-b-bevel-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/product/flender-b-bevel-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/product/flender-b-bevel-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/product/flender-b-bevel-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender B2SH07 Bevel-Helical Gearbox | Technical Specs & Full Selection Guide" />
@@ -61,16 +73,16 @@
       ],
       "description": "Flender B Series high-capacity right-angle bevel-helical industrial gear unit. Available in 2 to 4 reduction stages (B2, B3, B4) with solid, hollow, or splined output shaft configurations for space-saving power transmission applications.",
       "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -116,10 +128,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/product/flender-b-bevel-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/product/flender-b-bevel-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/product/flender-b-bevel-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -167,7 +294,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -183,7 +310,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/flender-gearbox-products/">FLENDER Gearbox</a> &gt; 
+                    <a href="/products/flender-gearbox-products/">FLENDER Gearbox</a> &gt; 
                     <span>B2SH07 Bevel-Helical</span>
                 </div>
 
@@ -193,37 +320,37 @@
                         <h1>Flender B2SH07 Industrial Bevel-Helical Gearbox</h1>
                         <div class="model-subtitle">Brand: Flender GmbH (Siemens AG) | Series: B Series Right-Angle Industrial Gear Units</div>
                         
-                        <p>The <strong>Flender B2SH07</strong> is a benchmark 2-stage right-angle bevel-helical industrial gearbox engineered for space-saving mounting, high operational reliability, and maximum torque density[cite: 20]. Combining a high-precision spiral bevel gear input stage with helical gear reduction stages[cite: 20], the Flender B series is available in 2, 3, and 4-stage layouts (B2, B3, B4) covering sizes 03 through 26 with nominal torques up to 1,400,000 Nm[cite: 20]. Key industrial applications include bucket elevators, heavy belt conveyors, crane hoist drives, ball mill auxiliaries, shredders, and water aerators[cite: 20].</p>
+                        <p>The <strong>Flender B2SH07</strong> is a benchmark 2-stage right-angle bevel-helical industrial gearbox engineered for space-saving mounting, high operational reliability, and maximum torque density. Combining a high-precision spiral bevel gear input stage with helical gear reduction stages, the Flender B series is available in 2, 3, and 4-stage layouts (B2, B3, B4) covering sizes 03 through 26 with nominal torques up to 1,400,000 Nm. Key industrial applications include bucket elevators, heavy belt conveyors, crane hoist drives, ball mill auxiliaries, shredders, and water aerators.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>B2SH07 (2-Stage Bevel-Helical, Size 07 Frame)[cite: 20]</td>
+                                <td>B2SH07 (2-Stage Bevel-Helical, Size 07 Frame)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH (Siemens AG)[cite: 20]</td>
+                                <td>Flender GmbH (Siemens AG)</td>
                             </tr>
                             <tr>
                                 <th>Gear Unit Architecture</th>
-                                <td>2-Stage (B2), 3-Stage (B3), 4-Stage (B4) Right-Angle Bevel-Helical[cite: 20]</td>
+                                <td>2-Stage (B2), 3-Stage (B3), 4-Stage (B4) Right-Angle Bevel-Helical</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>Up to 1,400,000 Nm (Full Series Range Size 03 to 26)[cite: 20]</td>
+                                <td>Up to 1,400,000 Nm (Full Series Range Size 03 to 26)</td>
                             </tr>
                             <tr>
                                 <th>Gear Ratio Range (i)</th>
-                                <td>5.0 to 450 (Standard Catalog Ratios)[cite: 20]</td>
+                                <td>5.0 to 450 (Standard Catalog Ratios)</td>
                             </tr>
                             <tr>
                                 <th>Output Shaft Execution</th>
-                                <td>Solid Shaft with Parallel Key (S/H), Hollow Shaft with Shrink Disc (D), Hollow Shaft with Keyway (H/A), Splined Hollow Shaft (K)[cite: 20]</td>
+                                <td>Solid Shaft with Parallel Key (S/H), Hollow Shaft with Shrink Disc (D), Hollow Shaft with Keyway (H/A), Splined Hollow Shaft (K)</td>
                             </tr>
                             <tr>
                                 <th>Housing Construction</th>
-                                <td>Heavy Cast Iron (Horizontal, Vertical, or Upright Floor Mounting)[cite: 20]</td>
+                                <td>Heavy Cast Iron (Horizontal, Vertical, or Upright Floor Mounting)</td>
                             </tr>
                         </table>
 
@@ -231,8 +358,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender H/B Series Industrial Gear Units Operating Manual (PDF)</a>[cite: 20]</li>
-                                <li><a href="#cad-drawing">Flender B2SH07 Dimension Sheet & 3D CAD Request</a>[cite: 20]</li>
+                                <li><a href="#pdf-manual">Flender H/B Series Industrial Gear Units Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">Flender B2SH07 Dimension Sheet & 3D CAD Request</a></li>
                             </ul>
                         </div>
 
@@ -240,7 +367,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender B Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender B series right-angle bevel-helical industrial gearboxes[cite: 20]. Review supported reduction stages, shaft executions, mounting layouts, and cooling packages:
+                                Full-range structural configuration guide for Flender B series right-angle bevel-helical industrial gearboxes. Review supported reduction stages, shaft executions, mounting layouts, and cooling packages:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -255,33 +382,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>B2SH / B2HH / B2DH</strong> (2-Stage Bevel-Helical)[cite: 20]</td>
-                                        <td>Size 03 to Size 26 (24 Sizes)[cite: 20]</td>
-                                        <td>Up to 1,400,000 Nm[cite: 20]</td>
+                                        <td><strong>B2SH / B2HH / B2DH</strong> (2-Stage Bevel-Helical)</td>
+                                        <td>Size 03 to Size 26 (24 Sizes)</td>
+                                        <td>Up to 1,400,000 Nm</td>
                                         <td><strong>/Fan</strong> (Axial Cooling Fan)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>B3SH / B3HH / B3DH</strong> (3-Stage Bevel-Helical)[cite: 20]</td>
-                                        <td>Size 04 to Size 26 (23 Sizes)[cite: 20]</td>
-                                        <td>Up to 1,400,000 Nm[cite: 20]</td>
+                                        <td><strong>B3SH / B3HH / B3DH</strong> (3-Stage Bevel-Helical)</td>
+                                        <td>Size 04 to Size 26 (23 Sizes)</td>
+                                        <td>Up to 1,400,000 Nm</td>
                                         <td><strong>/Cool-W</strong> (Water/Oil Heat Exchanger)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>B4SH / B4HH / B4DH</strong> (4-Stage Bevel-Helical)[cite: 20]</td>
-                                        <td>Size 07 to Size 26 (20 Sizes)[cite: 20]</td>
-                                        <td>Up to 1,400,000 Nm[cite: 20]</td>
+                                        <td><strong>B4SH / B4HH / B4DH</strong> (4-Stage Bevel-Helical)</td>
+                                        <td>Size 07 to Size 26 (20 Sizes)</td>
+                                        <td>Up to 1,400,000 Nm</td>
                                         <td><strong>/Backstop</strong> (Mechanical Non-Return)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Shrink Disc (D Series)</strong>[cite: 20]</td>
-                                        <td>Size 03 to Size 18[cite: 20]</td>
-                                        <td>Up to 300,000 Nm[cite: 20]</td>
+                                        <td><strong>Hollow Shaft Shrink Disc (D Series)</strong></td>
+                                        <td>Size 03 to Size 18</td>
+                                        <td>Up to 300,000 Nm</td>
                                         <td><strong>/Pump</strong> (Forced Pressure Oil Lubrication)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Splines (K Series)</strong>[cite: 20]</td>
-                                        <td>Size 05 to Size 16[cite: 20]</td>
-                                        <td>Up to 220,000 Nm[cite: 20]</td>
+                                        <td><strong>Hollow Shaft Splines (K Series)</strong></td>
+                                        <td>Size 05 to Size 16</td>
+                                        <td>Up to 220,000 Nm</td>
                                         <td><strong>/Heater</strong> (Oil Sump Heating Element)</td>
                                     </tr>
                                 </tbody>
@@ -290,7 +417,7 @@
                             <!-- Legacy Industrial Gearbox Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Flender Gearbox Replacement & B Series Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Obsolete Flender or Siemens gear units installed on industrial drivetrains can be directly replaced with current B Series right-angle gearboxes[cite: 20]. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
+                                Obsolete Flender or Siemens gear units installed on industrial drivetrains can be directly replaced with current B Series right-angle gearboxes. Refer to the cross-reference mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -305,39 +432,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Flender B2SH04 / B2SH05</strong>[cite: 20]</td>
-                                        <td>2-Stage Bevel-Helical[cite: 20]</td>
-                                        <td><strong>B2SH04 / B2SH05</strong> <span class="upgrade-badge">Current Standard</span>[cite: 20]</td>
-                                        <td>Size 04/05 / High Torque Density[cite: 20]</td>
-                                        <td>Direct 1-to-1 shaft centerline & footprint match[cite: 20].</td>
+                                        <td><strong>Flender B2SH04 / B2SH05</strong></td>
+                                        <td>2-Stage Bevel-Helical</td>
+                                        <td><strong>B2SH04 / B2SH05</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>Size 04/05 / High Torque Density</td>
+                                        <td>Direct 1-to-1 shaft centerline & footprint match.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Flender B2SH07 / B2SH08</strong>[cite: 20]</td>
-                                        <td>2-Stage Bevel-Helical[cite: 20]</td>
-                                        <td><strong>B2SH07 / B2SH08</strong> <span class="upgrade-badge">Current Standard</span>[cite: 20]</td>
-                                        <td>Size 07/08 / Benchmark Mining Drive[cite: 20]</td>
-                                        <td>Identical mounting dimensions & output shaft specs[cite: 20].</td>
+                                        <td><strong>Flender B2SH07 / B2SH08</strong></td>
+                                        <td>2-Stage Bevel-Helical</td>
+                                        <td><strong>B2SH07 / B2SH08</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>Size 07/08 / Benchmark Mining Drive</td>
+                                        <td>Identical mounting dimensions & output shaft specs.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Flender B3SH10 / B3SH12</strong>[cite: 20]</td>
-                                        <td>3-Stage Bevel-Helical[cite: 20]</td>
-                                        <td><strong>B3SH10 / B3SH12</strong> <span class="upgrade-badge">Current Standard</span>[cite: 20]</td>
-                                        <td>Size 10/12 / Heavy Conveyor Reducer[cite: 20]</td>
-                                        <td>Preserves base bolt pattern & input motor flange[cite: 20].</td>
+                                        <td><strong>Flender B3SH10 / B3SH12</strong></td>
+                                        <td>3-Stage Bevel-Helical</td>
+                                        <td><strong>B3SH10 / B3SH12</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>Size 10/12 / Heavy Conveyor Reducer</td>
+                                        <td>Preserves base bolt pattern & input motor flange.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Flender B4SH14 / B4SH16</strong>[cite: 20]</td>
-                                        <td>4-Stage Bevel-Helical[cite: 20]</td>
-                                        <td><strong>B4SH14 / B4SH16</strong> <span class="upgrade-badge">Current Standard</span>[cite: 20]</td>
-                                        <td>Size 14/16 / High Ratio Industrial Unit[cite: 20]</td>
-                                        <td>Drop-in replacement for high-reduction drives[cite: 20].</td>
+                                        <td><strong>Flender B4SH14 / B4SH16</strong></td>
+                                        <td>4-Stage Bevel-Helical</td>
+                                        <td><strong>B4SH14 / B4SH16</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>Size 14/16 / High Ratio Industrial Unit</td>
+                                        <td>Drop-in replacement for high-reduction drives.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Legacy Hollow Shaft Units (B..H)</strong>[cite: 20]</td>
-                                        <td>Hollow Shaft Keyway[cite: 20]</td>
-                                        <td><strong>B2DH / B3DH Shrink Disc</strong> <span class="upgrade-badge">Modern Clamp</span>[cite: 20]</td>
-                                        <td>Size 03 to Size 18[cite: 20]</td>
-                                        <td>Shrink disc execution provides 100% fretting-free connection[cite: 20].</td>
+                                        <td><strong>Legacy Hollow Shaft Units (B..H)</strong></td>
+                                        <td>Hollow Shaft Keyway</td>
+                                        <td><strong>B2DH / B3DH Shrink Disc</strong> <span class="upgrade-badge">Modern Clamp</span></td>
+                                        <td>Size 03 to Size 18</td>
+                                        <td>Shrink disc execution provides 100% fretting-free connection.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -345,34 +472,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete engineering sourcing and technical replacement solutions for the entire <strong>Flender B Series right-angle industrial gearbox family</strong>[cite: 20]. Whether your application requires a 2-stage bevel-helical reducer (<strong>B2SH / B2HH / B2DH</strong>)[cite: 20], a 3-stage drive (<strong>B3SH / B3HH / B3DH</strong>)[cite: 20], a 4-stage high-ratio unit (<strong>B4SH / B4HH / B4DH</strong>)[cite: 20], shrink disc clamping (<strong>D Series</strong>)[cite: 20], or involute splined hollow shafts (<strong>K Series</strong>)[cite: 20], all units can be configured with fan cooling covers, water/oil coolers, forced lubrication pumps, and mechanical backstops[cite: 20].
+                                We specialize in providing complete engineering sourcing and technical replacement solutions for the entire <strong>Flender B Series right-angle industrial gearbox family</strong>. Whether your application requires a 2-stage bevel-helical reducer (<strong>B2SH / B2HH / B2DH</strong>), a 3-stage drive (<strong>B3SH / B3HH / B3DH</strong>), a 4-stage high-ratio unit (<strong>B4SH / B4HH / B4DH</strong>), shrink disc clamping (<strong>D Series</strong>), or involute splined hollow shafts (<strong>K Series</strong>), all units can be configured with fan cooling covers, water/oil coolers, forced lubrication pumps, and mechanical backstops.
                                 <br><br>
-                                When retrofitting an existing drivetrain featuring older <strong>B2SH04, B2SH07, B3SH10, or Siemens Flender gearboxes</strong>[cite: 20], choosing original B Series units ensures complete 1-to-1 mechanical interchangeability without modifying foundation steelwork or drive shafts[cite: 20]. Simply supply us with your existing Flender serial number or nameplate data, and our engineering team will deliver a 100% compliant replacement specification and proposal[cite: 20].
+                                When retrofitting an existing drivetrain featuring older <strong>B2SH04, B2SH07, B3SH10, or Siemens Flender gearboxes</strong>, choosing original B Series units ensures complete 1-to-1 mechanical interchangeability without modifying foundation steelwork or drive shafts. Simply supply us with your existing Flender serial number or nameplate data, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>B2SH04[cite: 20]</li>
-                                <li>B2SH05[cite: 20]</li>
-                                <li>B2SH06[cite: 20]</li>
-                                <li>B2SH07[cite: 20]</li>
-                                <li>B2SH08[cite: 20]</li>
-                                <li>B2SH09[cite: 20]</li>
-                                <li>B2SH10[cite: 20]</li>
-                                <li>B2SH12[cite: 20]</li>
-                                <li>B3SH08[cite: 20]</li>
-                                <li>B3SH10[cite: 20]</li>
-                                <li>B3SH12[cite: 20]</li>
-                                <li>B3SH14[cite: 20]</li>
-                                <li>B4SH12[cite: 20]</li>
-                                <li>B4SH16[cite: 20]</li>
-                                <li>B2DH07 (Shrink Disc)[cite: 20]</li>
-                                <li>B3DH08 (Shrink Disc)[cite: 20]</li>
-                                <li>B2HH07 (Keyway Hollow)[cite: 20]</li>
-                                <li>B3HH10 (Keyway Hollow)[cite: 20]</li>
-                                <li>B2KH08 (Splined Shaft)[cite: 20]</li>
-                                <li>B3KH12 (Splined Shaft)[cite: 20]</li>
+                                <li>B2SH04</li>
+                                <li>B2SH05</li>
+                                <li>B2SH06</li>
+                                <li>B2SH07</li>
+                                <li>B2SH08</li>
+                                <li>B2SH09</li>
+                                <li>B2SH10</li>
+                                <li>B2SH12</li>
+                                <li>B3SH08</li>
+                                <li>B3SH10</li>
+                                <li>B3SH12</li>
+                                <li>B3SH14</li>
+                                <li>B4SH12</li>
+                                <li>B4SH16</li>
+                                <li>B2DH07 (Shrink Disc)</li>
+                                <li>B3DH08 (Shrink Disc)</li>
+                                <li>B2HH07 (Keyway Hollow)</li>
+                                <li>B3HH10 (Keyway Hollow)</li>
+                                <li>B2KH08 (Splined Shaft)</li>
+                                <li>B3KH12 (Splined Shaft)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -382,11 +509,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>Flender B2SH07</strong>?[cite: 20]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>Flender B2SH07</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 20]</li>
-                            <li>Global Express Shipping[cite: 20]</li>
-                            <li>Technical Support Available[cite: 20]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Technical Support Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
