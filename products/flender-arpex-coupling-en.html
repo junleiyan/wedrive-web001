@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/flender-arpex-coupling-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-arpex-coupling-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-arpex-coupling-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-arpex-coupling-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender ARPEX ARN-6 NEN 165-6 Flexible Disc Coupling | Technical Specs & Selection Guide" />
@@ -54,17 +66,17 @@
         "ARPEX 78-6", "ARPEX 96-6", "ARPEX 116-6", "ARPEX 138-6", "ARPEX 165-6", "ARPEX 195-6", "ARPEX 225-6", "ARPEX 265-6", "ARPEX 300-6", "ARPEX 340-6"
       ],
       "description": "Flender ARPEX all-steel flexible disc couplings providing backlash-free, torsionally rigid power transmission up to 2,000,000 Nm. Maintenance-free, high-temperature resistant, and engineered for high-speed turbo and heavy industrial applications.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -110,10 +122,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-arpex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-arpex-coupling-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -161,7 +288,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -177,7 +304,7 @@
                 <div class="breadcrumb">
                     <a href="/">Home</a> &gt; 
                     <a href="/products/">Products</a> &gt; 
-                    <a href="/flender-gearbox-products/">FLENDER Couplings</a> &gt; 
+                    <a href="/products/flender-gearbox-products/">FLENDER Couplings</a> &gt; 
                     <span>ARPEX ARN-6 NEN 165-6</span>
                 </div>
 
@@ -187,41 +314,41 @@
                         <h1>Flender ARPEX ARN-6 NEN 165-6 Flexible Disc Coupling</h1>
                         <div class="model-subtitle">Brand: Flender GmbH | Series: ARPEX Torsionally Rigid All-Steel Disc Couplings (ARN-6 / ARN-8 / ARN-10 / ARS-6)</div>
                         
-                        <p>The <strong>Flender ARPEX ARN-6 NEN 165-6</strong> is a benchmark high-performance all-steel flexible disc coupling engineered for high-precision, torsionally rigid, and 100% backlash-free power transmission[cite: 25]. Utilizing high-strength stainless spring steel disc packs (plate packs)[cite: 25], the ARPEX ARN-6 compensates for angular, radial, and axial shaft misalignments entirely through elastic flexing without any sliding parts[cite: 25]. Featuring zero maintenance, wear-free operation, infinite service life under alignment limits, and extreme temperature resistance (-270°C to +280°C)[cite: 25], ARPEX couplings are available across major product lines—including the latest high-performance <strong>ARN-6, ARN-8, and ARN-10</strong> series alongside classic <strong>ARS-6, ARC-8, ARP-6, ARW-4/6, and ART-6</strong> series—with torque capacities from 92 Nm to 2,000,000 Nm[cite: 25]. They are widely applied in paper machines, centrifugal pumps, compressors, turbomachinery, test benches, wind turbines, generator sets, and marine propulsion[cite: 25].</p>
+                        <p>The <strong>Flender ARPEX ARN-6 NEN 165-6</strong> is a benchmark high-performance all-steel flexible disc coupling engineered for high-precision, torsionally rigid, and 100% backlash-free power transmission. Utilizing high-strength stainless spring steel disc packs (plate packs), the ARPEX ARN-6 compensates for angular, radial, and axial shaft misalignments entirely through elastic flexing without any sliding parts. Featuring zero maintenance, wear-free operation, infinite service life under alignment limits, and extreme temperature resistance (-270°C to +280°C), ARPEX couplings are available across major product lines—including the latest high-performance <strong>ARN-6, ARN-8, and ARN-10</strong> series alongside classic <strong>ARS-6, ARC-8, ARP-6, ARW-4/6, and ART-6</strong> series—with torque capacities from 92 Nm to 2,000,000 Nm. They are widely applied in paper machines, centrifugal pumps, compressors, turbomachinery, test benches, wind turbines, generator sets, and marine propulsion.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>ARPEX ARN-6 NEN 165-6 (Type NEN, Size 165, 6-Bolt Pack)[cite: 25]</td>
+                                <td>ARPEX ARN-6 NEN 165-6 (Type NEN, Size 165, 6-Bolt Pack)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 25]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Coupling Execution</th>
-                                <td>Type NEN (Standard execution with intermediate spacer)[cite: 25]</td>
+                                <td>Type NEN (Standard execution with intermediate spacer)</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>4,800 Nm (Size 165-6) / 92 Nm to 2,000,000 Nm (Full Series Range)[cite: 25]</td>
+                                <td>4,800 Nm (Size 165-6) / 92 Nm to 2,000,000 Nm (Full Series Range)</td>
                             </tr>
                             <tr>
                                 <th>Disc Pack Geometry</th>
-                                <td>High-tensile stainless spring steel ring packs with close-tolerance reamed fitted bolts[cite: 25]</td>
+                                <td>High-tensile stainless spring steel ring packs with close-tolerance reamed fitted bolts</td>
                             </tr>
                             <tr>
                                 <th>Operating Temperature</th>
-                                <td>-270°C to +280°C (All-metal execution without elastomer degradation)[cite: 25]</td>
+                                <td>-270°C to +280°C (All-metal execution without elastomer degradation)</td>
                             </tr>
                             <tr>
                                 <th>ATEX Certification</th>
-                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)[cite: 25]</td>
+                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)</td>
                             </tr>
                             <tr>
                                 <th>Maintenance Requirement</th>
-                                <td>100% Maintenance-free & wear-free (Zero lubrication needed)[cite: 25]</td>
+                                <td>100% Maintenance-free & wear-free (Zero lubrication needed)</td>
                             </tr>
                         </table>
 
@@ -229,8 +356,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender ARPEX All-Steel Disc Couplings Catalog FLON-101 & Operating Manual (PDF)</a>[cite: 25]</li>
-                                <li><a href="#cad-drawing">ARPEX ARN-6 NEN 165-6 2D/3D CAD Drawing & Custom DBSE / Bore Request</a>[cite: 25]</li>
+                                <li><a href="#pdf-manual">Flender ARPEX All-Steel Disc Couplings Catalog FLON-101 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">ARPEX ARN-6 NEN 165-6 2D/3D CAD Drawing & Custom DBSE / Bore Request</a></li>
                             </ul>
                         </div>
 
@@ -238,7 +365,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender ARPEX Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Complete product line guide for Flender ARPEX all-steel flexible disc couplings[cite: 25]. Review supported series, structural execution types, torque ranges, and special industry application standards:
+                                Complete product line guide for Flender ARPEX all-steel flexible disc couplings. Review supported series, structural execution types, torque ranges, and special industry application standards:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -253,34 +380,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>ARPEX ARN-6 / ARN-8 / ARN-10</strong> (Optimized High-Torque)[cite: 25]</td>
-                                        <td>100-6 to 610-10 (24 Sizes)[cite: 25]</td>
-                                        <td>1,200 Nm - 1,450,000 Nm[cite: 25]</td>
-                                        <td><strong>NEN / NHN</strong> (Standard & Long Spacer)[cite: 25]</td>
+                                        <td><strong>ARPEX ARN-6 / ARN-8 / ARN-10</strong> (Optimized High-Torque)</td>
+                                        <td>100-6 to 610-10 (24 Sizes)</td>
+                                        <td>1,200 Nm - 1,450,000 Nm</td>
+                                        <td><strong>NEN / NHN</strong> (Standard & Long Spacer)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ARPEX ARS-6 Series</strong> (Universal Industrial Modular)[cite: 25]</td>
-                                        <td>78-6 to 340-6 (10 Sizes)[cite: 25]</td>
-                                        <td>92 Nm - 32,000 Nm[cite: 25]</td>
-                                        <td><strong>NEN / NHN / MNN / MHN</strong>[cite: 25]</td>
+                                        <td><strong>ARPEX ARS-6 Series</strong> (Universal Industrial Modular)</td>
+                                        <td>78-6 to 340-6 (10 Sizes)</td>
+                                        <td>92 Nm - 32,000 Nm</td>
+                                        <td><strong>NEN / NHN / MNN / MHN</strong></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ARPEX Keyless Clamping Hubs</strong> (BEN / BHN / BMN)[cite: 25]</td>
-                                        <td>78-6 to 340-6 (10 Sizes)[cite: 25]</td>
-                                        <td>92 Nm - 32,000 Nm[cite: 25]</td>
-                                        <td><strong>BEN / BHN / BMN / BMH</strong> (Keyless Hubs)[cite: 25]</td>
+                                        <td><strong>ARPEX Keyless Clamping Hubs</strong> (BEN / BHN / BMN)</td>
+                                        <td>78-6 to 340-6 (10 Sizes)</td>
+                                        <td>92 Nm - 32,000 Nm</td>
+                                        <td><strong>BEN / BHN / BMN / BMH</strong> (Keyless Hubs)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ARPEX ARC-8 Series</strong> (Heavy-Duty Industrial)[cite: 25]</td>
-                                        <td>210-8 to 850-8 (14 Sizes)[cite: 25]</td>
-                                        <td>12,000 Nm - 2,000,000 Nm[cite: 25]</td>
-                                        <td><strong>NEN / NHN / BNN</strong> (Heavy Mill Drives)[cite: 25]</td>
+                                        <td><strong>ARPEX ARC-8 Series</strong> (Heavy-Duty Industrial)</td>
+                                        <td>210-8 to 850-8 (14 Sizes)</td>
+                                        <td>12,000 Nm - 2,000,000 Nm</td>
+                                        <td><strong>NEN / NHN / BNN</strong> (Heavy Mill Drives)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ARPEX ARP-6 Series</strong> (API 610 / API 671 Turbomachinery)[cite: 25]</td>
-                                        <td>105-6 to 325-6 (9 Sizes)[cite: 25]</td>
-                                        <td>1,000 Nm - 30,000 Nm[cite: 25]</td>
-                                        <td><strong>NAN / MCE</strong> (API Pump Compliant)[cite: 25]</td>
+                                        <td><strong>ARPEX ARP-6 Series</strong> (API 610 / API 671 Turbomachinery)</td>
+                                        <td>105-6 to 325-6 (9 Sizes)</td>
+                                        <td>1,000 Nm - 30,000 Nm</td>
+                                        <td><strong>NAN / MCE</strong> (API Pump Compliant)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -288,7 +415,7 @@
                             <!-- Legacy Coupling Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Disc Coupling Replacement & ARPEX Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Obsolete steel disc couplings or worn gear couplings on high-speed pumps and turbomachinery can be seamlessly retrofitted with Flender ARPEX all-steel disc couplings[cite: 25]. Refer to the replacement mapping below for 1-to-1 retrofitting:
+                                Obsolete steel disc couplings or worn gear couplings on high-speed pumps and turbomachinery can be seamlessly retrofitted with Flender ARPEX all-steel disc couplings. Refer to the replacement mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -303,39 +430,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Legacy ARS-6 Type NEN 165-6</strong>[cite: 25]</td>
-                                        <td>Classic Disc Pack[cite: 25]</td>
-                                        <td><strong>ARPEX ARN-6 Type NEN 165-6</strong> <span class="upgrade-badge">ARN Upgrade</span>[cite: 25]</td>
-                                        <td>4,800 Nm[cite: 25]</td>
-                                        <td>Direct 1-to-1 flange & DBSE spacer match. Higher torque density[cite: 25].</td>
+                                        <td><strong>Legacy ARS-6 Type NEN 165-6</strong></td>
+                                        <td>Classic Disc Pack</td>
+                                        <td><strong>ARPEX ARN-6 Type NEN 165-6</strong> <span class="upgrade-badge">ARN Upgrade</span></td>
+                                        <td>4,800 Nm</td>
+                                        <td>Direct 1-to-1 flange & DBSE spacer match. Higher torque density.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Legacy ARS-6 Type NHN 195-6</strong>[cite: 25]</td>
-                                        <td>Classic Long Spacer[cite: 25]</td>
-                                        <td><strong>ARPEX ARN-6 Type NHN 190-6</strong> <span class="upgrade-badge">ARN Upgrade</span>[cite: 25]</td>
-                                        <td>7,500 Nm[cite: 25]</td>
-                                        <td>Matches standard ANSI/ISO pump distance between shaft ends (DBSE)[cite: 25].</td>
+                                        <td><strong>Legacy ARS-6 Type NHN 195-6</strong></td>
+                                        <td>Classic Long Spacer</td>
+                                        <td><strong>ARPEX ARN-6 Type NHN 190-6</strong> <span class="upgrade-badge">ARN Upgrade</span></td>
+                                        <td>7,500 Nm</td>
+                                        <td>Matches standard ANSI/ISO pump distance between shaft ends (DBSE).</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Lubricated Gear Couplings (ZAPEX)</strong>[cite: 25]</td>
-                                        <td>Sleeve / Crowned Gear[cite: 25]</td>
-                                        <td><strong>ARPEX ARN-6 / ARC-8 Series</strong> <span class="upgrade-badge">Zero Maintenance</span>[cite: 25]</td>
-                                        <td>Up to 2,000,000 Nm[cite: 25]</td>
-                                        <td>Eliminates grease lubrication and gear tooth wear completely[cite: 25].</td>
+                                        <td><strong>Lubricated Gear Couplings (ZAPEX)</strong></td>
+                                        <td>Sleeve / Crowned Gear</td>
+                                        <td><strong>ARPEX ARN-6 / ARC-8 Series</strong> <span class="upgrade-badge">Zero Maintenance</span></td>
+                                        <td>Up to 2,000,000 Nm</td>
+                                        <td>Eliminates grease lubrication and gear tooth wear completely.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Elastomer Jaw / Pin Couplings</strong>[cite: 25]</td>
-                                        <td>Flexible Rubber Insert[cite: 25]</td>
-                                        <td><strong>ARPEX ARS-6 / ARN-6 Series</strong> <span class="upgrade-badge">Torsionally Rigid</span>[cite: 25]</td>
-                                        <td>92 Nm - 32,000 Nm[cite: 25]</td>
-                                        <td>Provides backlash-free rigid transmission resistant to high temperatures[cite: 25].</td>
+                                        <td><strong>Elastomer Jaw / Pin Couplings</strong></td>
+                                        <td>Flexible Rubber Insert</td>
+                                        <td><strong>ARPEX ARS-6 / ARN-6 Series</strong> <span class="upgrade-badge">Torsionally Rigid</span></td>
+                                        <td>92 Nm - 32,000 Nm</td>
+                                        <td>Provides backlash-free rigid transmission resistant to high temperatures.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>API 610 Process Pump Drives</strong>[cite: 25]</td>
-                                        <td>Standard Disc Pack[cite: 25]</td>
-                                        <td><strong>ARPEX ARP-6 Type NAN / MCE</strong> <span class="upgrade-badge">API Compliant</span>[cite: 25]</td>
-                                        <td>1,000 Nm - 30,000 Nm[cite: 25]</td>
-                                        <td>Features anti-flail catch plates and factory dynamic balancing[cite: 25].</td>
+                                        <td><strong>API 610 Process Pump Drives</strong></td>
+                                        <td>Standard Disc Pack</td>
+                                        <td><strong>ARPEX ARP-6 Type NAN / MCE</strong> <span class="upgrade-badge">API Compliant</span></td>
+                                        <td>1,000 Nm - 30,000 Nm</td>
+                                        <td>Features anti-flail catch plates and factory dynamic balancing.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -343,34 +470,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the complete <strong>Flender ARPEX all-steel disc coupling family</strong>[cite: 25]. Whether your drive train requires a standard intermediate spacer coupling (<strong>ARN-6 / ARS-6 Type NEN</strong>)[cite: 25], a long-spacer pump drive (<strong>Type NHN</strong>)[cite: 25], keyless clamping hubs (<strong>Type BEN / BHN</strong>)[cite: 25], close-coupled space-saving designs (<strong>Type CEC</strong>)[cite: 25], or API 610/671 turbomachinery couplings (<strong>ARP-6 Type NAN / MCE</strong>)[cite: 25], all hubs can be precision bore-machined with custom keyways, spline profiles, or taper bores[cite: 25].
+                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the complete <strong>Flender ARPEX all-steel disc coupling family</strong>. Whether your drive train requires a standard intermediate spacer coupling (<strong>ARN-6 / ARS-6 Type NEN</strong>), a long-spacer pump drive (<strong>Type NHN</strong>), keyless clamping hubs (<strong>Type BEN / BHN</strong>), close-coupled space-saving designs (<strong>Type CEC</strong>), or API 610/671 turbomachinery couplings (<strong>ARP-6 Type NAN / MCE</strong>), all hubs can be precision bore-machined with custom keyways, spline profiles, or taper bores.
                                 <br><br>
-                                When retrofitting an existing drive featuring worn gear couplings or older <strong>ARS-6 / ARC-8</strong> units[cite: 25], upgrading to current ARPEX ARN series couplings ensures complete 1-to-1 dimensional interchangeability while eliminating the need for periodic lubrication and routine maintenance[cite: 25]. Simply supply us with your shaft diameters, distance between shaft ends (DBSE), operating speed, and motor power, and our engineering team will provide a 100% compliant specification and quote[cite: 25].
+                                When retrofitting an existing drive featuring worn gear couplings or older <strong>ARS-6 / ARC-8</strong> units, upgrading to current ARPEX ARN series couplings ensures complete 1-to-1 dimensional interchangeability while eliminating the need for periodic lubrication and routine maintenance. Simply supply us with your shaft diameters, distance between shaft ends (DBSE), operating speed, and motor power, and our engineering team will provide a 100% compliant specification and quote.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>ARN-6 NEN 100-6[cite: 25]</li>
-                                <li>ARN-6 NEN 120-6[cite: 25]</li>
-                                <li>ARN-6 NEN 140-6[cite: 25]</li>
-                                <li>ARN-6 NEN 165-6[cite: 25]</li>
-                                <li>ARN-6 NEN 190-6[cite: 25]</li>
-                                <li>ARN-6 NEN 220-6[cite: 25]</li>
-                                <li>ARN-6 NHN 165-6[cite: 25]</li>
-                                <li>ARN-6 NHN 190-6[cite: 25]</li>
-                                <li>ARN-8 NEN 240-8[cite: 25]</li>
-                                <li>ARN-8 NEN 275-8[cite: 25]</li>
-                                <li>ARN-10 NEN 410-10[cite: 25]</li>
-                                <li>ARS-6 NEN 78-6[cite: 25]</li>
-                                <li>ARS-6 NEN 116-6[cite: 25]</li>
-                                <li>ARS-6 NEN 165-6[cite: 25]</li>
-                                <li>ARS-6 BEN 165-6[cite: 25]</li>
-                                <li>ARC-8 NEN 210-8[cite: 25]</li>
-                                <li>ARP-6 NAN 125-6[cite: 25]</li>
-                                <li>ARW-4 NEN 105-4[cite: 25]</li>
-                                <li>ART-6 NEN 140-6[cite: 25]</li>
-                                <li>Type CEC 165-6[cite: 25]</li>
+                                <li>ARN-6 NEN 100-6</li>
+                                <li>ARN-6 NEN 120-6</li>
+                                <li>ARN-6 NEN 140-6</li>
+                                <li>ARN-6 NEN 165-6</li>
+                                <li>ARN-6 NEN 190-6</li>
+                                <li>ARN-6 NEN 220-6</li>
+                                <li>ARN-6 NHN 165-6</li>
+                                <li>ARN-6 NHN 190-6</li>
+                                <li>ARN-8 NEN 240-8</li>
+                                <li>ARN-8 NEN 275-8</li>
+                                <li>ARN-10 NEN 410-10</li>
+                                <li>ARS-6 NEN 78-6</li>
+                                <li>ARS-6 NEN 116-6</li>
+                                <li>ARS-6 NEN 165-6</li>
+                                <li>ARS-6 BEN 165-6</li>
+                                <li>ARC-8 NEN 210-8</li>
+                                <li>ARP-6 NAN 125-6</li>
+                                <li>ARW-4 NEN 105-4</li>
+                                <li>ART-6 NEN 140-6</li>
+                                <li>Type CEC 165-6</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -380,11 +507,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, custom DBSE / bore machining or best price for <strong>Flender ARPEX Couplings</strong>?[cite: 25]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, custom DBSE / bore machining or best price for <strong>Flender ARPEX Couplings</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 25]</li>
-                            <li>Global Express Shipping[cite: 25]</li>
-                            <li>Custom Bore & Keyway Machining Available[cite: 25]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Custom Bore & Keyway Machining Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
