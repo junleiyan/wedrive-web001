@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/flender-fluid-coupling-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-fluid-coupling-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-fluid-coupling-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-fluid-coupling-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender FLUDEX FAD 450 Hydrodynamic Fluid Coupling | Technical Specs & Selection Guide" />
@@ -53,17 +65,17 @@
         "FLUDEX Type FAD", "FLUDEX Type FAO", "FLUDEX Type FND", "FLUDEX Type FNDB", "FLUDEX Type FGO", "FLUDEX Type FGD", "FLUDEX Type FVO"
       ],
       "description": "Flender FLUDEX hydrodynamic fluid couplings functioning on the Föttinger principle for soft, shock-free motor starting, torque limitation, and overload protection up to 2,500 kW across 15 sizes.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-fluid-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-fluid-coupling-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -160,7 +287,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -186,41 +313,41 @@
                         <h1>Flender FLUDEX FAD 450 Hydrodynamic Fluid Coupling</h1>
                         <div class="model-subtitle">Brand: Flender GmbH | Series: FLUDEX Hydrodynamic Soft-Start Couplings (Size 222 to 840)</div>
                         
-                        <p>The <strong>Flender FLUDEX FAD 450</strong> is a benchmark hydrodynamic fluid coupling operating on the wear-free Föttinger principle, where input and output components transmit power via fluid kinetic movement without mechanical contact[cite: 21]. Featuring an integrated delay chamber (Type FAD)[cite: 21], the FLUDEX FAD 450 delivers soft, shock-free starting of heavy masses, protects motors from high starting current peaks, and provides automatic overload protection across heavy industrial drivetrains[cite: 21]. Available in 15 standard sizes (sizes 222 to 840) covering power transmission from 1.2 kW up to 2,500 kW[cite: 21], FLUDEX couplings offer flexible configurations with basic designs (FAO), delay chambers (FAD/FGD), extended delay chambers (FVO), integrated brake discs/drums (FADB/FNDB), and attached N-EUPEX or ARPEX flexible couplings[cite: 21]. They are extensively specified in overland belt conveyors, bucket elevators, ball mills, crushers, centrifuges, and industrial agitators[cite: 21].</p>
+                        <p>The <strong>Flender FLUDEX FAD 450</strong> is a benchmark hydrodynamic fluid coupling operating on the wear-free Föttinger principle, where input and output components transmit power via fluid kinetic movement without mechanical contact. Featuring an integrated delay chamber (Type FAD), the FLUDEX FAD 450 delivers soft, shock-free starting of heavy masses, protects motors from high starting current peaks, and provides automatic overload protection across heavy industrial drivetrains. Available in 15 standard sizes (sizes 222 to 840) covering power transmission from 1.2 kW up to 2,500 kW, FLUDEX couplings offer flexible configurations with basic designs (FAO), delay chambers (FAD/FGD), extended delay chambers (FVO), integrated brake discs/drums (FADB/FNDB), and attached N-EUPEX or ARPEX flexible couplings. They are extensively specified in overland belt conveyors, bucket elevators, ball mills, crushers, centrifuges, and industrial agitators.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>FLUDEX FAD 450 (Type FAD, Size 450 with Delay Chamber)[cite: 21]</td>
+                                <td>FLUDEX FAD 450 (Type FAD, Size 450 with Delay Chamber)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 21]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Operating Principle</th>
-                                <td>Hydrodynamic power transmission on the Föttinger principle (Wear-free)[cite: 21]</td>
+                                <td>Hydrodynamic power transmission on the Föttinger principle (Wear-free)</td>
                             </tr>
                             <tr>
                                 <th>Power Transmission Range</th>
-                                <td>1.2 kW to 2,500 kW (Full Series Range Size 222 to 840)[cite: 21]</td>
+                                <td>1.2 kW to 2,500 kW (Full Series Range Size 222 to 840)</td>
                             </tr>
                             <tr>
                                 <th>Attached Coupling Type</th>
-                                <td>N-EUPEX Flexible Pin Coupling (Type FAD) or ARPEX All-Steel Disc (Type FND)[cite: 21]</td>
+                                <td>N-EUPEX Flexible Pin Coupling (Type FAD) or ARPEX All-Steel Disc (Type FND)</td>
                             </tr>
                             <tr>
                                 <th>Working Medium</th>
-                                <td>Mineral Hydraulic Oil (HLP ISO VG 22 / VG 32) or Synthetic Fluids[cite: 21]</td>
+                                <td>Mineral Hydraulic Oil (HLP ISO VG 22 / VG 32) or Synthetic Fluids</td>
                             </tr>
                             <tr>
                                 <th>Thermal Overload Protection</th>
-                                <td>Fusible Safety Plugs (110°C, 140°C, 160°C), EOT Thermal Switch, EOC Sensor[cite: 21]</td>
+                                <td>Fusible Safety Plugs (110°C, 140°C, 160°C), EOT Thermal Switch, EOC Sensor</td>
                             </tr>
                             <tr>
                                 <th>ATEX Certification</th>
-                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)[cite: 21]</td>
+                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)</td>
                             </tr>
                         </table>
 
@@ -228,8 +355,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender FLUDEX Fluid Couplings Catalog FLE 10.4 & BA 4600 Manual (PDF)</a>[cite: 21]</li>
-                                <li><a href="#cad-drawing">FLUDEX FAD 450 2D/3D CAD Drawing & Custom Bore Request</a>[cite: 21]</li>
+                                <li><a href="#pdf-manual">Flender FLUDEX Fluid Couplings Catalog FLE 10.4 & BA 4600 Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">FLUDEX FAD 450 2D/3D CAD Drawing & Custom Bore Request</a></li>
                             </ul>
                         </div>
 
@@ -237,7 +364,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender FLUDEX Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender FLUDEX hydrodynamic fluid couplings[cite: 21]. Review supported execution designs, delay chamber options, attached flexible couplings, and brake elements:
+                                Full-range structural configuration guide for Flender FLUDEX hydrodynamic fluid couplings. Review supported execution designs, delay chamber options, attached flexible couplings, and brake elements:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -252,33 +379,33 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Type FAO</strong> (Basic Design without Delay Chamber)[cite: 21]</td>
-                                        <td>Sizes 222 to 840 (12 Sizes)[cite: 21]</td>
-                                        <td>1.2 kW - 2,500 kW[cite: 21]</td>
+                                        <td><strong>Type FAO</strong> (Basic Design without Delay Chamber)</td>
+                                        <td>Sizes 222 to 840 (12 Sizes)</td>
+                                        <td>1.2 kW - 2,500 kW</td>
                                         <td><strong>N-EUPEX</strong> (Attached Flexible Pin Coupling)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Type FAD</strong> (Standard Delay Chamber Design)[cite: 21]</td>
-                                        <td>Sizes 222 to 840 (12 Sizes)[cite: 21]</td>
-                                        <td>1.2 kW - 2,500 kW[cite: 21]</td>
+                                        <td><strong>Type FAD</strong> (Standard Delay Chamber Design)</td>
+                                        <td>Sizes 222 to 840 (12 Sizes)</td>
+                                        <td>1.2 kW - 2,500 kW</td>
                                         <td><strong>Delay Chamber</strong> (Reduces Starting Torque)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Type FVO / FVD</strong> (Extended Delay Chamber)[cite: 21]</td>
-                                        <td>Sizes 370 to 655 (6 Sizes)[cite: 21]</td>
-                                        <td>15 kW - 1,000 kW[cite: 21]</td>
+                                        <td><strong>Type FVO / FVD</strong> (Extended Delay Chamber)</td>
+                                        <td>Sizes 370 to 655 (6 Sizes)</td>
+                                        <td>15 kW - 1,000 kW</td>
                                         <td><strong>Extended Chamber</strong> (For Conveyor Belts)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Type FND / FNDB</strong> (ARPEX All-Steel Disc Output)[cite: 21]</td>
-                                        <td>Sizes 295 to 655 (7 Sizes)[cite: 21]</td>
-                                        <td>10 kW - 1,200 kW[cite: 21]</td>
+                                        <td><strong>Type FND / FNDB</strong> (ARPEX All-Steel Disc Output)</td>
+                                        <td>Sizes 295 to 655 (7 Sizes)</td>
+                                        <td>10 kW - 1,200 kW</td>
                                         <td><strong>ARPEX Disc Pack</strong> (Backlash-Free Rigid)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Type FADB / FADS</strong> (With Brake Disc or Drum)[cite: 21]</td>
-                                        <td>Sizes 295 to 755 (10 Sizes)[cite: 21]</td>
-                                        <td>10 kW - 1,800 kW[cite: 21]</td>
+                                        <td><strong>Type FADB / FADS</strong> (With Brake Disc or Drum)</td>
+                                        <td>Sizes 295 to 755 (10 Sizes)</td>
+                                        <td>10 kW - 1,800 kW</td>
                                         <td><strong>Brake Disc / Drum</strong> (Safety Stop Systems)</td>
                                     </tr>
                                 </tbody>
@@ -287,7 +414,7 @@
                             <!-- Legacy Fluid Coupling Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Fluid Coupling Replacement & FLUDEX Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Obsolete hydrodynamic fluid couplings or direct-on-line electrical motor starters on heavy conveyors can be upgraded to Flender FLUDEX fluid couplings[cite: 21]. Refer to the replacement mapping below for 1-to-1 retrofitting:
+                                Obsolete hydrodynamic fluid couplings or direct-on-line electrical motor starters on heavy conveyors can be upgraded to Flender FLUDEX fluid couplings. Refer to the replacement mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -302,39 +429,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Flender FAO 425 / FAD 425</strong>[cite: 21]</td>
-                                        <td>1st Gen Fluid Coupling[cite: 21]</td>
-                                        <td><strong>FLUDEX FAD 425 / FAD 450</strong> <span class="upgrade-badge">FLUDEX Upgrade</span>[cite: 21]</td>
-                                        <td>Up to 250 kW[cite: 21]</td>
-                                        <td>Direct 1-to-1 shaft diameter & N-EUPEX pin match[cite: 21].</td>
+                                        <td><strong>Flender FAO 425 / FAD 425</strong></td>
+                                        <td>1st Gen Fluid Coupling</td>
+                                        <td><strong>FLUDEX FAD 425 / FAD 450</strong> <span class="upgrade-badge">FLUDEX Upgrade</span></td>
+                                        <td>Up to 250 kW</td>
+                                        <td>Direct 1-to-1 shaft diameter & N-EUPEX pin match.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Flender FAD 450 / FAD 490</strong>[cite: 21]</td>
-                                        <td>1st Gen Fluid Coupling[cite: 21]</td>
-                                        <td><strong>FLUDEX FAD 450 / FAD 490</strong> <span class="upgrade-badge">FLUDEX Upgrade</span>[cite: 21]</td>
-                                        <td>Up to 400 kW[cite: 21]</td>
-                                        <td>Identical shaft centerline height & N-EUPEX buffers[cite: 21].</td>
+                                        <td><strong>Flender FAD 450 / FAD 490</strong></td>
+                                        <td>1st Gen Fluid Coupling</td>
+                                        <td><strong>FLUDEX FAD 450 / FAD 490</strong> <span class="upgrade-badge">FLUDEX Upgrade</span></td>
+                                        <td>Up to 400 kW</td>
+                                        <td>Identical shaft centerline height & N-EUPEX buffers.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Direct-On-Line Motor Starters</strong>[cite: 21]</td>
-                                        <td>Rigid Electrical Start[cite: 21]</td>
-                                        <td><strong>FLUDEX FAD / FVO Series</strong> <span class="upgrade-badge">Soft Start</span>[cite: 21]</td>
-                                        <td>Up to 2,500 kW[cite: 21]</td>
-                                        <td>Smooth hydrodynamic acceleration reduces electrical current spikes[cite: 21].</td>
+                                        <td><strong>Direct-On-Line Motor Starters</strong></td>
+                                        <td>Rigid Electrical Start</td>
+                                        <td><strong>FLUDEX FAD / FVO Series</strong> <span class="upgrade-badge">Soft Start</span></td>
+                                        <td>Up to 2,500 kW</td>
+                                        <td>Smooth hydrodynamic acceleration reduces electrical current spikes.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy Conveyor Belt Drives</strong>[cite: 21]</td>
-                                        <td>Standard Fluid Coupling[cite: 21]</td>
-                                        <td><strong>FLUDEX FVO / FVD Extended Delay</strong> <span class="upgrade-badge">Conveyor Duty</span>[cite: 21]</td>
-                                        <td>Up to 1,000 kW[cite: 21]</td>
-                                        <td>Extended delay chamber protects conveyor belts from tearing[cite: 21].</td>
+                                        <td><strong>Heavy Conveyor Belt Drives</strong></td>
+                                        <td>Standard Fluid Coupling</td>
+                                        <td><strong>FLUDEX FVO / FVD Extended Delay</strong> <span class="upgrade-badge">Conveyor Duty</span></td>
+                                        <td>Up to 1,000 kW</td>
+                                        <td>Extended delay chamber protects conveyor belts from tearing.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>High-Temperature Thermal Drives</strong>[cite: 21]</td>
-                                        <td>Basic Fusible Plug Unit[cite: 21]</td>
-                                        <td><strong>FLUDEX + EOC / EOT Electronic Sensor</strong> <span class="upgrade-badge">Smart Monitor</span>[cite: 21]</td>
-                                        <td>Full Range 222-840[cite: 21]</td>
-                                        <td>Non-contact EOC sensor detects slip and isolates motor before plug melts[cite: 21].</td>
+                                        <td><strong>High-Temperature Thermal Drives</strong></td>
+                                        <td>Basic Fusible Plug Unit</td>
+                                        <td><strong>FLUDEX + EOC / EOT Electronic Sensor</strong> <span class="upgrade-badge">Smart Monitor</span></td>
+                                        <td>Full Range 222-840</td>
+                                        <td>Non-contact EOC sensor detects slip and isolates motor before plug melts.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -342,34 +469,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete technical sourcing and custom machining solutions for the entire <strong>Flender FLUDEX hydrodynamic fluid coupling family</strong>[cite: 21]. Whether your drivetrain requires a basic soft-start coupling (<strong>FAO</strong>)[cite: 21], a delay chamber unit for smooth motor starting (<strong>FAD</strong>)[cite: 21], extended delay chambers for long belt conveyors (<strong>FVO / FVD</strong>)[cite: 21], integrated brake discs or drums for safety stopping (<strong>FADB / FNDB / FADS</strong>)[cite: 21], or backlash-free all-steel disc outputs (<strong>FND</strong>)[cite: 21], all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles[cite: 21].
+                                We specialize in providing complete technical sourcing and custom machining solutions for the entire <strong>Flender FLUDEX hydrodynamic fluid coupling family</strong>. Whether your drivetrain requires a basic soft-start coupling (<strong>FAO</strong>), a delay chamber unit for smooth motor starting (<strong>FAD</strong>), extended delay chambers for long belt conveyors (<strong>FVO / FVD</strong>), integrated brake discs or drums for safety stopping (<strong>FADB / FNDB / FADS</strong>), or backlash-free all-steel disc outputs (<strong>FND</strong>), all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles.
                                 <br><br>
-                                When retrofitting an existing drive featuring older <strong>FAD 370, FAD 425, FAD 450, or competitor fluid couplings</strong>[cite: 21], choosing original FLUDEX units ensures complete 1-to-1 mechanical interchangeability and reliable overload protection[cite: 21]. Simply supply us with your motor power rating, operating speed, driven machine inertia, and shaft dimensions, and our engineering team will provide a 100% compliant replacement specification and quotation[cite: 21].
+                                When retrofitting an existing drive featuring older <strong>FAD 370, FAD 425, FAD 450, or competitor fluid couplings</strong>, choosing original FLUDEX units ensures complete 1-to-1 mechanical interchangeability and reliable overload protection. Simply supply us with your motor power rating, operating speed, driven machine inertia, and shaft dimensions, and our engineering team will provide a 100% compliant replacement specification and quotation.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>FLUDEX FAO 222[cite: 21]</li>
-                                <li>FLUDEX FAO 295[cite: 21]</li>
-                                <li>FLUDEX FAO 370[cite: 21]</li>
-                                <li>FLUDEX FAO 425[cite: 21]</li>
-                                <li>FLUDEX FAO 450[cite: 21]</li>
-                                <li>FLUDEX FAO 490[cite: 21]</li>
-                                <li>FLUDEX FAD 295[cite: 21]</li>
-                                <li>FLUDEX FAD 370[cite: 21]</li>
-                                <li>FLUDEX FAD 425[cite: 21]</li>
-                                <li>FLUDEX FAD 450[cite: 21]</li>
-                                <li>FLUDEX FAD 490[cite: 21]</li>
-                                <li>FLUDEX FAD 565[cite: 21]</li>
-                                <li>FLUDEX FVO 450 (Conveyor Duty)[cite: 21]</li>
-                                <li>FLUDEX FND 450 (ARPEX Output)[cite: 21]</li>
-                                <li>FLUDEX FADB 450 (Brake Disc)[cite: 21]</li>
-                                <li>FLUDEX FADS 450 (Brake Drum)[cite: 21]</li>
-                                <li>FLUDEX FGD 450 (Outer Shell Drive)[cite: 21]</li>
-                                <li>FLUDEX FAK 425 (V-Belt Pulley)[cite: 21]</li>
-                                <li>FLUDEX Fusible Safety Plug 140°C[cite: 21]</li>
-                                <li>FLUDEX EOC Electronic Control Sensor[cite: 21]</li>
+                                <li>FLUDEX FAO 222</li>
+                                <li>FLUDEX FAO 295</li>
+                                <li>FLUDEX FAO 370</li>
+                                <li>FLUDEX FAO 425</li>
+                                <li>FLUDEX FAO 450</li>
+                                <li>FLUDEX FAO 490</li>
+                                <li>FLUDEX FAD 295</li>
+                                <li>FLUDEX FAD 370</li>
+                                <li>FLUDEX FAD 425</li>
+                                <li>FLUDEX FAD 450</li>
+                                <li>FLUDEX FAD 490</li>
+                                <li>FLUDEX FAD 565</li>
+                                <li>FLUDEX FVO 450 (Conveyor Duty)</li>
+                                <li>FLUDEX FND 450 (ARPEX Output)</li>
+                                <li>FLUDEX FADB 450 (Brake Disc)</li>
+                                <li>FLUDEX FADS 450 (Brake Drum)</li>
+                                <li>FLUDEX FGD 450 (Outer Shell Drive)</li>
+                                <li>FLUDEX FAK 425 (V-Belt Pulley)</li>
+                                <li>FLUDEX Fusible Safety Plug 140°C</li>
+                                <li>FLUDEX EOC Electronic Control Sensor</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -379,11 +506,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, custom bore machining or best price for <strong>Flender FLUDEX FAD 450</strong>?[cite: 21]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, custom bore machining or best price for <strong>Flender FLUDEX FAD 450</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 21]</li>
-                            <li>Global Express Shipping[cite: 21]</li>
-                            <li>Custom Bore & Keyway Machining Available[cite: 21]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Custom Bore & Keyway Machining Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
