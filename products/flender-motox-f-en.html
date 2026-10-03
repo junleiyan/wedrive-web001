@@ -15,6 +15,18 @@
     <!-- Canonical English URL -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-motox-f-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-motox-f-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-motox-f-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="MOTOX FD48B-LA80M4 Parallel Shaft Gearmotor | Technical Specs & Replacement Guide" />
@@ -54,17 +66,17 @@
         "MOTOX FDF38B", "MOTOX FDF48B", "MOTOX FDF68B", "MOTOX FDA38B", "MOTOX FDA48B", "MOTOX FAD38B", "MOTOX FDS38B"
       ],
       "description": "MOTOX F Series parallel shaft helical gearmotors (FZ 2-stage and FD 3-stage) covering all foot-mounted, flange-mounted, hollow shaft, shrink disc, and torque arm options. Originally designed by Flender, transitioned through Siemens and Innomotics, and manufactured via authentic OEM channels.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -111,10 +123,125 @@
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .brand-history-notice { background: #eef7fc; border-left: 4px solid #0073bb; padding: 15px 20px; margin: 20px 0; border-radius: 0 4px 4px 0; font-size: 13.5px; color: #334155; line-height: 1.7; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-motox-f-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-motox-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-motox-f-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -162,7 +289,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -186,44 +313,44 @@
                     <!-- Main Specs -->
                     <div class="product-main">
                         <h1>MOTOX FD48B-LA80M4 Parallel Shaft Gearmotor</h1>
-                        <div class="model-subtitle">Series: MOTOX Parallel Shaft Gear Units | Size FD48B (2KJ1402 Order Code)[cite: 20]</div>
+                        <div class="model-subtitle">Series: MOTOX Parallel Shaft Gear Units | Size FD48B (2KJ1402 Order Code)</div>
                         
                         <div class="brand-history-notice">
                             <strong>Brand & Ownership Evolution Notice:</strong><br>
-                            The iconic <strong>MOTOX</strong> gearmotor series was originally created and engineered by <strong>FLENDER</strong>[cite: 20]. Following Siemens' acquisition of Flender, MOTOX was integrated into Siemens' drive portfolio under the 2KJ catalog line (2KJ1402 for FD48B)[cite: 20]. Subsequently, Siemens carved out its heavy-duty motors and gearmotors business under the <strong>INNOMOTICS</strong> brand[cite: 20]. Today, MOTOX products have transitioned back to the original manufacturing plants and authentic OEM supplier channels, ensuring 100% exact design continuity, mechanical interchangeability, and original quality standards[cite: 20].
+                            The iconic <strong>MOTOX</strong> gearmotor series was originally created and engineered by <strong>FLENDER</strong>. Following Siemens' acquisition of Flender, MOTOX was integrated into Siemens' drive portfolio under the 2KJ catalog line (2KJ1402 for FD48B). Subsequently, Siemens carved out its heavy-duty motors and gearmotors business under the <strong>INNOMOTICS</strong> brand. Today, MOTOX products have transitioned back to the original manufacturing plants and authentic OEM supplier channels, ensuring 100% exact design continuity, mechanical interchangeability, and original quality standards.
                         </div>
 
-                        <p>The <strong>MOTOX FD48B-LA80M4</strong> is a 3-stage parallel shaft helical gearmotor designed for narrow installation profiles where flat, space-saving drive layouts are required[cite: 20]. Cataloged under Siemens 2KJ order code <strong>2KJ1402</strong>[cite: 20], the FD48B size delivers nominal output torques up to 450 Nm and is paired with 0.55 kW LA80M4 motors[cite: 20]. Featuring high mechanical efficiency (94%), rigid cast iron housing construction, and high overhung load capacity[cite: 20], MOTOX F series gearmotors are available in versatile configurations (foot FD48B, hollow shaft FDA48B, flange FDF48B, shrink disc FAD48B, and shaft-mounted torque arm FAAD48B)[cite: 20] ideal for crane hoists, monorail conveyors, agitators, mixers, and automated warehouse lines[cite: 20].</p>
+                        <p>The <strong>MOTOX FD48B-LA80M4</strong> is a 3-stage parallel shaft helical gearmotor designed for narrow installation profiles where flat, space-saving drive layouts are required. Cataloged under Siemens 2KJ order code <strong>2KJ1402</strong>, the FD48B size delivers nominal output torques up to 450 Nm and is paired with 0.55 kW LA80M4 motors. Featuring high mechanical efficiency (94%), rigid cast iron housing construction, and high overhung load capacity, MOTOX F series gearmotors are available in versatile configurations (foot FD48B, hollow shaft FDA48B, flange FDF48B, shrink disc FAD48B, and shaft-mounted torque arm FAAD48B) ideal for crane hoists, monorail conveyors, agitators, mixers, and automated warehouse lines.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>FD48B-LA80M4 (Order Code: 2KJ1402-..DE13)[cite: 20]</td>
+                                <td>FD48B-LA80M4 (Order Code: 2KJ1402-..DE13)</td>
                             </tr>
                             <tr>
                                 <th>Brand Lineage</th>
-                                <td>Flender &rarr; Siemens &rarr; Innomotics &rarr; Original OEM Factory Brand[cite: 20]</td>
+                                <td>Flender &rarr; Siemens &rarr; Innomotics &rarr; Original OEM Factory Brand</td>
                             </tr>
                             <tr>
                                 <th>Gear Unit Type</th>
-                                <td>MOTOX FD Series (3-Stage Parallel Shaft Helical)[cite: 20]</td>
+                                <td>MOTOX FD Series (3-Stage Parallel Shaft Helical)</td>
                             </tr>
                             <tr>
                                 <th>Catalog Frame Size</th>
-                                <td>Size FD48B (Nominal torque capacity: 450 Nm)[cite: 20]</td>
+                                <td>Size FD48B (Nominal torque capacity: 450 Nm)</td>
                             </tr>
                             <tr>
                                 <th>Matched Motor Type & Power</th>
-                                <td>LA80M4 / LA80ZMB4E (0.55 kW AC Squirrel-Cage Motor)[cite: 20]</td>
+                                <td>LA80M4 / LA80ZMB4E (0.55 kW AC Squirrel-Cage Motor)</td>
                             </tr>
                             <tr>
                                 <th>Output Speed / Ratio Range</th>
-                                <td>i = 3.80 to 449.21 (Customizable ratios available)[cite: 20]</td>
+                                <td>i = 3.80 to 449.21 (Customizable ratios available)</td>
                             </tr>
                             <tr>
                                 <th>Shaft & Mounting Options</th>
-                                <td>Foot-mounted, Flange B5/B14, Solid Shaft, Hollow Shaft with Keyway/Shrink Disc/TorqLOC®[cite: 20]</td>
+                                <td>Foot-mounted, Flange B5/B14, Solid Shaft, Hollow Shaft with Keyway/Shrink Disc/TorqLOC®</td>
                             </tr>
                         </table>
 
@@ -231,8 +358,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">MOTOX Parallel Shaft Gearmotors Catalog D 87.1 & Operating Instructions (PDF)[cite: 20]</a></li>
-                                <li><a href="#cad-drawing">FD48B-LA80M4 Dimension Sheet & 3D CAD Request[cite: 20]</a></li>
+                                <li><a href="#pdf-manual">MOTOX Parallel Shaft Gearmotors Catalog D 87.1 & Operating Instructions (PDF)</a></li>
+                                <li><a href="#cad-drawing">FD48B-LA80M4 Dimension Sheet & 3D CAD Request</a></li>
                             </ul>
                         </div>
 
@@ -240,7 +367,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">MOTOX F Series Parallel Shaft Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range modular configuration guide for Flender / Siemens / Innomotics MOTOX F series parallel shaft helical gearboxes[cite: 20]. Review supported frame sizes, 2KJ order code structure, and mounting forms:
+                                Full-range modular configuration guide for Flender / Siemens / Innomotics MOTOX F series parallel shaft helical gearboxes. Review supported frame sizes, 2KJ order code structure, and mounting forms:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -255,34 +382,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>MOTOX FZ Series (2-Stage Compact)</strong>[cite: 20]</td>
-                                        <td>2KJ1300-.. to 2KJ1311-..[cite: 20]</td>
-                                        <td>Up to 34,000 Nm[cite: 20]</td>
-                                        <td>LA63 to LG250 (0.12 kW - 45 kW)[cite: 20]</td>
+                                        <td><strong>MOTOX FZ Series (2-Stage Compact)</strong></td>
+                                        <td>2KJ1300-.. to 2KJ1311-..</td>
+                                        <td>Up to 34,000 Nm</td>
+                                        <td>LA63 to LG250 (0.12 kW - 45 kW)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>MOTOX FD Series (3-Stage High Ratio)</strong>[cite: 20]</td>
-                                        <td>2KJ1400-.. to 2KJ1411-..[cite: 20]</td>
-                                        <td>Up to 34,000 Nm[cite: 20]</td>
-                                        <td>LA63 to LG250 (0.12 kW - 45 kW)[cite: 20]</td>
+                                        <td><strong>MOTOX FD Series (3-Stage High Ratio)</strong></td>
+                                        <td>2KJ1400-.. to 2KJ1411-..</td>
+                                        <td>Up to 34,000 Nm</td>
+                                        <td>LA63 to LG250 (0.12 kW - 45 kW)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Keyway (FDA / FZA)</strong>[cite: 20]</td>
-                                        <td>2KJ13..-Z A / 14..-Z A[cite: 20]</td>
-                                        <td>Up to 34,000 Nm[cite: 20]</td>
-                                        <td>Hollow Shaft Output with Keyway[cite: 20]</td>
+                                        <td><strong>Hollow Shaft Keyway (FDA / FZA)</strong></td>
+                                        <td>2KJ13..-Z A / 14..-Z A</td>
+                                        <td>Up to 34,000 Nm</td>
+                                        <td>Hollow Shaft Output with Keyway</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Flange Executions (FDF / FZF)</strong>[cite: 20]</td>
-                                        <td>2KJ13..-Z F / 14..-Z F[cite: 20]</td>
-                                        <td>Up to 34,000 Nm[cite: 20]</td>
-                                        <td>B5 Flange Output Mounting[cite: 20]</td>
+                                        <td><strong>Flange Executions (FDF / FZF)</strong></td>
+                                        <td>2KJ13..-Z F / 14..-Z F</td>
+                                        <td>Up to 34,000 Nm</td>
+                                        <td>B5 Flange Output Mounting</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Shrink Disc (FAD / FZD)</strong>[cite: 20]</td>
-                                        <td>2KJ13..-Z D / 14..-Z D[cite: 20]</td>
-                                        <td>Up to 34,000 Nm[cite: 20]</td>
-                                        <td>Keyless Shrink Disc Connection[cite: 20]</td>
+                                        <td><strong>Hollow Shaft Shrink Disc (FAD / FZD)</strong></td>
+                                        <td>2KJ13..-Z D / 14..-Z D</td>
+                                        <td>Up to 34,000 Nm</td>
+                                        <td>Keyless Shrink Disc Connection</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -290,7 +417,7 @@
                             <!-- Legacy 2KJ Order Code Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">MOTOX 2KJ Order Code & Brand Cross-Reference Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                MOTOX parallel shaft gearmotors installed under Flender, Siemens 2KJ, or Innomotics nameplates can be seamlessly cross-referenced and supplied directly via authentic OEM factory channels[cite: 20]. Refer to the catalog code mapping below:
+                                MOTOX parallel shaft gearmotors installed under Flender, Siemens 2KJ, or Innomotics nameplates can be seamlessly cross-referenced and supplied directly via authentic OEM factory channels. Refer to the catalog code mapping below:
                             </p>
 
                             <table class="upgrade-table">
@@ -305,39 +432,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>2KJ1302-..DE13 (FZ48B)</strong>[cite: 20]</td>
-                                        <td>Siemens / Innomotics[cite: 20]</td>
-                                        <td><strong>MOTOX FZ48B-LA80ZMB4E</strong> <span class="upgrade-badge">OEM Direct</span>[cite: 20]</td>
-                                        <td>0.55 kW[cite: 20]</td>
-                                        <td>Direct 1-to-1 flange & shaft match. Complete interchangeability[cite: 20].</td>
+                                        <td><strong>2KJ1302-..DE13 (FZ48B)</strong></td>
+                                        <td>Siemens / Innomotics</td>
+                                        <td><strong>MOTOX FZ48B-LA80ZMB4E</strong> <span class="upgrade-badge">OEM Direct</span></td>
+                                        <td>0.55 kW</td>
+                                        <td>Direct 1-to-1 flange & shaft match. Complete interchangeability.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>2KJ1402-..DE13 (FD48B)</strong>[cite: 20]</td>
-                                        <td>Siemens / Innomotics[cite: 20]</td>
-                                        <td><strong>MOTOX FD48B-LA80M4</strong> <span class="upgrade-badge">OEM Direct</span>[cite: 20]</td>
-                                        <td>0.55 kW[cite: 20]</td>
-                                        <td>Standard FD48B drive package. 100% drop-in replacement[cite: 20].</td>
+                                        <td><strong>2KJ1402-..DE13 (FD48B)</strong></td>
+                                        <td>Siemens / Innomotics</td>
+                                        <td><strong>MOTOX FD48B-LA80M4</strong> <span class="upgrade-badge">OEM Direct</span></td>
+                                        <td>0.55 kW</td>
+                                        <td>Standard FD48B drive package. 100% drop-in replacement.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>2KJ1403-..EM13 (FD68B)</strong>[cite: 20]</td>
-                                        <td>Siemens / Innomotics[cite: 20]</td>
-                                        <td><strong>MOTOX FD68B-LA90SB4E</strong> <span class="upgrade-badge">OEM Direct</span>[cite: 20]</td>
-                                        <td>0.75 kW[cite: 20]</td>
-                                        <td>Identical shaft centerline height & foot mounting bolt pattern[cite: 20].</td>
+                                        <td><strong>2KJ1403-..EM13 (FD68B)</strong></td>
+                                        <td>Siemens / Innomotics</td>
+                                        <td><strong>MOTOX FD68B-LA90SB4E</strong> <span class="upgrade-badge">OEM Direct</span></td>
+                                        <td>0.75 kW</td>
+                                        <td>Identical shaft centerline height & foot mounting bolt pattern.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>2KJ1404-..FM13 (FD88B)</strong>[cite: 20]</td>
-                                        <td>Siemens / Innomotics[cite: 20]</td>
-                                        <td><strong>MOTOX FD88B-LA100ZLP4E</strong> <span class="upgrade-badge">OEM Direct</span>[cite: 20]</td>
-                                        <td>1.5 kW[cite: 20]</td>
-                                        <td>Heavy conveyor drive. Preserves existing torque arm / flange[cite: 20].</td>
+                                        <td><strong>2KJ1404-..FM13 (FD88B)</strong></td>
+                                        <td>Siemens / Innomotics</td>
+                                        <td><strong>MOTOX FD88B-LA100ZLP4E</strong> <span class="upgrade-badge">OEM Direct</span></td>
+                                        <td>1.5 kW</td>
+                                        <td>Heavy conveyor drive. Preserves existing torque arm / flange.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>2KJ1405-..HG13 (FD108B)</strong>[cite: 20]</td>
-                                        <td>Siemens / Innomotics[cite: 20]</td>
-                                        <td><strong>MOTOX FD108B-LA132SP4E</strong> <span class="upgrade-badge">OEM Direct</span>[cite: 20]</td>
-                                        <td>4.0 kW[cite: 20]</td>
-                                        <td>Maximum torque capacity for F series. 100% exact replacement[cite: 20].</td>
+                                        <td><strong>2KJ1405-..HG13 (FD108B)</strong></td>
+                                        <td>Siemens / Innomotics</td>
+                                        <td><strong>MOTOX FD108B-LA132SP4E</strong> <span class="upgrade-badge">OEM Direct</span></td>
+                                        <td>4.0 kW</td>
+                                        <td>Maximum torque capacity for F series. 100% exact replacement.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -345,34 +472,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>Flender / Siemens / Innomotics MOTOX F Series</strong>[cite: 20]. Whether you require a 2-stage compact unit (<strong>FZ28 to FZ208</strong>)[cite: 20], a 3-stage high-ratio drive (<strong>FD28 to FD208</strong>)[cite: 20], hollow shaft output (<strong>FDA / FZA</strong>)[cite: 20], B5/B14 flange mounting (<strong>FDF / FZF</strong>)[cite: 20], shrink disc connection (<strong>FAD / FZD</strong>)[cite: 20], or shaft-mounted torque arm execution (<strong>FAAD / FZAD</strong>)[cite: 20], all mechanical designs can be supplied pre-assembled with original MOTOX motor series[cite: 20].
+                                We specialize in providing complete drive packages and technical replacement solutions for the entire <strong>Flender / Siemens / Innomotics MOTOX F Series</strong>. Whether you require a 2-stage compact unit (<strong>FZ28 to FZ208</strong>), a 3-stage high-ratio drive (<strong>FD28 to FD208</strong>), hollow shaft output (<strong>FDA / FZA</strong>), B5/B14 flange mounting (<strong>FDF / FZF</strong>), shrink disc connection (<strong>FAD / FZD</strong>), or shaft-mounted torque arm execution (<strong>FAAD / FZAD</strong>), all mechanical designs can be supplied pre-assembled with original MOTOX motor series.
                                 <br><br>
-                                When retrofitting an existing installation featuring older <strong>Flender MOTOX or Siemens 2KJ1402</strong> gearmotors[cite: 20], sourcing directly through authentic OEM channels ensures complete dimensional interchangeability, original gear tooth geometry, and zero modification costs[cite: 20]. Simply send us your existing Siemens 2KJ order code or nameplate serial number, and our engineering team will provide a 100% compliant replacement specification and quotation[cite: 20].
+                                When retrofitting an existing installation featuring older <strong>Flender MOTOX or Siemens 2KJ1402</strong> gearmotors, sourcing directly through authentic OEM channels ensures complete dimensional interchangeability, original gear tooth geometry, and zero modification costs. Simply send us your existing Siemens 2KJ order code or nameplate serial number, and our engineering team will provide a 100% compliant replacement specification and quotation.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>FD28-LA71B4 (0.18 kW)[cite: 20]</li>
-                                <li>FD38B-LA71S4 (0.25 kW)[cite: 20]</li>
-                                <li>FD38B-LA71M4 (0.37 kW)[cite: 20]</li>
-                                <li>FD48B-LA80M4 (0.55 kW)[cite: 20]</li>
-                                <li>FD48B-LA90S4 (0.75 kW)[cite: 20]</li>
-                                <li>FD68B-LA90S4 (0.75 kW)[cite: 20]</li>
-                                <li>FD68B-LA100L4 (1.5 kW)[cite: 20]</li>
-                                <li>FD88B-LA100L4 (1.5 kW)[cite: 20]</li>
-                                <li>FD88B-LA112M4 (3.0 kW)[cite: 20]</li>
-                                <li>FD108B-LA132S4 (4.0 kW)[cite: 20]</li>
-                                <li>FD128B-LA160M4 (7.5 kW)[cite: 20]</li>
-                                <li>FZ48B-LA80M4 (0.55 kW)[cite: 20]</li>
-                                <li>FDA48B-LA80M4 (Hollow Shaft)[cite: 20]</li>
-                                <li>FDF48B-LA80M4 (Flange Shaft)[cite: 20]</li>
-                                <li>FAD48B-LA80M4 (Shrink Disc)[cite: 20]</li>
-                                <li>FDS48B-LA80M4 (Solid Foot)[cite: 20]</li>
-                                <li>FAAD48B Torque Arm Package[cite: 20]</li>
-                                <li>2KJ1402-7DE13 (Siemens Code)[cite: 20]</li>
-                                <li>2KJ1403-7EM13 (Siemens Code)[cite: 20]</li>
-                                <li>2KJ1404-7FM13 (Siemens Code)[cite: 20]</li>
+                                <li>FD28-LA71B4 (0.18 kW)</li>
+                                <li>FD38B-LA71S4 (0.25 kW)</li>
+                                <li>FD38B-LA71M4 (0.37 kW)</li>
+                                <li>FD48B-LA80M4 (0.55 kW)</li>
+                                <li>FD48B-LA90S4 (0.75 kW)</li>
+                                <li>FD68B-LA90S4 (0.75 kW)</li>
+                                <li>FD68B-LA100L4 (1.5 kW)</li>
+                                <li>FD88B-LA100L4 (1.5 kW)</li>
+                                <li>FD88B-LA112M4 (3.0 kW)</li>
+                                <li>FD108B-LA132S4 (4.0 kW)</li>
+                                <li>FD128B-LA160M4 (7.5 kW)</li>
+                                <li>FZ48B-LA80M4 (0.55 kW)</li>
+                                <li>FDA48B-LA80M4 (Hollow Shaft)</li>
+                                <li>FDF48B-LA80M4 (Flange Shaft)</li>
+                                <li>FAD48B-LA80M4 (Shrink Disc)</li>
+                                <li>FDS48B-LA80M4 (Solid Foot)</li>
+                                <li>FAAD48B Torque Arm Package</li>
+                                <li>2KJ1402-7DE13 (Siemens Code)</li>
+                                <li>2KJ1403-7EM13 (Siemens Code)</li>
+                                <li>2KJ1404-7FM13 (Siemens Code)</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -382,11 +509,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>MOTOX FD48B-LA80M4</strong>?[cite: 20]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>MOTOX FD48B-LA80M4</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original OEM Factory Supply[cite: 20]</li>
+                            <li>100% Original OEM Factory Supply</li>
                             <li>Global Express Shipping</li>
-                            <li>Technical Support Available[cite: 20]</li>
+                            <li>Technical Support Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
