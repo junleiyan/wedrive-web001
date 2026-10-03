@@ -15,6 +15,18 @@
     <!-- Canonical English URL -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-n-eupex-coupling-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-n-eupex-coupling-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-n-eupex-coupling-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender N-EUPEX Type A 160 Flexible Pin Coupling | Technical Specs & Selection Guide" />
@@ -54,16 +66,16 @@
       ],
       "description": "Flender N-EUPEX flexible pin and bush couplings offering torsional damping, compensation for shaft misalignments, and fail-safe torque transmission up to 85,000 Nm. Available in 23 frame sizes and multiple modular designs.",
       "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-n-eupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-n-eupex-coupling-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -160,7 +287,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -186,41 +313,41 @@
                         <h1>Flender N-EUPEX Type A 160 Flexible Pin Coupling</h1>
                         <div class="model-subtitle">Brand: Flender GmbH | Series: N-EUPEX & N-EUPEX DS Flexible Pin & Bush Couplings (Size 58 to 710)</div>
                         
-                        <p>The <strong>Flender N-EUPEX Type A 160</strong> is the world's most widely specified three-part flexible pin and bush elastomer coupling for industrial power transmission[cite: 22]. Engineered to compensate for shaft misalignments (angular, radial, and axial) while effectively damping torsional vibrations and shock loads[cite: 22], the Type A three-part design allows replacement of flexible elastomer packets without moving the driven or driving machinery[cite: 22]. Available in 23 standard sizes (size 58 to 710) covering nominal torques from 19 Nm to 85,000 Nm[cite: 22], N-EUPEX couplings feature fail-safe cast iron construction with flexible NBR or TPU packets[cite: 22], and are widely specified across pump drives, fan drives, belt conveyors, compressors, mill drives, and crane machinery[cite: 22].</p>
+                        <p>The <strong>Flender N-EUPEX Type A 160</strong> is the world's most widely specified three-part flexible pin and bush elastomer coupling for industrial power transmission. Engineered to compensate for shaft misalignments (angular, radial, and axial) while effectively damping torsional vibrations and shock loads, the Type A three-part design allows replacement of flexible elastomer packets without moving the driven or driving machinery. Available in 23 standard sizes (size 58 to 710) covering nominal torques from 19 Nm to 85,000 Nm, N-EUPEX couplings feature fail-safe cast iron construction with flexible NBR or TPU packets, and are widely specified across pump drives, fan drives, belt conveyors, compressors, mill drives, and crane machinery.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>N-EUPEX Type A 160 (Three-part design, Size 160 Frame)[cite: 22]</td>
+                                <td>N-EUPEX Type A 160 (Three-part design, Size 160 Frame)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 22]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Structural Execution</th>
-                                <td>Type A (Three-part fail-safe pin & bush layout for easy bush replacement)[cite: 22]</td>
+                                <td>Type A (Three-part fail-safe pin & bush layout for easy bush replacement)</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>1,050 Nm (Size 160) / 19 Nm to 85,000 Nm (Full Series Range)[cite: 22]</td>
+                                <td>1,050 Nm (Size 160) / 19 Nm to 85,000 Nm (Full Series Range)</td>
                             </tr>
                             <tr>
                                 <th>Elastomer Packets</th>
-                                <td>Flexible NBR 80 Shore A (Standard), NBR 90 Shore A, or High-Temp TPU Packets[cite: 22]</td>
+                                <td>Flexible NBR 80 Shore A (Standard), NBR 90 Shore A, or High-Temp TPU Packets</td>
                             </tr>
                             <tr>
                                 <th>Operating Temperature</th>
-                                <td>-50°C to +100°C (Depending on elastomer grade selected)[cite: 22]</td>
+                                <td>-50°C to +100°C (Depending on elastomer grade selected)</td>
                             </tr>
                             <tr>
                                 <th>ATEX Certification</th>
-                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)[cite: 22]</td>
+                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)</td>
                             </tr>
                             <tr>
                                 <th>Overload Behavior</th>
-                                <td>Fail-safe design (Caws transmit torque even if elastomer wears out)[cite: 22]</td>
+                                <td>Fail-safe design (Caws transmit torque even if elastomer wears out)</td>
                             </tr>
                         </table>
 
@@ -228,8 +355,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender N-EUPEX Flexible Couplings Catalog FLON-101 & Operating Manual (PDF)</a>[cite: 22]</li>
-                                <li><a href="#cad-drawing">N-EUPEX Type A 160 2D/3D CAD Drawing & Custom Bore Request</a>[cite: 22]</li>
+                                <li><a href="#pdf-manual">Flender N-EUPEX Flexible Couplings Catalog FLON-101 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">N-EUPEX Type A 160 2D/3D CAD Drawing & Custom Bore Request</a></li>
                             </ul>
                         </div>
 
@@ -237,7 +364,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender N-EUPEX Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender N-EUPEX and N-EUPEX DS flexible pin and bush couplings[cite: 22]. Review supported execution types, brake attachments, pump spacer options, and overload protection:
+                                Full-range structural configuration guide for Flender N-EUPEX and N-EUPEX DS flexible pin and bush couplings. Review supported execution types, brake attachments, pump spacer options, and overload protection:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -252,34 +379,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>N-EUPEX Type A</strong> (Three-Part Fail-Safe)[cite: 22]</td>
-                                        <td>Size 110 to Size 710 (17 Sizes)[cite: 22]</td>
-                                        <td>380 Nm - 85,000 Nm[cite: 22]</td>
-                                        <td><strong>Easy Maintenance</strong> (Bushes replaced without unbolting motor)[cite: 22]</td>
+                                        <td><strong>N-EUPEX Type A</strong> (Three-Part Fail-Safe)</td>
+                                        <td>Size 110 to Size 710 (17 Sizes)</td>
+                                        <td>380 Nm - 85,000 Nm</td>
+                                        <td><strong>Easy Maintenance</strong> (Bushes replaced without unbolting motor)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>N-EUPEX Type B</strong> (Two-Part Fail-Safe)[cite: 22]</td>
-                                        <td>Size 58 to Size 710 (21 Sizes)[cite: 22]</td>
-                                        <td>19 Nm - 85,000 Nm[cite: 22]</td>
-                                        <td><strong>Compact Standard</strong> (Shortest DBSE for space savings)[cite: 22]</td>
+                                        <td><strong>N-EUPEX Type B</strong> (Two-Part Fail-Safe)</td>
+                                        <td>Size 58 to Size 710 (21 Sizes)</td>
+                                        <td>19 Nm - 85,000 Nm</td>
+                                        <td><strong>Compact Standard</strong> (Shortest DBSE for space savings)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>N-EUPEX Type D / E</strong> (Brake Disc / Drum)[cite: 22]</td>
-                                        <td>Size 80 to Size 710 (17 Sizes)[cite: 22]</td>
-                                        <td>60 Nm - 85,000 Nm[cite: 22]</td>
-                                        <td><strong>Brake Integration</strong> (Attached brake disc or drum for hoists)[cite: 22]</td>
+                                        <td><strong>N-EUPEX Type D / E</strong> (Brake Disc / Drum)</td>
+                                        <td>Size 80 to Size 710 (17 Sizes)</td>
+                                        <td>60 Nm - 85,000 Nm</td>
+                                        <td><strong>Brake Integration</strong> (Attached brake disc or drum for hoists)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>N-EUPEX Type H / P</strong> (Pump Spacer Sleeves)[cite: 22]</td>
-                                        <td>Size 110 to Size 315 (10 Sizes)[cite: 22]</td>
-                                        <td>380 Nm - 15,000 Nm[cite: 22]</td>
-                                        <td><strong>ANSI/ISO Pump Spacer</strong> (Allows pump seal maintenance)[cite: 22]</td>
+                                        <td><strong>N-EUPEX Type H / P</strong> (Pump Spacer Sleeves)</td>
+                                        <td>Size 110 to Size 315 (10 Sizes)</td>
+                                        <td>380 Nm - 15,000 Nm</td>
+                                        <td><strong>ANSI/ISO Pump Spacer</strong> (Allows pump seal maintenance)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>N-EUPEX DS Series</strong> (Non-Fail-Safe)[cite: 22]</td>
-                                        <td>Size 68 to Size 250 (11 Sizes)[cite: 22]</td>
-                                        <td>34 Nm - 8,000 Nm[cite: 22]</td>
-                                        <td><strong>Non-Fail-Safe</strong> (Isolates motor upon elastomer breakdown)[cite: 22]</td>
+                                        <td><strong>N-EUPEX DS Series</strong> (Non-Fail-Safe)</td>
+                                        <td>Size 68 to Size 250 (11 Sizes)</td>
+                                        <td>34 Nm - 8,000 Nm</td>
+                                        <td><strong>Non-Fail-Safe</strong> (Isolates motor upon elastomer breakdown)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -287,7 +414,7 @@
                             <!-- Legacy Coupling Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Pin Coupling Replacement & N-EUPEX Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Worn EUPEX or non-standard flexible pin couplings installed on pumps, fans, and gearboxes can be directly replaced with current Flender N-EUPEX couplings[cite: 22]. Refer to the replacement mapping below for 1-to-1 retrofitting:
+                                Worn EUPEX or non-standard flexible pin couplings installed on pumps, fans, and gearboxes can be directly replaced with current Flender N-EUPEX couplings. Refer to the replacement mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -302,39 +429,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Legacy EUPEX Size 160 Type A</strong>[cite: 22]</td>
-                                        <td>Pin & Bush Elastomer[cite: 22]</td>
-                                        <td><strong>N-EUPEX Type A 160</strong> <span class="upgrade-badge">Current Standard</span>[cite: 22]</td>
-                                        <td>1,050 Nm[cite: 22]</td>
-                                        <td>Direct 1-to-1 hub diameter & bolt pattern match. Uses standard N-EUPEX packets[cite: 22].</td>
+                                        <td><strong>Legacy EUPEX Size 160 Type A</strong></td>
+                                        <td>Pin & Bush Elastomer</td>
+                                        <td><strong>N-EUPEX Type A 160</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>1,050 Nm</td>
+                                        <td>Direct 1-to-1 hub diameter & bolt pattern match. Uses standard N-EUPEX packets.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Legacy EUPEX Size 160 Type B</strong>[cite: 22]</td>
-                                        <td>Pin & Bush Elastomer[cite: 22]</td>
-                                        <td><strong>N-EUPEX Type B 160</strong> <span class="upgrade-badge">Current Standard</span>[cite: 22]</td>
-                                        <td>1,050 Nm[cite: 22]</td>
-                                        <td>Two-part compact design. Identical shaft insertion depth[cite: 22].</td>
+                                        <td><strong>Legacy EUPEX Size 160 Type B</strong></td>
+                                        <td>Pin & Bush Elastomer</td>
+                                        <td><strong>N-EUPEX Type B 160</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>1,050 Nm</td>
+                                        <td>Two-part compact design. Identical shaft insertion depth.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Standard Jaw / Spider Couplings</strong>[cite: 22]</td>
-                                        <td>Elastomer Spider[cite: 22]</td>
-                                        <td><strong>N-EUPEX Type B 110 / 140 / 160</strong> <span class="upgrade-badge">Heavy Duty</span>[cite: 22]</td>
-                                        <td>380 Nm - 1,050 Nm[cite: 22]</td>
-                                        <td>Replaces fragile spiders with durable NBR multi-bushes[cite: 22].</td>
+                                        <td><strong>Standard Jaw / Spider Couplings</strong></td>
+                                        <td>Elastomer Spider</td>
+                                        <td><strong>N-EUPEX Type B 110 / 140 / 160</strong> <span class="upgrade-badge">Heavy Duty</span></td>
+                                        <td>380 Nm - 1,050 Nm</td>
+                                        <td>Replaces fragile spiders with durable NBR multi-bushes.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ISO / ANSI Process Pump Couplings</strong>[cite: 22]</td>
-                                        <td>Pin & Bush Spacer[cite: 22]</td>
-                                        <td><strong>N-EUPEX Type H / Type P Spacer</strong> <span class="upgrade-badge">Pump Duty</span>[cite: 22]</td>
-                                        <td>380 Nm - 15,000 Nm[cite: 22]</td>
-                                        <td>Standard DBSE spacer lengths (100mm, 140mm, 180mm, 250mm)[cite: 22].</td>
+                                        <td><strong>ISO / ANSI Process Pump Couplings</strong></td>
+                                        <td>Pin & Bush Spacer</td>
+                                        <td><strong>N-EUPEX Type H / Type P Spacer</strong> <span class="upgrade-badge">Pump Duty</span></td>
+                                        <td>380 Nm - 15,000 Nm</td>
+                                        <td>Standard DBSE spacer lengths (100mm, 140mm, 180mm, 250mm).</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Overload Isolation Applications</strong>[cite: 22]</td>
-                                        <td>Fail-Safe Bushing[cite: 22]</td>
-                                        <td><strong>N-EUPEX DS Type A / Type B</strong> <span class="upgrade-badge">Non-Fail-Safe</span>[cite: 22]</td>
-                                        <td>34 Nm - 8,000 Nm[cite: 22]</td>
-                                        <td>Breaks mechanical link upon element destruction to protect machinery[cite: 22].</td>
+                                        <td><strong>Overload Isolation Applications</strong></td>
+                                        <td>Fail-Safe Bushing</td>
+                                        <td><strong>N-EUPEX DS Type A / Type B</strong> <span class="upgrade-badge">Non-Fail-Safe</span></td>
+                                        <td>34 Nm - 8,000 Nm</td>
+                                        <td>Breaks mechanical link upon element destruction to protect machinery.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -342,34 +469,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender N-EUPEX and N-EUPEX DS coupling family</strong>[cite: 22]. Whether your drive train requires a three-part easy-maintenance coupling (<strong>N-EUPEX Type A 110 to 710</strong>)[cite: 22], a compact two-part coupling (<strong>Type B 58 to 710</strong>)[cite: 22], a brake disc or drum execution (<strong>Type D / Type E</strong>)[cite: 22], pump spacer sleeves (<strong>Type H / Type P</strong>)[cite: 22], or non-fail-safe isolation couplings (<strong>N-EUPEX DS</strong>)[cite: 22], all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles[cite: 22].
+                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender N-EUPEX and N-EUPEX DS coupling family</strong>. Whether your drive train requires a three-part easy-maintenance coupling (<strong>N-EUPEX Type A 110 to 710</strong>), a compact two-part coupling (<strong>Type B 58 to 710</strong>), a brake disc or drum execution (<strong>Type D / Type E</strong>), pump spacer sleeves (<strong>Type H / Type P</strong>), or non-fail-safe isolation couplings (<strong>N-EUPEX DS</strong>), all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles.
                                 <br><br>
-                                When servicing existing installations featuring worn elastomer bushes, we stock genuine <strong>Flender N-EUPEX flexible packets</strong> in standard NBR 80 Shore A, high-load NBR 90 Shore A, and high-temperature TPU grades[cite: 22]. Simply supply us with your coupling size, bore diameters, and operating parameters, and our engineering team will deliver a 100% compliant replacement specification and proposal[cite: 22].
+                                When servicing existing installations featuring worn elastomer bushes, we stock genuine <strong>Flender N-EUPEX flexible packets</strong> in standard NBR 80 Shore A, high-load NBR 90 Shore A, and high-temperature TPU grades. Simply supply us with your coupling size, bore diameters, and operating parameters, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>N-EUPEX Type A 110[cite: 22]</li>
-                                <li>N-EUPEX Type A 140[cite: 22]</li>
-                                <li>N-EUPEX Type A 160[cite: 22]</li>
-                                <li>N-EUPEX Type A 180[cite: 22]</li>
-                                <li>N-EUPEX Type A 200[cite: 22]</li>
-                                <li>N-EUPEX Type A 225[cite: 22]</li>
-                                <li>N-EUPEX Type B 80[cite: 22]</li>
-                                <li>N-EUPEX Type B 95[cite: 22]</li>
-                                <li>N-EUPEX Type B 110[cite: 22]</li>
-                                <li>N-EUPEX Type B 140[cite: 22]</li>
-                                <li>N-EUPEX Type B 160[cite: 22]</li>
-                                <li>N-EUPEX Type B 200[cite: 22]</li>
-                                <li>N-EUPEX Type D 160 (Brake Disc)[cite: 22]</li>
-                                <li>N-EUPEX Type E 160 (Brake Drum)[cite: 22]</li>
-                                <li>N-EUPEX Type H 140 (Pump Spacer)[cite: 22]</li>
-                                <li>N-EUPEX Type P 160 (Pump Sleeve)[cite: 22]</li>
-                                <li>N-EUPEX DS Type A 160[cite: 22]</li>
-                                <li>N-EUPEX Packets Size 160 (NBR 80)[cite: 22]</li>
-                                <li>N-EUPEX Packets Size 200 (NBR 80)[cite: 22]</li>
-                                <li>N-EUPEX TPU High-Temp Packets[cite: 22]</li>
+                                <li>N-EUPEX Type A 110</li>
+                                <li>N-EUPEX Type A 140</li>
+                                <li>N-EUPEX Type A 160</li>
+                                <li>N-EUPEX Type A 180</li>
+                                <li>N-EUPEX Type A 200</li>
+                                <li>N-EUPEX Type A 225</li>
+                                <li>N-EUPEX Type B 80</li>
+                                <li>N-EUPEX Type B 95</li>
+                                <li>N-EUPEX Type B 110</li>
+                                <li>N-EUPEX Type B 140</li>
+                                <li>N-EUPEX Type B 160</li>
+                                <li>N-EUPEX Type B 200</li>
+                                <li>N-EUPEX Type D 160 (Brake Disc)</li>
+                                <li>N-EUPEX Type E 160 (Brake Drum)</li>
+                                <li>N-EUPEX Type H 140 (Pump Spacer)</li>
+                                <li>N-EUPEX Type P 160 (Pump Sleeve)</li>
+                                <li>N-EUPEX DS Type A 160</li>
+                                <li>N-EUPEX Packets Size 160 (NBR 80)</li>
+                                <li>N-EUPEX Packets Size 200 (NBR 80)</li>
+                                <li>N-EUPEX TPU High-Temp Packets</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -379,11 +506,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender N-EUPEX Type A 160</strong>?[cite: 22]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender N-EUPEX Type A 160</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 22]</li>
-                            <li>Global Express Shipping[cite: 22]</li>
-                            <li>Custom Bore & Keyway Machining Available[cite: 22]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Custom Bore & Keyway Machining Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
