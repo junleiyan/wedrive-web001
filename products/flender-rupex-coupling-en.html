@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/flender-rupex-coupling-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-rupex-coupling-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-rupex-coupling-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-rupex-coupling-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender RUPEX RWN 360 Flexible Pin Coupling | Technical Specs & Selection Guide" />
@@ -53,17 +65,17 @@
         "RUPEX Type RWN", "RUPEX Type RWS", "RUPEX Type RWB", "RUPEX Type RBS", "RUPEX Type RWT", "RUPEX Type RWD"
       ],
       "description": "Flender RUPEX shock-damping flexible pin and bush couplings designed for high torque industrial power transmission up to 1,300,000 Nm. Features conical buffer pins, fail-safe operation, and heavy-duty steel or cast iron execution.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-rupex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-rupex-coupling-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -160,7 +287,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -184,43 +311,43 @@
                     <!-- Main Specs -->
                     <div class="product-main">
                         <h1>Flender RUPEX RWN 360 Flexible Pin & Bush Coupling</h1>
-                        <div class="model-subtitle">Brand: Flender GmbH | Series: RUPEX Heavy-Duty Shock-Damping Couplings (Size 105 to 2000)[cite: 24]</div>
+                        <div class="model-subtitle">Brand: Flender GmbH | Series: RUPEX Heavy-Duty Shock-Damping Couplings (Size 105 to 2000)</div>
                         
-                        <p>The <strong>Flender RUPEX RWN 360</strong> is a heavy-duty, shock-damping flexible pin and bush coupling engineered for demanding industrial drive trains requiring high torque capacity, fail-safe reliability, and impact load absorption[cite: 24]. Featuring a fail-safe design with conical buffer pins mounted in spherical flexible elastomer bushes[cite: 24], the RUPEX RWN 360 delivers a nominal torque capacity of 13,200 Nm (peak torque up to 33,000 Nm)[cite: 24]. Covering 25 frame sizes from size 105 to 2000 (200 Nm to 1,300,000 Nm)[cite: 24], RUPEX couplings feature cast iron/steel standard designs (RWN), high-speed all-steel executions (RWS), integrated brake discs (RWB/RBS), brake drums (RWD), and shear-pin overload protection (RWT)[cite: 24]. They are extensively specified across heavy cranes, cement ball mills, mine hoists, bucket wheel excavators, crushers, and marine winch drives[cite: 24].</p>
+                        <p>The <strong>Flender RUPEX RWN 360</strong> is a heavy-duty, shock-damping flexible pin and bush coupling engineered for demanding industrial drive trains requiring high torque capacity, fail-safe reliability, and impact load absorption. Featuring a fail-safe design with conical buffer pins mounted in spherical flexible elastomer bushes, the RUPEX RWN 360 delivers a nominal torque capacity of 13,200 Nm (peak torque up to 33,000 Nm). Covering 25 frame sizes from size 105 to 2000 (200 Nm to 1,300,000 Nm), RUPEX couplings feature cast iron/steel standard designs (RWN), high-speed all-steel executions (RWS), integrated brake discs (RWB/RBS), brake drums (RWD), and shear-pin overload protection (RWT). They are extensively specified across heavy cranes, cement ball mills, mine hoists, bucket wheel excavators, crushers, and marine winch drives.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>RUPEX RWN 360 (Type RWN, Size 360 Heavy Duty)[cite: 24]</td>
+                                <td>RUPEX RWN 360 (Type RWN, Size 360 Heavy Duty)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 24]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Structural Execution</th>
-                                <td>Type RWN (Cast iron / steel standard pin and bush design)[cite: 24]</td>
+                                <td>Type RWN (Cast iron / steel standard pin and bush design)</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>13,200 Nm (Size 360) / 200 Nm to 1,300,000 Nm (Full Series Range)[cite: 24]</td>
+                                <td>13,200 Nm (Size 360) / 200 Nm to 1,300,000 Nm (Full Series Range)</td>
                             </tr>
                             <tr>
                                 <th>Buffer Pin Elements</th>
-                                <td>Ground conical steel pins with spherical NBR 80 Shore A or TPU flexible bushes[cite: 24]</td>
+                                <td>Ground conical steel pins with spherical NBR 80 Shore A or TPU flexible bushes</td>
                             </tr>
                             <tr>
                                 <th>Operating Temperature</th>
-                                <td>-50°C to +100°C (Depending on elastomer grade selected)[cite: 24]</td>
+                                <td>-50°C to +100°C (Depending on elastomer grade selected)</td>
                             </tr>
                             <tr>
                                 <th>ATEX Certification</th>
-                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)[cite: 24]</td>
+                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)</td>
                             </tr>
                             <tr>
                                 <th>Overload Behavior</th>
-                                <td>Fail-safe operation (Transmits torque safely under extreme overload)[cite: 24]</td>
+                                <td>Fail-safe operation (Transmits torque safely under extreme overload)</td>
                             </tr>
                         </table>
 
@@ -228,8 +355,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender RUPEX Pin and Bush Couplings Catalog FLON-101 & Operating Manual (PDF)</a>[cite: 24]</li>
-                                <li><a href="#cad-drawing">RUPEX RWN 360 2D/3D CAD Drawing & Custom Bore Request</a>[cite: 24]</li>
+                                <li><a href="#pdf-manual">Flender RUPEX Pin and Bush Couplings Catalog FLON-101 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">RUPEX RWN 360 2D/3D CAD Drawing & Custom Bore Request</a></li>
                             </ul>
                         </div>
 
@@ -237,7 +364,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender RUPEX Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender RUPEX heavy-duty flexible pin and bush couplings[cite: 24]. Review supported execution types, brake attachments, high-speed steel designs, and overload protection:
+                                Full-range structural configuration guide for Flender RUPEX heavy-duty flexible pin and bush couplings. Review supported execution types, brake attachments, high-speed steel designs, and overload protection:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -252,34 +379,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>RUPEX Type RWN</strong> (Standard Cast Iron/Steel)[cite: 24]</td>
-                                        <td>Size 105 to Size 1000 (19 Sizes)[cite: 24]</td>
-                                        <td>200 Nm - 240,000 Nm[cite: 24]</td>
-                                        <td><strong>Standard Heavy Duty</strong> (Universal industrial drives)[cite: 24]</td>
+                                        <td><strong>RUPEX Type RWN</strong> (Standard Cast Iron/Steel)</td>
+                                        <td>Size 105 to Size 1000 (19 Sizes)</td>
+                                        <td>200 Nm - 240,000 Nm</td>
+                                        <td><strong>Standard Heavy Duty</strong> (Universal industrial drives)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>RUPEX Type RWS</strong> (All-Steel High-Speed)[cite: 24]</td>
-                                        <td>Size 144 to Size 2000 (23 Sizes)[cite: 24]</td>
-                                        <td>1,000 Nm - 1,300,000 Nm[cite: 24]</td>
-                                        <td><strong>High-Speed Steel</strong> (Turbines, mills & heavy hoists)[cite: 24]</td>
+                                        <td><strong>RUPEX Type RWS</strong> (All-Steel High-Speed)</td>
+                                        <td>Size 144 to Size 2000 (23 Sizes)</td>
+                                        <td>1,000 Nm - 1,300,000 Nm</td>
+                                        <td><strong>High-Speed Steel</strong> (Turbines, mills & heavy hoists)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>RUPEX Type RWB / RBS</strong> (With Brake Disc)[cite: 24]</td>
-                                        <td>Size 160 to Size 1000 (16 Sizes)[cite: 24]</td>
-                                        <td>1,600 Nm - 240,000 Nm[cite: 24]</td>
-                                        <td><strong>Brake Disc Integration</strong> (Crane hoist & winch brakes)[cite: 24]</td>
+                                        <td><strong>RUPEX Type RWB / RBS</strong> (With Brake Disc)</td>
+                                        <td>Size 160 to Size 1000 (16 Sizes)</td>
+                                        <td>1,600 Nm - 240,000 Nm</td>
+                                        <td><strong>Brake Disc Integration</strong> (Crane hoist & winch brakes)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>RUPEX Type RWD</strong> (With Brake Drum)[cite: 24]</td>
-                                        <td>Size 144 to Size 630 (13 Sizes)[cite: 24]</td>
-                                        <td>1,000 Nm - 63,000 Nm[cite: 24]</td>
-                                        <td><strong>Brake Drum Integration</strong> (Shoe brake systems)[cite: 24]</td>
+                                        <td><strong>RUPEX Type RWD</strong> (With Brake Drum)</td>
+                                        <td>Size 144 to Size 630 (13 Sizes)</td>
+                                        <td>1,000 Nm - 63,000 Nm</td>
+                                        <td><strong>Brake Drum Integration</strong> (Shoe brake systems)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>RUPEX Type RWT</strong> (Shear Pin Protection)[cite: 24]</td>
-                                        <td>Size 198 to Size 800 (13 Sizes)[cite: 24]</td>
-                                        <td>2,700 Nm - 160,000 Nm[cite: 24]</td>
-                                        <td><strong>Overload Shear Pin</strong> (Isolates drive upon jam)[cite: 24]</td>
+                                        <td><strong>RUPEX Type RWT</strong> (Shear Pin Protection)</td>
+                                        <td>Size 198 to Size 800 (13 Sizes)</td>
+                                        <td>2,700 Nm - 160,000 Nm</td>
+                                        <td><strong>Overload Shear Pin</strong> (Isolates drive upon jam)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -287,7 +414,7 @@
                             <!-- Legacy Coupling Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Pin Coupling Replacement & RUPEX Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Worn pin and bush couplings or gear couplings on heavy crushers, mills, and cranes can be directly replaced with Flender RUPEX heavy-duty couplings[cite: 24]. Refer to the replacement mapping below for 1-to-1 retrofitting:
+                                Worn pin and bush couplings or gear couplings on heavy crushers, mills, and cranes can be directly replaced with Flender RUPEX heavy-duty couplings. Refer to the replacement mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -302,39 +429,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Legacy RUPEX Size 360 Type RWN</strong>[cite: 24]</td>
-                                        <td>Pin & Bush Elastomer[cite: 24]</td>
-                                        <td><strong>RUPEX Type RWN 360</strong> <span class="upgrade-badge">Current Standard</span>[cite: 24]</td>
-                                        <td>13,200 Nm[cite: 24]</td>
-                                        <td>Direct 1-to-1 hub dimensions & pin pitch circle match[cite: 24].</td>
+                                        <td><strong>Legacy RUPEX Size 360 Type RWN</strong></td>
+                                        <td>Pin & Bush Elastomer</td>
+                                        <td><strong>RUPEX Type RWN 360</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>13,200 Nm</td>
+                                        <td>Direct 1-to-1 hub dimensions & pin pitch circle match.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Legacy Heavy Pin Couplings</strong>[cite: 24]</td>
-                                        <td>Straight Pin & Bush[cite: 24]</td>
-                                        <td><strong>RUPEX Type RWN 250 / 315 / 360</strong> <span class="upgrade-badge">Conical Pin</span>[cite: 24]</td>
-                                        <td>5,000 Nm - 13,200 Nm[cite: 24]</td>
-                                        <td>Conical buffer pins eliminate pin backlash and reduce wear[cite: 24].</td>
+                                        <td><strong>Legacy Heavy Pin Couplings</strong></td>
+                                        <td>Straight Pin & Bush</td>
+                                        <td><strong>RUPEX Type RWN 250 / 315 / 360</strong> <span class="upgrade-badge">Conical Pin</span></td>
+                                        <td>5,000 Nm - 13,200 Nm</td>
+                                        <td>Conical buffer pins eliminate pin backlash and reduce wear.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Rigid Flange / Gear Couplings</strong>[cite: 24]</td>
-                                        <td>Toothed Gear Sleeve[cite: 24]</td>
-                                        <td><strong>RUPEX Type RWS 360 / 450 / 560</strong> <span class="upgrade-badge">Shock-Damping</span>[cite: 24]</td>
-                                        <td>13,200 Nm - 50,000 Nm[cite: 24]</td>
-                                        <td>Damps heavy shock loads in ball mills and crushers[cite: 24].</td>
+                                        <td><strong>Rigid Flange / Gear Couplings</strong></td>
+                                        <td>Toothed Gear Sleeve</td>
+                                        <td><strong>RUPEX Type RWS 360 / 450 / 560</strong> <span class="upgrade-badge">Shock-Damping</span></td>
+                                        <td>13,200 Nm - 50,000 Nm</td>
+                                        <td>Damps heavy shock loads in ball mills and crushers.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy Mine Hoist Drives</strong>[cite: 24]</td>
-                                        <td>Pin Coupling with Brake[cite: 24]</td>
-                                        <td><strong>RUPEX Type RBS 360 / 450 + Brake</strong> <span class="upgrade-badge">Steel Brake</span>[cite: 24]</td>
-                                        <td>13,200 Nm - 25,000 Nm[cite: 24]</td>
-                                        <td>High-speed steel execution with integrated caliper brake disc[cite: 24].</td>
+                                        <td><strong>Heavy Mine Hoist Drives</strong></td>
+                                        <td>Pin Coupling with Brake</td>
+                                        <td><strong>RUPEX Type RBS 360 / 450 + Brake</strong> <span class="upgrade-badge">Steel Brake</span></td>
+                                        <td>13,200 Nm - 25,000 Nm</td>
+                                        <td>High-speed steel execution with integrated caliper brake disc.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Jammed Drive Overload Duty</strong>[cite: 24]</td>
-                                        <td>Standard Pin Coupling[cite: 24]</td>
-                                        <td><strong>RUPEX Type RWT 360 Shear Pin</strong> <span class="upgrade-badge">Overload Protection</span>[cite: 24]</td>
-                                        <td>13,200 Nm[cite: 24]</td>
-                                        <td>Precise shear pin calibration protects expensive speed reducers[cite: 24].</td>
+                                        <td><strong>Jammed Drive Overload Duty</strong></td>
+                                        <td>Standard Pin Coupling</td>
+                                        <td><strong>RUPEX Type RWT 360 Shear Pin</strong> <span class="upgrade-badge">Overload Protection</span></td>
+                                        <td>13,200 Nm</td>
+                                        <td>Precise shear pin calibration protects expensive speed reducers.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -342,34 +469,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender RUPEX heavy-duty flexible pin coupling family</strong>[cite: 24]. Whether your drivetrain requires a standard cast iron/steel coupling (<strong>RUPEX Type RWN 105 to 1000</strong>)[cite: 24], an all-steel high-speed unit (<strong>Type RWS 144 to 2000</strong>)[cite: 24], an integrated brake disc or drum design (<strong>Type RWB / RBS / RWD</strong>)[cite: 24], or shear-pin overload protection (<strong>Type RWT</strong>)[cite: 24], all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles[cite: 24].
+                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender RUPEX heavy-duty flexible pin coupling family</strong>. Whether your drivetrain requires a standard cast iron/steel coupling (<strong>RUPEX Type RWN 105 to 1000</strong>), an all-steel high-speed unit (<strong>Type RWS 144 to 2000</strong>), an integrated brake disc or drum design (<strong>Type RWB / RBS / RWD</strong>), or shear-pin overload protection (<strong>Type RWT</strong>), all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles.
                                 <br><br>
-                                When servicing existing installations featuring worn buffer pins, we stock genuine <strong>Flender RUPEX conical buffer pin assemblies</strong> and spherical bushes in standard NBR 80 Shore A and high-impact TPU materials[cite: 24]. Simply supply us with your coupling size, bore diameters, and operating parameters, and our engineering team will deliver a 100% compliant replacement specification and proposal[cite: 24].
+                                When servicing existing installations featuring worn buffer pins, we stock genuine <strong>Flender RUPEX conical buffer pin assemblies</strong> and spherical bushes in standard NBR 80 Shore A and high-impact TPU materials. Simply supply us with your coupling size, bore diameters, and operating parameters, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>RUPEX Type RWN 198[cite: 24]</li>
-                                <li>RUPEX Type RWN 224[cite: 24]</li>
-                                <li>RUPEX Type RWN 250[cite: 24]</li>
-                                <li>RUPEX Type RWN 280[cite: 24]</li>
-                                <li>RUPEX Type RWN 315[cite: 24]</li>
-                                <li>RUPEX Type RWN 360[cite: 24]</li>
-                                <li>RUPEX Type RWN 400[cite: 24]</li>
-                                <li>RUPEX Type RWN 450[cite: 24]</li>
-                                <li>RUPEX Type RWN 500[cite: 24]</li>
-                                <li>RUPEX Type RWS 360 (Steel)[cite: 24]</li>
-                                <li>RUPEX Type RWS 450 (Steel)[cite: 24]</li>
-                                <li>RUPEX Type RWS 560 (Steel)[cite: 24]</li>
-                                <li>RUPEX Type RWB 360 (Brake Disc)[cite: 24]</li>
-                                <li>RUPEX Type RBS 360 (Steel Brake)[cite: 24]</li>
-                                <li>RUPEX Type RWD 360 (Brake Drum)[cite: 24]</li>
-                                <li>RUPEX Type RWT 360 (Shear Pin)[cite: 24]</li>
-                                <li>RUPEX Buffer Pins Size 360 (NBR)[cite: 24]</li>
-                                <li>RUPEX Buffer Pins Size 400 (NBR)[cite: 24]</li>
-                                <li>RUPEX TPU High-Impact Bushes[cite: 24]</li>
-                                <li>RUPEX Reamed Fitted Pin Sets[cite: 24]</li>
+                                <li>RUPEX Type RWN 198</li>
+                                <li>RUPEX Type RWN 224</li>
+                                <li>RUPEX Type RWN 250</li>
+                                <li>RUPEX Type RWN 280</li>
+                                <li>RUPEX Type RWN 315</li>
+                                <li>RUPEX Type RWN 360</li>
+                                <li>RUPEX Type RWN 400</li>
+                                <li>RUPEX Type RWN 450</li>
+                                <li>RUPEX Type RWN 500</li>
+                                <li>RUPEX Type RWS 360 (Steel)</li>
+                                <li>RUPEX Type RWS 450 (Steel)</li>
+                                <li>RUPEX Type RWS 560 (Steel)</li>
+                                <li>RUPEX Type RWB 360 (Brake Disc)</li>
+                                <li>RUPEX Type RBS 360 (Steel Brake)</li>
+                                <li>RUPEX Type RWD 360 (Brake Drum)</li>
+                                <li>RUPEX Type RWT 360 (Shear Pin)</li>
+                                <li>RUPEX Buffer Pins Size 360 (NBR)</li>
+                                <li>RUPEX Buffer Pins Size 400 (NBR)</li>
+                                <li>RUPEX TPU High-Impact Bushes</li>
+                                <li>RUPEX Reamed Fitted Pin Sets</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -379,11 +506,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender RUPEX RWN 360</strong>?[cite: 24]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender RUPEX RWN 360</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 24]</li>
-                            <li>Global Express Shipping[cite: 24]</li>
-                            <li>Custom Bore & Keyway Machining Available[cite: 24]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Custom Bore & Keyway Machining Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
