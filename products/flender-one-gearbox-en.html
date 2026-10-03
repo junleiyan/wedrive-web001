@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/product/flender-one-gearbox-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/product/flender-one-gearbox-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/product/flender-one-gearbox-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/product/flender-one-gearbox-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender ONE H2SHN0096 Helical Gearbox | Technical Specs & FZG Replacement Guide" />
@@ -63,16 +75,16 @@
       ],
       "description": "Flender ONE next-generation industrial gear unit series offering tailor-made helical and bevel-helical designs with up to 50% reduced power losses, optimized thermal capacity, integrated AI sensor intelligence, and complete modular shaft/housing configurations.",
       "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -118,10 +130,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/product/flender-one-gearbox-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/product/flender-one-gearbox-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/product/flender-one-gearbox-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -169,7 +296,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -193,43 +320,43 @@
                     <!-- Main Specs -->
                     <div class="product-main">
                         <h1>Flender ONE H2SHN0096 Industrial Helical Gearbox</h1>
-                        <div class="model-subtitle">Brand: Flender GmbH | Series: Flender ONE (Single-Stage H1SHN / NH1 & Multi-Stage H..N / B..N)[cite: 23]</div>
+                        <div class="model-subtitle">Brand: Flender GmbH | Series: Flender ONE (Single-Stage H1SHN / NH1 & Multi-Stage H..N / B..N)</div>
                         
-                        <p>The <strong>Flender ONE H2SHN0096</strong> is a benchmark 2-stage parallel shaft helical industrial gearbox from Flender's next-generation <strong>Flender ONE</strong> platform, engineered to replace traditional FZG Size 7 gearboxes[cite: 23]. Utilizing the newly developed <strong>Metaperform® gearing</strong> and <strong>Perfect Sizing</strong> philosophy[cite: 23], Flender ONE achieves up to 50% lower friction power losses, a 35% larger surface cooling area, over 80% extended bearing service life (100,000+ hours), and up to 20% reduced oil consumption[cite: 23]. Every unit comes factory-equipped with the <strong>AIQ® Core sensor</strong> for real-time digital condition monitoring and predictive maintenance[cite: 23]. Flender ONE maintains identical mounting and shaft centerline dimensions as previous generations, ensuring seamless 1:1 drop-in replacement with higher power density and substantially lower operating expenses (OPEX)[cite: 23].</p>
+                        <p>The <strong>Flender ONE H2SHN0096</strong> is a benchmark 2-stage parallel shaft helical industrial gearbox from Flender's next-generation <strong>Flender ONE</strong> platform, engineered to replace traditional FZG Size 7 gearboxes. Utilizing the newly developed <strong>Metaperform® gearing</strong> and <strong>Perfect Sizing</strong> philosophy, Flender ONE achieves up to 50% lower friction power losses, a 35% larger surface cooling area, over 80% extended bearing service life (100,000+ hours), and up to 20% reduced oil consumption. Every unit comes factory-equipped with the <strong>AIQ® Core sensor</strong> for real-time digital condition monitoring and predictive maintenance. Flender ONE maintains identical mounting and shaft centerline dimensions as previous generations, ensuring seamless 1:1 drop-in replacement with higher power density and substantially lower operating expenses (OPEX).</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>H2SHN0096 (2-Stage Parallel Shaft, Size 0096 Flender ONE)[cite: 23]</td>
+                                <td>H2SHN0096 (2-Stage Parallel Shaft, Size 0096 Flender ONE)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 23]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Gearbox Design Types</th>
-                                <td>Single-Stage Helical (H1SHN), 2-Stage (H2SHN), 3-Stage (H3SHN), 2-Stage Bevel (B2SHN), 3-Stage Bevel (B3SHN)[cite: 23]</td>
+                                <td>Single-Stage Helical (H1SHN), 2-Stage (H2SHN), 3-Stage (H3SHN), 2-Stage Bevel (B2SHN), 3-Stage Bevel (B3SHN)</td>
                             </tr>
                             <tr>
                                 <th>Legacy Size Cross-Reference</th>
-                                <td>Direct 1:1 drop-in replacement for Flender FZG H2SH07 / H2DH07[cite: 23]</td>
+                                <td>Direct 1:1 drop-in replacement for Flender FZG H2SH07 / H2DH07</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>24.0 kNm (Size 0096) / 6.7 kNm to 153 kNm (Standard Matrix)[cite: 23]</td>
+                                <td>24.0 kNm (Size 0096) / 6.7 kNm to 153 kNm (Standard Matrix)</td>
                             </tr>
                             <tr>
                                 <th>Gearing Technology</th>
-                                <td>Metaperform® optimized tooth geometry with precision ratio matching[cite: 23]</td>
+                                <td>Metaperform® optimized tooth geometry with precision ratio matching</td>
                             </tr>
                             <tr>
                                 <th>Smart Intelligence</th>
-                                <td>AIQ® Core integrated sensor (Vibration, Temperature, Oil Quality, Torque)[cite: 23]</td>
+                                <td>AIQ® Core integrated sensor (Vibration, Temperature, Oil Quality, Torque)</td>
                             </tr>
                             <tr>
                                 <th>Efficiency & Thermal Upgrades</th>
-                                <td>Power losses reduced by up to 50%, thermal capacity increased by +30%[cite: 23]</td>
+                                <td>Power losses reduced by up to 50%, thermal capacity increased by +30%</td>
                             </tr>
                         </table>
 
@@ -237,8 +364,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender ONE Industrial Gear Units Product Brochure & Datasheets (PDF)[cite: 23]</a></li>
-                                <li><a href="#cad-drawing">Flender ONE H2SHN0096 3D CAD Model & Drop-in Replacement Request[cite: 23]</a></li>
+                                <li><a href="#pdf-manual">Flender ONE Industrial Gear Units Product Brochure & Datasheets (PDF)</a></li>
+                                <li><a href="#cad-drawing">Flender ONE H2SHN0096 3D CAD Model & Drop-in Replacement Request</a></li>
                             </ul>
                         </div>
 
@@ -246,7 +373,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender ONE Platform Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender ONE single-stage and multi-stage industrial gearboxes[cite: 23]. Review supported stage layouts, new size codes, and smart monitoring accessories:
+                                Full-range structural configuration guide for Flender ONE single-stage and multi-stage industrial gearboxes. Review supported stage layouts, new size codes, and smart monitoring accessories:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -261,34 +388,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>H1SHN / NH1</strong> (Single-Stage High Speed Helical)[cite: 23]</td>
-                                        <td>0026 to 0541 (11 Sizes)[cite: 23]</td>
-                                        <td>6.7 kNm - 153.0 kNm[cite: 23]</td>
-                                        <td><strong>AIQ® Core</strong> (Integrated Vibration/Temp Sensor)[cite: 23]</td>
+                                        <td><strong>H1SHN / NH1</strong> (Single-Stage High Speed Helical)</td>
+                                        <td>0026 to 0541 (11 Sizes)</td>
+                                        <td>6.7 kNm - 153.0 kNm</td>
+                                        <td><strong>AIQ® Core</strong> (Integrated Vibration/Temp Sensor)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>H2SHN / H3SHN / H4SHN</strong> (Multi-Stage Parallel Helical)[cite: 23]</td>
-                                        <td>0024 to 0541 (16 Sizes)[cite: 23]</td>
-                                        <td>6.7 kNm - 153.0 kNm[cite: 23]</td>
-                                        <td><strong>Metaperform®</strong> (50% Lower Friction Loss)[cite: 23]</td>
+                                        <td><strong>H2SHN / H3SHN / H4SHN</strong> (Multi-Stage Parallel Helical)</td>
+                                        <td>0024 to 0541 (16 Sizes)</td>
+                                        <td>6.7 kNm - 153.0 kNm</td>
+                                        <td><strong>Metaperform®</strong> (50% Lower Friction Loss)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>B2SHN / B3SHN / B4SHN</strong> (Multi-Stage Right-Angle Bevel)[cite: 23]</td>
-                                        <td>0042 to 0541 (15 Sizes)[cite: 23]</td>
-                                        <td>6.7 kNm - 153.0 kNm[cite: 23]</td>
-                                        <td><strong>Perfect Sizing</strong> (Tailor-made Ratios)[cite: 23]</td>
+                                        <td><strong>B2SHN / B3SHN / B4SHN</strong> (Multi-Stage Right-Angle Bevel)</td>
+                                        <td>0042 to 0541 (15 Sizes)</td>
+                                        <td>6.7 kNm - 153.0 kNm</td>
+                                        <td><strong>Perfect Sizing</strong> (Tailor-made Ratios)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Shrink Disc (DHN Series)</strong>[cite: 23]</td>
-                                        <td>0063 to 0312 (10 Sizes)[cite: 23]</td>
-                                        <td>12.0 kNm - 110.0 kNm[cite: 23]</td>
-                                        <td><strong>100,000h+</strong> (Extended Bearing Life)[cite: 23]</td>
+                                        <td><strong>Hollow Shaft Shrink Disc (DHN Series)</strong></td>
+                                        <td>0063 to 0312 (10 Sizes)</td>
+                                        <td>12.0 kNm - 110.0 kNm</td>
+                                        <td><strong>100,000h+</strong> (Extended Bearing Life)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Hollow Shaft Keyway (HHN Series)</strong>[cite: 23]</td>
-                                        <td>0096 to 0234 (4 Sizes)[cite: 23]</td>
-                                        <td>24.0 kNm - 75.0 kNm[cite: 23]</td>
-                                        <td><strong>-20% Oil</strong> (Reduced Oil Fill Volume)[cite: 23]</td>
+                                        <td><strong>Hollow Shaft Keyway (HHN Series)</strong></td>
+                                        <td>0096 to 0234 (4 Sizes)</td>
+                                        <td>24.0 kNm - 75.0 kNm</td>
+                                        <td><strong>-20% Oil</strong> (Reduced Oil Fill Volume)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -296,7 +423,7 @@
                             <!-- Legacy FZG to Flender ONE Replacement & Upgrade Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Flender FZG to Flender ONE Replacement Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Obsolete Flender FZG gearboxes installed on industrial production lines can be directly replaced with Flender ONE next-generation gear units[cite: 23]. Refer to the 1:1 dimensional replacement mapping below:
+                                Obsolete Flender FZG gearboxes installed on industrial production lines can be directly replaced with Flender ONE next-generation gear units. Refer to the 1:1 dimensional replacement mapping below:
                             </p>
 
                             <table class="upgrade-table">
@@ -311,39 +438,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>FZG Size 3 / Size 4</strong>[cite: 23]</td>
-                                        <td>H1SH03 / H2SH04[cite: 23]</td>
-                                        <td><strong>H1SHN0026 / H2SHN0042</strong> <span class="upgrade-badge">Flender ONE</span>[cite: 23]</td>
-                                        <td>6.7 - 12.0 kNm[cite: 23]</td>
-                                        <td>Direct 1:1 footprint & shaft match. 50% lower friction loss[cite: 23].</td>
+                                        <td><strong>FZG Size 3 / Size 4</strong></td>
+                                        <td>H1SH03 / H2SH04</td>
+                                        <td><strong>H1SHN0026 / H2SHN0042</strong> <span class="upgrade-badge">Flender ONE</span></td>
+                                        <td>6.7 - 12.0 kNm</td>
+                                        <td>Direct 1:1 footprint & shaft match. 50% lower friction loss.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>FZG Size 5 / Size 6</strong>[cite: 23]</td>
-                                        <td>H2SH05 / H2SH06[cite: 23]</td>
-                                        <td><strong>H2SHN0063 / H2SHN0070</strong> <span class="upgrade-badge">Flender ONE</span>[cite: 23]</td>
-                                        <td>15.0 - 18.0 kNm[cite: 23]</td>
-                                        <td>Identical shaft centerline height. 35% larger cooling area[cite: 23].</td>
+                                        <td><strong>FZG Size 5 / Size 6</strong></td>
+                                        <td>H2SH05 / H2SH06</td>
+                                        <td><strong>H2SHN0063 / H2SHN0070</strong> <span class="upgrade-badge">Flender ONE</span></td>
+                                        <td>15.0 - 18.0 kNm</td>
+                                        <td>Identical shaft centerline height. 35% larger cooling area.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>FZG Size 7 / Size 8</strong>[cite: 23]</td>
-                                        <td>H2SH07 / H2SH08[cite: 23]</td>
-                                        <td><strong>H2SHN0096 / H2SHN0104</strong> <span class="upgrade-badge">Flender ONE</span>[cite: 23]</td>
-                                        <td>24.0 - 30.0 kNm[cite: 23]</td>
-                                        <td>Drop-in replacement for Size 7. Factory AIQ® Core monitoring[cite: 23].</td>
+                                        <td><strong>FZG Size 7 / Size 8</strong></td>
+                                        <td>H2SH07 / H2SH08</td>
+                                        <td><strong>H2SHN0096 / H2SHN0104</strong> <span class="upgrade-badge">Flender ONE</span></td>
+                                        <td>24.0 - 30.0 kNm</td>
+                                        <td>Drop-in replacement for Size 7. Factory AIQ® Core monitoring.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>FZG Size 9 / Size 10</strong>[cite: 23]</td>
-                                        <td>H2SH09 / H2SH10[cite: 23]</td>
-                                        <td><strong>H2SHN0136 / H2SHN0151</strong> <span class="upgrade-badge">Flender ONE</span>[cite: 23]</td>
-                                        <td>42.0 - 48.0 kNm[cite: 23]</td>
-                                        <td>Preserves base bolt pattern. Bearing life extended to 100,000h+[cite: 23].</td>
+                                        <td><strong>FZG Size 9 / Size 10</strong></td>
+                                        <td>H2SH09 / H2SH10</td>
+                                        <td><strong>H2SHN0136 / H2SHN0151</strong> <span class="upgrade-badge">Flender ONE</span></td>
+                                        <td>42.0 - 48.0 kNm</td>
+                                        <td>Preserves base bolt pattern. Bearing life extended to 100,000h+.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>FZG Size 11 to Size 19</strong>[cite: 23]</td>
-                                        <td>H2SH11 to H2SH19[cite: 23]</td>
-                                        <td><strong>H2SHN0179 to H2SHN0541</strong> <span class="upgrade-badge">Flender ONE</span>[cite: 23]</td>
-                                        <td>60.0 - 153.0 kNm[cite: 23]</td>
-                                        <td>Heavy conveyor & mill replacement. Reduced oil volume requirement[cite: 23].</td>
+                                        <td><strong>FZG Size 11 to Size 19</strong></td>
+                                        <td>H2SH11 to H2SH19</td>
+                                        <td><strong>H2SHN0179 to H2SHN0541</strong> <span class="upgrade-badge">Flender ONE</span></td>
+                                        <td>60.0 - 153.0 kNm</td>
+                                        <td>Heavy conveyor & mill replacement. Reduced oil volume requirement.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -351,34 +478,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing complete engineering sourcing and technical replacement solutions for the entire <strong>Flender ONE next-generation industrial gearbox platform</strong>[cite: 23]. Whether your plant requires a single-stage high-speed helical unit (<strong>H1SHN / NH1</strong>)[cite: 23], multi-stage parallel shaft helical reducers (<strong>H2SHN / H3SHN / H4SHN</strong>)[cite: 23], multi-stage right-angle bevel-helical gearboxes (<strong>B2SHN / B3SHN / B4SHN</strong>)[cite: 23], shrink disc clamping (<strong>DHN Series</strong>)[cite: 23], or hollow shaft keyway executions (<strong>HHN Series</strong>)[cite: 23], all units feature Metaperform® precision gearing and factory-fitted AIQ® Core digital intelligence[cite: 23].
+                                We specialize in providing complete engineering sourcing and technical replacement solutions for the entire <strong>Flender ONE next-generation industrial gearbox platform</strong>. Whether your plant requires a single-stage high-speed helical unit (<strong>H1SHN / NH1</strong>), multi-stage parallel shaft helical reducers (<strong>H2SHN / H3SHN / H4SHN</strong>), multi-stage right-angle bevel-helical gearboxes (<strong>B2SHN / B3SHN / B4SHN</strong>), shrink disc clamping (<strong>DHN Series</strong>), or hollow shaft keyway executions (<strong>HHN Series</strong>), all units feature Metaperform® precision gearing and factory-fitted AIQ® Core digital intelligence.
                                 <br><br>
-                                When replacing an older <strong>Flender FZG H2SH07, H2SH09, H2SH11, or competitor industrial gearbox</strong>[cite: 23], upgrading to Flender ONE ensures 1:1 mechanical interchangeability without modifying foundation steelwork or drive shafts, while substantially lowering operating noise, thermal stress, and energy costs[cite: 23]. Simply supply us with your existing Flender serial number or nameplate data, and our engineering team will provide a 100% compliant replacement specification and proposal[cite: 23].
+                                When replacing an older <strong>Flender FZG H2SH07, H2SH09, H2SH11, or competitor industrial gearbox</strong>, upgrading to Flender ONE ensures 1:1 mechanical interchangeability without modifying foundation steelwork or drive shafts, while substantially lowering operating noise, thermal stress, and energy costs. Simply supply us with your existing Flender serial number or nameplate data, and our engineering team will provide a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>H1SHN0026 (6.7 kNm)[cite: 23]</li>
-                                <li>H1SHN0063 (15.0 kNm)[cite: 23]</li>
-                                <li>H1SHN0096 (24.0 kNm)[cite: 23]</li>
-                                <li>H1SHN0136 (42.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0042 (12.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0063 (15.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0096 (24.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0136 (42.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0179 (60.0 kNm)[cite: 23]</li>
-                                <li>H2SHN0234 (85.0 kNm)[cite: 23]</li>
-                                <li>H3SHN0096 (24.0 kNm)[cite: 23]</li>
-                                <li>H3SHN0136 (42.0 kNm)[cite: 23]</li>
-                                <li>B2SHN0096 (Right-Angle)[cite: 23]</li>
-                                <li>B2SHN0136 (Right-Angle)[cite: 23]</li>
-                                <li>B3SHN0096 (Right-Angle)[cite: 23]</li>
-                                <li>B3SHN0151 (Right-Angle)[cite: 23]</li>
-                                <li>H2DHN0096 (Shrink Disc)[cite: 23]</li>
-                                <li>H2HHN0096 (Keyway Hollow)[cite: 23]</li>
-                                <li>H2KHN0096 (Splined Hollow)[cite: 23]</li>
-                                <li>AIQ® Core Sensor Module[cite: 23]</li>
+                                <li>H1SHN0026 (6.7 kNm)</li>
+                                <li>H1SHN0063 (15.0 kNm)</li>
+                                <li>H1SHN0096 (24.0 kNm)</li>
+                                <li>H1SHN0136 (42.0 kNm)</li>
+                                <li>H2SHN0042 (12.0 kNm)</li>
+                                <li>H2SHN0063 (15.0 kNm)</li>
+                                <li>H2SHN0096 (24.0 kNm)</li>
+                                <li>H2SHN0136 (42.0 kNm)</li>
+                                <li>H2SHN0179 (60.0 kNm)</li>
+                                <li>H2SHN0234 (85.0 kNm)</li>
+                                <li>H3SHN0096 (24.0 kNm)</li>
+                                <li>H3SHN0136 (42.0 kNm)</li>
+                                <li>B2SHN0096 (Right-Angle)</li>
+                                <li>B2SHN0136 (Right-Angle)</li>
+                                <li>B3SHN0096 (Right-Angle)</li>
+                                <li>B3SHN0151 (Right-Angle)</li>
+                                <li>H2DHN0096 (Shrink Disc)</li>
+                                <li>H2HHN0096 (Keyway Hollow)</li>
+                                <li>H2KHN0096 (Splined Hollow)</li>
+                                <li>AIQ® Core Sensor Module</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -388,11 +515,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, drop-in replacement or best price for <strong>Flender ONE H2SHN0096</strong>?[cite: 23]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, drop-in replacement or best price for <strong>Flender ONE H2SHN0096</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 23]</li>
+                            <li>100% Original Flender Equipment</li>
                             <li>Global Express Shipping</li>
-                            <li>Technical Support & Replacement Cross-Reference[cite: 23]</li>
+                            <li>Technical Support & Replacement Cross-Reference</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
@@ -482,7 +609,7 @@
                     <div class="col-12">
                         <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
                         <div style="text-align: center; margin-bottom: 20px;">
-                          <a href="/products/flender-gearbox-products/" class="button alt">Back to Flender Products</a>
+                            <a href="/products/flender-gearbox-products/" class="button alt">Back to Flender Products</a>
                         </div>
                         
                         <div id="copyright" style="text-align: center;">
