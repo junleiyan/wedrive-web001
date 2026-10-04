@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/flender-zapex-coupling-en/">
     
-    <!-- Canonical English URL -->
+    <!-- Canonical URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/flender-zapex-coupling-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/flender-zapex-coupling-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/flender-zapex-coupling-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Flender ZAPEX ZNN 280 Heavy-Duty Gear Coupling | Technical Specs & Selection Guide" />
@@ -53,17 +65,17 @@
         "ZAPEX Type ZNN", "ZAPEX Type ZNA", "ZAPEX Type ZND", "ZAPEX Type ZNH", "ZAPEX Type ZWB", "ZAPEX Type ZWS", "ZAPEX Type ZWNV", "ZAPEX Type ZNNA"
       ],
       "description": "Flender ZAPEX high-capacity gear couplings designed for heavy industrial power transmission up to 7,200,000 Nm. Features curved-tooth gearing, high angular misalignment capability, and robust all-steel construction.",
-    "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/flender-zapex-coupling-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/flender-zapex-coupling-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -160,7 +287,7 @@
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -184,43 +311,43 @@
                     <!-- Main Specs -->
                     <div class="product-main">
                         <h1>Flender ZAPEX ZNN 280 Heavy-Duty Gear Coupling</h1>
-                        <div class="model-subtitle">Brand: Flender GmbH | Series: ZAPEX ZI & ZW Double-Gimbal Gear Couplings (Size 83 to 1000)[cite: 20]</div>
+                        <div class="model-subtitle">Brand: Flender GmbH | Series: ZAPEX ZI & ZW Double-Gimbal Gear Couplings (Size 83 to 1000)</div>
                         
-                        <p>The <strong>Flender ZAPEX ZNN 280</strong> is a heavy-duty double-gimbal curved-tooth gear coupling engineered for ultra-high torque transmission in compact industrial drivetrains[cite: 20]. Featuring precision-machined crowned teeth[cite: 20], the ZAPEX ZNN 280 delivers a nominal torque rating of 62,000 Nm (peak capacity up to 140,000 Nm) while accommodating angular, parallel, and axial shaft misalignments with minimal restoring forces[cite: 20]. Covering 20 frame sizes from size 83 to 1000 (1,020 Nm to 7,200,000 Nm)[cite: 20], ZAPEX couplings feature standard double-engagement designs (ZNN), extended axial float units (ZNA), single-engagement cardan drives (ZNNA), attached brake discs (ZWB/ZNNB), high-speed steel designs (ZWS), and vertical executions (ZWNV)[cite: 20]. They are heavily specified in steel rolling mills, continuous casting lines, crane hoists, cement kilns, marine propulsion, and mining winches[cite: 20].</p>
+                        <p>The <strong>Flender ZAPEX ZNN 280</strong> is a heavy-duty double-gimbal curved-tooth gear coupling engineered for ultra-high torque transmission in compact industrial drivetrains. Featuring precision-machined crowned teeth, the ZAPEX ZNN 280 delivers a nominal torque rating of 62,000 Nm (peak capacity up to 140,000 Nm) while accommodating angular, parallel, and axial shaft misalignments with minimal restoring forces. Covering 20 frame sizes from size 83 to 1000 (1,020 Nm to 7,200,000 Nm), ZAPEX couplings feature standard double-engagement designs (ZNN), extended axial float units (ZNA), single-engagement cardan drives (ZNNA), attached brake discs (ZWB/ZNNB), high-speed steel designs (ZWS), and vertical executions (ZWNV). They are heavily specified in steel rolling mills, continuous casting lines, crane hoists, cement kilns, marine propulsion, and mining winches.</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Model / Part Number</th>
-                                <td>ZAPEX ZNN 280 (Type ZNN, Size 280 Double-Engagement)[cite: 20]</td>
+                                <td>ZAPEX ZNN 280 (Type ZNN, Size 280 Double-Engagement)</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Flender GmbH[cite: 20]</td>
+                                <td>Flender GmbH</td>
                             </tr>
                             <tr>
                                 <th>Structural Execution</th>
-                                <td>Type ZNN (Standard double-engagement all-steel gear coupling)[cite: 20]</td>
+                                <td>Type ZNN (Standard double-engagement all-steel gear coupling)</td>
                             </tr>
                             <tr>
                                 <th>Nominal Torque Output</th>
-                                <td>62,000 Nm (Size 280) / 1,020 Nm to 7,200,000 Nm (Full Series Range)[cite: 20]</td>
+                                <td>62,000 Nm (Size 280) / 1,020 Nm to 7,200,000 Nm (Full Series Range)</td>
                             </tr>
                             <tr>
                                 <th>Misalignment Capability</th>
-                                <td>Angular misalignment up to ±1.5° per gearing half[cite: 20]</td>
+                                <td>Angular misalignment up to ±1.5° per gearing half</td>
                             </tr>
                             <tr>
                                 <th>Lubrication & Seals</th>
-                                <td>High-performance synthetic grease / oil with DUO double radial shaft seals[cite: 20]</td>
+                                <td>High-performance synthetic grease / oil with DUO double radial shaft seals</td>
                             </tr>
                             <tr>
                                 <th>ATEX Certification</th>
-                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)[cite: 20]</td>
+                                <td>Certified according to 2014/34/EU Directive for explosive atmospheres (Zone 1/21 & 2/22)</td>
                             </tr>
                             <tr>
                                 <th>Construction Material</th>
-                                <td>High-tensile forged alloy steel sleeve and crowned tooth hubs[cite: 20]</td>
+                                <td>High-tensile forged alloy steel sleeve and crowned tooth hubs</td>
                             </tr>
                         </table>
 
@@ -228,8 +355,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Flender ZAPEX Gear Couplings Catalog FLON-101 & Operating Manual (PDF)</a>[cite: 20]</li>
-                                <li><a href="#cad-drawing">ZAPEX ZNN 280 2D/3D CAD Drawing & Custom Bore Request</a>[cite: 20]</li>
+                                <li><a href="#pdf-manual">Flender ZAPEX Gear Couplings Catalog FLON-101 & Operating Manual (PDF)</a></li>
+                                <li><a href="#cad-drawing">ZAPEX ZNN 280 2D/3D CAD Drawing & Custom Bore Request</a></li>
                             </ul>
                         </div>
 
@@ -237,7 +364,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Flender ZAPEX Series Modular Architecture Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Full-range structural configuration guide for Flender ZAPEX heavy-duty curved-tooth gear couplings[cite: 20]. Review supported execution types, brake disc attachments, high-speed steel designs, and vertical layouts:
+                                Full-range structural configuration guide for Flender ZAPEX heavy-duty curved-tooth gear couplings. Review supported execution types, brake disc attachments, high-speed steel designs, and vertical layouts:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -252,34 +379,34 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>ZAPEX Type ZNN</strong> (Standard Double-Engagement)[cite: 20]</td>
-                                        <td>Size 83 to Size 1000 (20 Sizes)[cite: 20]</td>
-                                        <td>1,020 Nm - 7,200,000 Nm[cite: 20]</td>
-                                        <td><strong>Universal High Torque</strong> (Mill stands & heavy drives)[cite: 20]</td>
+                                        <td><strong>ZAPEX Type ZNN</strong> (Standard Double-Engagement)</td>
+                                        <td>Size 83 to Size 1000 (20 Sizes)</td>
+                                        <td>1,020 Nm - 7,200,000 Nm</td>
+                                        <td><strong>Universal High Torque</strong> (Mill stands & heavy drives)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ZAPEX Type ZNA</strong> (Extended Shaft Distance)[cite: 20]</td>
-                                        <td>Size 83 to Size 800 (18 Sizes)[cite: 20]</td>
-                                        <td>1,020 Nm - 3,500,000 Nm[cite: 20]</td>
-                                        <td><strong>Extended DBSE</strong> (Accommodates large shaft spacing)[cite: 20]</td>
+                                        <td><strong>ZAPEX Type ZNA</strong> (Extended Shaft Distance)</td>
+                                        <td>Size 83 to Size 800 (18 Sizes)</td>
+                                        <td>1,020 Nm - 3,500,000 Nm</td>
+                                        <td><strong>Extended DBSE</strong> (Accommodates large shaft spacing)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ZAPEX Type ZWB / ZNNB</strong> (With Brake Disc)[cite: 20]</td>
-                                        <td>Size 107 to Size 530 (13 Sizes)[cite: 20]</td>
-                                        <td>2,000 Nm - 350,000 Nm[cite: 20]</td>
-                                        <td><strong>Brake Integration</strong> (Heavy crane hoist & winch brakes)[cite: 20]</td>
+                                        <td><strong>ZAPEX Type ZWB / ZNNB</strong> (With Brake Disc)</td>
+                                        <td>Size 107 to Size 530 (13 Sizes)</td>
+                                        <td>2,000 Nm - 350,000 Nm</td>
+                                        <td><strong>Brake Integration</strong> (Heavy crane hoist & winch brakes)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ZAPEX Type ZWS / ZWNV</strong> (High Speed & Vertical)[cite: 20]</td>
-                                        <td>Size 83 to Size 530 (14 Sizes)[cite: 20]</td>
-                                        <td>1,020 Nm - 350,000 Nm[cite: 20]</td>
-                                        <td><strong>High Speed / Vertical</strong> (Pump shafts & turbomachinery)[cite: 20]</td>
+                                        <td><strong>ZAPEX Type ZWS / ZWNV</strong> (High Speed & Vertical)</td>
+                                        <td>Size 83 to Size 530 (14 Sizes)</td>
+                                        <td>1,020 Nm - 350,000 Nm</td>
+                                        <td><strong>High Speed / Vertical</strong> (Pump shafts & turbomachinery)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>ZAPEX Type ZND / ZNH</strong> (Intermediate Spacers)[cite: 20]</td>
-                                        <td>Size 107 to Size 400 (10 Sizes)[cite: 20]</td>
-                                        <td>2,000 Nm - 160,000 Nm[cite: 20]</td>
-                                        <td><strong>Spacer Sleeves</strong> (Eases motor / pump disassembly)[cite: 20]</td>
+                                        <td><strong>ZAPEX Type ZND / ZNH</strong> (Intermediate Spacers)</td>
+                                        <td>Size 107 to Size 400 (10 Sizes)</td>
+                                        <td>2,000 Nm - 160,000 Nm</td>
+                                        <td><strong>Spacer Sleeves</strong> (Eases motor / pump disassembly)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -287,7 +414,7 @@
                             <!-- Legacy Coupling Replacement & Cross-Reference Section -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Legacy Gear Coupling Replacement & ZAPEX Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Worn toothed gear couplings installed on rolling mills, cement kilns, and crane hoists can be directly replaced with Flender ZAPEX high-capacity couplings[cite: 20]. Refer to the replacement mapping below for 1-to-1 retrofitting:
+                                Worn toothed gear couplings installed on rolling mills, cement kilns, and crane hoists can be directly replaced with Flender ZAPEX high-capacity couplings. Refer to the replacement mapping below for 1-to-1 retrofitting:
                             </p>
 
                             <table class="upgrade-table">
@@ -302,39 +429,39 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Legacy ZAPEX Size 280 Type ZNN</strong>[cite: 20]</td>
-                                        <td>Curved Gear Tooth[cite: 20]</td>
-                                        <td><strong>ZAPEX Type ZNN 280</strong> <span class="upgrade-badge">Current Standard</span>[cite: 20]</td>
-                                        <td>62,000 Nm[cite: 20]</td>
-                                        <td>Direct 1-to-1 flange bolt circle & gear tooth pitch match[cite: 20].</td>
+                                        <td><strong>Legacy ZAPEX Size 280 Type ZNN</strong></td>
+                                        <td>Curved Gear Tooth</td>
+                                        <td><strong>ZAPEX Type ZNN 280</strong> <span class="upgrade-badge">Current Standard</span></td>
+                                        <td>62,000 Nm</td>
+                                        <td>Direct 1-to-1 flange bolt circle & gear tooth pitch match.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Conventional Straight Gear Couplings</strong>[cite: 20]</td>
-                                        <td>Straight Spur Gearing[cite: 20]</td>
-                                        <td><strong>ZAPEX Type ZNN 210 / 240 / 280</strong> <span class="upgrade-badge">Crowned Tooth</span>[cite: 20]</td>
-                                        <td>28,000 Nm - 62,000 Nm[cite: 20]</td>
-                                        <td>Crowned tooth profile eliminates edge pressure and extends life[cite: 20].</td>
+                                        <td><strong>Conventional Straight Gear Couplings</strong></td>
+                                        <td>Straight Spur Gearing</td>
+                                        <td><strong>ZAPEX Type ZNN 210 / 240 / 280</strong> <span class="upgrade-badge">Crowned Tooth</span></td>
+                                        <td>28,000 Nm - 62,000 Nm</td>
+                                        <td>Crowned tooth profile eliminates edge pressure and extends life.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Steel Mill Roll Stand Drives</strong>[cite: 20]</td>
-                                        <td>High Torque Gear Sleeve[cite: 20]</td>
-                                        <td><strong>ZAPEX Type ZNN 280 / 320 / 360</strong> <span class="upgrade-badge">Mill Duty</span>[cite: 20]</td>
-                                        <td>62,000 Nm - 140,000 Nm[cite: 20]</td>
-                                        <td>Transmits extreme reversing impact loads in rolling mills[cite: 20].</td>
+                                        <td><strong>Steel Mill Roll Stand Drives</strong></td>
+                                        <td>High Torque Gear Sleeve</td>
+                                        <td><strong>ZAPEX Type ZNN 280 / 320 / 360</strong> <span class="upgrade-badge">Mill Duty</span></td>
+                                        <td>62,000 Nm - 140,000 Nm</td>
+                                        <td>Transmits extreme reversing impact loads in rolling mills.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Heavy Crane Hoist Winch Drives</strong>[cite: 20]</td>
-                                        <td>Gear Coupling with Brake[cite: 20]</td>
-                                        <td><strong>ZAPEX Type ZWB / ZNNB 280 + Brake</strong> <span class="upgrade-badge">Brake Disc</span>[cite: 20]</td>
-                                        <td>62,000 Nm[cite: 20]</td>
-                                        <td>Forged steel hub with integrated caliper brake disc[cite: 20].</td>
+                                        <td><strong>Heavy Crane Hoist Winch Drives</strong></td>
+                                        <td>Gear Coupling with Brake</td>
+                                        <td><strong>ZAPEX Type ZWB / ZNNB 280 + Brake</strong> <span class="upgrade-badge">Brake Disc</span></td>
+                                        <td>62,000 Nm</td>
+                                        <td>Forged steel hub with integrated caliper brake disc.</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Vertical Pump & Mixer Shafts</strong>[cite: 20]</td>
-                                        <td>Standard Horizontal Gear[cite: 20]</td>
-                                        <td><strong>ZAPEX Type ZWNV 280 Vertical</strong> <span class="upgrade-badge">Vertical Duty</span>[cite: 20]</td>
-                                        <td>62,000 Nm[cite: 20]</td>
-                                        <td>Special DUO oil retention seals prevent lubricant leakage[cite: 20].</td>
+                                        <td><strong>Vertical Pump & Mixer Shafts</strong></td>
+                                        <td>Standard Horizontal Gear</td>
+                                        <td><strong>ZAPEX Type ZWNV 280 Vertical</strong> <span class="upgrade-badge">Vertical Duty</span></td>
+                                        <td>62,000 Nm</td>
+                                        <td>Special DUO oil retention seals prevent lubricant leakage.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -342,34 +469,34 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender ZAPEX heavy-duty gear coupling family</strong>[cite: 20]. Whether your drivetrain requires a standard double-engagement coupling (<strong>ZAPEX Type ZNN 83 to 1000</strong>)[cite: 20], an extended shaft spacing design (<strong>Type ZNA 83 to 800</strong>)[cite: 20], single-engagement cardan drives (<strong>Type ZNNA</strong>)[cite: 20], attached brake discs (<strong>Type ZWB / ZNNB</strong>)[cite: 20], or high-speed vertical units (<strong>Type ZWNV</strong>)[cite: 20], all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles[cite: 20].
+                                We specialize in providing comprehensive technical sourcing and custom machining solutions for the entire <strong>Flender ZAPEX heavy-duty gear coupling family</strong>. Whether your drivetrain requires a standard double-engagement coupling (<strong>ZAPEX Type ZNN 83 to 1000</strong>), an extended shaft spacing design (<strong>Type ZNA 83 to 800</strong>), single-engagement cardan drives (<strong>Type ZNNA</strong>), attached brake discs (<strong>Type ZWB / ZNNB</strong>), or high-speed vertical units (<strong>Type ZWNV</strong>), all hubs can be precision bore-machined with custom keyways, taper bores, or spline profiles.
                                 <br><br>
-                                When servicing existing installations featuring worn gear teeth or leaking seals, we stock genuine <strong>Flender ZAPEX crowned tooth hubs, flanged sleeves, and DUO double radial seal kits</strong>[cite: 20]. Simply supply us with your coupling size, bore diameters, distance between shaft ends (DBSE), and operating torque, and our engineering team will deliver a 100% compliant replacement specification and proposal[cite: 20].
+                                When servicing existing installations featuring worn gear teeth or leaking seals, we stock genuine <strong>Flender ZAPEX crowned tooth hubs, flanged sleeves, and DUO double radial seal kits</strong>. Simply supply us with your coupling size, bore diameters, distance between shaft ends (DBSE), and operating torque, and our engineering team will deliver a 100% compliant replacement specification and proposal.
                             </div>
 
                             <!-- Curated Benchmark Models -->
                             <h4>Core Benchmark Model Standard Configurations</h4>
                             <ul class="benchmark-grid">
-                                <li>ZAPEX Type ZNN 130[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 180[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 210[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 240[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 280[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 320[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 360[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 400[cite: 20]</li>
-                                <li>ZAPEX Type ZNN 480[cite: 20]</li>
-                                <li>ZAPEX Type ZNA 280 (Long DBSE)[cite: 20]</li>
-                                <li>ZAPEX Type ZNNA 280 (Single Eng.)[cite: 20]</li>
-                                <li>ZAPEX Type ZWB 280 (Brake Disc)[cite: 20]</li>
-                                <li>ZAPEX Type ZWS 280 (High Speed)[cite: 20]</li>
-                                <li>ZAPEX Type ZWNV 280 (Vertical)[cite: 20]</li>
-                                <li>ZAPEX Type ZND 280 (Spacer)[cite: 20]</li>
-                                <li>ZAPEX Crowned Hub Size 280[cite: 20]</li>
-                                <li>ZAPEX Flanged Sleeve Size 280[cite: 20]</li>
-                                <li>ZAPEX DUO Seal Kit Size 280[cite: 20]</li>
-                                <li>ZAPEX O-Ring Kit Size 280[cite: 20]</li>
-                                <li>Flender High-Load Gear Grease[cite: 20]</li>
+                                <li>ZAPEX Type ZNN 130</li>
+                                <li>ZAPEX Type ZNN 180</li>
+                                <li>ZAPEX Type ZNN 210</li>
+                                <li>ZAPEX Type ZNN 240</li>
+                                <li>ZAPEX Type ZNN 280</li>
+                                <li>ZAPEX Type ZNN 320</li>
+                                <li>ZAPEX Type ZNN 360</li>
+                                <li>ZAPEX Type ZNN 400</li>
+                                <li>ZAPEX Type ZNN 480</li>
+                                <li>ZAPEX Type ZNA 280 (Long DBSE)</li>
+                                <li>ZAPEX Type ZNNA 280 (Single Eng.)</li>
+                                <li>ZAPEX Type ZWB 280 (Brake Disc)</li>
+                                <li>ZAPEX Type ZWS 280 (High Speed)</li>
+                                <li>ZAPEX Type ZWNV 280 (Vertical)</li>
+                                <li>ZAPEX Type ZND 280 (Spacer)</li>
+                                <li>ZAPEX Crowned Hub Size 280</li>
+                                <li>ZAPEX Flanged Sleeve Size 280</li>
+                                <li>ZAPEX DUO Seal Kit Size 280</li>
+                                <li>ZAPEX O-Ring Kit Size 280</li>
+                                <li>Flender High-Load Gear Grease</li>
                             </ul>
                         </div>
                         <!-- ===== End Selection Section ===== -->
@@ -379,11 +506,11 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender ZAPEX ZNN 280</strong>?[cite: 20]</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, bored & keyway machining or best price for <strong>Flender ZAPEX ZNN 280</strong>?</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
-                            <li>100% Original Flender Equipment[cite: 20]</li>
-                            <li>Global Express Shipping[cite: 20]</li>
-                            <li>Custom Bore & Keyway Machining Available[cite: 20]</li>
+                            <li>100% Original Flender Equipment</li>
+                            <li>Global Express Shipping</li>
+                            <li>Custom Bore & Keyway Machining Available</li>
                         </ul>
                         <a href="https://wa.me/8615502804645" class="quote-btn" target="_blank" rel="noopener noreferrer">Get a Quote Now</a>
                     </div>
@@ -473,7 +600,7 @@
                     <div class="col-12">
                         <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
                         <div style="text-align: center; margin-bottom: 20px;">
-                           <a href="/products/flender-gearbox-products/" class="button alt">Back to Flender Products</a>
+                            <a href="/products/flender-gearbox-products/" class="button alt">Back to Flender Products</a>
                         </div>
                         
                         <div id="copyright" style="text-align: center;">
