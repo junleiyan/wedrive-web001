@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/lenze-g500h-en/" />
     
-    <!-- Canonical English URL -->
+    <!-- Canonical & Alternate URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/lenze-g500h-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/lenze-g500h-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/lenze-g500h-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Lenze g500-H Coaxial Helical Geared Motor | Technical Specs & GST Replacement" />
@@ -53,17 +65,17 @@
         "Lenze GST04 Replacement", "Lenze GST05 Replacement", "Lenze GST06 Replacement", "Lenze GST07 Replacement", "Lenze GST09 Replacement"
       ],
       "description": "Lenze g500-H Series coaxial inline helical geared motors covering frame sizes g500-H450 to g500-H1400. Featuring gear efficiency up to 96%, torque capacities up to 1,400 Nm, m550 IE3 Premium Efficiency AC motors, and 100% mechanical replacement for legacy Lenze GST series.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -109,10 +121,125 @@
         
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/lenze-g500h-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/lenze-g500h-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/lenze-g500h-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -341,7 +468,7 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Selection & Retrofit Engineering Notes</h4>
                             <div class="selection-text">
-                                WE DRIVE HONGKONG LIMITED specializes in technical sourcing, exact part number identification, and global supply for the complete <strong>Lenze g500-H Series Coaxial Inline Helical Geared Motor family</strong>. Whether your plant requires a foot-mounted unit (<strong>g500-H450, g500-H600, g500-H1000, g500-H1400</strong>), a flange-mounted unit (<strong>g500-HF Series</strong>), or a decentralized inverter-duty drive paired with an i550 cabinet inverter, all units can be supplied pre-configured with integrated holding brakes, resolvers, thermistors, or forced-cooling ventilation.
+                                WE DRIVE HONGKONG LIMITED specializes in technical sourcing, exact part number identification, and global supply for the complete <strong>Lenze g500-H Series Coaxial Inline Helical Geared Motor family</strong>. Whether your plant requires a foot-mounted unit (<strong>g500-H450, g500-H600, g500-H1000, g500-H1400</strong>), a flange-mounted unit (<strong>g500-HF Series</strong>), or a decentralized drive paired with an i550 cabinet inverter, all units can be supplied pre-configured with integrated holding brakes, resolvers, thermistors, or forced-cooling ventilation.
                                 <br><br>
                                 When replacing older <strong>Lenze GST Series gearmotors</strong> on existing production lines, switching to current g500-H series models with m550 IE3 Premium Efficiency motors guarantees 100% exact physical mounting alignment without modifying foundation plates or output shaft couplings. Simply supply us with your existing Lenze nameplate serial number or code (e.g., <em>g500-H1000-m550-P90L4</em>), and our technical team will deliver a 100% compliant replacement specification and proposal.
                             </div>
@@ -472,7 +599,7 @@
                     <div class="col-12">
                         <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
                         <div style="text-align: center; margin-bottom: 20px;">
-                           <a href="/products/lenze-gearbox-products/" class="button alt">Back to Lenze Products</a>
+                             <a href="/products/lenze-gearbox-products/" class="button alt">Back to Lenze Products</a>
                         </div>
                         
                         <div id="copyright" style="text-align: center;">
