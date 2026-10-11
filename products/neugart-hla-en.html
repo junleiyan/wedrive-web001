@@ -12,9 +12,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/neugart-hla-en/" />
     
-    <!-- Canonical English URL -->
+    <!-- Canonical & Alternate URLs -->
     <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/neugart-hla-en/" />
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/neugart-hla-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/neugart-hla-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Neugart HLA Hygienic Design Stainless Steel Planetary Gearboxes | Technical Specs" />
@@ -54,17 +66,17 @@
         "IP69K Washdown Servo Gearbox", "EHEDG Food Grade Planetary Reducer"
       ],
       "description": "Neugart HLA Series world-first EHEDG-certified hygienic design planetary gearboxes engineered for pharmaceutical, food processing, and chemical packaging applications. Featuring high-grade stainless steel housings with round electropolished surfaces, IP69K washdown water tightness, NSF H1 food-grade lubrication, radial shaft seals with PTFE lips, low backlash (<3 to <5 arcmin), and 100% direct replacement for servo drives in severe washdown processing zones.",
-     "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -111,10 +123,125 @@
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
         .neugart-badge { background: #e0f2fe; color: #0369a1; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; border: 1px solid #bae6fd; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            background-blend-mode: multiply;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/neugart-hla-en/" style="text-decoration:none; color:#0073bb; font-weight:bold;">EN</a></li>
+            <li><a href="/pt/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/neugart-hla-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/neugart-hla-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -135,7 +262,7 @@
             
             <nav id="nav">
                 <ul>
-                     <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li class="wd-parent">
                         <a href="/brand/">Brand</a>
                         <ul id="wd-brand-menu">
@@ -188,41 +315,41 @@
                         <h1>Neugart HLA Hygienic Design Stainless Steel Planetary Gearboxes</h1>
                         <div class="model-subtitle">Brand: Neugart GmbH | Category: EHEDG Certified Stainless Steel Planetary Reducers (HLA070 to HLA115 Range: 27 Nm to 350 Nm)</div>
                         
-                        <p>The <strong>Neugart HLA Hygienic Design Planetary Gearbox Series</strong> (featured model: HLA070 1-Stage 5:1 Ratio) is the world's first **EHEDG-certified hygienic design planetary gearhead**, engineered specifically for food processing, primary packaging, pharmaceutical dosing, and chemical washdown environments. Built with high-grade electropolished stainless steel casings featuring smooth, rounded contours, the HLA series eliminates horizontal flat surfaces, blind pockets, and exposed bolt threads where organic residue or bacteria can accumulate. Certified to **IP69K water tightness standards**, these units withstand high-pressure, high-temperature chemical jet washdowns (up to 100 bar at 80°C). Pre-filled with **NSF H1 food-grade synthetic grease**, HLA reducers utilize specialized radial shaft seals with PTFE sealing lips to prevent lubricant leakage into food zones. Incorporating precision ground helical gearing, HLA gearboxes deliver exceptional positioning accuracy (<3 to <5 arcmin backlash) and high dynamic efficiency across 3 frame sizes (HLA070, HLA090, HLA115). WE DRIVE HONGKONG LIMITED provides technical sourcing, ratio verification, and custom PCS motor adapter matching for Neugart HLA hygienic planetary drives worldwide.</p>
+                        <p>The <strong>Neugart HLA Hygienic Design Planetary Gearbox Series</strong> (featured model: HLA070 1-Stage 5:1 Ratio) is the world's first **EHEDG-certified hygienic design planetary gearhead**, engineered specifically for food processing, primary packaging, pharmaceutical dosing, and chemical washdown environments[cite: 1]. Built with high-grade electropolished stainless steel casings featuring smooth, rounded contours, the HLA series eliminates horizontal flat surfaces, blind pockets, and exposed bolt threads where organic residue or bacteria can accumulate[cite: 1]. Certified to **IP69K water tightness standards**, these units withstand high-pressure, high-temperature chemical jet washdowns (up to 100 bar at 80°C)[cite: 1]. Pre-filled with **NSF H1 food-grade synthetic grease**, HLA reducers utilize specialized radial shaft seals with PTFE sealing lips to prevent lubricant leakage into food zones[cite: 1]. Incorporating precision ground helical gearing, HLA gearboxes deliver exceptional positioning accuracy (<3 to <5 arcmin backlash) and high dynamic efficiency across 3 frame sizes (HLA070, HLA090, HLA115)[cite: 1]. WE DRIVE HONGKONG LIMITED provides technical sourcing, ratio verification, and custom PCS motor adapter matching for Neugart HLA hygienic planetary drives worldwide[cite: 1].</p>
 
                         <h3>Technical Specifications</h3>
                         <table class="specs-table">
                             <tr>
                                 <th>Featured Model</th>
-                                <td>HLA070-005-OPB3AD (Size 70 Stainless Steel Hygienic Planetary Reducer, 1-Stage, 5:1 Ratio, Smooth Round Casing, <3 arcmin Backlash)</td>
+                                <td>HLA070-005-OPB3AD (Size 70 Stainless Steel Hygienic Planetary Reducer, 1-Stage, 5:1 Ratio, Smooth Round Casing, <3 arcmin Backlash)[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Brand / Manufacturer</th>
-                                <td>Neugart GmbH (German Precision Motion Control)</td>
+                                <td>Neugart GmbH (German Precision Motion Control)[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Product Series</th>
-                                <td>HLA Series EHEDG Certified Hygienic Design Stainless Steel Planetary Reducers</td>
+                                <td>HLA Series EHEDG Certified Hygienic Design Stainless Steel Planetary Reducers[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Frame Sizes Covered</th>
-                                <td>Frame Sizes HLA070, HLA090, HLA115 (High-Grade Electropolished Stainless Steel Construction)</td>
+                                <td>Frame Sizes HLA070, HLA090, HLA115 (High-Grade Electropolished Stainless Steel Construction)[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Output Torque Range</th>
-                                <td>27 Nm to 350 Nm (238 lb-in to 3,097 lb-in Continuous Output Torque)</td>
+                                <td>27 Nm to 350 Nm (238 lb-in to 3,097 lb-in Continuous Output Torque)[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Reduction Ratio Range</th>
-                                <td>1-Stage Ratios: 3:1, 4:1, 5:1, 7:1, 8:1, 10:1; 2-Stage Ratios: 12:1 to 100:1</td>
+                                <td>1-Stage Ratios: 3:1, 4:1, 5:1, 7:1, 8:1, 10:1; 2-Stage Ratios: 12:1 to 100:1[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Ingress Protection & Certifications</th>
-                                <td>IP69K Washdown Sealing Standard; EHEDG Certified Hygienic Design; FDA Compliant Materials</td>
+                                <td>IP69K Washdown Sealing Standard; EHEDG Certified Hygienic Design; FDA Compliant Materials[cite: 1]</td>
                             </tr>
                             <tr>
                                 <th>Lubrication & Sealing</th>
-                                <td>NSF H1 Food-Grade Synthetic Grease (Lifetime Lubrication); Dual PTFE Lip Radial Shaft Seals</td>
+                                <td>NSF H1 Food-Grade Synthetic Grease (Lifetime Lubrication); Dual PTFE Lip Radial Shaft Seals[cite: 1]</td>
                             </tr>
                         </table>
 
@@ -230,8 +357,8 @@
                         <div class="downloads-section">
                             <h3>Documentation & Resources</h3>
                             <ul>
-                                <li><a href="#pdf-manual">Neugart HLA Hygienic Design Technical Catalog & EHEDG Certificate (PDF)</a></li>
-                                <li><a href="#cad-drawing">HLA070 to HLA115 2D/3D CAD Drawing & Stainless Steel Motor Adapter Flange Request</a></li>
+                                <li><a href="#pdf-manual">Neugart HLA Hygienic Design Technical Catalog & EHEDG Certificate (PDF)</a>[cite: 1]</li>
+                                <li><a href="#cad-drawing">HLA070 to HLA115 2D/3D CAD Drawing & Stainless Steel Motor Adapter Flange Request</a>[cite: 1]</li>
                             </ul>
                         </div>
 
@@ -239,7 +366,7 @@
                         <div class="selection-guide-box">
                             <h3 class="catalog-title">Neugart HLA Series Frame Size, Torque & Backlash Selection Matrix</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Complete selection matrix for Neugart HLA hygienic stainless steel planetary gearboxes. Review frame sizes, nominal torques, allowable radial/axial loads, backlash levels, and model codes:
+                                Complete selection matrix for Neugart HLA hygienic stainless steel planetary gearboxes[cite: 1]. Review frame sizes, nominal torques, allowable radial/axial loads, backlash levels, and model codes:
                             </p>
 
                             <!-- Configuration Matrix Table -->
@@ -285,7 +412,7 @@
                             <!-- Standard Washdown Reducer to Neugart HLA Upgrade Guide -->
                             <h3 class="catalog-title" style="margin-top: 35px;">Standard Washdown Gearbox to Neugart HLA Hygienic Upgrade Guide</h3>
                             <p style="font-size: 13px; color: #555; line-height: 1.7;">
-                                Direct replacement guide for upgrading conventional painted or epoxy-coated washdown gearboxes to EHEDG certified Neugart HLA stainless steel planetary units:
+                                Direct replacement guide for upgrading conventional painted or epoxy-coated washdown gearboxes to EHEDG certified Neugart HLA stainless steel planetary units[cite: 1]:
                             </p>
 
                             <table class="upgrade-table">
@@ -322,9 +449,9 @@
                             <!-- Engineering Selection Text -->
                             <h4>Expert Technical Sourcing & Washdown Motion Control Notes</h4>
                             <div class="selection-text">
-                                WE DRIVE HONGKONG LIMITED specializes in technical sourcing, hygienic compliance verification, and global express supply for the complete <strong>Neugart HLA Hygienic Design Stainless Steel Planetary Gearbox portfolio</strong>. Whether your food slicing, beverage bottling, pharmaceutical tableting, or meat processing machinery requires 1-stage inline units (<strong>HLA070, HLA090, HLA115</strong>), 2-stage high-ratio units, stainless steel PCS motor adapter flanges, or custom output shaft dimensions, all units can be supplied pre-lubricated with NSF H1 food-grade grease directly from factory channels.
+                                WE DRIVE HONGKONG LIMITED specializes in technical sourcing, hygienic compliance verification, and global express supply for the complete <strong>Neugart HLA Hygienic Design Stainless Steel Planetary Gearbox portfolio</strong>[cite: 1]. Whether your food slicing, beverage bottling, pharmaceutical tableting, or meat processing machinery requires 1-stage inline units (<strong>HLA070, HLA090, HLA115</strong>), 2-stage high-ratio units, stainless steel PCS motor adapter flanges, or custom output shaft dimensions, all units can be supplied pre-lubricated with NSF H1 food-grade grease directly from factory channels[cite: 1].
                                 <br><br>
-                                When retrofitting washdown processing equipment or upgrading to strict EHEDG/FDA sanitary guidelines, switching to Neugart HLA series planetary gearboxes delivers immediate performance benefits: zero paint flaking risks via electropolished stainless steel construction, IP69K high-pressure water tightness, self-draining curved surfaces, ultra-low torsional backlash (<3 arcmin), and total peace of mind in splash and contact food zones. Simply provide us with your existing reducer designation or servo motor part number, and our technical engineering team will deliver a 100% compliant replacement specification and proposal.
+                                When retrofitting washdown processing equipment or upgrading to strict EHEDG/FDA sanitary guidelines, switching to Neugart HLA series planetary gearboxes delivers immediate performance benefits: zero paint flaking risks via electropolished stainless steel construction, IP69K high-pressure water tightness, self-draining curved surfaces, ultra-low torsional backlash (<3 arcmin), and total peace of mind in splash and contact food zones[cite: 1]. Simply provide us with your existing reducer designation or servo motor part number, and our technical engineering team will deliver a 100% compliant replacement specification and proposal[cite: 1].
                             </div>
 
                             <!-- Curated Benchmark Models -->
@@ -359,7 +486,7 @@
                     <!-- Sidebar Inquiry -->
                     <div class="product-sidebar">
                         <h3>Instant Inquiry</h3>
-                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>Neugart HLA Stainless Steel Gearboxes</strong>?</p>
+                        <p style="font-size: 13px; color: #666;">Looking for stock, lead time, replacement units or best price for <strong>Neugart HLA Stainless Steel Gearboxes</strong>?[cite: 1]</p>
                         <ul style="font-size: 13px; color: #555; padding-left: 15px; margin-bottom: 20px;">
                             <li>100% Original Neugart Equipment</li>
                             <li>Global Express Shipping</li>
