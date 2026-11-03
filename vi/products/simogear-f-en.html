@@ -171,7 +171,6 @@
 
         .contact-bar-item:hover .bar-icon {
             width: 50px;
-            background-blend-mode: multiply;
             filter: brightness(0.9);
         }
 
@@ -212,12 +211,59 @@
             right: 55px; 
         }
 
-        .qr-popup {
+        /* Footer QR Popups Control - 修复二维码错位溢出问题 */
+        .qr-container {
+            position: relative;
+            display: inline-block;
+        }
+        .qr-container .qr-popup {
+            position: absolute;
+            bottom: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            padding: 5px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 100;
+        }
+        .qr-container:hover .qr-popup {
+            display: block !important;
+        }
+        .bar-info .qr-popup {
             width: 100px;
             height: 100px;
             display: block;
             margin: 0 auto 5px auto;
             object-fit: contain;
+            position: static;
+            transform: none;
+            box-shadow: none;
+            padding: 0;
+            border: none;
+        }
+
+        /* Footer Contact Text Styling - 确保深色背景下字迹清晰 */
+        #footer .contact-text {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 0.95em;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 15px;
+            border-radius: 4px;
+        }
+        #footer .contact-text a {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+        #footer .contact-text a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -241,7 +287,7 @@
             <li><a href="/id/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
             <li><a href="/fil/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
         </ul>
-        <div onclick="window.location.href='/products/simogear-f-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+        <div onclick="window.location.href='/vi/products/simogear-f-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
             🌐 Ngôn ngữ (VI)
         </div>
     </div>
@@ -250,11 +296,11 @@
         <!-- Header Section -->
         <section id="header">
             <div style="margin: 0;">
-                <a href="/" id="logo" style="display:flex; align-items:center; max-width:1440px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
+                <a href="/vi/" id="logo" style="display:flex; align-items:center; max-width:1440px; margin:0 auto; padding:1.2em 1.5em 0.8em 1.5em; text-decoration:none;">
                     <img src="/images/logo.png" width="400" height="85" alt="WE DRIVE HONGKONG LIMITED" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
                     <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
                         <span style="font-size:1.9em; font-weight:800; letter-spacing:2px; color:#1d1d1d; line-height:1.1; text-transform:uppercase;">
-                            WE DRIVE HONGKONG LIMITED  
+                            WE DRIVE HONGKONG LIMITED
                         </span>
                         <span style="font-size:0.82em; font-weight:500; color:#666; margin-top:6px; letter-spacing:1px; text-transform:uppercase;">
                             Nhà Cung Cấp Toàn Cầu Động Cơ & Hộp Giảm Tốc Công Nghiệp
@@ -618,11 +664,11 @@
                                     <li><a href="https://www.facebook.com/profile.php?id=100084388278281" class="icon brands fa-facebook-f" target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
                                 </ul>
 
-                                <div class="contact-text" style="text-align:left; line-height:2; font-size:1.1em; color: #fff; background: rgba(0,0,0,0.03); padding: 10px; border-radius: 4px;">
+                                <div class="contact-text">
                                     <p style="margin: 0;">
-                                        WhatsApp/WeChat: +86 15502804645<br>
-                                        Email: james@wedrivepower.com<br>
-                                        we.drive.hk@gmail.com
+                                        <strong>WhatsApp / WeChat:</strong> +86 15502804645<br>
+                                        <strong>Email:</strong> <a href="mailto:james@wedrivepower.com">james@wedrivepower.com</a><br>
+                                        <a href="mailto:we.drive.hk@gmail.com">we.drive.hk@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -639,8 +685,8 @@
                         
                         <div id="copyright" style="text-align: center;">
                             <ul class="links" style="list-style:none; padding:0; margin:0;">
-                                <li style="color: #777; font-size: 0.95em;">
-                                    © 2015 - <script>document.write(new Date().getFullYear())</script> WE DRIVE HONGKONG LIMITED | WeDrive Power Transmission Co., Ltd. Bảo lưu mọi quyền.
+                                <li style="color: #aaa; font-size: 0.95em;">
+                                    © 2015 - <script>document.write(new Date().getFullYear());</script> WE DRIVE HONGKONG LIMITED | WeDrive Power Transmission Co., Ltd. Bảo lưu mọi quyền.
                                 </li>
                             </ul>
                         </div>
