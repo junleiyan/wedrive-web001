@@ -13,9 +13,21 @@
     
     <link rel="canonical" href="https://www.wedrivepower.com/products/simogear-f-en/">
     
-    <!-- Canonical English URL -->
-    <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/simogear-f-en/" />
+    <!-- Canonical & 13 Multi-language Hreflang Tags + x-default -->
     <link rel="alternate" hreflang="x-default" href="https://www.wedrivepower.com/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="en" href="https://www.wedrivepower.com/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wedrivepower.com/pt/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.wedrivepower.com/ar/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="de" href="https://www.wedrivepower.com/de/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="es" href="https://www.wedrivepower.com/es/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="fa" href="https://www.wedrivepower.com/fa/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wedrivepower.com/fr/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="ru" href="https://www.wedrivepower.com/ru/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="ja" href="https://www.wedrivepower.com/ja/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="th" href="https://www.wedrivepower.com/th/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="vi" href="https://www.wedrivepower.com/vi/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="id" href="https://www.wedrivepower.com/id/products/simogear-f-en/" />
+    <link rel="alternate" hreflang="fil" href="https://www.wedrivepower.com/fil/products/simogear-f-en/" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Siemens SIMOGEAR F89 Parallel Shaft Geared Motor | Specs & Replacement" />
@@ -24,8 +36,9 @@
     <meta property="og:url" content="https://www.wedrivepower.com/products/simogear-f-en/" />
     <meta property="og:image" content="https://www.wedrivepower.com/images/siemens-innomotics-gearmotors-en.jpg" />
 
-    <!-- Absolute CSS Path -->
+    <!-- Absolute CSS Path & FontAwesome -->
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QVTK1XJB6"></script>
@@ -56,17 +69,17 @@
         "SIMOGEAR FF29", "SIMOGEAR FF39", "SIMOGEAR FF49", "SIMOGEAR FF69", "SIMOGEAR FF89", "SIMOGEAR FF109", "SIMOGEAR FF129"
       ],
       "description": "Siemens and Innomotics SIMOGEAR F series parallel shaft helical geared motors. High efficiency, compact shaft-mounted layout, plug-in pinion motors, and 100% mechanical replacement for legacy Siemens Flender MOTOX F series.",
-   "offers": {
-  "@type": "Offer",
-  "price": "500",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/InStock",
-  "seller": {
-    "@type": "Organization",
-    "name": "WE DRIVE HONGKONG LIMITED",
-    "url": "https://www.wedrivepower.com/"
-  }
-}
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "WE DRIVE HONGKONG LIMITED",
+          "url": "https://www.wedrivepower.com/"
+        }
+      }
     }
     </script>
 
@@ -113,11 +126,171 @@
         .selection-text { font-size: 14px; color: #444; line-height: 1.8; margin-top: 15px; background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; }
         .brand-history-notice { background: #eef7fc; border-left: 4px solid #0073bb; padding: 15px 20px; margin: 20px 0; border-radius: 0 4px 4px 0; font-size: 13.5px; color: #334155; line-height: 1.7; }
         .upgrade-badge { background: #e8f5e9; color: #2e7d32; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
-        .china-badge { background: #e3f2fd; color: #0277bd; font-weight: bold; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+
+        /* Multilingual Dropdown Container */
+        .lang-container { position: fixed; top: 15px; right: 15px; z-index: 10000; display: flex; align-items: center; gap: 10px; }
+        .lang-menu { display: none; list-style: none; padding: 5px 10px; margin: 0; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-direction: row; gap: 15px; white-space: nowrap; }
+        .lang-container:hover .lang-menu { display: flex !important; }
+
+        /* Fixed Contact Bar CSS */
+        .fixed-contact-bar {
+            position: fixed;
+            right: 0;
+            bottom: 120px; 
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+        }
+
+        .contact-bar-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-size: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px 0 0 4px; 
+            box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bar-icon.wa { background-color: #25D366; }
+        .bar-icon.wx { background-color: #1AAD19; }
+        .bar-icon.mail { background-color: #E14938; }
+
+        .contact-bar-item:hover .bar-icon {
+            width: 50px;
+            filter: brightness(0.9);
+        }
+
+        .bar-info {
+            position: absolute;
+            right: 60px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 13px;
+            color: #333333;
+            pointer-events: none; 
+        }
+
+        .bar-info::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .contact-bar-item:hover .bar-info {
+            opacity: 1;
+            visibility: visible;
+            right: 55px; 
+        }
+
+        /* Footer QR Popups Control - 修复二维码错位溢出问题 */
+        .qr-container {
+            position: relative;
+            display: inline-block;
+        }
+        .qr-container .qr-popup {
+            position: absolute;
+            bottom: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            padding: 5px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 100;
+        }
+        .qr-container:hover .qr-popup {
+            display: block !important;
+        }
+        .bar-info .qr-popup {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 5px auto;
+            object-fit: contain;
+            position: static;
+            transform: none;
+            box-shadow: none;
+            padding: 0;
+            border: none;
+        }
+
+        /* Footer Contact Text Styling - 确保深色背景下字迹清晰 */
+        #footer .contact-text {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 0.95em;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 15px;
+            border-radius: 4px;
+        }
+        #footer .contact-text a {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+        #footer .contact-text a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body class="homepage is-preload">
+
+    <!-- Top Right Language Selector Switcher -->
+    <div class="lang-container">
+        <ul class="lang-menu">
+            <li><a href="/products/simogear-f-en/" style="text-decoration:none; color:#0073bb; font-weight:900; text-decoration:underline;">EN</a></li>
+            <li><a href="/pt/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">PT</a></li>
+            <li><a href="/ar/products/simogear-f-en/" dir="rtl" style="text-decoration:none; color:#333; font-weight:bold;">AR</a></li>
+            <li><a href="/de/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">DE</a></li>
+            <li><a href="/es/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">ES</a></li>
+            <li><a href="/fa/products/simogear-f-en/" dir="rtl" style="text-decoration:none; color:#333; font-weight:bold;">FA</a></li>
+            <li><a href="/fr/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FR</a></li>
+            <li><a href="/ru/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">RU</a></li>
+            <li><a href="/ja/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">JA</a></li>
+            <li><a href="/th/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">TH</a></li>
+            <li><a href="/vi/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">VI</a></li>
+            <li><a href="/id/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">ID</a></li>
+            <li><a href="/fil/products/simogear-f-en/" style="text-decoration:none; color:#333; font-weight:bold;">FIL</a></li>
+        </ul>
+        <div onclick="window.location.href='/products/simogear-f-en/';" style="background: #0073bb; color: #fff; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            🌐 Language (EN)
+        </div>
+    </div>
 
     <div id="page-wrapper">
         <!-- Header Section -->
@@ -127,7 +300,7 @@
                     <img src="/images/logo.png" width="400" height="85" alt="WE DRIVE HONGKONG LIMITED" style="height:85px; width:auto; margin-right:26px; flex-shrink:0;">
                     <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15;">
                         <span style="font-size:1.9em; font-weight:800; letter-spacing:2px; color:#1d1d1d; line-height:1.1; text-transform:uppercase;">
-                            WE DRIVE HONGKONG LIMITED  
+                            WE DRIVE HONGKONG LIMITED
                         </span>
                         <span style="font-size:0.82em; font-weight:500; color:#666; margin-top:6px; letter-spacing:1px; text-transform:uppercase;">
                             Global Supplier of Industrial Gearboxes & Motors
@@ -159,13 +332,13 @@
                             <li><a href="/ksb-industrial-pump/">KSB</a></li>
                             <li><a href="/samson-industrial-valve-actuator/">SAMSON</a></li>
                             <li><a href="/odm-brand/">ODM BRAND</a></li>
-                             <li><a href="/weg-motors/">WEG</a></li>
+                            <li><a href="/weg-motors/">WEG</a></li>
                         </ul>
                     </li>
                     <li><a href="/products/" class="active">Products</a></li>
                     <li><a href="/company/">Company</a></li>
                     <li><a href="/case/">Case</a></li>
-                    <li><a href="/news-blog./">News and Blog</a></li>
+                    <li><a href="/news-blog/">News and Blog</a></li>
                     <li><a href="/inquiry/">Inquiry</a></li>
                     <li><a href="/contact/">Contact</a></li>
                     <li><a href="/discount/">Discount</a></li>
@@ -458,6 +631,7 @@
                                         <li><a href="/kollmorgen-servomotors/" style="color: #444; font-weight: 600; text-decoration: none;">• KOLLMORGEN Servo</a></li>
                                         <li><a href="/sumitomohansen-speedreducer/" style="color: #444; font-weight: 600; text-decoration: none;">• SUMITOMO & HANSEN</a></li>
                                         <li><a href="/odm-brand/" style="color: #444; font-weight: 600; text-decoration: none;">• ODM BRAND Solutions</a></li>
+                                        <li><a href="/weg-motors/" style="color: #444; font-weight: 600; text-decoration: none;">• WEG</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -490,11 +664,11 @@
                                     <li><a href="https://www.facebook.com/profile.php?id=100084388278281" class="icon brands fa-facebook-f" target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
                                 </ul>
 
-                                <div class="contact-text" style="text-align:left; line-height:2; font-size:1.1em; color: #fff; background: rgba(0,0,0,0.03); padding: 10px; border-radius: 4px;">
+                                <div class="contact-text">
                                     <p style="margin: 0;">
-                                        WhatsApp/WeChat: +86 15502804645<br>
-                                        Email: james@wedrivepower.com<br>
-                                        we.drive.hk@gmail.com
+                                        <strong>WhatsApp / WeChat:</strong> +86 15502804645<br>
+                                        <strong>Email:</strong> <a href="mailto:james@wedrivepower.com">james@wedrivepower.com</a><br>
+                                        <a href="mailto:we.drive.hk@gmail.com">we.drive.hk@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -506,13 +680,13 @@
                     <div class="col-12">
                         <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
                         <div style="text-align: center; margin-bottom: 20px;">
-                        <a href="/products/siemens-gearbox-motor-products/" class="button alt">Back to Siemens Products</a>
+                          <a href="/products/siemens-gearbox-motor-products/" class="button alt">Back to Siemens Products</a>
                         </div>
                         
                         <div id="copyright" style="text-align: center;">
                             <ul class="links" style="list-style:none; padding:0; margin:0;">
-                                <li style="color: #777; font-size: 0.95em;">
-                                    © 2015 - <script>document.write(new Date().getFullYear())</script> WE DRIVE HONGKONG LIMITED | WeDrive Power Transmission Co., Ltd. All Rights Reserved.
+                                <li style="color: #aaa; font-size: 0.95em;">
+                                    © 2015 - <script>document.write(new Date().getFullYear());</script> WE DRIVE HONGKONG LIMITED | WeDrive Power Transmission Co., Ltd. All Rights Reserved.
                                 </li>
                             </ul>
                         </div>
